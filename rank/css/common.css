@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url("reset.css");
-@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 
 *{
 	-webkit-box-sizing:border-box;
@@ -45,7 +45,7 @@ input{
 	max-width:640px;
 	margin:0 auto;
 	padding:0 15px;
-	
+
 	overflow:hidden;
 }
 .wrapper.toggle{
@@ -165,7 +165,7 @@ footer .socialWrap li a i{
 	transform:translate(-50%,-50%);
 }
 footer .logo{
-	
+
 }
 footer .logo a{
 	width:63px;
@@ -322,7 +322,7 @@ footer .logo a{
 	transform:translateY(-50%);
 }
 .cover .container .con1 .cover_visual{
-	
+
 }
 .cover .container .con1 .cover_visual b{
 	padding-bottom:10px;
@@ -401,7 +401,7 @@ i.pos:before{
 	font-weight:bold;
 }
 .item_1 a .num li:nth-child(2){
-	
+
 }
 .item_1 a .num li:nth-child(2) i{
 	font-size:18px;
@@ -465,10 +465,10 @@ i.pos:before{
 	border-bottom:none;
 }
 .item_2{
-	
+
 }
 .item_2 a{
-	
+
 }
 .item_2 a > ul{
 	width:100%;
@@ -571,7 +571,7 @@ padding-bottom:10px;
 	text-align:center;
 }
 .con_list > ul{
-	
+
 }
 .con_list > ul > li{
 	padding-bottom:20px;
@@ -616,7 +616,7 @@ padding-bottom:10px;
 	line-height:20px;
 }
 .con_list > ul > li a .date dl{
-	
+
 }
 .con_list > ul > li a .date dl dt{
 	font-size:48px;
@@ -657,7 +657,7 @@ padding-bottom:10px;
 	border-bottom:3px solid #000;
 }
 .form_1{
-	
+
 }
 .form_1 > ul > li{
 	margin-top:15px;
