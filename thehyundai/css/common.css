@@ -416,6 +416,7 @@
 }
 
 body {
+  max-width: 640px;
     font: 14px "Roboto Mono", "나눔고딕", "Nanum Gothic", "돋움", "dotum", sans-serif;
     font-size: 14px;
     color: #333;
