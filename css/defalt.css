@@ -1,0 +1,273 @@
+.index_hero .section_content .row{
+    min-height: 100vh;
+    position: relative;
+}
+.index_hero .section_content .canvas_wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: #000;
+}
+.index_hero .section_content .canvas_wrap .sketch{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.index_hero .section_content a{
+    color: #fff;
+}
+.index_hero .headline{
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(250,250,250,1);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.index_hero .headline .tx_2{
+    font-size: 70px;
+}
+.index_hero .headline .button_wrap a{
+    border: 2px solid #fff;
+}
+.index_hero .headline .button_wrap a:hover{
+    background-color: #fff;
+    color: #333;
+}
+.index2_hero .section_content .row .img_wrap{
+    height: 800px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 110% 0;
+}
+.figure_wrap{
+    position: relative;
+}
+.figure_wrap figure{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+.parallax1{
+    height: 800px;
+}
+.parallax1 figure:nth-child(1){
+    width: 1588px;
+    height: 873px;
+    bottom: 0px;
+    left: 50%;
+    background-image: url("../images/hero_shadow_large.png");
+}
+.parallax1 figure:nth-child(2){
+    width: 1219px;
+    height: 492px;
+    bottom: 150px;
+    left: 45%;
+    background-image: url("../images/hero_pro_12_9_large_2x.png");
+}
+.parallax1 figure:nth-child(3){
+    width: 959px;
+    height: 386px;
+    bottom: 150px;
+    left: 65%;
+    background-image: url("../images/hero_pro_9_7_large_2x.png");
+}
+.parallax1 figure:nth-child(4){
+    width: 434px;
+    height: 182px;
+    bottom: 150px;
+    left: 15%;
+    background-image: url("../images/hero_pencil_large_2x.png");
+}
+.parallax2{
+    height: 1500px;
+}
+.parallax2 figure:nth-child(1){
+    width: 1120px;
+    height: 480px;
+    bottom: 300px;
+    left: 25%;
+    background-image: url("../images/retina_display_12_9_shadow_large.jpg");
+}
+.parallax2 figure:nth-child(2){
+    width: 868px;
+    height: 384px;
+    bottom: 75px;
+    left: 66%;
+    background-image: url("../images/retina_display_9_7_shadow_large.png");
+}
+.parallax2 figure:nth-child(3){
+    width: 855px;
+    height: 1070px;
+    bottom: 320px;
+    left: 35%;
+    background-image: url("../images/retina_display_12_9_large_2x.png");
+}
+.parallax2 figure:nth-child(4){
+    width: 669px;
+    height: 833px;
+    bottom: 130px;
+    left: 75%;
+    background-image: url("../images/retina_display_9_7_large_2x.png");
+}
+.parallax3{
+    height: 759px;
+}
+.parallax3 figure{
+    width: 894px;
+    height: 759px;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+    background-image: url("../images/icloud_large_2x.jpg");
+}
+.sound_large_2x{
+    background-image: url("../images/a02.png");
+}
+.wireless_hero_large_2x{
+    background-image: url("../images/a03.png");
+}
+.wireless_large_2x{
+    background-image: url("../images/a01.png");
+}
+.chip_hero_large{
+    background-image: url("../images/chip_hero_large.jpg");
+}
+.ipadmini_large_2x{
+    background-image: url("../images/ipadmini_large_2x.jpg");
+}
+.watch_large{
+    background-image: url("../images/watch_large.jpg");
+}
+.hero_large_2x{
+    background-image: url("../images/hero_large_2x.jpg");
+}
+
+.img_wrap{
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img_wrap .filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.img_wrap:hover .filter{
+    background-color: rgba(0,0,0,0.7);
+}
+.img_wrap .headline{
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    text-align: left;
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.img_wrap:hover .headline{
+    opacity: 1;
+}
+.con3 .col_3_1 .img_wrap{
+    height: 400px;
+}
+.con3 .col_3_1 .img_wrap:nth-child(2){
+    background-position: right 0;
+}
+.con3 .col_3_2 .img_wrap{
+    height: 800px;
+}
+.con4{
+    background-color: #f2f2f2;
+}
+.con6 .section_content,
+.con5 .section_content{
+    max-width: 1240px;
+}
+.con5 .col_3_1{
+    padding: 0 20px;
+}
+.con6{
+    background-color: #222;
+}
+.con6 .row > .tx_1{
+    margin-bottom: 50px;
+    color: #fff;
+}
+.con6 .col_3_1{
+    padding: 0 10px;
+}
+.con6 .col_3_1 .inner{
+    overflow: hidden;
+}
+.con6 .col_3_1 .img_wrap{
+    height: 200px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: #fff;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.con6 .col_3_1:hover .img_wrap{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.con6 .col_3_1 .headline{
+    padding: 30px;
+    background-color: #111;
+    color: #fff;
+    text-align: left;
+}
+.con6 .col_3_1 .headline .tx_1:first-child{
+    color: #999;
+}
+.con6 .col_3_1:nth-child(1) .img_wrap{
+    background-color: #111;
+    background-position: 50% 20px;
+}
+.con6 .col_3_1:nth-child(2) .img_wrap{
+    background-position: 50% 10px;
+}
+.con6 .col_3_1:nth-child(3) .img_wrap{
+    background-color: #f2f2f2;
+}
+.con6 .col_3_1:nth-child(1) .headline{
+    background-color: #fff;
+    color: #333;
+}
