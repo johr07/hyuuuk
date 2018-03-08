@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrapper ticket_pay">
+            <div class="header">
+                <div class="header_2">
+                    <ul>
+                        <li>
+                            <div class="icon_back"><a href="#" onclick="history.back();return false"><i class="material-icons">&#xE5CB;</i></a></div>
+                            <div class="h1">결제</div>
+                        </li>
+                        <li>
+                            <div class="icon_home"><a href="index.html"><img src="images/icon_home.svg" alt=""></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="con_busticket">
+                    <div class="item">
+                        <div class="item_main">
+                            <a href="ticket_detail.html">
+                                <span>6500</span>
+                                <p>인천국제공항——더케이호텔서울</p>
+                            </a>
+                        </div>
+                        <div class="item_sub">
+                            <div class="swiper-container swiper-container1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="ticket_table.html">명동</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">동대문</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">잠실</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">대치동</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">남대문</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">강남</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">신촌</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">홍대</a></div>
+                                </div>
+                            </div>
+                            <script>
+                                var swiper = new Swiper('.swiper-container1', {
+                                    slidesPerView: 'auto'
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_1">
+                    <div class="h1">유효기간 2017-2-27 00:00（24시간）</div>
+                    <div class="h1">성인 * 2장</div>
+                    <div class="h1">편도 2017.02.27</div>
+                    <div class="h1">결제완료 30,000원（人民币150元）</div>
+                    <div class="h2">
+                        합계
+                        <div class="h3">
+                            <span>¥ 150元</span>
+                            <span>₩ 30,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_2">
+                    <form action="">
+                        <div class="h1">
+                            결제방법
+                        </div>
+                        <div class="con_pay">
+                            <div class="item">
+                                <input type="radio" id="pay_1" name="a">
+                                <label for="pay_1">
+                                    <img src="images/icon_unionpay.png" alt="">
+                                    <div class="h2">unionpay</div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="pay_2" name="a">
+                                <label for="pay_2">
+                                    <img src="images/icon_zhifubaopay.png" alt="">
+                                    <div class="h2">zhifubaopay</div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="pay_3" name="a">
+                                <label for="pay_3">
+                                    <img src="images/icon_wechatpay.png" alt="">
+                                    <div class="h2">wechatpay</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="h1">
+                            교환코드
+                        </div>
+                        <div class="con_search">
+                            <input type="text" placeholder="교환코드 입력">
+                        </div>
+                        <div class="con_button1">
+                            <a href="ticket_pay_complete.html" target="_blank">결제하기</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+    </body>
+</html>
