@@ -154,6 +154,7 @@ label:hover:before {
 	left: 0;
 }
 .header_inner{
+	height: 60px;
 	position: relative;
     overflow: hidden;
 	background-image: url("../images/bg_pattern.png");
@@ -2156,6 +2157,7 @@ label:hover:before {
 	line-height: 36px;
 	color: #777;
 	background: url("../images/icon_like_button1.png") 20px 8px no-repeat;
+	background-size: 20px;
     border-radius: 20px;
     border: 1px solid #fb7889;
 }
@@ -2170,6 +2172,7 @@ label:hover:before {
 .auction .con1 .con_wrap .item_wrap .item .like_sns_wrap .like_button.on a,
 .list .con1 .con_wrap .item_wrap .item .like_sns_wrap .like_button.on a{
 	background: url("../images/icon_like_button2.png") 20px 8px no-repeat;
+	background-size: 20px;
 }
 .article_detail .con1 .like_sns_wrap .like_button.on a:after,
 .group_buying .con1 .con_wrap .item_wrap .item .like_sns_wrap .like_button.on a:after,
