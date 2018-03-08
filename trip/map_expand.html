@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>攻略地图·首尔</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/map_expand.css" />
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+$(function(){
+	$("html,body").scrollTop(900).scrollLeft(700);
+	var countChecked = function() {
+		var n = $( "input:checked" ).length;
+		if (n == 1){
+			$("label").click(function(){
+				$(this).addClass("on");
+			});
+		}else if (n !== 1) {
+			$("label").click(function(){
+				$(this).removeClass("on");
+			});
+			if (n == 2){
+				$(".alert_bg").css({display:"block"});
+				$(".alert_bg").animate({opacity:"1"});
+				$(".no").click(function(){
+					$(".alert_bg").animate({opacity:"0"});
+					$(".alert_bg").css({display:"none"});
+					return false;
+				});
+			}else if (n == 3){
+				$("[id^='btnJ']").prop("checked", false);
+				
+			}
+		};
+	};
+	$( "input[type=checkbox]" ).on( "click", countChecked );
+});
+</script>
+
+<style>
+	body{
+		background:#333;
+	}
+</style>
+
+</head>
+<body>
+<div class="alert_bg">
+	<div class="btn_alert">
+		<p>결과로 이동하겠습니까?</p>
+		<a href="trip_sub01.html" class="yes">네</a>
+		<a href="" class="no">아니요</a>
+	</div>
+</div>
+<div class="map">
+	<div class="btn_bg">
+		<ul class="btn_click">
+			<li class="btn_sel1">
+				<input id="btnJ1" type="checkbox">
+				<label for="btnJ1"><img src="images/btn2/1.png" alt=""/></label>
+			</li>
+			<li class="btn_sel2">
+				<input id="btnJ2" type="checkbox">
+				<label for="btnJ2"><img src="images/btn2/2.png" alt=""/></label>
+			</li>
+			<li class="btn_sel3">
+				<input id="btnJ3" type="checkbox">
+				<label for="btnJ3"><img src="images/btn2/3.png" alt=""/></label>
+			</li>
+			<li class="btn_sel4">
+				<input id="btnJ4" type="checkbox">
+				<label for="btnJ4"><img src="images/btn2/4.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel5">
+				<input id="btnJ5" type="checkbox">
+				<label for="btnJ5"><img src="images/btn2/5.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel6">
+				<input id="btnJ6" type="checkbox">
+				<label for="btnJ6"><img src="images/btn2/6.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel7">
+				<input id="btnJ7" type="checkbox">
+				<label for="btnJ7"><img src="images/btn2/7.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel8">
+				<input id="btnJ8" type="checkbox">
+				<label for="btnJ8"><img src="images/btn2/8.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel9">
+				<input id="btnJ9" type="checkbox">
+				<label for="btnJ9"><img src="images/btn2/9.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel10">
+				<input id="btnJ10" type="checkbox">
+				<label for="btnJ10"><img src="images/btn2/10.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel11">
+				<input id="btnJ11" type="checkbox">
+				<label for="btnJ11"><img src="images/btn2/11.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel12">
+				<input id="btnJ12" type="checkbox">
+				<label for="btnJ12"><img src="images/btn2/12.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel13">
+				<input id="btnJ13" type="checkbox">
+				<label for="btnJ13"><img src="images/btn2/13.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel14">
+				<input id="btnJ14" type="checkbox">
+				<label for="btnJ14"><img src="images/btn2/14.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel15">
+				<input id="btnJ15" type="checkbox">
+				<label for="btnJ15"><img src="images/btn2/15.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel16">
+				<input id="btnJ16" type="checkbox">
+				<label for="btnJ16"><img src="images/btn2/16.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel17">
+				<input id="btnJ17" type="checkbox">
+				<label for="btnJ17"><img src="images/btn2/17.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel18">
+				<input id="btnJ18" type="checkbox">
+				<label for="btnJ18"><img src="images/btn2/18.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel19">
+				<input id="btnJ19" type="checkbox">
+				<label for="btnJ19"><img src="images/btn2/19.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel20">
+				<input id="btnJ20" type="checkbox">
+				<label for="btnJ20"><img src="images/btn2/20.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel21">
+				<input id="btnJ21" type="checkbox">
+				<label for="btnJ21"><img src="images/btn2/21.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel22">
+				<input id="btnJ22" type="checkbox">
+				<label for="btnJ22"><img src="images/btn2/22.png" alt=""/></i></label>
+			</li>
+			<li class="btn_sel23">
+				<input id="btnJ23" type="checkbox">
+				<label for="btnJ23"><img src="images/btn2/23.png" alt=""/></i></label>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
