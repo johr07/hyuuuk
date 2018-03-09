@@ -46,12 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-a{
-	display: block;
-}
-*{
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
