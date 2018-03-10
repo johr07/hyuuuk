@@ -76,20 +76,22 @@ img{
   position: fixed;
   z-index: 99;
 }
-.header .logo a{
+.header .logo{
   position: absolute;
   top: 30px;
   left: 15px;
   z-index: 99;
-  font-size: 50px;
   opacity: 1;
-  color: rgb(255, 202, 56);
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
 }
-.header .logo.onVisual a{
+.header .logo.onVisual{
   opacity: 0;
+}
+.header .logo a{
+  font-size: 50px;
+  color: rgb(255, 202, 56);
 }
 .header .menuBtn{
   width: 36px;
@@ -430,6 +432,23 @@ img{
 
 
 @media screen and (max-width: 640px) {
+  .header .logo{
+    top: 10px;
+    left: 10px;
+  }
+  .header .logo a{
+    font-size: 40px;
+  }
+  .header .menuBtn{
+    top: 15px;
+    right: 10px;
+  }
+  .main_visual .visual_inner .title_text{
+    font-size: 30px;
+  }
+  .main_visual .visual_inner .title_logo{
+    font-size: 350px;
+  }
   .container .con_hello .inner h2 {
       font-size: 64px;
   }
