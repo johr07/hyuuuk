@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 a{
+  display: inline-block;
   color: #333;
   text-decoration: none;
 }
@@ -19,12 +20,76 @@ img{
 }
 
 
+.loading {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 248, 248, 1);
+}
+.loading .loading_img {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateY(-50%) translateX(-50%);
+}
+.loading .loading_img .circle {
+    position: absolute;
+    border: 3px solid transparent;
+    border-top-color: #ffca38;
+    border-radius: 50%;
+    -webkit-animation: rotate linear infinite;
+    animation: rotate linear infinite;
+}
+.loading .loading_img .circle.one {
+    height: 50px;
+    width: 50px;
+    left: 50px;
+    top: 50px;
+    -webkit-animation-duration: .85s;
+    animation-duration: .85s;
+}
+.loading .loading_img .circle.two {
+    height: 75px;
+    width: 75px;
+    top: 38px;
+    left: 38px;
+    -webkit-animation-duration: .95s;
+    animation-duration: .95s;
+}
+.loading .loading_img .circle.three {
+    height: 100px;
+    width: 100px;
+    top: 25px;
+    left: 25px;
+    -webkit-animation-duration: 1.05s;
+    animation-duration: 1.05s;
+}
 
 
 .header{
   width: 100%;
   position: fixed;
   z-index: 99;
+}
+.header .logo a{
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  z-index: 99;
+  font-size: 50px;
+  opacity: 1;
+  color: rgb(255, 202, 56);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.header .logo.onVisual a{
+  opacity: 0;
 }
 .header .menuBtn{
   width: 36px;
@@ -38,12 +103,15 @@ img{
 .header .menuBtn .line{
   width: 80%;
   height: 2px;
-  background: #fff;
+  background: #333;
   position: absolute;
   right: 0;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+.header .menuBtn.onVisual .line{
+  background: #eee;
 }
 .header .menuBtn .line_1{
   top: 0;
@@ -59,8 +127,11 @@ img{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background: #333;
   transition: transform .35s ease-in-out, background-color .2s;
+}
+.header .menuBtn.onVisual .line_2:before{
+  background: #eee;
 }
 .header .menuBtn .line_3{
   bottom: 0;
@@ -90,6 +161,7 @@ img{
   bottom: 100%;
   right: 0;
   left: 0;
+  overflow: hidden;
   background: #eee;
   z-index: 98;
   -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -99,7 +171,19 @@ img{
 .header .gnb.on{
   bottom: 0;
 }
-
+.header .gnb ul{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.header .gnb ul li a{
+  padding: 20px 10px;
+  font-size: 30px;
+}
 .main_visual{
   height: 100vh;
   background: url("../images/main_visual/visual_temp_1215.jpeg") 50% 80% no-repeat;
@@ -192,8 +276,10 @@ img{
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  color: #999;
   animation: scroll_down .8s ease-in-out infinite alternate;
+}
+.main_visual .visual_inner .scroll_down a{
+  color: #999;
 }
 .main_visual .visual_el{
   position: absolute;
@@ -254,6 +340,50 @@ img{
   animation: visual_fog2 18s linear infinite alternate;
 }
 
+.container .con_hello{
+  height: 100vh;
+  position: relative;
+}
+.container .con_hello .inner{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.container .con_hello .inner h2{
+  margin: 0 auto;
+  display: table;
+  font-size: 100px;
+  color: #e3e1e1;
+  position: relative;
+}
+.container .con_hello .inner h2:before {
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  color: #8cddeb;
+  content: "Hello.";
+  transition: all .55s;
+}
+.container .con_hello .inner h2.on:before{
+  width: 100%;
+}
+.container .con_hello .inner h6{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #aaa;
+  font-weight: 300;
+}
+.container .con_hello .inner .hello_text{
+  padding: 0 10%;
+  font-size: 20px;
+  line-height: 36px;
+  color: #333;
+}
+
 
 @keyframes visual_tree1 {
   0%{top: 0; left: 0;}
@@ -286,6 +416,26 @@ img{
   100% {opacity: 0; left: -80px;}
 }
 @keyframes scroll_down {
-  0% {margin-top: -5px;}
-  100% {margin-top: 5px;}
+  0% {bottom: 10%;}
+  100% {bottom: 11%;}
+}
+@-webkit-keyframes rotate{
+  from{-webkit-transform:rotateZ(360deg);transform:rotateZ(360deg)}
+  to{-webkit-transform:rotateZ(0);transform:rotateZ(0)}
+}
+@keyframes rotate{
+  from{-webkit-transform:rotateZ(360deg);transform:rotateZ(360deg)}
+  to{-webkit-transform:rotateZ(0);transform:rotateZ(0)}
+}
+
+
+@media screen and (max-width: 640px) {
+  .container .con_hello .inner h2 {
+      font-size: 64px;
+  }
+  .container .con_hello .inner .hello_text {
+      font-size: 14px;
+      line-height: 26px;
+      text-align: left;
+  }
 }
