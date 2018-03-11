@@ -80,6 +80,7 @@ $(function(){
 
 
 
+
   $('.scroll_down').on('click',function(){
     scrollTo($('.con_hello').offset().top);
     return false;
@@ -90,36 +91,38 @@ $(function(){
     return false;
   });
 
-  $('.menu_home a').on('click',function(){
-    menuToggleClass();
-    scrollTo(0);
-    return false;
-  });
-
-  $('.menu_hello a').on('click',function(){
-    menuToggleClass();
-    scrollTo($('.con_hello').offset().top);
-    return false;
-  });
-
   $(".menuBtn").click(function(){
     menuToggleClass()
   });
 
-  $(window).on('scroll',function(){
-    scrollTop = $(window).scrollTop();
-    hederColor();
-    showTitle();
-  });
-
   $(window).on('load',function(){
-    hederColor();
     $(".loading").fadeOut(800); //로딩
-    setTimeout(function(){
-      visualLogo_ani(); //로고 등장
-    },800);
-    setTimeout(function(){
-      visualTitle_ani(); //타이틀 애니메이션 시작
-    },1000);
+
+    if ($(".wrap.home").length){
+      hederColor();
+      $(window).on('scroll',function(){
+        scrollTop = $(window).scrollTop();
+        hederColor();
+        showTitle();
+      });
+      setTimeout(function(){
+        visualLogo_ani(); //로고 등장
+      },800);
+      setTimeout(function(){
+        visualTitle_ani(); //타이틀 애니메이션 시작
+      },1000);
+      $('.menu_work a').on('click',function(){
+        menuToggleClass();
+        scrollTo($('.con_work').offset().top);
+        return false;
+      });
+    }
+    if ($(".wrap.about").length){
+      $(window).on('scroll',function(){
+        scrollTop = $(window).scrollTop();
+        showTitle();
+      });
+      $(".menuBtn").add($(".logo")).removeClass('onVisual');
+    }
   });
 })
