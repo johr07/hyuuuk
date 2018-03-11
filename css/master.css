@@ -84,7 +84,7 @@ img{
   position: absolute;
   top: 30px;
   left: 15px;
-  z-index: 99;
+  z-index: 97;
   opacity: 1;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -587,6 +587,7 @@ img{
   background-size: cover;
 }
 .footer .footer_bottom .social .social_item.social_github {
+  margin-right: 0;
   background-image: url(../images/ico_github.svg);
   background-size: cover;
 }
@@ -688,6 +689,9 @@ img{
     display: inline-block;
     text-align: left;
   }
+  .container{
+    margin-bottom: 420px;
+  }
   .container .main_visual .visual_inner .title_text{
     font-size: 30px;
   }
@@ -701,5 +705,56 @@ img{
       font-size: 14px;
       line-height: 26px;
       text-align: left;
+  }
+  .footer h2{
+    font-size: 30px;
+  }
+  .footer .footer_text{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .footer address{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .footer address .footer_link{
+    margin-right: 0;
+  }
+  .footer address .footer_link span{
+    margin-top: 10px;
+    line-height: 44px;
+  }
+  .footer address .footer_link .icon_circle{
+    width: 44px;
+    height: 44px;
+  }
+  .footer address .footer_link .icon_circle i{
+    font-size: 26px;
+  }
+  .footer address .footer_link .footer_link_text{
+    width: 160px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .footer .footer_bottom{
+    padding: 50px 15px;
+  }
+  .footer .footer_bottom .social{
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .footer .footer_bottom .update{
+    margin-top: 20px;
+  }
+  .footer .footer_bottom .copyright{
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    transform: translate(50%, 0);
   }
 }
