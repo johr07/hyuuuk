@@ -96,5 +96,34 @@ $(function(){
     menuToggleClass()
   });
 
+  $(window).on('load',function(){
+    $(".loading").fadeOut(800); //로딩
 
+    if ($(".wrap.home").length){
+      hederColor();
+      $(window).on('scroll',function(){
+        scrollTop = $(window).scrollTop();
+        hederColor();
+        showTitle();
+      });
+      setTimeout(function(){
+        visualLogo_ani(); //로고 등장
+      },800);
+      setTimeout(function(){
+        visualTitle_ani(); //타이틀 애니메이션 시작
+      },1000);
+      $('.menu_work a').on('click',function(){
+        menuToggleClass();
+        scrollTo($('.con_work').offset().top);
+        return false;
+      });
+    }
+    if ($(".wrap.about").length){
+      $(window).on('scroll',function(){
+        scrollTop = $(window).scrollTop();
+        showTitle();
+      });
+      $(".menuBtn").add($(".logo")).removeClass('onVisual');
+    }
+  });
 })
