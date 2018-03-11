@@ -100,9 +100,7 @@ $(function(){
 
 
   $(window).on('load',function(){
-    setTimeout(function(){
         $(".loading").fadeOut(800);
-    },100);
 
 
     if ($(".wrap.home").length){
@@ -112,12 +110,8 @@ $(function(){
         hederColor();
         showTitle();
       });
-      setTimeout(function(){
         visualLogo_ani(); //로고 등장
-      },800);
-      setTimeout(function(){
         visualTitle_ani(); //타이틀 애니메이션 시작
-      },1000);
       $('.menu_work a').on('click',function(){
         menuToggleClass();
         scrollTo($('.con_work').offset().top);
