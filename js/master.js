@@ -22,6 +22,23 @@ $(function(){
     $('html,body').stop().animate({scrollTop:where});
   };
 
+  function showTitle(){
+    $("[data-ani]").each(function(){
+
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + ( $(window).height() / 1.5);
+      var $titleLine = $(this).next('.title_line');
+
+      function showElemLine(){
+        $titleLine.addClass('on');
+      }
+
+      if ( windowBottom > objectBottom ) {
+        $(this).addClass("on");
+      }
+    });
+  };
+
   function visualTitleFindN(){
     $(".title_text").html( //비주얼 타이틀 쪼개기
       $(".title_text").html().replace(/./g, "<span>$&</span>").replace(/\s/g, "&nbsp;")
@@ -58,22 +75,6 @@ $(function(){
     $(".visual_inner .title_logo").addClass("on");
   };
 
-  function showTitle(){
-    $("[data-ani]").each(function(){
-
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      var windowBottom = $(window).scrollTop() + ( $(window).height() / 1.5);
-      var $titleLine = $(this).next('.title_line');
-
-      function showElemLine(){
-        $titleLine.addClass('on');
-      }
-
-      if ( windowBottom > objectBottom ) {
-        $(this).addClass("on");
-      }
-    });
-  };
 
 
 
@@ -95,34 +96,5 @@ $(function(){
     menuToggleClass()
   });
 
-  $(window).on('load',function(){
-    $(".loading").fadeOut(800); //로딩
 
-    if ($(".wrap.home").length){
-      hederColor();
-      $(window).on('scroll',function(){
-        scrollTop = $(window).scrollTop();
-        hederColor();
-        showTitle();
-      });
-      setTimeout(function(){
-        visualLogo_ani(); //로고 등장
-      },800);
-      setTimeout(function(){
-        visualTitle_ani(); //타이틀 애니메이션 시작
-      },1000);
-      $('.menu_work a').on('click',function(){
-        menuToggleClass();
-        scrollTo($('.con_work').offset().top);
-        return false;
-      });
-    }
-    if ($(".wrap.about").length){
-      $(window).on('scroll',function(){
-        scrollTop = $(window).scrollTop();
-        showTitle();
-      });
-      $(".menuBtn").add($(".logo")).removeClass('onVisual');
-    }
-  });
 })
