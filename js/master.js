@@ -92,12 +92,18 @@ $(function(){
     return false;
   });
 
-  $(".menuBtn").click(function(){
+  $(".menuBtn").on('click',function(){
     menuToggleClass()
   });
 
+
+
+
   $(window).on('load',function(){
-    $(".loading").fadeOut(800); //로딩
+    setTimeout(function(){
+        $(".loading").fadeOut(800);
+    },100);
+
 
     if ($(".wrap.home").length){
       hederColor();
