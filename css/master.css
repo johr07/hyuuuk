@@ -402,7 +402,6 @@ img{
   max-width: 360px;
   background: url("../images/main_visual/visual_elem_1.png") -5% bottom no-repeat;
   background-size: 100%;
-  animation: visual_tree1 2s ease-out forwards;
 }
 .container .main_visual .visual_tree2{
   left: 0;
@@ -411,7 +410,6 @@ img{
   height: 100%;
   background: url("../images/main_visual/visual_elem_2.png") -10% bottom no-repeat;
   background-size: 100%;
-  animation: visual_tree2 4s ease-in forwards;
 }
 .container .main_visual .visual_tree3{
   right: 0;
@@ -420,7 +418,6 @@ img{
   height: 100%;
   background: url("../images/main_visual/visual_elem_3.png") 0% bottom no-repeat;
   background-size: 100%;
-  animation: visual_tree3 2s ease-out forwards;
 }
 .container .main_visual .visual_tree4{
   right: 0;
@@ -429,6 +426,17 @@ img{
   height: 100%;
   background: url("../images/main_visual/visual_elem_4.png") 0 bottom no-repeat;
   background-size: 100%;
+}
+.container .main_visual .visual_tree1.on{
+  animation: visual_tree1 2s ease-out forwards;
+}
+.container .main_visual .visual_tree2.on{
+  animation: visual_tree2 4s ease-in forwards;
+}
+.container .main_visual .visual_tree3.on{
+  animation: visual_tree3 2s ease-out forwards;
+}
+.container .main_visual .visual_tree4.on{
   animation: visual_tree4 4s ease-in forwards;
 }
 .container .main_visual .visual_fog1{

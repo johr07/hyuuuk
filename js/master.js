@@ -98,26 +98,32 @@ $(function(){
 
 
 
+  $(window).on('scroll',function(){
+    if ($(".wrap.home").length){
+      scrollTop = $(window).scrollTop();
+      showTitle();
+      hederColor();
+    }
+    if ($(".wrap.about").length){
+      showTitle();
+    }
+  });
 
   $(window).on('load',function(){
     setTimeout(function(){
-        $(".loading").fadeOut(800);
+      $(".loading").fadeOut(800);
     },100);
-
-
     if ($(".wrap.home").length){
       hederColor();
-      $(window).on('scroll',function(){
-        scrollTop = $(window).scrollTop();
-        hederColor();
-        showTitle();
-      });
       setTimeout(function(){
         visualLogo_ani(); //로고 등장
       },800);
       setTimeout(function(){
         visualTitle_ani(); //타이틀 애니메이션 시작
       },1000);
+      setTimeout(function(){
+        $(".visual_el").addClass("on");
+      },1200);
       $('.menu_work a').on('click',function(){
         menuToggleClass();
         scrollTo($('.con_work').offset().top);
@@ -125,10 +131,6 @@ $(function(){
       });
     }
     if ($(".wrap.about").length){
-      $(window).on('scroll',function(){
-        scrollTop = $(window).scrollTop();
-        showTitle();
-      });
       $(".menuBtn").add($(".logo")).removeClass('onVisual');
     }
   });
