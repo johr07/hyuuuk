@@ -36,7 +36,7 @@ $(function() {
     html += ' <div class="contact"> ';
     html += ' <a href="mailto:johr0712@gmail.com" class="contact_link">  ';
     html += ' <span class="contact_heading">MAIL</span>    ';
-    html += ' <span class="contact_info">johr07@gmail.com</span> ';
+    html += ' <span class="contact_info">johr0712@gmail.com</span> ';
     html += ' </a> ';
     html += ' <a href="tel:01074603737" class="contact_link"> ';
     html += ' <span class="contact_heading">PHONE</span>';

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_170929.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrapper buypage">
+            <div class="header">
+
+            </div>
+            <div class="container">
+                <div class="con_h1">
+                    주문서
+                </div>
+                <div class="myinfo_form">
+                  <div class="useinfo">
+                    <p class="title">배송지</p>
+                    <fieldset>
+                      <label for="">수령인</label>
+                      <input type="text" value="최정애">
+                    </fieldset>
+                    <fieldset>
+                      <label for="">연락처</label>
+                      <input type="text" value="010-2452-5055">
+                    </fieldset>
+                    <fieldset>
+                      <label for="">배송지</label>
+                      <input type="text" value="(04607) 서울특별시 중구">
+                      <input class="mt10" type="text" value="다산로 133(신당동, 샘클리닉빌딩) 함흥냉면">
+                    </fieldset>
+                    <fieldset>
+                      <label for="">요구사항</label>
+                      <input type="text" value="" placeholder="택배기사님께 전달할 메세지를 입력하세요.">
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="order_pro">
+                  <div class="title">
+                    주문상품
+                  </div>
+                  <div class="item">
+                    <div class="imgWrap">
+                      <img src="images/cart1.jpg" alt="">
+                      <p>[B316285425] 산지직송 영광굴비 특호1.1kg이상/추석선물세트</p>
+                      <span>판매자:옥션마켓몰 | 무료</span>
+                    </div>
+                    <div class="tx_1">
+                      <p>필수선택 / 01.[10+1]오가특호 X 1개</p>
+                      <span>40,000원</span>
+                    </div>
+                    <div class="tx_1">
+                      <p>할인금액</p>
+                      <span class="red">-10,000원</span>
+                      <div class="use_coupon btn_coupon">
+                        <a href="">쿠폰적용</a>
+                      </div>
+                    </div>
+                    <div class="tx_1">
+                      <p>합계금액</p>
+                      <span>30,000원</span>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="imgWrap">
+                      <img src="images/cart1.jpg" alt="">
+                      <p>[B316285425] 산지직송 영광굴비 특호1.1kg이상/추석선물세트</p>
+                      <span>판매자:옥션마켓몰 | 무료</span>
+                    </div>
+                    <div class="tx_1">
+                      <p>필수선택 / 01.[10+1]오가특호 X 1개</p>
+                      <span>40,000원</span>
+                    </div>
+                    <div class="tx_1">
+                      <p>할인금액</p>
+                      <span class="red">-10,000원</span>
+                      <div class="use_coupon btn_coupon">
+                        <a href="">쿠폰적용</a>
+                      </div>
+                    </div>
+                    <div class="tx_1">
+                      <p>합계금액</p>
+                      <span>30,000원</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="total_pay">
+                  <div class="pay_1 cgray">
+                    <p>결제금액</p>
+                    <span>77,800원</span>
+                  </div>
+                  <div class="pay_1">
+                    <p>사용가능한 포인트 200</p>
+                    <input type="text" value="" placeholder="0">
+                  </div>
+                  <div class="pay_1">
+                    <p>최종결제금액</p>
+                    <span class="fwb">77,800원</span>
+                  </div>
+                  <div class="pay_1">
+                    <p>UN포인트 (12/28 부터 사용가능)</p>
+                    <span class="cblue">376원 적립</span>
+                  </div>
+                </div>
+                <div class="pay_way">
+                  <div class="tab_wrap">
+                    <label for="cardWay">체크/신용카드</label>
+                    <label for="bankWay">은행 계좌이체</label>
+                  </div>
+                  <input type="radio" id="cardWay" name="payWay" checked>
+                  <div class="cardBox">
+                    <span class="top_bar"></span>
+                    <div class="select_way">
+                      <div class="item">
+                        <input id="paycard_way1" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way1">
+                          <img src="images/pay1.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way2" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way2">
+                          <img src="images/pay2.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way3" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way3">
+                          <img src="images/pay3.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way4" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way4">
+                          <img src="images/pay4.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way5" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way5">
+                          <img src="images/pay5.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way6" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way6">
+                          <img src="images/pay6.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way7" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way7">
+                          <img src="images/pay7.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way8" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way8">
+                          <img src="images/pay8.gif" alt="">
+                        </label>
+                      </div>
+                      <div class="item">
+                        <input id="paycard_way9" type="radio" name="paycard_1" value="">
+                        <label for="paycard_way9">
+                          <img src="images/pay9.gif" alt="">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="radio" id="bankWay" name="payWay">
+                  <div class="bankBox">
+                    <span class="top_bar"></span>
+                    <div class="select_way">
+                      <p>농협 315-4551-54155</p>
+                      <span>홍길동</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_payWrap">
+                  <input type="submit" value="결제하기">
+                  <a href="">취소하기</a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="lnb">
+                    <div class="icon_home"><a href="index.html"><img src="images/icon_home.svg" alt=""></a></div>
+                    <div class="icon_bookmark"><a href="bookmark_1.html"><img src="images/icon_bookmark.svg" alt=""></a></div>
+                    <div class="icon_hotel"><a href="hotel.html"><img src="images/icon_hotel.svg" alt=""></a></div>
+                    <div class="icon_tour"><a href="tour.html"><img src="images/icon_tour.svg" alt=""></a></div>
+                    <div class="icon_my"><a href="my.html"><img src="images/icon_my.svg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="coupon_wrap">
+          <div class="couponBg"></div>
+          <div class="coupon_item">
+            <div class="title">쿠폰적용</div>
+            <div class="tx1">판매자할인</div>
+            <fieldset>
+              <input id="couInput" type="radio" name="" value="" checked>
+              <label for="couInput"><b>1,600원</b> 판매자즉시할인</label>
+            </fieldset>
+            <div class="tx2">
+              <p>16,000원</p>
+              <b>></b>
+              <span>14,700원</span>
+            </div>
+            <div class="btn_couWrap">
+              <input type="submit" value="적용하기">
+              <a href="">취소</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function(){
+            $(".btn_coupon").click(function(){
+              $(".coupon_wrap").addClass("on");
+              return false;
+            });
+          });
+        </script>
+    </body>
+</html>

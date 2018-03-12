@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>comparePrice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/master_m.css" media="screen" title="no title">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/master_m.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <div class="header_logo">
+                <a href=""><img src="images/logo1.png" alt=""></a>
+            </div>
+            <div class="gnb_menu">
+                <div class="menu_button">
+                    <a href=""><img src="images/icon_bell.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+                <div class="main_visual">
+                    <div class="main_visual_inner">
+                        <div class="visual_wrap">
+                            <img src="images/m_main_visual.png" alt="" />
+                        </div>
+                        <div class="search_wrap">
+                            <form class="search_box" action="no_result_m.html" method="post">
+                                <input type="text" placeholder="在这里搜索你感兴趣的商品" required="">
+                                <button type="submit" name="button"><img src="images/icon_search_button1.png" alt=""></button>
+                            </form>
+                        </div>
+                        <div class="popular_wrap">
+                            <ul>
+                                <li><a href="result_m.html">雪花秀</a></li>
+                                <li><a href="result_m.html">兰芝</a></li>
+                                <li><a href="result_m.html">后</a></li>
+                                <li><a href="result_m.html">芭妮兰</a></li>
+                                <li><a href="result_m.html">乐天</a></li>
+                                <li><a href="result_m.html">润盈3件套装</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_tab">
+                    <div class="category_wrap">
+                        <div class="swiper-container4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide on"><a href="index_m.html">首页</a></div>
+                                <div class="swiper-slide"><a href="category_product_m.html">分类</a></div>
+                                <div class="swiper-slide"><a href="auction_list_m.html">竞拍</a></div>
+                                <div class="swiper-slide"><a href="group_buying_list_m.html">闪购</a></div>
+                                <div class="swiper-slide"><a href="video_list_m.html">直播</a></div>
+                                <div class="swiper-slide"><a href="sale_list_m.html">优惠</a></div>
+                                <div class="swiper-slide"><a href="article_list_m.html">资讯</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            var swiper = new Swiper('.swiper-container4', {
+                                initialSlide :0,
+                                loopAdditionalSlides:"auto",
+                                slidesPerView: 'auto'
+                            });
+                            $(window).scroll(function(){
+                                var wst = $(window).scrollTop();
+                                var ctt = $(".con_tab").offset().top;
+                                if (wst >= ctt) {
+                                    $(".category_wrap").addClass("on");
+                                }
+                                else {
+                                    $(".category_wrap").removeClass("on");
+                                }
+                            })
+                        </script>
+                    </div>
+                </div>
+                <div class="con con1">
+                    <div class="con_title">
+                        <h2><span></span> 人气商品比价</h2>
+                    </div>
+                    <div class="con_wrap">
+                        <!-- Swiper -->
+                        <div class="swiper-container swiper-container1">
+                            <div class="swiper-wrapper item_wrap_1">
+                                <div class="swiper-slide item">
+                                    <div class="item_img">
+                                        <a href="list_m.html">
+                                            <img src="images/main_con1_1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>雪花秀</h2>
+                                            <p>润致滋盈3件套装</p>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="">
+                                                <div class="item_nation">
+                                                    <img src="images/icon_nation_kr.png" alt=""> BENLUX免税店
+                                                </div>
+                                                <div class="item_price">
+                                                    <span>￥46</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide item">
+                                    <div class="item_img">
+                                        <a href="list_m.html">
+                                            <img src="images/main_con1_2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>雪花秀</h2>
+                                            <p>润致滋盈3件套装</p>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="">
+                                                <div class="item_nation">
+                                                    <img src="images/icon_nation_fr.png" alt=""> BENLUX免税店
+                                                </div>
+                                                <div class="item_price">
+                                                    <span>￥46</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide item">
+                                    <div class="item_img">
+                                        <a href="list_m.html">
+                                            <img src="images/main_con1_3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>雪花秀</h2>
+                                            <p>润致滋盈3件套装</p>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="">
+                                                <div class="item_nation">
+                                                    <img src="images/icon_nation_sg.png" alt=""> BENLUX免税店
+                                                </div>
+                                                <div class="item_price">
+                                                    <span>￥46</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide item">
+                                    <div class="item_img">
+                                        <a href="list_m.html">
+                                            <img src="images/main_con1_1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>雪花秀</h2>
+                                            <p>润致滋盈3件套装</p>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="">
+                                                <div class="item_nation">
+                                                    <img src="images/icon_nation_us.png" alt=""> BENLUX免税店
+                                                </div>
+                                                <div class="item_price">
+                                                    <span>￥46</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide item">
+                                    <div class="item_img">
+                                        <a href="list_m.html">
+                                            <img src="images/main_con1_3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>雪花秀</h2>
+                                            <p>润致滋盈3件套装</p>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="">
+                                                <div class="item_nation">
+                                                    <img src="images/icon_nation_hk.png" alt=""> BENLUX免税店
+                                                </div>
+                                                <div class="item_price">
+                                                    <span>￥46</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.swiper-container1', {
+                                slidesPerView: "auto",
+                                paginationClickable: true,
+                                centeredSlides: true,
+                                pagination: '.swiper-pagination',
+                                loop: true
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="con con2">
+                    <div class="con_title">
+                        <h2><span></span> 购物资讯</h2>
+                    </div>
+                    <div class="con_wrap">
+                        <ul class="item_wrap_2">
+                            <li class="item">
+                                <a href="article_detail_m.html">
+                                    <div class="item_img">
+                                        <img src="images/main_con2_1.png" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_date">
+                                            2016.06.03
+                                        </div>
+                                        <div class="item_title">
+                                            <h2>心跳注意报——可爱的护手霜</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="article_detail_m.html">
+                                    <div class="item_img">
+                                        <img src="images/main_con2_2.png" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_date">
+                                            2016.06.03
+                                        </div>
+                                        <div class="item_title">
+                                            <h2>心跳注意报——可爱的护手霜</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="article_detail_m.html">
+                                    <div class="item_img">
+                                        <img src="images/main_con2_3.png" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_date">
+                                            2016.06.03
+                                        </div>
+                                        <div class="item_title">
+                                            <h2>心跳注意报——可爱的护手霜</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button_1">
+                        <a href="article_list_m.html">全部资讯</a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <a href=""><img src="images/main_banner1.png" alt=""></a>
+                </div>
+                <div class="con con5">
+                    <div class="con_title">
+                        <h2><span></span> 积分竞拍</h2>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="item_wrap_1">
+                            <div class="item">
+                                <a href="auction_m.html">
+                                    <div class="item_img">
+                                        <img src="images/main_con5_1.png" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>Nooni</h2>
+                                            <p>东海深层海水面霜 50g</p>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="item_auction">
+                                                <ul>
+                                                    <li>
+                                                        <span>起拍价</span>
+                                                        <span class="point">10</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>当前价</span>
+                                                        <span class="point">25</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>一口价</span>
+                                                        <span class="point">100</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>剩余时间</span>
+                                                        <span>01时58分<b>03秒</b></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="button_1"><a href="">更多</a></div>
+                    </div>
+                </div>
+                <div class="con con6">
+                    <div class="con_title">
+                        <h2><span></span> 积分闪购</h2>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="item_wrap_1">
+                            <div class="item">
+                                <a href="group_buying_m.html">
+                                    <div class="item_img">
+                                        <img src="images/main_con5_4.png" alt="">
+                                        <div class="point_ab">25积分</div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="item_title">
+                                            <h2>芭比波郎/BOBBI BROWN</h2>
+                                            <p>东海深层海水面霜 50g</p>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="item_auction">
+                                                <ul>
+                                                    <li>
+                                                        <span>剩余时间</span>
+                                                        <span>01时58分<b class="red">03秒</b></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>剩余数量</span>
+                                                        <span><b class="red">3</b> / 100</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="button_1"><a href="">更多</a></div>
+                    </div>
+                </div>
+                <div class="con con3">
+                    <div class="con_title">
+                        <h2><span></span> 优惠活动</h2>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="top_con">
+                            <h3>有赠品</h3>
+                            <!-- Swiper -->
+                            <div class="swiper-container swiper-container2">
+                                <div class="swiper-wrapper item_wrap_1">
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_kr.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_us.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_hk.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiper = new Swiper('.swiper-container2', {
+                                    slidesPerView: "auto",
+                                    centeredSlides: true,
+                                    loop: true
+                                });
+                            </script>
+                        </div>
+                        <div class="bottom_con">
+                            <h3>省银子</h3>
+                            <!-- Swiper -->
+                            <div class="swiper-container swiper-container3">
+                                <div class="swiper-wrapper item_wrap_1">
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_5.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_uk.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_6.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_kr.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="item_img">
+                                            <a href="">
+                                                <img src="images/main_con3_7.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="item_title">
+                                                <h2>心跳注意报——可爱的护手霜</h2>
+                                                <p>购买指定商品赠送独家礼品</p>
+                                            </div>
+                                            <div class="item_nation">
+                                                <img src="images/icon_nation_fr.png" alt=""> BENLUX免税店
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiper = new Swiper('.swiper-container3', {
+                                    slidesPerView: "auto",
+                                    centeredSlides: true,
+                                    loop: true
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <a href=""><img src="images/main_banner2.png" alt=""></a>
+                </div>
+                <div class="con con4">
+                    <div class="con_title">
+                        <h2><span></span> 韩国买手直播</h2>
+                    </div>
+                    <div class="item_wrap_1">
+                        <div class="item">
+                            <div class="item_img">
+                                <a href="">
+                                    <img src="images/main_con4_1.png" alt="">
+                                    <div class="play_button"></div>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <div class="item_title">
+                                    <h2>著名买手店Harvey Nichols迪拜分店 2014年春夏新品导购</h2>
+                                </div>
+                                <div class="item_date">
+                                    <p>主播昵称  |  直播时间：<span>2016.12.07 18:00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <a href="">
+                                    <img src="images/main_con4_2.png" alt="">
+                                    <div class="play_button"></div>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <div class="item_title">
+                                    <h2>著名买手店Harvey Nichols迪拜分店 2014年春夏新品导购</h2>
+                                </div>
+                                <div class="item_date">
+                                    <p>主播昵称  |  直播时间：<span>2016.12.07 18:00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <a href="">
+                                    <img src="images/main_con4_3.png" alt="">
+                                    <div class="play_button"></div>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <div class="item_title">
+                                    <h2>著名买手店Harvey Nichols迪拜分店 2014年春夏新品导购</h2>
+                                </div>
+                                <div class="item_date">
+                                    <p>主播昵称  |  直播时间：<span>2016.12.07 18:00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="">更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <div class="footer_logo">
+                        <a href=""><img src="images/logo2.png" alt=""></a>
+                    </div>
+                    <div class="footer_info">
+                        <p>사업자등록번호：<span>201</span>-<span>86</span>-<span>35595</span></p>
+                        <p>통신판매업신고：2015-서울중구-0953</p>
+                        <p>邮箱：mkt@unccompany.com</p>
+                        <p>电话：<span>82</span>-<span>2</span>-<span>862</span>-<span>1788</span></p>
+                        <p>首尔特别市中区明洞2街34号</p>
+                        <p>&copy; 2017 UNC Company, INC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_wrap">
+        <div class="popup_bg"></div>
+        <div class="popup">
+            <div class="logo"><img src="images/logo3.png" alt=""></div>
+            <ul class="tab_group">
+                <li class="tab on"><a href="#login">登录</a></li>
+                <li class="tab"><a href="#signup">注册</a></li>
+            </ul>
+            <div class="tab_con">
+                <div id="login">
+                    <form action="">
+                        <div class="con_login">
+                            <input type="test" name="name" value="" placeholder="昵称/邮箱">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="创建密码">
+                        </div>
+                        <div class="con_login">
+                            <input id="remember" type="checkbox" name="name" value="">
+                            <label for="remember">记住我</label>
+                            <div class="forget"><a href="">找回密码</a></div>
+                        </div>
+                        <div class="con_login">
+                            <a href="index_login_m.html">登录</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="signup">
+                    <form action="">
+                        <div class="con_login">
+                            <input type="test" name="name" value="" placeholder="邮箱">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="昵称">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="密码">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="确认密码">
+                        </div>
+                        <div class="con_login">
+                            <a href="index_login_m.html">注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tab_footer">
+                <a href="">新浪微博登录</a>
+                <a class="icon_weibo" href=""><img src="images/icon_weibo.png" alt=""></a>
+            </div>
+            <div class="popup_close"><i class="material-icons">&#xE5CD;</i></div>
+        </div>
+    </div>
+</body>
+</html>

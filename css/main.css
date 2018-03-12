@@ -1982,6 +1982,7 @@ html, body {
   padding: 8% 9em 0 9em;
   height: 100vh;
   height: 100%;
+  background: rgba(0, 0, 0, .5);
   box-sizing: border-box
 }
 
@@ -2133,7 +2134,15 @@ html, body {
 }
 
 .work_04 .hero {
+  background-image: url(../images/hero_work_03.jpg)
+}
+
+.work_04 .hero {
   background-image: url(../images/hero_work_04.jpg)
+}
+
+.work_04 .hero {
+  background-image: url(../images/hero_work_05.jpg)
 }
 
 .work_06 .hero {

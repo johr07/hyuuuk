@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>comparePrice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/master.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <a href="index.html"><img src="images/logo1.png" alt=""></a>
+                </div>
+                <div class="search_wrap">
+                    <form class="search_box" action="" method="post">
+                        <input class="search_input" type="text" placeholder="在这里搜索你感兴趣的商品" required="">
+                        <button type="submit" name="button"></button>
+                    </form>
+                </div>
+                <div class="gnb_menu">
+                    <ul>
+                        <li class="gnb_open"><a href="">登录</a></li>
+                        <li class="gnb_device"><a href=""><img src="images/icon_gnb_ios.png" alt=""> <span>iOS下载</span></a></li>
+                        <li class="gnb_device"><a href=""><img src="images/icon_gnb_android.png" alt=""> <span>Android下载</span></a></li>
+                        <li class="gnb_qr"><a href="#wrapper"><img src="images/icon_qr.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mypage_point">
+                <div class="con con1">
+                    <div class="con_wrap">
+                        <div class="mypage_con">
+                            <div class="user_wrap">
+                                <div class="user_info">
+                                    <a href="mypage_setting.html"><img src="images/user1.png" alt=""></a>
+                                    <span>KunioFC</span>
+                                </div>
+                                <div class="user_setting_button">
+                                    <a href="mypage_setting.html">个人设置</a>
+                                </div>
+                            </div>
+                            <div class="mypage_point on">
+                                <a href="mypage_point.html"><span></span>积分：8,882,190.88</a>
+                            </div>
+                            <div class="mypage_notice">
+                                <a href="mypage_notice.html"><span></span>新消息：3</a>
+                            </div>
+                            <div class="mypage_category">
+                                <ul>
+                                    <li>
+                                        <a href="mypage_item.html">
+                                            <h2>139</h2>
+                                            <span>商品</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mypage_article.html">
+                                            <h2>4</h2>
+                                            <span>文章</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mypage_group_buying.html">
+                                            <h2>0</h2>
+                                            <span>闪购</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mypage_auction.html">
+                                            <h2>3</h2>
+                                            <span>竞拍</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con con2 pt0">
+                    <div class="filter_wrap">
+                        <ul>
+                            <li class="on">
+                                <a href="">
+                                    最近一周
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    最近一个月
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    最近六个月
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="con_title">
+                            <h3>积分记录</h3>
+                        </div>
+                        <div class="con_table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>时间</th>
+                                        <th>时间</th>
+                                        <th>时间</th>
+                                        <th>时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2016.11.24</td>
+                                        <td>上传头像</td>
+                                        <td class="red">+10.00</td>
+                                        <td>753.38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.11.09</td>
+                                        <td>竞拍扣除</td>
+                                        <td class="blue">-1,258.00</td>
+                                        <td>743.38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.11.17</td>
+                                        <td>每日积分收益</td>
+                                        <td class="red">+0.69</td>
+                                        <td>2001.38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.10.29</td>
+                                        <td>每日积分收益</td>
+                                        <td class="red">+0.69</td>
+                                        <td>2000.69</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.09.17</td>
+                                        <td>充值</td>
+                                        <td class="red">+1,000.00</td>
+                                        <td>2000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.09.16</td>
+                                        <td>每日积分收益</td>
+                                        <td class="red">+0.69</td>
+                                        <td>999.31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_button_wrap">
+                            <div class="page_button_inner">
+                                <div class="page_prev_button">
+                                    <a href="">
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                </ul>
+                                <div class="page_next_button">
+                                    <a href="">
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con con3 pt0">
+                    <div class="filter_wrap">
+                        <ul>
+                            <li class="on">
+                                <a href="">
+                                    积分充值
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    积分规则
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="con_title">1.选择充值方案</div>
+                        <div class="point_select">
+                            <ul>
+                                <li>
+                                    <p>3,100p</p>
+                                    <p>2,100p</p>
+                                    <p>+</p>
+                                    <p>1,000p (附赠)</p>
+                                    <p>￥99.00</p>
+                                </li>
+                                <li>
+                                    <p>3,100p</p>
+                                    <p>2,100p</p>
+                                    <p>+</p>
+                                    <p>1,000p (附赠)</p>
+                                    <p>￥199.00</p>
+                                </li>
+                                <li>
+                                    <p>3,100p</p>
+                                    <p>2,100p</p>
+                                    <p>+</p>
+                                    <p>1,000p (附赠)</p>
+                                    <p>￥399.00</p>
+                                </li>
+                                <li>
+                                    <p>3,100p</p>
+                                    <p>2,100p</p>
+                                    <p>+</p>
+                                    <p>1,000p (附赠)</p>
+                                    <p>￥699.00</p>
+                                </li>
+                                <li>
+                                    <p>3,100p</p>
+                                    <p>2,100p</p>
+                                    <p>+</p>
+                                    <p>1,000p (附赠)</p>
+                                    <p>￥999.00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="con_wrap">
+                        <div class="con_title">2.选择结算方式</div>
+                        <div class="pay_select">
+                            <ul>
+                                <li>
+                                    <div class="img_wrap"></div>
+                                    <p>网银</p>
+                                </li>
+                                <li>
+                                    <div class="img_wrap"></div>
+                                    <p>支付宝</p>
+                                </li>
+                                <li>
+                                    <div class="img_wrap"></div>
+                                    <p>微信支付</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button"><a href="">充值</a></div>
+                </div>
+                <div class="con con4 pt0">
+                    <div class="con_title">
+                        <h3>温馨提示</h3>
+                    </div>
+                    <div class="con_wrap">
+                        <p>1、首次充值成功即送30元代金券，2016年4月13日21:00点前注册用户以原账户实际赠送为准，不再享受本次活动赠送；</p>
+                        <p>2、平台充值金额最低 100 元起；</p>
+                        <p>3、充值/提现必须为银行借记卡，不支持存折、信用卡充值；</p>
+                        <p>4、为保障您的资金安全，首次使用快捷支付将同时绑定提现银行卡。快捷支付仅支持您实名的银行卡，且使用同卡进出规则；</p>
+                        <p>5、严禁利用充值功能进行信用卡套现、转账、洗钱等行为，一经发现，将封停账号30天；</p>
+                        <p>6、充值期间，请勿关闭浏览器，待充值成功并返回充值成功信息后，所充资金才能入账，如有疑问，请联系客服；</p>
+                        <p>7、充值限额是由银行支付限额和用户自己设定的支付限额共同决定，取两者最小值，如有疑问请咨询开户行客服。</p>
+                        <p>8、资金支付由"连连支付”、"盛付通”、“易宝支付”和“腾付通”第三方支付平台提供服务，充值时将为您选择最优支付通道。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <div class="footer_logo">
+                        <a href="index.html"><img src="images/logo2.png" alt=""></a>
+                    </div>
+                    <div class="footer_info">
+                        <p>사업자등록번호：201-86-35595</p>
+                        <p>통신판매업신고：2015-서울중구-0953</p>
+                        <p>邮箱：mkt@unccompany.com</p>
+                        <p>电话：82-2-862-1788</p>
+                        <p>首尔特别市中区明洞2街34号</p>
+                        <p>&copy; 2017 UNC Company, INC</p>
+                    </div>
+                    <div class="footer_qrcode">
+                        <a href=""><img src="images/qrcode.png" alt=""></a>
+                        <p>首尔购物街微信服务号</p>
+                    </div>
+                </div>
+                <div class="footer_link">
+                    <ul>
+                        <li>友情链接 : </li>
+                        <li><a href="">慧聪网</a></li>
+                        <li><a href="">粉淘吧</a></li>
+                        <li><a href="">蘑菇街</a></li>
+                        <li><a href="">美丽说</a></li>
+                        <li><a href="">韩国游</a></li>
+                        <li><a href="">时尚品牌网</a></li>
+                        <li><a href="">QQ钱包</a></li>
+                        <li><a href="">播视网视频</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_wrap">
+        <div class="popup_bg"></div>
+        <div class="popup">
+            <ul class="tab_group">
+                <li class="tab on"><a href="#login">登录</a></li>
+                <li class="tab"><a href="#signup">注册</a></li>
+            </ul>
+            <div class="tab_con">
+                <div id="login">
+                    <form action="">
+                        <div class="con_login">
+                            <input type="test" name="name" value="" placeholder="昵称/邮箱">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="密码">
+                        </div>
+                        <div class="con_login">
+                            <input id="remember" type="checkbox" name="name" value="">
+                            <label for="remember">记住我</label>
+                            <div class="forget"><a href="">找回密码</a></div>
+                        </div>
+                        <div class="con_login">
+                            <button type="submit" name="button">登录</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="signup">
+                    <form action="">
+                        <div class="con_login">
+                            <input type="test" name="name" value="" placeholder="邮箱">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="昵称">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="密码">
+                        </div>
+                        <div class="con_login">
+                            <input type="password" name="name" value="" placeholder="确认密码">
+                        </div>
+                        <div class="con_login">
+                            <button type="submit" name="button">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tab_footer">
+                <a href="">新浪微博登录</a>
+                <a class="icon_weibo" href=""></a>
+            </div>
+            <div class="popup_close"><i class="material-icons">&#xE5CD;</i></div>
+        </div>
+    </div>
+</body>
+</html>

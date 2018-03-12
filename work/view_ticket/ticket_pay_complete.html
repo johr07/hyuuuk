@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrapper ticket_pay_complete">
+            <div class="header">
+                <div class="header_2">
+                    <ul>
+                        <li>
+                            <div class="h1 h3">마이티켓<span>(결제완료, 승차전)</span></div>
+                        </li>
+                        <li>
+                            <div class="icon_home"><a href="" onClick="self.close();"><i class="material-icons">&#xE5CD;</i></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="con_busticket">
+                    <div class="item">
+                        <div class="item_main">
+                            <a href="ticket_detail.html">
+                                <span>6500</span>
+                                <p>인천국제공항——더케이호텔서울</p>
+                            </a>
+                        </div>
+                        <div class="item_sub">
+                            <div class="swiper-container swiper-container1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="ticket_table.html">명동</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">동대문</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">잠실</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">대치동</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">남대문</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">강남</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">신촌</a></div>
+                                    <div class="swiper-slide"><a href="ticket_table.html">홍대</a></div>
+                                </div>
+                            </div>
+                            <script>
+                                var swiper = new Swiper('.swiper-container1', {
+                                    slidesPerView: 'auto'
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_1">
+                    <div class="h1">
+                        <p>有效期至 2017-2-27 00:00（24小时）</p>
+                        <span>유효기간 2017-2-27 00:00（24小时）</span>
+                    </div>
+                    <div class="h1">
+                        <p>成人 * 2张</p>
+                        <span>성인 * 2장</span>
+                    </div>
+                    <div class="h1">
+                        <p>单程 2017.02.27</p>
+                        <span>편도 2017.02.27</span>
+                    </div>
+                    <div class="h1">
+                        <p>已付清 30,000韩元（人民币150元）</p>
+                        <span>결제완료 30,000원</span>
+                    </div>
+                </div>
+                <div class="con_2">
+                    승차시 기사님께 보여주세요!
+                </div>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+    </body>
+</html>

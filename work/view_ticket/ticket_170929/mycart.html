@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_170929.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrapper mycart">
+            <div class="header">
+
+            </div>
+            <div class="container">
+                <div class="con_h1">
+                    장바구니
+                </div>
+                <div class="cart_item_wrap">
+                  <div class="item">
+                    <div class="imgWrap">
+                      <img src="images/cart1.jpg" alt="">
+                      <p>[A9467652352] 키친아트 특가행사-스텐 주전자/스텐물병/휘슬주전자/물병/물통</p>
+                      <span>옥션마켓몰</span>
+                    </div>
+                    <div class="useCouponWrap">
+                      <fieldset>
+                        <input class="item_check" type="checkbox">
+                        <p class="product_tx">1.주전자(01-43) / 20.키친아트-퀸즈 휘슬주전자 (3리터) / 1개</p>
+                        <span>19,000원</span>
+                      </fieldset>
+                      <fieldset>
+                        <p class="product_tx2">할인금액</p>
+                        <div class="btn_coupon"><a href="">쿠폰 적용</a></div>
+                        <span class="red">-600원</span>
+                      </fieldset>
+                    </div>
+                    <div class="useCouponWrap bdt">
+                      <fieldset>
+                        <p class="product_tx2">배송비</p>
+                        <span>무료</span>
+                      </fieldset>
+                      <fieldset>
+                        <p class="product_tx2">주문금액</p>
+                        <span>18,400원</span>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="imgWrap">
+                      <img src="images/cart1.jpg" alt="">
+                      <p>[A9467652352] 키친아트 특가행사-스텐 주전자/스텐물병/휘슬주전자/물병/물통</p>
+                      <span>옥션마켓몰</span>
+                    </div>
+                    <div class="useCouponWrap">
+                      <fieldset>
+                        <input class="item_check" type="checkbox">
+                        <p class="product_tx">1.주전자(01-43) / 20.키친아트-퀸즈 휘슬주전자 (3리터) / 1개</p>
+                        <span>19,000원</span>
+                      </fieldset>
+                      <fieldset>
+                        <p class="product_tx2">할인금액</p>
+                        <div class="btn_coupon"><a href="">쿠폰 적용</a></div>
+                        <span class="red">-600원</span>
+                      </fieldset>
+                    </div>
+                    <div class="useCouponWrap bdt">
+                      <fieldset>
+                        <p class="product_tx2">배송비</p>
+                        <span>무료</span>
+                      </fieldset>
+                      <fieldset>
+                        <p class="product_tx2">주문금액</p>
+                        <span>18,400원</span>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="allCheck_wrap">
+                  <fieldset>
+                    <input id="allCheck" type="checkbox">
+                    <p class="product_tx">전체선택</p>
+                    <span>선택삭제</span>
+                  </fieldset>
+                </div>
+                <div class="txSub">
+                  <p>
+                    * 상품의 할인,쿠폰,배송비적용 최종금액은 주문서에서 확인가능합니다.
+                  </p>
+                  <p>
+                    * 장바구니에는 30개까지 저장할 수 있으며, 그 이상 담으면 가장 오래 저장된 상품이 삭제됩니다.
+                  </p>
+                </div>
+                <div class="buy_wrap">
+                  <ul>
+                    <li>
+                      <span>102,800원</span>
+                      <span>UN포인트 <b>1%적립</b></span>
+                    </li>
+                    <li>
+                      <a href="buypage.html">주문하기</a>
+                    </li>
+                  </ul>
+                </div>
+                <script type="text/javascript">
+                  $(function(){
+                    //전체선택 체크박스 클릭
+                    $("#allCheck").click(function(){
+                      //만약 전체 선택 체크박스가 체크된상태일경우
+                      if($("#allCheck").prop("checked")) {
+                        //해당화면에 전체 checkbox들을 체크해준다
+                        $(".item_check").prop("checked",true);
+                        // 전체선택 체크박스가 해제된 경우
+                      } else {
+                        //해당화면에 모든 checkbox들의 체크를해제시킨다.
+                        $(".item_check").prop("checked",false);
+                      }
+                    })
+                  })
+                </script>
+            </div>
+            <div class="footer">
+                <div class="lnb">
+                    <div class="icon_home"><a href="index.html"><img src="images/icon_home.svg" alt=""></a></div>
+                    <div class="icon_bookmark"><a href="bookmark_1.html"><img src="images/icon_bookmark.svg" alt=""></a></div>
+                    <div class="icon_hotel"><a href="hotel.html"><img src="images/icon_hotel.svg" alt=""></a></div>
+                    <div class="icon_tour"><a href="tour.html"><img src="images/icon_tour.svg" alt=""></a></div>
+                    <div class="icon_my"><a href="my.html"><img src="images/icon_my.svg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="coupon_wrap">
+          <div class="couponBg"></div>
+          <div class="coupon_item">
+            <div class="title">쿠폰적용</div>
+            <div class="tx1">판매자할인</div>
+            <fieldset>
+              <input id="couInput" type="radio" name="" value="" checked>
+              <label for="couInput"><b>1,600원</b> 판매자즉시할인</label>
+            </fieldset>
+            <div class="tx2">
+              <p>16,000원</p>
+              <b>></b>
+              <span>14,700원</span>
+            </div>
+            <div class="btn_couWrap">
+              <input type="submit" value="적용하기">
+              <a href="">취소</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function(){
+            $(".btn_coupon").click(function(){
+              $(".coupon_wrap").addClass("on");
+              return false;
+            });
+          });
+        </script>
+    </body>
+</html>
