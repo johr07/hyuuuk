@@ -2130,23 +2130,23 @@ html, body {
 }
 
 .work_02 .hero {
-  background-image: url(../images/hero_work_02.jpg)
+  background-image: url(../images/hero_work_02.png)
+}
+
+.work_03 .hero {
+  background-image: url(../images/hero_work_03.png)
 }
 
 .work_04 .hero {
-  background-image: url(../images/hero_work_03.jpg)
+  background-image: url(../images/hero_work_04.png)
 }
 
-.work_04 .hero {
-  background-image: url(../images/hero_work_04.jpg)
-}
-
-.work_04 .hero {
-  background-image: url(../images/hero_work_05.jpg)
+.work_05 .hero {
+  background-image: url(../images/hero_work_05.png)
 }
 
 .work_06 .hero {
-  background-image: url(../images/hero_work_06.jpg)
+  background-image: url(../images/hero_work_06.png)
 }
 
 @media screen and (min-width: 1921px) {
