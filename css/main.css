@@ -2442,11 +2442,12 @@ html, body {
 
 .article_detail .detail_main .shots .shots_item.mobile {
   float: left;
-  width: 48%
+  margin-right: 2%;
+  width: 32%
 }
 
-.article_detail .detail_main .shots .shots_item.mobile:nth-child(odd) {
-  margin-right: 4%
+.article_detail .detail_main .shots .shots_item.mobile:nth-child(3n) {
+  margin-right: 0
 }
 
 .article_detail .detail_main .slider {
