@@ -178,7 +178,7 @@ $(function() {
       "list_03": {
         'number': twolength(2),
         'title': 'ZEMU',
-        'desc': 'ZEMU화장품 중국어 버전)'
+        'desc': 'ZEMU(화장품 중국어 버전)'
       },
       "list_04": {
         'number': twolength(3),
