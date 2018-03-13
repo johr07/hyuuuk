@@ -167,23 +167,23 @@ $(function() {
     var obj = {
       "list_01": {
         'number': twolength(0),
-        'title': 'The Hyundai',
-        'desc': '중국인을 위한 현대백화점 사이트'
-      },
-      "list_02": {
-        'number': twolength(1),
-        'title': 'AMAZINGPAY',
-        'desc': 'AMAZINGPAY 하이브리드앱'
-      },
-      "list_03": {
-        'number': twolength(2),
         'title': 'ZEMU',
         'desc': 'ZEMU(화장품 중국어 버전)'
       },
-      "list_04": {
-        'number': twolength(3),
+      "list_02": {
+        'number': twolength(1),
+        'title': 'ComparePrice',
+        'desc': '화장품 비교 사이트'
+      },
+      "list_03": {
+        'number': twolength(2),
         'title': 'Rankie',
         'desc': '화장품 랭킹 사이트'
+      },
+      "list_04": {
+        'number': twolength(3),
+        'title': 'The Hyundai',
+        'desc': '중국인을 위한 현대백화점 사이트'
       },
       "list_05": {
         'number': twolength(4),
@@ -192,8 +192,8 @@ $(function() {
       },
       "list_06": {
         'number': twolength(5),
-        'title': 'ComparePrice',
-        'desc': '화장품 비교 사이트'
+        'title': 'AMAZINGPAY',
+        'desc': 'AMAZINGPAY 하이브리드앱'
       }
     };
 
