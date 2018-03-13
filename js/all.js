@@ -77,7 +77,7 @@ $(function() {
     html += ' <li class="social_item social_github"><a href="https://github.com/johr07" target="_blank">github</a></li> ';
     html += ' </ul> ';
     html += ' <p class="update">Last Updated On March 11th, 2018</p> ';
-    html += ' <p class="copyright">&copy; 2017 HRJo</p> ';
+    html += ' <p class="copyright">&copy; 2018 HRJo</p> ';
     html += ' </div> ';
 
     $(".footer").append(html);
