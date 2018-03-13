@@ -52,7 +52,7 @@
 		transform:translateX(30%) scale(0.8);
 	}
 		.map_title{margin-top:-55px;padding-bottom:30px;display:block;text-align:right;}
-		
+
 			.btn_click li div.tooltip{display:none;width:260px;padding:30px;position:absolute;top:-60px;left:75px;z-index:999;color:#fff;background-color: rgba(32, 32, 32, 0.9);border:1px solid #fff;opacity:0;}
 			.btn_click li div.tooltip dl{}
 			.btn_click li div.tooltip dt{font-size:18px;font-weight:800;color:#fb7889;}
@@ -61,7 +61,7 @@
 			.btn_click li div.tooltip ul{font-size:14px;margin-top:10px;overflow:hidden;}
 			.btn_click li div.tooltip li{width:50%;float:left;line-height:25px;}
 			.btn_click li div.tooltip li b{width:7px;height:7px;margin-right:5px;border-radius:40px;background:#fb7889;display:inline-block;}
-		
+
 		.air{}
 		.air{position:absolute;}
 		.air1{width:116px;top:20%;left:-7%;}
@@ -107,7 +107,7 @@
 }
 @media all and (max-width:1023px){
 	.topPage{
-		
+
 	}
 	.main_visual{
 		width:710px;
@@ -306,7 +306,7 @@
 		font-size:18px;
 	}
 	.slides{
-		height:550px;
+		height:680px;
 	}
 	.slideshow > nav{
 		right:50%;
