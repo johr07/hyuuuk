@@ -2149,6 +2149,18 @@ html, body {
   background-image: url(../images/hero_work_06.png)
 }
 
+.work_07 .hero {
+  background-image: url(../images/hero_work_07.png)
+}
+
+.work_08 .hero {
+  background-image: url(../images/hero_work_08.png)
+}
+
+.work_09 .hero {
+  background-image: url(../images/hero_work_09.png)
+}
+
 @media screen and (min-width: 1921px) {
   .hero .inner {
     padding-top: 6%

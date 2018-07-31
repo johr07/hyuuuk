@@ -166,19 +166,19 @@ $(function() {
 
     var obj = {
       "list_01": {
-        'number': twolength(0),
-        'title': 'ZEMU1',
-        'desc': 'ZEMU(화장품 중국어 버전)'
+        'number': twolength(6),
+        'title': 'KT GIGA Genie',
+        'desc': '인공 지능 서비스를 개발하기 위한 사이트'
       },
       "list_02": {
-        'number': twolength(1),
-        'title': 'ComparePrice',
-        'desc': '화장품 비교 사이트'
+        'number': twolength(7),
+        'title': '코원에너지서비스',
+        'desc': '도시가스 사이트'
       },
       "list_03": {
-        'number': twolength(2),
-        'title': 'Rankie',
-        'desc': '화장품 랭킹 사이트'
+        'number': twolength(8),
+        'title': '성균관대학교',
+        'desc': '대학 사이트'
       },
       "list_04": {
         'number': twolength(3),
