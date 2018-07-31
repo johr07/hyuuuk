@@ -167,7 +167,7 @@ $(function() {
     var obj = {
       "list_01": {
         'number': twolength(0),
-        'title': 'ZEMU',
+        'title': 'ZEMU1',
         'desc': 'ZEMU(화장품 중국어 버전)'
       },
       "list_02": {
