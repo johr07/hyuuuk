@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Noto Sans CJKkr';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../font/NotoSansCJKkr-Light.woff) format('woff'),
+       url(../font/NotoSansCJKkr-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans CJKkr';
+  font-style: normal;
+  font-weight: 300;
+  src:  url(../font/NotoSansCJKkr-DemiLight.woff) format('woff'),
+       url(../font/NotoSansCJKkr-DemiLight.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans CJKkr';
+   font-style: normal;
+   font-weight: 400;
+   src: url(../font/NotoSansCJKkr-Regular.woff) format('woff'),
+        url(../font/NotoSansCJKkr-Regular.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans CJKkr';
+   font-style: normal;
+   font-weight: 500;
+   src: url(../font/NotoSansCJKkr-Medium.woff) format('woff'),
+        url(../font/NotoSansCJKkr-Medium.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans CJKkr';
+   font-style: normal;
+   font-weight: 700;
+   src: url(../font/NotoSansCJKkr-Bold.woff) format('woff'),
+        url(../font/NotoSansCJKkr-Bold.otf) format('opentype');
+}

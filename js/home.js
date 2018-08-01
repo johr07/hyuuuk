@@ -172,7 +172,7 @@ $(function() {
       },
       "list_02": {
         'number': twolength(7),
-        'title': '코원에너지서비스',
+        'title': '코원에너지서비스 | SK E&S',
         'desc': '도시가스 사이트'
       },
       "list_03": {
@@ -181,19 +181,19 @@ $(function() {
         'desc': '대학 사이트'
       },
       "list_04": {
-        'number': twolength(3),
-        'title': 'The Hyundai',
-        'desc': '중국인을 위한 현대백화점 사이트'
+        'number': twolength(9),
+        'title': 'wowsom',
+        'desc': '암호화폐로 거래 할 수 있는 쇼핑몰'
       },
       "list_05": {
-        'number': twolength(4),
-        'title': 'Trip',
-        'desc': ' 중국 관광객을 위한 여행사이트'
+        'number': twolength(10),
+        'title': 'KT sat',
+        'desc': ' 통신과 방송 사업, 위성기술 소개 사이트'
       },
       "list_06": {
-        'number': twolength(5),
-        'title': 'AMAZINGPAY',
-        'desc': 'AMAZINGPAY 하이브리드앱'
+        'number': twolength(11),
+        'title': 'KOTITI',
+        'desc': 'KOTITI 웹진 페이지'
       }
     };
 
