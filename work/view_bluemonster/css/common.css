@@ -290,7 +290,7 @@ body {
 }
 
 .container .con_2 .box_left .inner {
-    width: 100%;
+    width: 550px;
     padding: 80px 40px 0;
     float: right;
 }
@@ -324,7 +324,7 @@ body {
 }
 
 .container .con_2 .box_right .inner {
-    width: 100%;
+    width: 550px;
     padding: 80px 40px 0;
     float: left;
 }
