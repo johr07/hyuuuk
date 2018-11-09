@@ -837,15 +837,35 @@ body {
     .container .con_5 .inner .arrows_wrap {
         min-width: 120px;
     }
+
+    .container .con_5 .inner .title {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
     .container .con_1 .inner .title {
         padding-top: 25px;
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .container .con_1 .inner .title span {
+        font-size: 34px;
+    }
+
+    .container .con_2 .box_left .inner .title {
+        font-size: 42px;
+    }
+
+    .container .con_2 .box_left .inner .title span {
+        font-size: 34px;
+    }
+
+    .container .con_2 .box_right .inner .title {
+        font-size: 42px;
+    }
+
+    .container .con_2 .box_right .inner .title span {
         font-size: 34px;
     }
 }
