@@ -17,54 +17,101 @@
 
 <body>
     <div class="warapper sub07">
-        <div class="header">
-            <div class="inner">
-                <a href="#" class="aside_open"></a>
-                <h1>
-                    <a href="index.html">
-                        <img src="img/logo_1.png" alt="블루몬스터">
-                    </a>
-                </h1>
-                <div class="gnb">
+        <header id="header" class="brand">
+            <div class="header_inner">
+                <button href="#" id="trg_aside" class="trg_aside"></button>
+                <h1 class="logo"><a href="#"><span class="hide">블루몬스터</span></a></h1>
+                <nav id="gnb" class="gnb">
                     <ul>
                         <li>
                             <a href="sub01.html">소개</a>
+                            <ul>
+                                <li><a href="sub01.html">대표인사말</a></li>
+                                <li><a href="sub01.html">블루이야기</a></li>
+                                <li><a href="sub01.html">오시는 길</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="sub02.html">교육코스</a>
+                            <ul>
+                                <li><a href="sub03.html">오픈워터</a></li>
+                                <li><a href="sub03.html">어드벤스트 오픈워터</a></li>
+                                <li><a href="sub03.html">레스큐</a></li>
+                                <li><a href="sub03.html">EFR</a></li>
+                                <li><a href="sub03.html">스페셜티</a></li>
+                                <li><a href="sub03.html">체험다이빙</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="sub03.html">펀다이빙</a>
+                            <a href="#">펀다이빙</a>
+                            <ul>
+                                <li><a href="#">난루수안</a></li>
+                                <li><a href="#">힐룽뚱안</a></li>
+                                <li><a href="#">올라고섬</a></li>
+                                <li><a href="#">막탄섬</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="sub04.html">숙소안내</a>
+                            <a href="#">숙소안내</a>
+                            <ul>
+                                <li><a href="sub04.html">모벤토콘도 미니움</a></li>
+                                <li><a href="sub04.html">세바스티안호텔</a></li>
+                                <li><a href="sub04.html">코코넛펜션</a></li>
+                                <li><a href="sub04.html">게스트하우스</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="sub05.html">액티비티</a>
+                            <a href="#">액티비티</a>
+                            <ul>
+                                <li><a href="#">해양스포츠</a></li>
+                                <li><a href="#">남부투어</a></li>
+                                <li><a href="#">체크아웃투어</a></li>
+                                <li><a href="#">어메이징쇼</a></li>
+                                <li><a href="#">스파마사지</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="sub06.html">커뮤니티</a>
-                        </li>
-                        <li>
-                            <a href="#" class="aside_close"></a>
+                            <a href="#">커뮤니티</a>
+                            <ul>
+                                <li><a href="sub06.html">예약하기</a></li>
+                                <li><a href="sub05.html">문의하기</a></li>
+                                <li><a href="sub07.html">이용후기</a></li>
+                                <li><a href="#">캘린더</a></li>
+                            </ul>
                         </li>
                     </ul>
-                </div>
+                    <button type="button" class="aside_close"></button>
+                </nav>
                 <div class="gnb_bg"></div>
-                <a href="#" class="box_login" style="display: none;">
-                    <img src="img/login.png" alt="로그인">
-                </a>
-                <a href="#" class="box_login">
-                    <img src="img/logout.png" alt="로그아웃">
-                </a>
-                <a href="#" class="m_login" style="display: none;">
-                    <img src="img/m_login.png" alt="로그인">
-                </a>
-                <a href="#" class="m_login">
-                    <img src="img/m_logout.png" alt="로그아웃">
-                </a>
+                <a href="#" class="util">로그인/로그아웃</a>
+                <div id="showGnb" class="show_gnb">
+                    <div class="type">
+                        <p class="tit">소개</p>
+                        <p class="desc">죠스는 언제나 즐겁습니다.</p>
+                    </div>
+                    <div class="type">
+                        <p class="tit">교육코스</p>
+                        <p class="desc">죠스의 메뉴입니다.</p>
+                    </div>
+                    <div class="type">
+                        <p class="tit">펀다이빙</p>
+                        <p class="desc">죠스의 매장입니다.</p>
+                    </div>
+                    <div class="type">
+                        <p class="tit">숙소안내</p>
+                        <p class="desc">죠스의 커뮤니티입니다.</p>
+                    </div>
+                    <div class="type">
+                        <p class="tit">액티비티</p>
+                        <p class="desc">죠스의 커뮤니티입니다.</p>
+                    </div>
+                    <div class="type">
+                        <p class="tit">커뮤니티</p>
+                        <p class="desc">죠스의 커뮤니티입니다.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
         <aside class="quick">
             <a href="#"><img src="img/quick_1.png" alt="고객의 소리"></a>
             <a href="#"><img src="img/quick_2.png" alt="예약하기 신청"></a>
