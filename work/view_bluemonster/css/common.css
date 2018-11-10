@@ -113,7 +113,7 @@ body {
 }
 
 .search_box .total {
-    width: 95px;
+    width: 100%;
     padding: 0 0 12px;
     border-bottom: 2px solid #000000;
     font-size: 16px;
@@ -1094,9 +1094,6 @@ label.chk2 input[type=checkbox]:checked+span:before {
     font-size: 13px;
 }
 
-.sub06 .container {
-    background-color: #f4f4f4;
-}
 
 .container .sub_visual {
     width: 100%;
@@ -1115,6 +1112,53 @@ label.chk2 input[type=checkbox]:checked+span:before {
     text-align: center;
     font-size: 40px;
     color: #fff;
+}
+
+.sub05 .tac {
+    text-align: left !important;
+}
+
+.sub05.sub07 .container .con_1 {
+    background: none;
+}
+
+.sub05 .container .con .inner .tbl_info {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sub05 .container .con .inner .tbl_info th {
+    padding: 16px 0 15px;
+    background: #666666;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sub05 .container .con .inner .tbl_info td {
+    padding: 16px 0 15px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sub05 .container .con_2 {
+    padding-top: 80px;
+    background-color: #fff;
+}
+
+.sub06 .container {
+    background-color: #f4f4f4;
 }
 
 .sub06 .container .con_1 {
@@ -1301,14 +1345,16 @@ label.chk2 input[type=checkbox]:checked+span:before {
 .sub07 .container .con_1 .search_box>form {
     padding-bottom: 50px;
 }
-.sub07 .container .con_2{
-}
-.sub07 .container .con_2 .inner{
+
+.sub07 .container .con_2 {}
+
+.sub07 .container .con_2 .inner {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
 }
+
 .sub07 .container .con_2 .board_wrap {
     padding: 40px 0 0;
     overflow: hidden;
@@ -1331,15 +1377,18 @@ label.chk2 input[type=checkbox]:checked+span:before {
     width: 134px;
     margin-bottom: 35px;
 }
-.sub07 .container .con_2 .pagination{
+
+.sub07 .container .con_2 .pagination {
     padding-bottom: 100px;
 }
-.sub07 .container .con_2 .btn_write{
+
+.sub07 .container .con_2 .btn_write {
     width: 133px;
     position: absolute;
     bottom: 100px;
     right: 0;
 }
+
 @media screen and (max-width: 1100px) {
     html.on .gnb_bg {
         top: 0;
@@ -1519,17 +1568,21 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .quick {
         display: none;
     }
-    .sub07 .container .con_1 .search_box .sub_title{
+
+    .sub07 .container .con_1 .search_box .sub_title {
         display: none;
     }
-    .sub07 .container .con_1 .search_box{
+
+    .sub07 .container .con_1 .search_box {
         padding-top: 40px;
     }
-    .sub07 .container .con_1 .search_box>form{
+
+    .sub07 .container .con_1 .search_box>form {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .sub07 .container .con_2 .inner{
+
+    .sub07 .container .con_2 .inner {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1628,6 +1681,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
 
     .main .container .con_3 .inner .btn_wrap {
         top: 80%;
+    }
+
+    .sub05.sub07 .container .con_2 .inner {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sub06 .container .con .inner {
@@ -1735,38 +1793,54 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .sub06 .container .btn_wrap .btn:last-child {
         margin-top: 15px;
     }
-    .sub07 .container .con_1 .search_box>form .group:nth-child(1){
+
+    .sub07 .container .con_1 .search_box>form .group:nth-child(1) {
         width: 49% !important;
         margin-right: 2% !important;
     }
-    .sub07 .container .con_1 .search_box>form .group:nth-child(2){
+
+    .sub07 .container .con_1 .search_box>form .group:nth-child(2) {
         width: 49% !important;
         margin-right: 0 !important;
     }
-    .sub07 .container .con_1 .search_box>form .group:nth-child(3){
+
+    .sub07 .container .con_1 .search_box>form .group:nth-child(3) {
         width: 100% !important;
         margin: 15px 0 15px !important;
     }
-    .sub07 .container .con_1 .search_box>form .group:nth-child(4){
+
+    .sub07 .container .con_1 .search_box>form .group:nth-child(4) {
         width: 100% !important;
         margin-right: 0 !important;
     }
-    .sub07 .container .con_1 .search_box>form .group .total{
+
+    .sub07 .container .con_1 .search_box>form .group .total {
         margin: 0 auto;
         border-bottom: none;
+        text-align: center;
     }
-    .sub07 .container .con_2 .board_wrap .box{
+
+    .sub07 .container .con_2 .board_wrap .box {
         width: 49%;
     }
-    .sub07 .container .con_2 .board_wrap .box:nth-child(3n){
+
+    .sub07 .container .con_2 .board_wrap .box:nth-child(3n) {
         margin-right: 2%;
     }
-    .sub07 .container .con_2 .board_wrap .box:nth-child(2n){
+
+    .sub07 .container .con_2 .board_wrap .box:nth-child(2n) {
         margin-right: 0;
     }
-    .sub07 .container .con_2 .btn_write{
+
+    .sub07 .container .con_2 .btn_write {
         right: 20px;
         bottom: 30px;
+    }
+    .sub07 .container .con_1 .search_box>form{
+        padding-bottom: 30px;
+    }
+    .sub05 .container .con_2{
+        padding-top: 30px;
     }
 }
 
@@ -1856,16 +1930,20 @@ label.chk2 input[type=checkbox]:checked+span:before {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .sub07 .container .con_2 .board_wrap .box{
+
+    .sub07 .container .con_2 .board_wrap .box {
         width: 100%;
     }
-    .sub07 .container .con_2 .board_wrap .box:nth-child(3n){
+
+    .sub07 .container .con_2 .board_wrap .box:nth-child(3n) {
         margin-right: 0;
     }
-    .sub07 .container .pagination .paging>a.page_first{
+
+    .sub07 .container .pagination .paging>a.page_first {
         display: none;
     }
-    .sub07 .container .pagination .paging>a.page_last{
+
+    .sub07 .container .pagination .paging>a.page_last {
         display: none;
     }
 }
