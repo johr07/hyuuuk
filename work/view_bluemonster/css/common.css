@@ -22,6 +22,21 @@ body {
     overflow-x: hidden;
 }
 
+.hide {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    border: none;
+    background: none;
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+    opacity: 0;
+}
+
 .pagination {
     margin: 50px 0 0;
     text-align: center;
@@ -91,7 +106,7 @@ body {
 .search_box .tit {
     margin: 0 0 34px;
     padding: 0 0 0 61px;
-    font-family: 'HGGGothicssi';
+    font-family: 'BMDOHYEON';
     font-weight: 800;
     font-size: 26px;
     line-height: 42px;
@@ -708,6 +723,348 @@ label.chk2 input[type=checkbox]:checked+span:before {
 
 .wrapper {
     overflow: hidden;
+}
+
+#header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    height: 80px;
+    background: none;
+    transform: translateZ(0);
+    transition: height .3s, background .3s;
+}
+
+#header:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#header.brand:before {
+    height: 250px;
+}
+
+#header.franchise:before {
+    height: 210px;
+}
+
+#header:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 79px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all .3s;
+}
+
+#header .header_inner {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header .header_inner:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -730px;
+    left: -730px;
+    height: 79px;
+    background: #0489b1;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#header .header_inner .logo {
+    position: absolute;
+    top: 21px;
+    left: 0;
+}
+
+#header .header_inner .logo a {
+    display: block;
+    width: 122px;
+    height: 43px;
+}
+
+#header .header_inner .logo a:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 43px;
+    background: url(../img/logo1.png);
+    opacity: 1;
+}
+
+#header .header_inner .logo a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 43px;
+    background: url(../img/logo2.png);
+    opacity: 0;
+}
+
+#header .header_inner .gnb {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 1;
+}
+
+#header .header_inner .gnb>ul>li {
+    float: left;
+    position: relative;
+}
+
+#header .header_inner .gnb>ul>li>a {
+    display: block;
+    padding: 0 30px;
+    font-family: 'BMDOHYEON';
+    font-size: 21px;
+    line-height: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+#header .header_inner .gnb>ul>li.curr>a {
+    color: #0489b1;
+}
+
+#header .header_inner .gnb>ul>li>ul {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 24px 0 0 0;
+    text-align: center;
+}
+
+#header.brand .header_inner .gnb>ul>li>ul {
+    height: 250px;
+}
+
+#header.franchise .header_inner .gnb>ul>li>ul {
+    height: 210px;
+}
+
+#header .header_inner .gnb>ul>li>ul:hover {
+    background: #f7f4f1;
+}
+
+#header .header_inner .gnb>ul>li>ul>li {
+    margin: 8px 0 0;
+    line-height: 26px;
+}
+
+#header .header_inner .gnb>ul>li>ul>li:first-child {
+    margin: 0;
+}
+
+#header .header_inner .gnb>ul>li>ul>li>a {
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #111111;
+    background: url(../img/gnb_depth2_over.png) 140% 5px no-repeat;
+    transition: all .3s;
+    letter-spacing: -1.7px;
+}
+
+#header .header_inner .gnb>ul>li>ul>li>a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    background: #0489b1;
+    border-radius: 1px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .3s;
+}
+
+#header .header_inner .gnb>ul>li>ul>li>a:hover {
+    background-position-x: 100%;
+}
+
+#header .header_inner .gnb>ul>li>ul>li>a:hover:after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+#header .header_inner .gnb>ul>li>ul>li>a:focus,
+#header .header_inner .gnb>ul>li>ul>li>a:hover {
+    color: #0489b1;
+}
+
+#header .header_inner .show_gnb {
+    position: absolute;
+    top: 118px;
+    left: 0;
+}
+
+#header .header_inner .show_gnb:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 66px;
+    width: 131px;
+    height: 45px;
+    background: url(../img/bg_show_gnb.png) 0 0 no-repeat;
+}
+
+#header .header_inner .show_gnb .type {
+    display: none;
+}
+
+#header .header_inner .show_gnb .type.on {
+    display: block;
+}
+
+#header .header_inner .show_gnb .tit {
+    font-family: 'BMDOHYEON';
+    font-weight: 800;
+    font-size: 30px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+}
+
+#header .header_inner .show_gnb .desc {
+    margin: 6px 0 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+#header .header_inner .util {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 133px;
+    height: 53px;
+    text-indent: -9999em;
+}
+
+#header.brand .header_inner .util:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/btn_franchise.png) 0 0 no-repeat;
+    opacity: 1;
+    transition: all .3s;
+}
+
+#header.brand .header_inner .util:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/btn_franchise.png) 0 -53px no-repeat;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#header.franchise .header_inner .util:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/btn_brand.png) 0 0 no-repeat;
+    opacity: 1;
+    transition: all .3s;
+}
+
+#header.franchise .header_inner .util:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/btn_brand.png) 0 -53px no-repeat;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#header.active .header_inner {}
+
+#header.active .header_inner:before {
+    opacity: 1;
+}
+
+#header.active .header_inner .logo a:before {
+    opacity: 0;
+}
+
+#header.active .header_inner .logo a:after {
+    opacity: 1;
+}
+
+#header.active .header_inner .gnb>ul>li>a {
+    color: #111111;
+}
+
+#header.active .header_inner .gnb>ul>li:focus>a,
+#header.active .header_inner .gnb>ul>li:hover>a {
+    color: #fff;
+}
+
+#header.active:after {
+    background: #c0c0c0;
+}
+
+#header.brand.open {
+    height: 330px;
+}
+
+#header.franchise.open {
+    height: 290px;
+}
+
+#header.open:before {
+    opacity: 1;
 }
 
 .header {
@@ -1574,9 +1931,21 @@ label.chk2 input[type=checkbox]:checked+span:before {
 }
 
 @media screen and (max-width: 1100px) {
-    html.on .gnb_bg {
+    #gnb.on+.gnb_bg {
         top: 0;
         background: rgba(0, 0, 0, 0.7);
+    }
+
+    .aside_close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        box-sizing: content-box;
+        width: 40px;
+        height: 40px;
+        padding: 20px;
+        background: url(../img/aside_close.png) center center no-repeat;
     }
 
     .header .inner {
@@ -1652,6 +2021,173 @@ label.chk2 input[type=checkbox]:checked+span:before {
         right: 20px;
         top: 50%;
         transform: translate(0, -50%);
+    }
+
+    #header {
+        overflow: visible;
+        transform: none;
+    }
+
+    #header .header_inner {
+        width: 100%;
+        max-width: 1100px;
+        height: 80px;
+        z-index: 100;
+        box-sizing: border-box;
+        transition: all .3s;
+    }
+
+    #header .header_inner .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #header .header_inner .logo a {
+        display: block;
+    }
+
+
+    #header .header_inner .trg_aside {
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translate(0, -50%);
+        background: url(../img/trg_aside.png) center center no-repeat;
+    }
+
+    #header .header_inner .util {
+        width: 51px;
+        height: 51px;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translate(0, -50%);
+        text-indent: -9999px;
+    }
+
+    #header.brand .header_inner .util:before{
+        width: 51px;
+        height: 51px;
+        background: url(../img/m_logout.png) 0 0 no-repeat;
+    }
+    #header:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        transition: all .3s;
+    }
+
+    #header.active {
+        background: #0489b1;
+    }
+
+    #header.active .header_inner .logo a:before {
+        opacity: 0;
+    }
+
+    #header.active .header_inner .logo a:after {
+        opacity: 1;
+    }
+
+    #header.active:after {
+        background: #c0c0c0;
+    }
+
+    #header .header_inner .gnb {
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -375px;
+        z-index: 200;
+        box-sizing: border-box;
+        width: 375px;
+        margin: 0;
+        padding: 70px 40px 60px;
+        background: #0489b1;
+        transition: all .3s;
+    }
+
+    #header .header_inner .gnb.on {
+        left: 0;
+    }
+
+    #header .header_inner .gnb>ul>li {
+        float: none;
+    }
+
+    #header.brand:before {
+        display: none;
+    }
+
+    #header .header_inner:before {
+        display: none;
+    }
+
+    #header .header_inner .show_gnb {
+        display: none;
+    }
+
+    #header.brand .header_inner .gnb>ul>li>ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #header.brand .header_inner .gnb>ul>li>ul:hover {
+        background: none;
+    }
+
+    #header.brand .header_inner .gnb>ul>li>ul.on {
+        height: auto;
+    }
+
+    #header .header_inner .gnb>ul>li>ul {
+        padding: 0;
+        position: relative;
+        top: 0;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li {
+        text-align: left;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li:last-child {
+        padding-bottom: 30px;
+    }
+
+    #header .header_inner .gnb>ul>li>a {
+        padding: 0;
+        line-height: 60px;
+        font-size: 28px;
+    }
+    #header.active .header_inner .gnb>ul>li>a{
+        color: #fff;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li>a:hover {
+        color: #fff;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li>a:after {
+        background: #fff;
+    }
+
+    #header.brand.open {
+        height: 0;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li>a {
+        padding-left: 0;
+        font-size: 24px;
+        line-height: 34px;
     }
 
     .quick {
@@ -1770,7 +2306,8 @@ label.chk2 input[type=checkbox]:checked+span:before {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .sub02 .container .con_1 .inner{
+
+    .sub02 .container .con_1 .inner {
         padding-left: 0;
     }
 }
@@ -2031,17 +2568,21 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .sub05 .container .con_2 {
         padding-top: 30px;
     }
-    .sub02 .container .con a{
+
+    .sub02 .container .con a {
         width: 100% !important;
         padding: 40px 20px;
     }
-    .sub02 .container .con a .inner{
+
+    .sub02 .container .con a .inner {
         max-width: 100% !important;
     }
-    .sub02 .container .con_4 .box_right{
+
+    .sub02 .container .con_4 .box_right {
         display: none;
     }
-    .sub02 .container .con_1 .inner{
+
+    .sub02 .container .con_1 .inner {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
