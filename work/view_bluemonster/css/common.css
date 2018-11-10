@@ -2069,11 +2069,12 @@ label.chk2 input[type=checkbox]:checked+span:before {
         text-indent: -9999px;
     }
 
-    #header.brand .header_inner .util:before{
+    #header.brand .header_inner .util:before {
         width: 51px;
         height: 51px;
         background: url(../img/m_logout.png) 0 0 no-repeat;
     }
+
     #header:after {
         display: block;
         content: '';
@@ -2168,7 +2169,8 @@ label.chk2 input[type=checkbox]:checked+span:before {
         line-height: 60px;
         font-size: 28px;
     }
-    #header.active .header_inner .gnb>ul>li>a{
+
+    #header.active .header_inner .gnb>ul>li>a {
         color: #fff;
     }
 
@@ -2177,7 +2179,7 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:after {
-        background: #fff;
+        background: #111;
     }
 
     #header.brand.open {
@@ -2188,6 +2190,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
         padding-left: 0;
         font-size: 24px;
         line-height: 34px;
+        color: #fff;
+    }
+
+    #header .header_inner .gnb>ul>li>ul>li>a:hover {
+        color: #111;
     }
 
     .quick {
