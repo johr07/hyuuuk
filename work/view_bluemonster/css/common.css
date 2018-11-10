@@ -1534,6 +1534,10 @@ label.chk2 input[type=checkbox]:checked+span:before {
         font-size: 60px;
     }
 
+    .main .container .con_1 .btn {
+        width: 270px;
+    }
+
     .main .container .con_2 .box_right .inner .add_text {
         width: 100%;
     }
