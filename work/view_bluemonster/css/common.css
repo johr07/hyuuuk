@@ -1770,6 +1770,9 @@ label.chk2 input[type=checkbox]:checked+span:before {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .sub02 .container .con_1 .inner{
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -2027,6 +2030,22 @@ label.chk2 input[type=checkbox]:checked+span:before {
 
     .sub05 .container .con_2 {
         padding-top: 30px;
+    }
+    .sub02 .container .con a{
+        width: 100% !important;
+        padding: 40px 20px;
+    }
+    .sub02 .container .con a .inner{
+        max-width: 100% !important;
+    }
+    .sub02 .container .con_4 .box_right{
+        display: none;
+    }
+    .sub02 .container .con_1 .inner{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        float: none;
     }
 }
 
