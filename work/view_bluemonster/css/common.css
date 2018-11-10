@@ -171,9 +171,11 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.dp-outer .dp-inner .dp-body table tbody tr td:hover{
+
+.dp-outer .dp-inner .dp-body table tbody tr td:hover {
     border: none;
 }
+
 .dp-outer .dp-inner .dp-body table tbody tr td.today {
     background: #000000;
     color: #ffffff;
@@ -1012,9 +1014,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
 .sub06 .container .con {
     margin: 15px 0;
 }
-.sub06 .container .con .m_hidden{
+
+.sub06 .container .con .m_hidden {
     display: inline-block;
 }
+
 .sub06 .container .con .inner .desc {
     font-size: 18px;
     line-height: 26px;
@@ -1045,7 +1049,7 @@ label.chk2 input[type=checkbox]:checked+span:before {
     text-align: center;
 }
 
-.sub06 .container .con .inner .tbl_info table{
+.sub06 .container .con .inner .tbl_info table {
     table-layout: initial;
 }
 
@@ -1094,7 +1098,8 @@ label.chk2 input[type=checkbox]:checked+span:before {
     border: 1px solid #c2c2c2;
     overflow-y: scroll;
 }
-.sub06 .container .con .tbl_input > table > tbody > tr > th{
+
+.sub06 .container .con .tbl_input>table>tbody>tr>th {
     width: 170px;
     word-break: keep-all;
     white-space: -moz-pre-wrap;
@@ -1103,14 +1108,16 @@ label.chk2 input[type=checkbox]:checked+span:before {
     word-wrap: break-word;
     line-height: 22px;
 }
-.sub06 .container .btn_wrap{
+
+.sub06 .container .btn_wrap {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 0 140px;
     text-align: center;
 }
-.sub06 .container .btn_wrap .btn{
+
+.sub06 .container .btn_wrap .btn {
     width: 250px;
     margin: 0 20px;
     background-color: #0489b1;
@@ -1121,9 +1128,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     display: inline-block;
     border-radius: 10px;
 }
-.sub06 .container .btn_wrap .btn:last-child{
+
+.sub06 .container .btn_wrap .btn:last-child {
     background-color: #111111;
 }
+
 @media screen and (max-width: 1100px) {
     html.on .gnb_bg {
         top: 0;
@@ -1399,91 +1408,114 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .main .container .con_3 .inner .btn_wrap {
         top: 80%;
     }
-    .sub06 .container .con .inner{
+
+    .sub06 .container .con .inner {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    .sub06 .container .con .m_hidden{
+
+    .sub06 .container .con .m_hidden {
         display: none;
     }
-    .sub06 .container .con_1 .inner .title{
+
+    .sub06 .container .con_1 .inner .title {
         padding-left: 80px;
         font-size: 34px;
         background-size: contain;
         line-height: 60px;
     }
-    .sub06 .container .con .tbl_input .boxed .m_w100p{
+
+    .sub06 .container .con .tbl_input .boxed .m_w100p {
         width: 100% !important;
     }
-    .sub06 .container .con .tbl_input .boxed .m_w30p{
+
+    .sub06 .container .con .tbl_input .boxed .m_w30p {
         width: 30% !important;
     }
-    .sub06 .container .con .tbl_input > table > tbody > tr > th{
+
+    .sub06 .container .con .tbl_input>table>tbody>tr>th {
         width: 100px;
     }
-    .sub06 .container .con .tbl_input .boxed>*{
+
+    .sub06 .container .con .tbl_input .boxed>* {
         margin-left: 1%;
     }
+
     .sub06 .container .con .tbl_input .boxed>*:first-child {
         margin: 0;
     }
-    .sub06 .container .con .tbl_input .boxed .letter.hipen{
+
+    .sub06 .container .con .tbl_input .boxed .letter.hipen {
         width: 3%;
     }
-    .sub06 .container .con .tbl_input .boxed select{
+
+    .sub06 .container .con .tbl_input .boxed select {
         padding: 7px;
         background: url(../img/slt.png) top 15px right 7px no-repeat;
     }
-    .sub06 .container .con_4 .inner{
+
+    .sub06 .container .con_4 .inner {
         padding-left: 0;
         padding-right: 0;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.date .dp-outer{
+
+    .sub06 .container .con_4 .tbl_input .boxed.date .dp-outer {
         width: 100%;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.date .dp-outer .dp-input{
+
+    .sub06 .container .con_4 .tbl_input .boxed.date .dp-outer .dp-input {
         width: 100% !important;
         margin-bottom: 5px;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.date select{
+
+    .sub06 .container .con_4 .tbl_input .boxed.date select {
         width: 30% !important;
         margin: 0;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.place span.letter{
+
+    .sub06 .container .con_4 .tbl_input .boxed.place span.letter {
         width: 20%;
         margin-left: 0;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.place input{
+
+    .sub06 .container .con_4 .tbl_input .boxed.place input {
         width: 80% !important;
         margin-left: 0;
     }
-    .sub06 .container .con_4 .tbl_input .boxed.place .mt5{
+
+    .sub06 .container .con_4 .tbl_input .boxed.place .mt5 {
         margin-top: 5px;
     }
-    .sub06 .container .con .tbl_input .boxed.email input:nth-child(1){
+
+    .sub06 .container .con .tbl_input .boxed.email input:nth-child(1) {
         width: 80% !important;
     }
-    .sub06 .container .con .tbl_input .boxed.email span:nth-child(2){
+
+    .sub06 .container .con .tbl_input .boxed.email span:nth-child(2) {
         width: 20%;
         margin: 0;
         text-align: center;
     }
-    .sub06 .container .con .tbl_input .boxed.email input:nth-child(3){
+
+    .sub06 .container .con .tbl_input .boxed.email input:nth-child(3) {
         width: 100% !important;
         margin: 5px 0 0 0;
     }
-    .sub06 .container .btn_wrap{
+
+    .sub06 .container .btn_wrap {
         padding-bottom: 60px;
     }
-    .sub06 .container .btn_wrap .btn{
+
+    .sub06 .container .btn_wrap .btn {
         margin: 0 auto;
         display: block;
     }
-    .sub06 .container .btn_wrap .btn:last-child{
+
+    .sub06 .container .btn_wrap .btn:last-child {
         margin-top: 15px;
     }
 }
+
 @media screen and (max-width: 460px) {
     .m_hidden {
         display: none;
@@ -1537,25 +1569,30 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .main .container .con_5 .inner .title {
         width: 100%;
     }
-    .sub06 .container .con_1 .inner{
+
+    .sub06 .container .con_1 .inner {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .sub06 .container .con_1 .inner .title{
+
+    .sub06 .container .con_1 .inner .title {
         padding-left: 0;
         background: none;
     }
-    .sub06 .container .con_1 .inner .desc{
+
+    .sub06 .container .con_1 .inner .desc {
         padding-left: 0;
         margin: 0;
         font-size: 16px;
         border: none;
     }
-    .sub06 .container .con_2 .inner .desc{
+
+    .sub06 .container .con_2 .inner .desc {
         font-size: 16px;
         line-height: 24px;
     }
-    .dp-outer.open .dp-viewer{
+
+    .dp-outer.open .dp-viewer {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -1588,12 +1625,14 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .main .container .con_2 .box_right .inner .title span {
         font-size: 34px;
     }
-    .sub06 .container .con .inner .tbl_info td{
+
+    .sub06 .container .con .inner .tbl_info td {
         padding-left: 10px;
         padding-right: 10px;
         line-height: 24px;
     }
-    .sub06 .container .con_3 .inner .desc{
+
+    .sub06 .container .con_3 .inner .desc {
         font-size: 16px;
     }
 }
