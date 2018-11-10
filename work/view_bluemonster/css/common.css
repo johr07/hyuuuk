@@ -1114,6 +1114,190 @@ label.chk2 input[type=checkbox]:checked+span:before {
     color: #fff;
 }
 
+.sub02 .container .sub_visual {
+    background-image: url(../img/sub2_visual.png);
+}
+
+.sub02 .container .con_1 {
+    position: relative;
+    height: 720px;
+    background-image: url(../img/sub2_visual2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.sub02 .container .con_1 .inner {
+    width: 50%;
+    padding-left: 100px;
+    float: right;
+}
+
+.sub02 .container .con_1 .inner .best {
+    width: 123px;
+    padding-top: 190px;
+}
+
+.sub02 .container .con_1 .inner .sub_title {
+    padding: 30px 0 20px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.sub02 .container .con_1 .inner .title {
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 70px;
+    font-family: 'TmonMonsori';
+}
+
+.sub02 .container .con_1 .inner .desc {
+    color: #38c9f5;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.sub02 .container .con {
+    overflow: hidden;
+}
+
+.sub02 .container .con>a {
+    height: 595px;
+    padding-top: 40px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sub02 .container .con>div {
+    height: 595px;
+    padding-top: 40px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sub02 .container .con .box_left {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.sub02 .container .con .box_left .inner {
+    width: 100%;
+    max-width: 550px;
+    float: right;
+}
+
+.sub02 .container .con .box_right {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.sub02 .container .con .box_right .inner {
+    width: 100%;
+    max-width: 550px;
+    float: left;
+}
+
+.sub02 .container .con>a.box_left {
+    background-position: right center;
+}
+
+.sub02 .container .con>a.box_right {
+    background-position: left center;
+}
+
+.sub02 .container .con>div.box_right {
+    background-position: left center;
+}
+
+.sub02 .container .con>a .inner {
+    position: relative;
+}
+
+.sub02 .container .con>a .inner .sub_title {
+    font-size: 25px;
+}
+
+.sub02 .container .con>a .inner .title {
+    padding: 15px 0 20px;
+    font-family: 'BMDOHYEON';
+    font-size: 45px;
+    word-break: keep-all;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.sub02 .container .con>a .inner .desc {
+    font-size: 18px;
+}
+
+.sub02 .container .con>a .inner .btn_more {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    z-index: 10;
+    background: url(../img/btn_menu_more.png) no-repeat;
+    text-indent: -9999px;
+    transform: rotate(0deg);
+    transition: all .3s;
+}
+
+.sub02 .container .con>a .inner .btn_more:hover {
+    transform: rotate(90deg);
+}
+
+.sub02 .container .con_2 .box_left {
+    background-image: url(../img/sub2_con2_1.png);
+}
+
+.sub02 .container .con_2 .box_right {
+    background-image: url(../img/sub2_con2_2.png);
+}
+
+.sub02 .container .con_3 .box_left {
+    background-image: url(../img/sub2_con2_3.png);
+}
+
+.sub02 .container .con_3 .box_right {
+    background-image: url(../img/sub2_con2_4.png);
+}
+
+.sub02 .container .con_4 .box_left {
+    background-image: url(../img/sub2_con2_5.png);
+}
+
+.sub02 .container .con_4 .box_right {
+    background-image: url(../img/sub2_con2_6.png);
+}
+
+.sub02 .container .con_2 .box_left .title {
+    color: #0587d7;
+}
+
+.sub02 .container .con_2 a.box_right {
+    color: #fff;
+}
+
+.sub02 .container .con_3 a.box_left {
+    color: #fff
+}
+
+.sub02 .container .con_3 .box_right .title {
+    color: #0587d7;
+}
+
+.sub02 .container .con_4 .box_left .title {
+    color: #0587d7;
+}
+
 .sub05 .tac {
     text-align: left !important;
 }
@@ -1836,10 +2020,12 @@ label.chk2 input[type=checkbox]:checked+span:before {
         right: 20px;
         bottom: 30px;
     }
-    .sub07 .container .con_1 .search_box>form{
+
+    .sub07 .container .con_1 .search_box>form {
         padding-bottom: 30px;
     }
-    .sub05 .container .con_2{
+
+    .sub05 .container .con_2 {
         padding-top: 30px;
     }
 }
