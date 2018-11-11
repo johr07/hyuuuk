@@ -937,10 +937,10 @@ label.chk2 input[type=checkbox]:checked+span:before {
     display: block;
     content: '';
     position: absolute;
-    top: 65px;
-    left: 66px;
-    width: 131px;
-    height: 45px;
+    top: 100px;
+    left: 0px;
+    width: 190px;
+    height: 82px;
     background: url(../img/bg_show_gnb.png) 0 0 no-repeat;
 }
 
@@ -1475,6 +1475,10 @@ label.chk2 input[type=checkbox]:checked+span:before {
     background-image: url(../img/sub2_visual.png);
 }
 
+.sub03 .container .sub_visual {
+    background-image: url(../img/sub3_visual.png);
+}
+
 .sub02 .container .con_1 {
     position: relative;
     height: 720px;
@@ -1655,13 +1659,24 @@ label.chk2 input[type=checkbox]:checked+span:before {
     color: #0587d7;
 }
 
+.sub03 .container .con_1 {
+    background-image: url(../img/sub3_con_1_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sub03 .container .con_1 .inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sub03 .container .con_1 .inner .con_1 .sub_title {}
+
 .sub05 .tac {
     text-align: left !important;
 }
 
-.sub05.sub07 .container .con_1 {
-    background: none;
-}
 
 .sub05 .container .con .inner .tbl_info {
     width: 100%;
@@ -1682,6 +1697,26 @@ label.chk2 input[type=checkbox]:checked+span:before {
     text-overflow: ellipsis;
 }
 
+.sub05 .container .con .inner .tbl_info th:nth-child(1) {
+    width: 10%;
+}
+
+.sub05 .container .con .inner .tbl_info th:nth-child(2) {
+    width: 10%;
+}
+
+.sub05 .container .con .inner .tbl_info th:nth-child(3) {
+    width: 50%;
+}
+
+.sub05 .container .con .inner .tbl_info th:nth-child(4) {
+    width: 15%;
+}
+
+.sub05 .container .con .inner .tbl_info th:nth-child(5) {
+    width: 15%;
+}
+
 .sub05 .container .con .inner .tbl_info td {
     padding: 16px 0 15px;
     border-bottom: 1px solid #dfdfdf;
@@ -1693,9 +1728,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     text-overflow: ellipsis;
 }
 
-.sub05 .container .con_2 {
-    padding-top: 80px;
-    background-color: #fff;
+.sub05 .container .con .inner .tbl_info td a {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .sub06 .container {
@@ -1908,8 +1945,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     padding: 25px;
     float: left;
     background-color: #fff;
+    transition: all .3s;
 }
-
+.sub07 .container .con_2 .board_wrap .box:hover{
+    background-color: #0489b1;
+}
 .sub07 .container .con_2 .board_wrap .box:nth-child(3n) {
     margin-right: 0;
 }
@@ -1930,6 +1970,68 @@ label.chk2 input[type=checkbox]:checked+span:before {
     right: 0;
 }
 
+.sub05 .container .con_2 .board_wrap .box {
+    transition: all .3s;
+    font-size: 18px;
+}
+
+.sub05 .container .con_2 .board_wrap .box:hover {
+    background-color: #0489b1;
+    color: #fff;
+}
+
+.sub05 .container .con_2 .board_wrap .box:hover a {
+    color: #fff;
+}
+.sub05 .container .con_2 .board_wrap .box .tx1{
+    font-size: 16px;
+    color: #666;
+}
+.sub05 .container .con_2 .board_wrap .box:hover .tx1{
+    color: #eee;
+}
+.sub05 .container .con_2 .board_wrap .box .tx2{
+    font-size: 20px;
+}
+.sub05 .container .con_2 .board_wrap .box .tx3 {
+    height: 66px;
+    margin: 15px 0;
+    font-size: 24px;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.sub05 .container .con_2 .board_wrap .box .tx4{
+    color: #666;
+}
+.sub05 .container .con_2 .board_wrap .box:hover .tx4{
+    color: #eee;
+}
+.sub05 .container .con_2 .board_wrap .box .tx5{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+.sub05 .container .con_2 .board_wrap .box:hover .tx5{
+    color: #eee;
+}
+.sub05 .container .con_2 .board_wrap .box .both_wrap{
+    overflow: hidden;
+}
+.sub05 .container .con_2 .board_wrap .box .both_wrap .tx1{
+    float: right;
+}
+.sub05 .container .con_2 .board_wrap .box .both_wrap .tx2{
+    float: left;
+}
 @media screen and (max-width: 1100px) {
     #gnb.on+.gnb_bg {
         top: 0;
@@ -2413,6 +2515,40 @@ label.chk2 input[type=checkbox]:checked+span:before {
     .main .container .con_3 .inner .btn_wrap {
         top: 80%;
     }
+
+    .sub05 .container .con .inner .tbl_info th:nth-child(1) {
+        display: none;
+    }
+
+    .sub05 .container .con .inner .tbl_info th:nth-child(2) {
+        display: none;
+    }
+
+    .sub05 .container .con .inner .tbl_info th:nth-child(3) {
+        width: 70%;
+    }
+
+    .sub05 .container .con .inner .tbl_info th:nth-child(4) {
+        width: 15%;
+    }
+
+    .sub05 .container .con .inner .tbl_info th:nth-child(5) {
+        width: 15%;
+    }
+
+    .sub05 .container .con .inner .tbl_info td:nth-child(1) {
+        display: none;
+    }
+
+    .sub05 .container .con .inner .tbl_info td:nth-child(2) {
+        display: none;
+    }
+
+    .sub05 .container .con .inner .tbl_info td:nth-child(3) {}
+
+    .sub05 .container .con .inner .tbl_info td:nth-child(4) {}
+
+    .sub05 .container .con .inner .tbl_info td:nth-child(5) {}
 
     .sub05.sub07 .container .con_2 .inner {
         padding-left: 0;
