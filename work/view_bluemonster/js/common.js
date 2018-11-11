@@ -88,6 +88,17 @@ $(function(){
             appendArrows: $('.sub02 .con_1 .arrows_wrap'),
             appendDots: $('.sub02 .con_1 .dots_wrap')
         });
+        $('.sub03 .con_1 .slick_wrap').slick({
+            arrows: true,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            appendArrows: $('.sub03 .con_1 .arrows_wrap'),
+            appendDots: $('.sub03 .con_1 .dots_wrap')
+        });
         $('.sns_wrap .slick_wrap').slick({
             arrows : true,
             dots : false,
