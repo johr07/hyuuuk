@@ -2656,13 +2656,14 @@ label.chk2 input[type=checkbox]:checked+span:before {
 
 
     #header .header_inner .trg_aside {
-        width: 40px;
+        width: 34px;
         height: 32px;
         position: absolute;
         top: 50%;
         left: 20px;
         transform: translate(0, -50%);
         background: url(../img/trg_aside.png) center center no-repeat;
+        background-size: contain;
     }
 
     #header .header_inner .util {
@@ -2746,11 +2747,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header .header_inner .gnb>ul>li.on>a {
-        color: #111 !important;
+        color: #fff !important;
     }
 
     #header .header_inner .gnb>ul>li:hover>a {
-        color: #111;
+        color: #fff;
     }
 
     #header .header_inner .gnb>ul>li>a {
@@ -2760,26 +2761,43 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header .header_inner .gnb>ul>li:nth-child(1)>a {
+        background-image: url(../img/icon_gnb_1_on.png);
+    }
+    #header .header_inner .gnb>ul>li:nth-child(1).on>a{
         background-image: url(../img/icon_gnb_1.png);
     }
-
     #header .header_inner .gnb>ul>li:nth-child(2)>a {
-        background-image: url(../img/icon_gnb_2.png);
+        background-image: url(../img/icon_gnb_2_on.png);
     }
 
+    #header .header_inner .gnb>ul>li:nth-child(2).on>a {
+        background-image: url(../img/icon_gnb_2.png);
+    }
     #header .header_inner .gnb>ul>li:nth-child(3)>a {
+        background-image: url(../img/icon_gnb_3_on.png);
+    }
+    #header .header_inner .gnb>ul>li:nth-child(3).on>a {
         background-image: url(../img/icon_gnb_3.png);
     }
 
     #header .header_inner .gnb>ul>li:nth-child(4)>a {
-        background-image: url(../img/icon_gnb_4.png);
+        background-image: url(../img/icon_gnb_4_on.png);
     }
 
+    #header .header_inner .gnb>ul>li:nth-child(4).on>a {
+        background-image: url(../img/icon_gnb_4.png);
+    }
     #header .header_inner .gnb>ul>li:nth-child(5)>a {
+        background-image: url(../img/icon_gnb_5_on.png);
+    }
+    #header .header_inner .gnb>ul>li:nth-child(5).on>a {
         background-image: url(../img/icon_gnb_5.png);
     }
 
     #header .header_inner .gnb>ul>li:nth-child(6)>a {
+        background-image: url(../img/icon_gnb_6_on.png);
+    }
+    #header .header_inner .gnb>ul>li:nth-child(6).on>a {
         background-image: url(../img/icon_gnb_6.png);
     }
 
@@ -2810,7 +2828,7 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header.brand .header_inner .gnb>ul>li>ul.on li a {
-        color: #111;
+        color: #fff;
         transition: all .3s;
     }
 
@@ -2835,7 +2853,7 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header.active .header_inner .gnb>ul>li>a {
-        color: #fff;
+        color: #016583;
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:hover {
@@ -2843,11 +2861,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header.active .header_inner .gnb>ul>li>a:hover {
-        color: #111;
+        color: #fff;
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:after {
-        background: #111;
+        background: #016583;
     }
 
     #header.brand.open {
@@ -2861,7 +2879,7 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:hover {
-        color: #111;
+        color: #016583;
     }
 
     #header .header_inner .gnb .btn110 {
