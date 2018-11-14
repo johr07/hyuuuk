@@ -53,6 +53,9 @@ $(function(){
         $('.gnb_bg').click(function(){
             $('#gnb').removeClass('on');
         });
+        $('#header .header_inner .gnb>ul>li').click(function(){
+            $(this).toggleClass('on');
+        });
     };
     function mobile_open_close(){
         $('.aside_open').click(function(){
