@@ -2897,11 +2897,11 @@ label.chk2 input[type=checkbox]:checked+span:before {
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:hover {
-        color: #fff;
+        color: #016583;
     }
 
     #header.active .header_inner .gnb>ul>li>a:hover {
-        color: #fff;
+        color: #016583;
     }
 
     #header .header_inner .gnb>ul>li>ul>li>a:after {
@@ -3103,6 +3103,9 @@ label.chk2 input[type=checkbox]:checked+span:before {
 
     .main .container .main_visual .slick_wrap .slick_con .m2_hidden {
         display: block;
+    }
+    #header .header_inner .gnb>ul>li>a{
+        color: #0e6a86;
     }
 }
 
