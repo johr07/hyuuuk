@@ -227,9 +227,9 @@
                             <a href="#" class="page_last"><span class="hidden">끝</span></a>
                         </div>
                     </div>
-                    <a href="#" class="btn_write">
+                    <div class="btn_write popup_open" onclick="openPopup('name_1');">
                         <img src="img/sub7_write.png" alt="글쓰기">
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,6 +265,17 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="popupWrap">
+        <div class="popup" id="popup_name_1">
+            <p>팝업1</p>
+            <a href="#" onclick="closePopup();">닫기</a>
+        </div>
+        <div class="popup" id="popup_name_2">
+            <p>팝업2</p>
+            <a href="#" onclick="closePopup();">닫기</a>
+        </div>
+        <div class="popupBg" onclick="closePopup();"></div>
     </div>
 </body>
 
