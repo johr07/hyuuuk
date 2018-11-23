@@ -160,6 +160,16 @@ $(function () {
                 }
             ]
         });
+        $('.main .con_3 .slick_wrap').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            appendDots: $('.main .con_3 .dots_wrap')
+        });
     };
 
     function loadMotion() {
