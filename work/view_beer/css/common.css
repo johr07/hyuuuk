@@ -71,14 +71,14 @@ a {
     position: relative;
     background-image: url(../images/1_beerhand.png),url(../images/1_beermerchin.png),url(../images/1_bg.png);
     background-repeat: no-repeat;
-    background-position: 100px 0,-100px 0,0 0;
-    background-size: cover,cover,cover;
+    background-position: center center;
+    background-size: cover;
 }
 .con1.n-motion{
     transition: all 3s;
 }
 .con1.n-motion.n-active{
-    background-position: 0 0,0 0,0 0;
+    background-size: cover;
 }
 .con1 .box {
     min-width: 430px;
@@ -436,13 +436,17 @@ a {
 }
 
 .con7 {
-    background-image: url(../images/7_bg.jpg);
+    background-image: url(../images/7_men.png),url(../images/7_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     position: relative;
     overflow: hidden;
+    transition: all 1s;
 }
-
+.con7.n-motion.n-active{
+    background-size: cover;
+}
 .con7 .inner {
     height: 1628px;
     padding-top: 140px;
