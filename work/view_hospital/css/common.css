@@ -58,62 +58,117 @@ img {
     color: #1f50b0;
 }
 
-.sub_01 .con1 {
+.container>div>.inner {
+    width: 1415px;
+    margin: 0 auto;
+}
+
+.container .imgTx {
     width: 1415px;
     margin: 0 auto;
     padding-bottom: 113px;
     overflow: hidden;
 }
 
-.sub_01 .con1>div {
+.container .imgTx>div {
     height: 451px;
     float: left;
 }
 
-.sub_01 .con1 .left {
-    width: 730px;
+.container .imgTx .left {
+    width: 854px;
 }
 
-.sub_01 .con1 .right {
-    width: 685px;
+.container .imgTx .right {
+    width: 561px;
     padding-left: 55px;
     padding-right: 45px;
     background-color: #1f50af;
 }
 
-.sub_01 .con1 .right .tx1 {
-    padding-top: 105px;
+.container .imgTx .right .tx1 {
+    padding-top: 53px;
     font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
 
-.sub_01 .con1 .right .tx2 {
+.container .imgTx .right .tx2 {
     padding-top: 40px;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     color: #fff;
 }
-.sub_01 .con2{
-    padding-bottom: 96px;
-    background-color: #f3f7ff;
+.container .table {
+    border-top: 1px solid #1f50af;
+    border-bottom: 1px solid #1f50af;
 }
-.sub_01 .con2 .inner{
-    width: 1415px;
-    margin: 0 auto;
-    text-align: center;
+.container .table tr{
+    height: 102px;
+    border-bottom: 1px solid #cdcccc;
 }
-.sub_01 .con2 .tx1{
+.container .table tr:last-child{
+    border-bottom: none;
+}
+.container .table tr th{
+    width: 290px;
+    background-color: #f2f3f5;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: 600;
+    border-right: 1px solid #cdcccc;
+}
+
+.container .table tr td{
+    padding-left: 78px;
+    padding-right: 78px;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #fff;
+}
+.container > div > .inner > .tx1 {
     padding-top: 112px;
     padding-bottom: 85px;
     font-size: 50px;
     font-weight: 600;
+    text-align: center;
 }
-.sub_01 .con2 .box_16{
+.container > div > .inner > .tx2 {
+    margin-top: -30px;
+    padding-bottom: 65px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sub_01 .imgTx .left {
+    width: 730px;
+}
+
+.sub_01 .imgTx .right {
+    width: 685px;
+}
+
+.sub_01 .imgTx .right .tx1 {
+    padding-top: 105px;
+}
+
+.sub_01 .con2 {
+    padding-bottom: 96px;
+    background-color: #f3f7ff;
+}
+
+.sub_01 .con2 .inner {
+    text-align: center;
+}
+
+.sub_01 .con2 .box_16 {
     overflow: hidden;
 }
-.sub_01 .con2 .box_16 .box{
+
+.sub_01 .con2 .box_16 .box {
     width: 24.25%;
     margin-right: 1%;
     margin-bottom: 20px;
@@ -122,10 +177,12 @@ img {
     font-weight: 500;
     display: table;
 }
-.sub_01 .con2 .box_16 .box:nth-child(4n){
+
+.sub_01 .con2 .box_16 .box:nth-child(4n) {
     margin-right: 0;
 }
-.sub_01 .con2 .box_16 .box > div{
+
+.sub_01 .con2 .box_16 .box>div {
     width: 100%;
     height: 105px;
     display: table-cell;
@@ -135,27 +192,28 @@ img {
     border-bottom: 1px solid #cdcccc;
     background-color: #fff;
 }
-.sub_01 .con3{
+
+.sub_01 .con3 {
     padding-top: 122px;
     padding-bottom: 320px;
 }
-.sub_01 .con3 .inner{
-    width: 1415px;
-    margin: 0 auto;
-}
-.sub_01 .con3 .box_2{
+
+.sub_01 .con3 .box_2 {
     overflow: hidden;
 }
-.sub_01 .con3 .box_2 .box{
+
+.sub_01 .con3 .box_2 .box {
     width: 662.5px;
     height: 650px;
     margin-right: 90px;
     float: left;
 }
-.sub_01 .con3 .box_2 .box:last-child{
+
+.sub_01 .con3 .box_2 .box:last-child {
     margin-right: 0;
 }
-.sub_01 .con3 .box_2 .box .tx1{
+
+.sub_01 .con3 .box_2 .box .tx1 {
     margin-top: 46px;
     margin-bottom: 40px;
     padding-left: 37px;
@@ -163,7 +221,8 @@ img {
     font-weight: 600;
     position: relative;
 }
-.sub_01 .con3 .box_2 .box .tx1:after{
+
+.sub_01 .con3 .box_2 .box .tx1:after {
     content: "";
     width: 13px;
     height: 13px;
@@ -173,19 +232,35 @@ img {
     position: absolute;
     top: 50%;
     left: 3px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
-.sub_01 .con3 .box_2 .box .tx2{
+
+.sub_01 .con3 .box_2 .box .tx2 {
     padding-left: 37px;
     font-size: 20px;
     font-weight: 300;
     line-height: 36px;
 }
-.sub_01 .con3 .box_2 .box .tx3{
+
+.sub_01 .con3 .box_2 .box .tx3 {
     padding-top: 10px;
     padding-left: 37px;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     color: #1f50af;
+}
+.sub_02 .con2 {
+    padding-bottom: 136px;
+    background-color: #f3f7ff;
+}
+.sub_02 .con2 .table tr th{
+    background-color: #1f50af;
+    color: #fff;
+}
+.sub_02 .con2 .table tr:nth-child(2) th{
+    background-color: #629ce2;
+}
+.sub_02 .con3 {
+    padding-bottom: 550px;
 }
