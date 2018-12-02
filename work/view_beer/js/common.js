@@ -42,8 +42,16 @@ function keydowncheck() {
     return result;
 }
 
-$(function(){
-    $(document).bind("contextmenu", function(e) {
+function parallaxScroll() {
+    var currentScrollTop = $(window).scrollTop();
+    $('.con1 .bg1').css('top', (0 + (currentScrollTop * .1)) + 'px');
+    $('.con1 .bg2').css('top', (0 + (currentScrollTop * .1)) + 'px');
+    $('.con3 .bg1').css('top', (0 + ((currentScrollTop) * .1)) + 'px');
+    $('.con3 .bg2').css('top', (0 + ((currentScrollTop) * .1)) + 'px');
+}
+
+$(function () {
+    /* $(document).bind("contextmenu", function(e) {
 		return false;
 	});
     $(document)[0].oncontextmenu = function() { return false; }
@@ -55,7 +63,14 @@ $(function(){
                 return true;
         }
     });
-    
+    */
+    $(window).scroll(function (e) {
+        parallaxScroll();
+        var ccc = $('.con3 .bg2').offset().top;
+        console.log(ccc);
+    });
+    var ccc = $('.con3 .bg2').offset().top;
+    console.log(ccc);
     loadMotion();
     QuickActive();
 });

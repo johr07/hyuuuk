@@ -76,16 +76,11 @@ a {
 .con1 {
     height: 1280px;
     position: relative;
-    background-image: url(../images/1_beerhand.png),url(../images/1_beermerchin.png),url(../images/1_bg.png);
+    background-image: url(../images/1_bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-.con1.n-motion{
-    transition: all 3s;
-}
-.con1.n-motion.n-active{
-    background-size: cover;
+    overflow: hidden;
 }
 .con1 .box {
     min-width: 430px;
@@ -93,6 +88,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 5;
     transform: translate(-50%, -50%) rotate(10deg);
     text-align: center;
     color: #fff;
@@ -123,7 +119,32 @@ a {
     background-color: #fff;
     box-shadow: 0 0 15px #333;
 }
-
+.con1 .bg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/1_beermerchin.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 2s;
+}
+.con1 .bg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/1_beerhand.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 1s;
+}
 .con2 {
     padding: 50px 0 100px;
     text-align: center;
@@ -142,17 +163,40 @@ a {
 .con3 {
     height: 1550px;
     padding-top: 254px;
-    background-image: url(../images/3_bigcan.png),url(../images/3_bigcan2.png),url(../images/3_bigcan3.png);
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: -200px 0,-100px 0,0 0;
-    background-size: cover,cover,cover;
+    background-image: url(../images/3_bigcan3.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
     color: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
-.con3.n-motion{
-    transition: all 3s;
+.con3 .bg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/3_bigcan2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s;
 }
-.con3.n-motion.n-active{
-    background-position: 0 0,0 0,0 0;
+.con3 .bg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/3_bigcan.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    top: -1786px;
+    left: 0;
+    z-index: -1;
+    transition: all .3s;
 }
 .con3 .inner,
 .con4 .inner,
@@ -451,9 +495,6 @@ a {
     overflow: hidden;
     transition: all 1s;
 }
-.con7.n-motion.n-active{
-    background-size: cover;
-}
 .con7 .inner {
     height: 1628px;
     padding-top: 140px;
@@ -471,94 +512,4 @@ a {
     background-position: center 0;
     background-size: cover;
     opacity: .8;
-}
-
-.con7 .bg.n-motion{
-    transition: all 3s;
-}
-/* load motion */
-.n-motion {
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-}
-
-.n-delay1 {
-    transition-delay: 0.1s;
-}
-
-.n-delay2 {
-    transition-delay: 0.2s;
-}
-
-.n-delay3 {
-    transition-delay: 0.3s;
-}
-
-.n-delay4 {
-    transition-delay: 0.4s;
-}
-
-.n-delay5 {
-    transition-delay: 0.5s;
-}
-
-.n-delay6 {
-    transition-delay: 0.6s;
-}
-
-.n-delay7 {
-    transition-delay: 0.7s;
-}
-
-.n-delay8 {
-    transition-delay: 0.8s;
-}
-
-.n-delay9 {
-    transition-delay: 0.9s;
-}
-
-.n-motion.n-left {
-    transform: translateX(-50px);
-}
-
-.n-motion.n-right {
-    transform: translateX(50px);
-}
-
-.n-motion.n-top {
-    transform: translateY(-50px);
-}
-
-.n-motion.n-bottom {
-    transform: translateY(50px);
-}
-
-.n-motion.n-spin {
-    transform: rotate(180deg);
-}
-
-.n-motion.n-active {
-    opacity: 1;
-}
-
-.n-motion.n-left.n-active {
-    transform: translateX(0);
-}
-
-.n-motion.n-right.n-active {
-    transform: translateX(0);
-}
-
-.n-motion.n-top.n-active {
-    transform: translateY(0);
-}
-
-.n-motion.n-bottom.n-active {
-    transform: translateY(0);
-}
-
-.n-motion.n-spin.n-active {
-    transform: rotate(0deg);
 }
