@@ -130,7 +130,6 @@ a {
     top: 0;
     left: 0;
     z-index: 4;
-    transition: all .1s;
 }
 .con1 .bg2{
     width: 100%;
@@ -143,7 +142,6 @@ a {
     top: 0;
     left: 0;
     z-index: 4;
-    transition: all .1s;
 }
 .con2 {
     padding: 50px 0 100px;
@@ -183,7 +181,6 @@ a {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .1s;
 }
 .con3 .bg2{
     width: 100%;
@@ -196,7 +193,6 @@ a {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .1s;
 }
 .con3 .inner,
 .con4 .inner,
@@ -512,7 +508,6 @@ a {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .1s;
 }
 .con7 .bg {
     height: 430px;
@@ -525,5 +520,4 @@ a {
     background-position: center center;
     background-size: cover;
     opacity: .8;
-    transition: all .1s;
 }

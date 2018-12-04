@@ -81,29 +81,7 @@ function parallaxIt() {
     // triggers winodw scroll for refresh
     $fwindow.trigger('scroll');
 };
-function keydowncheck() {
-    var result = true;
-    var keycode = event.keyCode;
-    if (123 == keycode) //F12 키코드
-    {
-        result = false;
-    }
-    return result;
-}
-$(function () {
-    $(document).bind("contextmenu", function(e) {
-		return false;
-	});
-    $(document)[0].oncontextmenu = function() { return false; }
-    $(document).mousedown(function(e) {
-        if( e.button == 2 ) {
-                alert('내용을 복사할 수 없습니다.');
-                return false;
-        } else {
-                return true;
-        }
-    });
-    
+$(function () {    
     parallaxIt();
     loadMotion();
     QuickActive();
