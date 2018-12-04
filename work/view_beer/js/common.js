@@ -91,7 +91,7 @@ function keydowncheck() {
     return result;
 }
 $(function () {
-    /* $(document).bind("contextmenu", function(e) {
+    $(document).bind("contextmenu", function(e) {
 		return false;
 	});
     $(document)[0].oncontextmenu = function() { return false; }
@@ -103,7 +103,7 @@ $(function () {
                 return true;
         }
     });
-    */
+    
     parallaxIt();
     loadMotion();
     QuickActive();
