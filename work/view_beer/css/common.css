@@ -130,7 +130,7 @@ a {
     top: 0;
     left: 0;
     z-index: 4;
-    transition: all 2s;
+    transition: all .3s;
 }
 .con1 .bg2{
     width: 100%;
@@ -143,7 +143,7 @@ a {
     top: 0;
     left: 0;
     z-index: 4;
-    transition: all 1s;
+    transition: all .3s;
 }
 .con2 {
     padding: 50px 0 100px;
@@ -193,7 +193,7 @@ a {
     background-position: 0 0;
     background-size: cover;
     position: absolute;
-    top: -1786px;
+    top: 0;
     left: 0;
     z-index: -1;
     transition: all .3s;
@@ -487,11 +487,12 @@ a {
 }
 
 .con7 {
-    background-image: url(../images/7_men.png),url(../images/7_bg.jpg);
+    background-image: url(../images/7_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    z-index: 0;
     overflow: hidden;
     transition: all 1s;
 }
@@ -500,7 +501,19 @@ a {
     padding-top: 140px;
     color: #fff;
 }
-
+.con7 .bg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/7_men.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
 .con7 .bg {
     height: 430px;
     position: absolute;
@@ -509,7 +522,8 @@ a {
     left: 0;
     background-image: url(../images/7_bg_2.png);
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center center;
     background-size: cover;
     opacity: .8;
+    transition: all 0.3s;
 }

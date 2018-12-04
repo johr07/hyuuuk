@@ -11,9 +11,9 @@
     <script src="js/common.js"></script>
 </head>
 
-<body>
+<body onkeydown="return keydowncheck();" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <!-- 
-        onkeydown="return keydowncheck();" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'
+        
      -->
     <div class="wrapper">
         <div class="header">
@@ -52,8 +52,8 @@
                     <div class="bar"></div>
                     <div class="tx3">Q. 왜 독일 맥주는 맛있을까요?</div>
                 </div>
-                <div class="bg1"></div>
-                <div class="bg2"></div>
+                <div class="bg1" data-type="background" data-speed="10"></div>
+                <div class="bg2" data-type="background" data-speed="15"></div>
             </div>
             <div class="con2">
                 <img src="images/2_big_icon.gif" alt="icon">
@@ -99,8 +99,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg1"></div>
-                <div class="bg2"></div>
+                <div class="bg1" data-type="background" data-speed="10"></div>
+                <div class="bg2" data-type="background" data-speed="15"></div>
             </div>
             <div class="con4">
                 <div class="inner">
@@ -455,7 +455,8 @@
                         갈수록 그 수가 더욱 늘어나고 있는데, 축제 수익만도 30억 마르크(약 1650억 원)를 넘어선다.
                     </div>
                 </div>
-                <div class="bg"></div>
+                <div class="bg1" data-type="background" data-speed="10"></div>
+                <div class="bg" data-type="background" data-speed="30"></div>
             </div>
         </div>
         <div class="footer">
