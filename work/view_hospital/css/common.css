@@ -46,6 +46,7 @@ img {
     border-bottom: 1px solid #d8d8d8;
     font-size: 17px;
     font-weight: 400;
+    line-height: 40px;
 }
 
 .table_type1 tbody td:first-child {
@@ -1000,6 +1001,10 @@ img {
     text-align: center;
 }
 
+.sub_07 .con3 .table_1 li:last-child>div.tx2 {
+    background-color: #143068;
+}
+
 .sub_07 .con3 .table_1 li>div.tx3,
 .sub_07 .con3 .table_1 li>div.tx4 {
     font-size: 25px;
@@ -1044,9 +1049,10 @@ img {
     width: 1188px;
 }
 
-.sub_08 .con3{
+.sub_08 .con3 {
     padding-bottom: 200px;
 }
+
 .sub_08 .con3 .box_2_1 {
     padding-bottom: 78px;
     overflow: hidden;
@@ -1059,6 +1065,143 @@ img {
 
 .sub_08 .con3 .box_2_1 .box:last-child {
     padding-top: 110px;
+    padding-left: 34px;
+    line-height: 38px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+
+.sub_09 .con2 {
+    background-color: #f3f7ff;
+    padding-bottom: 124px;
+}
+
+.sub_09 .con2 .inner {
+    width: 1188px;
+}
+
+.sub_09 .con2 .table_1 li {
+    width: 100%;
+    margin-bottom: 11px;
+    display: table;
+    border-top: 1px solid #1f50af;
+    border-bottom: 1px solid #1f50af;
+    background-color: #fff;
+}
+
+.sub_09 .con2 .table_1 li:last-child {
+    margin-bottom: 0;
+    border-top: 1px solid #03ad9a;
+    border-bottom: 1px solid #03ad9a;
+}
+
+.sub_09 .con2 .table_1 li>div {
+    height: 104px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sub_09 .con2 .table_1 li>div.tx2 {
+    width: 243px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 32px;
+    background-color: #1f50af;
+    text-align: center;
+}
+
+.sub_09 .con2 .table_1 li:last-child>div.tx2 {
+    background-color: #03ad9a;
+}
+
+.sub_09 .con2 .table_1 li>div.tx3 {
+    padding-left: 70px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.sub_09 .con3 .inner {
+    width: 1188px;
+}
+
+.sub_09 .con3 .table_type1 thead th {
+    background-color: #f3f7ff;
+    color: #000;
+    border-top: 2px solid #1f50af;
+    border-bottom: 1px solid #1f50af;
+}
+
+.sub_09 .con4 .inner ul {
+    margin-top: 16px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.sub_09 .con4 img {
+    width: auto;
+}
+
+.sub_09 .con4 .inner ul li {
+    width: 25%;
+    height: 307px;
+    padding: 30px 40px;
+    float: left;
+    border-left: 1px solid #dedede;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.sub_09 .con4 .inner ul li:first-child {
+    border-left: none;
+}
+
+.sub_10 .con2 {
+    background-color: #f3f7ff;
+    padding-bottom: 124px;
+}
+
+.sub_10 .con2 .inner {
+    width: 1188px;
+}
+
+.sub_10 .con2 .table_type1 tr td {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.sub_10 .con2 .table_type1 tr td:first-child {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sub_10 .con2 .table_type1 tr:last-child td {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.sub_10 .con3 {
+    padding-bottom: 82px;
+}
+
+.sub_10 .con3 .box_2_1 {
+    padding-bottom: 78px;
+    overflow: hidden;
+}
+
+.sub_10 .con3 .box_2_1 .box {
+    width: 50%;
+    float: left;
+}
+
+.sub_10 .con3 .box_2_1 .box:last-child {
+    padding-top: 70px;
     padding-left: 34px;
     line-height: 38px;
     font-size: 20px;
