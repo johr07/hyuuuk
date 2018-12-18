@@ -1,6 +1,5 @@
 @charset "utf-8";
-
-div {
+.container div {
     box-sizing: border-box;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
