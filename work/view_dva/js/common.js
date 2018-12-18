@@ -3,9 +3,23 @@ $(function () {
     var swiper = new Swiper('.swiper-container1', {
         direction: 'vertical',
         autoHeight: true,
-        slidesPerView: 'auto',
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
         autoplay: {
             delay: 5000
+        }
+    });
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 2,
+        loop: true,
+        autoplay: {
+            delay: 5000000
+        },
+        breakpoints: {
+            1300: {
+                slidesPerView: 1
+            }
         }
     });
 })
