@@ -1,5 +1,6 @@
 $(function () {
     tab();
+    dropDown();
     var swiper = new Swiper('.swiper-container1', {
         direction: 'vertical',
         autoHeight: true,
@@ -14,7 +15,7 @@ $(function () {
         slidesPerView: 2,
         loop: true,
         autoplay: {
-            delay: 5000000
+            delay: 5000
         },
         breakpoints: {
             1300: {
@@ -35,4 +36,25 @@ function tab() {
         var activeTab = $(this).attr("data-rel");
         $("#" + activeTab).fadeIn();
     });
+}
+
+function dropDown() {
+    $(".dropDown .drop").click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('on');
+        //var thisNext = $(this).next(".down");
+        //thisNext.toggleClass('on');
+        // if (thisNext.css("height") == 0) {
+        //     thisNext.removeClass('on');
+        // } else {
+        //     $(this).parent().siblings().children(".down").removeClass('on');
+        //     thisNext.addClass('on');
+        // };
+    });
+}
+function hambuger_open() {
+        $('.wrapper').addClass('on');
+}
+function hambuger_close() {
+        $('.wrapper').removeClass('on');
 }
