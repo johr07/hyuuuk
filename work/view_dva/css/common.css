@@ -1178,19 +1178,24 @@ img {
     font-size: 24px;
     color: #919191;
 }
-.sub .con_title .write{
+.sub .btn{
     width: 240px;
     height: 60px;
     line-height: 60px;
-    position: absolute;
-    bottom: 50px;
-    right: 30px;
     background-color: #0ba29a;
     color: #fff;
     font-size: 18px;
     box-shadow: 0 10px 10px #ddd;
     border-radius: 40px;
     text-align: center;
+}
+.sub .btn.pink{
+    background-color: #e25f99;
+}
+.sub .con_title .btn{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
 }
 .sub01_1 .con1 {
     height: 400px;
@@ -1293,13 +1298,179 @@ img {
     line-height: 44px;
 }
 
+.sub03 .con3 .boxWrap{
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.sub03 .con3 .boxWrap .box{
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    float: left;
+}
+.sub03 .con3 .boxWrap .box:nth-child(3n){
+    margin-right: 0;
+}
 
+.sub03 .con3 .boxWrap .box .tx1{
+    height: 60px;
+    margin-top: 25px;
+    font-size: 24px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.sub03 .con3 .boxWrap .box .tx2{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
 
+.sub .write_view{
+    border-top: 2px solid #606060;
+}
+.sub .write_view .tx1{
+    height: 60px;
+    padding: 0 40px 0 50px;
+    font-size: 18px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.sub .write_view .tx1 .viewCount{
+    float: right;
+    font-size: 16px;
+    font-weight: 300;
+}
+.sub .write_view .tx2{
+    height: 50px;
+    padding: 0 40px 0 50px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+}
+.sub .write_view .tx2 span:nth-child(2){
+    margin: 0 10px;
+    width: 1px;
+    height: 15px;
+    background-color: #666;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sub .write_view .tx3{
+    padding: 40px 40px 40px 50px;
+    font-size: 18px;
+    line-height: 24px;
+}
 
+.sub .write_view .btn_wrap{
+    padding-top: 110px;
+    text-align: center;
+}
 
+.sub .write_view .btn_wrap .inner{
+    display: inline-block;
+}
+.sub .write_view .btn_wrap .inner .btn{
+    margin: 0 10px;
+    display: inline-block;
+}
 
+.sub .write_view .tx4{
+    margin-top: 68px;
+    padding-right: 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.sub .write_view .tx4 a{
+    float: right;
+}
+.sub .write_view .tx4 span{
+    float: right;
+}
+.sub .write_view .tx4 span:nth-child(2){
+    margin: 0 15px;
+    width: 1px;
+    height: 15px;
+    background-color: #666;
+    display: inline-block;
+    vertical-align: middle;
+}
 
-
+.sub .commentWrap{
+    margin-bottom: 300px;
+    border-top: 10px solid #e5e5e5;
+}
+.sub .commentWrap .box{
+    padding: 40px 40px 20px 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #aaaaaa;
+}
+.sub .commentWrap .box .fl{
+    float: left;
+}
+.sub .commentWrap .box .fl:nth-child(1){
+    padding-right: 40px;
+}
+.sub .commentWrap .box .fl:nth-child(1) img{
+    width: 115px;
+    height: 132px;
+}
+.sub .commentWrap .box .fl:nth-child(2){
+    width: 1065px;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx1{
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx1 span:nth-child(1){
+    font-size: 18px;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx1 span:nth-child(2){
+    margin: 0 15px;
+    width: 1px;
+    height: 15px;
+    background-color: #666;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx1 span:nth-child(3){
+    font-size: 16px;
+    font-weight: 300;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx1 .fire{
+    float: right;
+    font-size: 20px;
+    font-weight: 300;
+    color: #e25f99;
+}
+.sub .commentWrap .box .fl:nth-child(2) .tx2{
+    padding-right: 150px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.sub .commentWrap2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+}
+.sub .commentWrap2 .box{
+    border-bottom: none;
+}
+.sub .commentWrap2 .box .fl:nth-child(1) img{
+    width: 200px;
+    height: 230px;
+}
+.sub .commentWrap .box .fl:nth-child(2){
+    width: 978px;
+}
 
 
 
