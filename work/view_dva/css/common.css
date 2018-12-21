@@ -1197,7 +1197,7 @@ img {
     bottom: 50px;
     right: 30px;
 }
-.sub01_1 .con1 {
+.sub01_1 .container .con1 {
     height: 400px;
     margin-top: 40px;
     background-image: url(../images/sub01_1_1.png);
@@ -1205,25 +1205,25 @@ img {
     background-position: center 0;
 }
 
-.sub01_1 .con1 .tx1 {
+.sub01_1 .container .con1 .tx1 {
     padding-top: 120px;
     font-size: 40px;
     line-height: 70px;
     text-align: center;
 }
 
-.sub01_1 .con2 {
+.sub01_1 .container .con2 {
     margin-bottom: 330px;
 }
 
-.sub01_1 .con2 .bar {
+.sub01_1 .container .con2 .bar {
     width: 100px;
     height: 2px;
     margin: 120px auto 0;
     background-color: #0ba29a;
 }
 
-.sub01_1 .con2 .tx1 {
+.sub01_1 .container .con2 .tx1 {
     margin-top: 40px;
     margin-bottom: 120px;
     font-size: 40px;
@@ -1231,19 +1231,19 @@ img {
     color: #0ba29a;
 }
 
-.sub01_1 .con2 .tx1 span {
+.sub01_1 .container .con2 .tx1 span {
     font: 600px;
 }
 
-.sub01_1 .con2 .bothWrap {
+.sub01_1 .container .con2 .bothWrap {
     overflow: hidden;
 }
 
-.sub01_1 .con2 .bothWrap .fl {
+.sub01_1 .container .con2 .bothWrap .fl {
     float: left;
 }
 
-.sub01_1 .con2 .bothWrap .fl:nth-child(1) {
+.sub01_1 .container .con2 .bothWrap .fl:nth-child(1) {
     width: 800px;
     padding-right: 160px;
     font-size: 24px;
@@ -1251,18 +1251,18 @@ img {
     line-height: 44px;
 }
 
-.sub01_1 .con2 .bothWrap .fl:nth-child(2) {
+.sub01_1 .container .con2 .bothWrap .fl:nth-child(2) {
     width: 500px;
 }
 
-.sub01_2 .con1 .bar {
+.sub01_2 .container .con1 .bar {
     width: 100px;
     height: 2px;
     margin: 120px auto 0;
     background-color: #0ba29a;
 }
 
-.sub01_2 .con1 .tx1 {
+.sub01_2 .container .con1 .tx1 {
     margin-top: 40px;
     margin-bottom: 120px;
     font-size: 40px;
@@ -1270,27 +1270,27 @@ img {
     color: #0ba29a;
 }
 
-.sub01_2 .con2 .bothWrap {
+.sub01_2 .container .con2 .bothWrap {
     overflow: hidden;
 }
-.sub01_2 .con2 .bothWrap .fl{
+.sub01_2 .container .con2 .bothWrap .fl{
     width: 600px;
     float: left;
 }
-.sub01_2 .con2 .bothWrap .fl:last-child{
+.sub01_2 .container .con2 .bothWrap .fl:last-child{
     margin-left: 100px;
 }
-.sub01_2 .con2 .bothWrap .fl .tx2{
+.sub01_2 .container .con2 .bothWrap .fl .tx2{
     margin-bottom: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: 300;
 }
-.sub01_2 .con2 .bothWrap .fl img{
+.sub01_2 .container .con2 .bothWrap .fl img{
     margin-bottom: 20px;
 }
 
-.sub01_2 .con3{
+.sub01_2 .container .con3{
     margin-bottom: 130px;
     padding-top: 40px;
     font-size: 24px;
@@ -1298,21 +1298,21 @@ img {
     line-height: 44px;
 }
 
-.sub03 .con3 .boxWrap{
+.sub03 .container .con3 .boxWrap{
     padding-bottom: 50px;
     overflow: hidden;
 }
-.sub03 .con3 .boxWrap .box{
+.sub03 .container .con3 .boxWrap .box{
     width: 32%;
     margin-right: 2%;
     margin-bottom: 40px;
     float: left;
 }
-.sub03 .con3 .boxWrap .box:nth-child(3n){
+.sub03 .container .con3 .boxWrap .box:nth-child(3n){
     margin-right: 0;
 }
 
-.sub03 .con3 .boxWrap .box .tx1{
+.sub03 .container .con3 .boxWrap .box .tx1{
     height: 60px;
     margin-top: 25px;
     font-size: 24px;
@@ -1325,7 +1325,7 @@ img {
     -webkit-box-orient: vertical;
     word-wrap: break-word;
 }
-.sub03 .con3 .boxWrap .box .tx2{
+.sub03 .container .con3 .boxWrap .box .tx2{
     margin-top: 20px;
     font-size: 16px;
     font-weight: 300;
@@ -1486,27 +1486,27 @@ img {
         width: 300px;
     }
 
-    .main .container .con1 .m_w {
+    .price .m_w {
         width: 100%;
         float: left;
         overflow: hidden;
     }
 
-    .main .container .con1 .swiper-slide span {
+    .price .swiper-slide span {
         height: 50px;
         line-height: 50px;
     }
 
-    .main .container .con1 .swiper-container2 .swiper-slide {
+    .price .swiper-container2 .swiper-slide {
         padding-left: 25%;
     }
 
-    .main .container .con1 .m_w span {
+    .price .m_w span {
         height: 50px;
         line-height: 50px;
     }
 
-    .main .container .con1 p {
+    .price p {
         width: 640px;
         margin: 0 auto;
         float: none;
@@ -1615,16 +1615,16 @@ img {
         letter-spacing: .8px;
     }
 
-    .main .container .con1 {
+    .price {
         margin-top: -60px;
     }
 
-    .main .container .con1 .swiper-container2 {
+    .price .swiper-container2 {
         position: relative;
         z-index: 1;
     }
 
-    .main .container .con1 .swiper-container2 .swiper-slide {
+    .price .swiper-container2 .swiper-slide {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 15px;

@@ -1,6 +1,10 @@
 $(function () {
     tab();
     dropDown();
+    $('a[href="#"]').click(function (e) {
+        e.preventDefault();
+    });
+
     var swiper = new Swiper('.swiper-container1', {
         direction: 'vertical',
         autoHeight: true,
@@ -39,8 +43,7 @@ function tab() {
 }
 
 function dropDown() {
-    $(".dropDown .drop").click(function (e) {
-        e.preventDefault();
+    $(".dropDown .drop").click(function () {
         $(this).toggleClass('on');
         //var thisNext = $(this).next(".down");
         //thisNext.toggleClass('on');
@@ -52,9 +55,11 @@ function dropDown() {
         // };
     });
 }
+
 function hambuger_open() {
-        $('.wrapper').addClass('on');
+    $('.wrapper').addClass('on');
 }
+
 function hambuger_close() {
-        $('.wrapper').removeClass('on');
+    $('.wrapper').removeClass('on');
 }
