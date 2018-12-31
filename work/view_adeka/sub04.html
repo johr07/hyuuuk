@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADEKA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="wrapper sub04 sub01 sub06">
+        <div class="leftWrap">
+            <h1>
+                <a href="#"><img src="images/logo.png" alt="ADEKA"></a>
+            </h1>
+            <a href="#" class="btn_write">일정 추가</a>
+            <div class="cal_s">
+                <div class="top">
+                    <a href="#"><img src="images/icon_36.png" alt="이전"></a>
+                    <a href="#"><img src="images/icon_37.png" alt="이전"></a>
+                    <div>2018.12</div>
+                    <a href="#"><img src="images/icon_38.png" alt="다음"></a>
+                    <a href="#"><img src="images/icon_39.png" alt="다음"></a>
+                </div>
+                <div class="middle">
+                    <a href="#" class="orange">일</a>
+                    <a href="#">월</a>
+                    <a href="#">화</a>
+                    <a href="#">수</a>
+                    <a href="#">목</a>
+                    <a href="#">금</a>
+                    <a href="#" class="blue">토</a>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="op orange">25</a>
+                    <a href="#" class="op">26</a>
+                    <a href="#" class="op">27</a>
+                    <a href="#" class="op">28</a>
+                    <a href="#" class="op">29</a>
+                    <a href="#" class="op">30</a>
+                    <a href="#" class="blue">1</a>
+                    <a href="#" class="orange">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#" class="blue">8</a>
+                    <a href="#" class="orange">9</a>
+                    <a href="#">10</a>
+                    <a href="#">11</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#" class="blue">15</a>
+                    <a href="#" class="orange">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#" class="blue">22</a>
+                    <a href="#" class="orange">23</a>
+                    <a href="#">24</a>
+                    <a href="#" class="on">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#">28</a>
+                    <a href="#" class="blue">29</a>
+                    <a href="#" class="orange">30</a>
+                    <a href="#">31</a>
+                    <a href="#" class="op">1</a>
+                    <a href="#" class="op">2</a>
+                    <a href="#" class="op">3</a>
+                    <a href="#" class="op">4</a>
+                    <a href="#" class="op blue">5</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <div class="inner">
+                    <a href="#" class="drop">내 캘린더</a>
+                    <div class="down">
+                        <div class="inner">
+                            <a href="#" class="icon1">아데카 공지사항</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_set orange2">만들기</a>
+                </div>
+                <div class="inner">
+                    <a href="#" class="drop">회사 공유 캘린더</a>
+                    <div class="down">
+                        <div class="inner">
+                            <a href="#" class="icon1">아데카 공지사항</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <a href="#" class="drop">회사 캘린더</a>
+                    <div class="down">
+                        <div class="inner">
+                            <a href="#" class="icon1">아데카 공지사항</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linkWrap">
+                <a href="#" class="icon35">근태 캘린더 보기</a>
+                <a href="#" class="icon29">구글 계정 연동</a>
+            </div>
+        </div>
+        <div class="rightWrap">
+            <div class="menuWrap">
+                <a href="sub02.html">메일</a>
+                <a href="sub05.html">전자결재</a>
+                <a href="sub01.html">게시판</a>
+                <a href="sub04.html" class="on">일정관리</a>
+                <a href="sub06.html">주소록</a>
+                <a href="sub03.html">인사관리</a>
+                <a href="#">ERP</a>
+            </div>
+            <div class="container">
+                <div class="con1">
+                    <div>보기 :</div>
+                    <div class="btn_show dropDownSel">
+                        <div class="select">
+                            <span>모두</span>
+                        </div>
+                        <input type="hidden" name="type">
+                        <ul class="dropdown-menu">
+                            <li id="type1">type1</li>
+                            <li id="type2">type2</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn_print">인쇄하기</a>
+                    <div class="today">
+                        <a href="#"><img src="images/icon_41.png" alt="이전"></a>
+                        <div>2018.12</div>
+                        <a href="#"><img src="images/icon_42.png" alt="다음"></a>
+                        <div class="orange">오늘</div>
+                    </div>
+                </div>
+                <div class="cal_l">
+                    <div class="middle">
+                        <div class="red">일</div>
+                        <div>월</div>
+                        <div>화</div>
+                        <div>수</div>
+                        <div>목</div>
+                        <div>금</div>
+                        <div class="blue">토</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="both bdl op">
+                            <div class="inner">
+                                <div class="left red">25</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">26</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">27</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">28</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">29</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">30</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left blue">1</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdl">
+                            <div class="inner">
+                                <div class="left red">2</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">3</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">4</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">5</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">6</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">7</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left blue">8</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdl">
+                            <div class="inner">
+                                <div class="left red">9</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">10</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">11</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">12</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">13</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">14</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left blue">15</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdl">
+                            <div class="inner">
+                                <div class="left red">16</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">17</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">18</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">19</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">20</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">21</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left blue">22</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdl">
+                            <div class="inner">
+                                <div class="left red">23</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">24</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdRed">
+                            <div class="inner">
+                                <div class="left red">25</div>
+                                <div class="right">
+                                    <div class="red">성탄절</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">26</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">27</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">28</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left blue">29</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both bdl">
+                            <div class="inner">
+                                <div class="left red">30</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both">
+                            <div class="inner">
+                                <div class="left">31</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">1</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">2</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">3</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left">4</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="both op">
+                            <div class="inner">
+                                <div class="left blue">5</div>
+                                <div class="right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            ⓒ adkk.Corp
+        </div>
+    </div>
+</body>
+
+</html>

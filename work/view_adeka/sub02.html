@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADEKA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="wrapper sub02">
+        <div class="leftWrap">
+            <h1>
+                <a href="#"><img src="images/logo.png" alt="ADEKA"></a>
+            </h1>
+            <div class="bothWrap">
+                <a href="#" class="btn_write">메일쓰기</a>
+                <a href="#" class="btn_write">새창쓰기</a>
+            </div>
+            <div class="bothWrap fl3">
+                <a href="#" class="btn">
+                    <span class="orange2">123</span>
+                    <span>안읽음</span>
+                </a>
+                <a href="#" class="btn">
+                    <span><img src="images/icon_16.png" alt="중요"></span>
+                    <span>중요</span>
+                </a>
+                <a href="#" class="btn">
+                    <span>TO</span>
+                    <span>받는사람</span>
+                </a>
+            </div>
+            <div class="linkWrap">
+                <a href="#" class="icon11">전체메일</a>
+                <a href="#" class="icon10 orange2">받은메일함</a>
+                <a href="#" class="icon2">임시보관함</a>
+                <div class="inner">
+                    <a href="#" class="icon9">보낸메일함</a>
+                    <a href="#" class="btn_set type_1">수신확인</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="#" class="drop">내 메일함</a>
+                <div class="down">
+                    <div class="inner">
+                        <a href="#" class="icon1">아데카 공지사항</a>
+                        <a href="#" class="btn_set"><img src="images/icon_3.png" alt="설정"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linkWrap">
+                <div class="inner">
+                    <a href="#" class="icon12">스팸메일함</a>
+                    <a href="#" class="btn_set type_1">SpamOut</a>
+                </div>
+                <a href="#" class="icon7">휴지통</a>
+                <div class="inner">
+                    <a href="#" class="icon8">외부메일 가져오기</a>
+                    <a href="#" class="btn_set"><img src="images/icon_3.png" alt="설정"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rightWrap">
+            <div class="menuWrap">
+                <a href="sub02.html" class="on">메일</a>
+                <a href="sub05.html">전자결재</a>
+                <a href="sub01.html">게시판</a>
+                <a href="sub04.html">일정관리</a>
+                <a href="sub06.html">주소록</a>
+                <a href="sub03.html">인사관리</a>
+                <a href="#">ERP</a>
+            </div>
+            <div class="container">
+                <div class="con1">
+                    <a href="#" class="btn_1"></a>
+                    <input type="text" placeholder="메일검색">
+                    <a href="#" class="btn_3">검색</a>
+                    <div class="btn_4 dropDownSel">
+                        <div class="select">
+                            <span>자세히</span>
+                        </div>
+                        <input type="hidden" name="type">
+                        <ul class="dropdown-menu">
+                            <li id="type1">type1</li>
+                            <li id="type2">type2</li>
+                        </ul>
+                    </div>
+                    <div class="count">
+                        <span class="orange">0</span>
+                        <span> / 1</span>
+                    </div>
+                    <a href="#" class="btn_2"></a>
+                    <span class="tx3">안 읽은 메일 모두 읽음 표시</span>
+                </div>
+                <div class="con2">
+                    상세 검색을 원하시면 '자세히' 버튼을 클릭하여 상세검색을 해주세요.
+                </div>
+                <div class="con3">
+                    <div class="btn_sel dropDown">
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                        <label for="checkbox-1" class="checkbox-custom-label"></label>
+                    </div>
+                    <a href="#">안읽음</a>
+                    <a href="#" class="btn_del">삭제</a>
+                    <a href="#" class="bdn">답장</a>
+                    <a href="#" class="bdn">전체답장</a>
+                    <a href="#">전달</a>
+                    <div class="btn_move dropDownSel">
+                        <div class="select">
+                            <span>이동</span>
+                        </div>
+                        <input type="hidden" name="type">
+                        <ul class="dropdown-menu">
+                            <li id="type1">type1</li>
+                            <li id="type2">type2</li>
+                        </ul>
+                    </div>
+                    <div class="btn_filter dropDownSel">
+                        <div class="select">
+                            <span>필터</span>
+                        </div>
+                        <input type="hidden" name="type">
+                        <ul class="dropdown-menu">
+                            <li id="type1">tyasdasdpe1</li>
+                            <li id="type2">type2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bothWrap">
+                    <div class="left">
+                        <div class="table type_2">
+                            <table>
+                                <colgroup>
+                                    <col width="40px">
+                                    <col width="18px">
+                                    <col width="24px">
+                                    <col width="112px">
+                                    <col width="318px">
+                                    <col width="100px">
+                                    <col width="118px">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                                            <label for="checkbox-2" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                            <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15_f.png" alt="북마크체크함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_14.png" alt="읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox">
+                                            <label for="checkbox-4" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15_f.png" alt="북마크체크함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_14.png" alt="읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox">
+                                            <label for="checkbox-5" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15_f.png" alt="북마크체크함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_14.png" alt="읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox">
+                                            <label for="checkbox-6" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15_f.png" alt="북마크체크함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_14.png" alt="읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox">
+                                            <label for="checkbox-7" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15_f.png" alt="북마크체크함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_14.png" alt="읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-8" class="checkbox-custom" name="checkbox-8" type="checkbox">
+                                            <label for="checkbox-8" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-9" class="checkbox-custom" name="checkbox-9" type="checkbox">
+                                            <label for="checkbox-9" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox">
+                                            <label for="checkbox-10" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-11" class="checkbox-custom" name="checkbox-11" type="checkbox">
+                                            <label for="checkbox-11" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-12" class="checkbox-custom" name="checkbox-12" type="checkbox">
+                                            <label for="checkbox-12" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-13" class="checkbox-custom" name="checkbox-13" type="checkbox">
+                                            <label for="checkbox-13" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td>
+                                            <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                                            <label for="checkbox-1" class="checkbox-custom-label"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_15.png" alt="북마크체크안함">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/icon_13.png" alt="안읽음">
+                                            </a>
+                                        </td>
+                                        <td>발신전용</td>
+                                        <td>
+                                            <a href="#">
+                                                <span>TO</span>
+                                                <span>메일제목이 들어갑니다...</span>
+                                            </a>
+                                        </td>
+                                        <td>18-12-21 12:20</td>
+                                        <td>201.00 bytes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pageNavi">
+                            <a href="#" class="left_2 icon"></a>
+                            <a href="#" class="left_1 icon"></a>
+                            <a href="#" class="on">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#" class="right_1 icon"></a>
+                            <a href="#" class="right_2 icon"></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="tx1">
+                            <a href="#">
+                                <img src="images/icon_17.png" alt="북마크체크함">
+                            </a>
+                            메일제목이 들어갑니다...
+                            <span>18-12-21 12:20</span>
+                        </div>
+                        <div class="tx2">
+                            <span>보낸 이</span>
+                            <span>발신전용</span>
+                            <span>&lt;alimy@adkk.co.kr&gt;</span>
+                            <a href="#"><img src="images/icon_19.png" alt="up"></a>
+                        </div>
+                        <div class="tx2">
+                            <span>받는사람</span>
+                            <span>받는사람</span>
+                            <span>&lt;master@adkk.co.kr&gt;</span>
+                        </div>
+                        <div class="conTx">
+                            메일내용이 들어갑니다..
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            ⓒ adkk.Corp
+        </div>
+    </div>
+</body>
+
+</html>
