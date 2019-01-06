@@ -51,6 +51,7 @@ img {
 .wrapper {
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -796,13 +797,13 @@ img {
 .main .container .con4 {
     color: #fff;
     text-align: center;
+    background-color: #43c2bb;
 }
 
 .main .container .con4 .w1300 {
     background-image: url(../images/main_con4_2.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-color: #43c2bb;
     position: relative;
 }
 

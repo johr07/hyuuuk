@@ -1,0 +1,481 @@
+@charset "utf-8";
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,400,700&subset=korean');
+
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+
+select {
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 30px;
+    line-height: 28px;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    border-radius: 2px;
+    border-color: #cecece;
+    font-size: 14px;
+    position: relative;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+}
+
+.select::before {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+.checkbox-custom,
+.radio-custom {
+    position: absolute;
+    display: none;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before,
+.radio-custom+.radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #333;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+    content: "\f111";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #ff4200;
+}
+
+.radio-custom+.radio-custom-label:before {
+    border-radius: 50%;
+}
+
+
+.wrapper {
+    width: 100%;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../images/main_visual01.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.header .inner {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .inner .txWrap {
+    width: 100%;
+    color: #fff;
+}
+
+.header .inner .txWrap img{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.header .inner .txWrap .tx1 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+.header .inner .txWrap .tx1 span {
+    font-weight: 500;
+}
+
+.header .inner .txWrap .tx2 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.header .inner .txWrap .tx3 {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.header .inner span {
+    color: #fff445;
+}
+
+.header .inner > img {
+    max-width: 549px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.container .con1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #e3ecf8;
+}
+
+.container .con1 .inner > img{
+    max-width: 556px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.container .con1 .tx1 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 44px;
+    color: #0292f5;
+}
+
+.container .con1 .tx2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.container .con1 .tx2 span {
+    font-weight: 600;
+}
+
+.container .con1 .tx3 {
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7b7b7b;
+}
+
+.container .con1 .inputWrap {
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container .con1 .inputWrap .left {
+    margin-right: 10px;
+    float: left;
+    border: 1px solid #999;
+}
+
+.container .con1 .inputWrap .left input {
+    width: 200px;
+    height: 44px;
+    padding: 0 8px;
+    line-height: 44px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.container .con1 .inputWrap .right {
+    float: left;
+    border: 1px solid #999;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container .con1 .inputWrap .right .select {
+    overflow: hidden;
+    float: left;
+}
+
+.container .con1 .inputWrap .right .select select {
+    width: 82px;
+    height: 44px;
+    padding: 0 20px;
+    line-height: 44px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    float: left;
+}
+
+.container .con1 .inputWrap .right input {
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    background: none;
+    border: none;
+    outline: none;
+    float: left;
+    text-align: center;
+}
+
+.container .con1 .inputWrap .right span {
+    height: 44px;
+    line-height: 44px;
+    float: left;
+}
+
+.container .con1 .yakganWrap>* {
+    display: inline-block;
+}
+
+.container .con1 .yakganWrap>a {
+    height: 20px;
+    margin-left: 15px;
+    padding: 0 5px;
+    line-height: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+.container .con1 .btn {
+    width: 280px;
+    height: 48px;
+    margin: 40px auto 30px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0292f5;
+}
+
+.container .con2 {
+    margin: 45px 0;
+    text-align: center;
+}
+
+.container .con2 .box {
+    width: 18%;
+    margin: 15px .5%;
+    padding: 18px 0;
+    display: inline-block;
+    border: 1px solid #999;
+}
+
+.container .con2 .box img {
+    margin-bottom: 18px;
+}
+
+.container .con2 .box span {
+    font-weight: 500;
+    color: #6b6b6b;
+}
+
+.footer {
+    background-color: #1e3e8b;
+    color: #fff;
+}
+
+.footer {
+    padding: 65px 10px;
+}
+
+.footer .inner {
+    overflow: hidden;
+}
+
+.footer .inner .left {
+    float: left;
+}
+
+.footer .inner .left .tx2 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footer .inner .right {
+    padding-left: 55px;
+    float: left;
+}
+
+.footer .inner .right .tx3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header .inner .txWrap{
+        padding: 0 30px;
+    }
+    .header .inner > img{
+        width: 100%;
+    }
+    .container .con2 .box img{
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer .inner .left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .inner .right{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 720px) {
+    .header .inner .txWrap .tx1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header .inner .txWrap .tx2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .header .inner .txWrap .tx3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container .con1 {
+        padding: 30px 10px;
+    }
+    .container .con1 .tx1{
+        font-size: 32px;
+    }
+    .container .con1 .tx2{
+        font-size: 16px;
+    }
+    .container .con1 .inputWrap .left{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        display: inline-block;
+        float: none;
+    }
+    .container .con1 .inputWrap .left input{
+        width: 100%;
+        text-align: center;
+    }
+    .container .con1 .inputWrap .right{
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+    .container .con1 .inputWrap .right .select{
+        width: 28%;
+    }
+    .container .con1 .inputWrap .right .select select{
+        width: 100%;
+    }
+    .container .con1 .inputWrap .right input{
+        width: 35%;
+    }
+    .container .con1 .inputWrap .right span{
+        width: 2%;
+    }
+    .container .con2 .box{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header .inner .txWrap .tx1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .header .inner .txWrap .tx2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header .inner .txWrap .tx3{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .container .con1 .tx1{
+        font-size: 24px;
+    }
+    .container .con1 .tx2{
+        margin-top: 10px;
+    }
+    .container .con2 .box{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .container .con2 .box{
+        width: 80%;
+    }
+}
