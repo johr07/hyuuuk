@@ -5,8 +5,11 @@
 * {
     box-sizing: border-box;
 }
-
+html{
+    height: 100%;
+}
 body {
+    height: 100%;
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
@@ -84,12 +87,18 @@ table {
     text-align: center;
 }
 
-.checkbox-custom:checked+.checkbox-custom-label:before,
-.radio-custom:checked+.radio-custom-label:before {
+.checkbox-custom:checked+.checkbox-custom-label:before {
     content: "\f00c";
     font-family: 'FontAwesome';
     font-size: 10px;
     color: #333;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+    content: "\f111";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #ff4200;
 }
 
 .radio-custom+.radio-custom-label:before {
@@ -99,13 +108,14 @@ table {
 .wrapper {
     max-width: 1920px;
     width: 1920px;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .leftWrap {
     width: 240px;
-    height: 940px;
+    height: 95%;
     float: left;
     border-right: 1px solid #a3a6ae;
     font-size: 16px;
@@ -369,12 +379,18 @@ table {
 
 .rightWrap {
     width: 1680px;
+    height: 95%;
+    overflow-y: auto;
     float: left;
+    position: relative;
 }
 
 .rightWrap .menuWrap {
+    width: 1680px;
     background-color: #384463;
     overflow: hidden;
+    position: fixed;
+    z-index: 1000000;
 }
 
 .rightWrap .menuWrap a {
@@ -392,8 +408,27 @@ table {
     background-color: #fd671a;
 }
 
+.rightWrap .menuWrap .right_btnWrap{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    overflow: hidden;
+}
+.rightWrap .menuWrap .right_btnWrap a{
+    width: 80px;
+    height: 26px;
+    margin-top: 12px;
+    line-height: 26px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.rightWrap .menuWrap .right_btnWrap a:last-child{
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
 .container {
-    padding-top: 34px;
+    padding-top: 86px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -417,8 +452,19 @@ table {
     line-height: 38px;
     font-size: 12px;
     color: #666;
+    position: relative;
 }
 
+.footer .poa{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 13px;
+    color: #333;
+}
+.footer .poa span{
+    font-weight: 500;
+}
 .table {
     border-top: 2px solid #2f2c2d;
 }
@@ -826,6 +872,20 @@ table {
     font-size: 14px;
 }
 
+.sub02 .container .con1 .tx1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.sub02 .container .con1 .bullet{
+    padding-left: 15px;
+    padding-top: 8px;
+}
+.sub02 .container .con1 .bullet div{
+    width: 1px;
+    height: 16px;
+    background-color: #c5c5c5;
+}
 .sub02 .container .con1 .btn_1 {
     width: 34px;
     height: 30px;
@@ -858,7 +918,7 @@ table {
     margin-right: 23px;
 }
 
-.sub02 .container .con1 .btn_4 .select {
+.sub02 .container .con1 .btn_4 .btn {
     width: 81px;
     height: 30px;
     padding-left: 0;
@@ -871,6 +931,7 @@ table {
     background-image: url(../images/icon_30.png);
     background-repeat: no-repeat;
     background-position: right 11px center;
+    cursor: pointer;
 }
 
 .sub02 .container .con1 .count {
@@ -987,6 +1048,335 @@ table {
     border: none;
 }
 
+.sub02 .con4 .dropDownSel .select {
+    padding-right: 35px;
+    background-image: url(../images/bullet_5.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: #fff;
+}
+
+.sub02 .con_drop{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    display: none;
+}
+.sub02 .con_drop .box{
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+.sub02 .con_drop .box .inner{
+    font-size: 14px;
+    display: flex;
+}
+.sub02 .con_drop .box .inner:nth-child(1){
+    margin-bottom: 10px;
+}
+.sub02 .con_drop .box .inner .fl{
+    margin-right: 5px;
+    line-height: 29px;
+}
+.sub02 .con_drop .box .inner .fl:nth-child(1){
+    margin-right: 10px;
+}
+.sub02 .con_drop .box .inner .fl input{
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    border: 1px solid #c7c7c7;
+}
+.sub02 .con_drop .box .inner .fl .dropDownSel{
+    height: 30px;
+    line-height: 30px;
+}
+.sub02 .con_drop .box .inner .fl .dropDownSel .select{
+    height: 30px;
+    line-height: 30px;
+}
+.sub02 .con_drop .box:nth-child(1) .inner .fl input{
+    width: 120px;
+}
+.sub02 .con_drop .box:nth-child(1) .inner .fl .dropDownSel .select{
+    width: 120px;
+}
+.sub02 .con_drop .box:nth-child(2) .inner .fl input{
+    width: 150px;
+}
+.sub02 .con_drop .box:nth-child(2) .inner .fl .dropDownSel .select{
+    width: 150px;
+}
+.sub02 .con_drop .box:nth-child(3) .inner:nth-child(1) .fl input{
+    width: 320px;
+}
+.sub02 .con_drop .box:nth-child(2) .inner:nth-child(2) .fl .dropDownSel .select{
+    width: 150px;
+}
+.sub02 .con_drop .box:nth-child(3) .inner:nth-child(2) .fl input{
+    width: 100px;
+}
+.sub02 .con_drop .box:nth-child(3) .inner .fl .dropDownSel .select{
+    width: 100px;
+}
+.sub02 .con_drop .box > a{
+    width: 68px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #f8f8f8;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+}
+.sub02_0 .con2{
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+}
+.sub02_0 .con2 .box{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #dfdfdf;
+}
+.sub02_0 .con2 .box .inner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sub02_0 .con2 .box.on .inner{
+    border-bottom: 2px solid #ff5600;
+}
+.sub02_0 .con2 .box:nth-child(1){
+    padding-left: 0;
+}
+.sub02_0 .con2 .box:last-child{
+    border-right: none;
+}
+.sub02_0 .con2 .box a{
+    font-size: 15px;
+}
+.sub02_1 .con4{
+    padding-left: 20px;
+}
+.sub02_1 .con4 .tab_list{
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+}
+.sub02_1 .con4 .tab_list a{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+.sub02_1 .con4 .tab_list a.active{
+    border-top: 3px solid #384463;
+    background-color: #fff;
+}
+.sub02_1 .con4 .tab_list a:first-child{
+    border-left: 1px solid #dfdfdf;
+}
+.sub02_1 .con4 .tab_content_wrap{
+    padding-right: 20px;
+}
+.sub02_1 .con4 .tab_content .box{
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+}
+.sub02_1 .con4 .tab_content .box.bdt{
+    border-top: 1px solid #2f2c2d;
+}
+.sub02_1 .con4 .tab_content .box .fl{
+    min-height: 78px;
+    display: table;
+    font-size: 15px;
+}
+.sub02_1 .con4 .tab_content .box .fl:nth-child(1){
+    width: 200px;
+    padding-left: 20px;
+    background-color: #f6f6f6;
+}
+.sub02_1 .con4 #tab3 .box .fl:nth-child(1){
+    width: 260px;
+}
+.sub02_1 .con4 .tab_content .box .fl:nth-child(2){
+    padding-left: 20px;
+}
+.sub02_1 .con4 .tab_content .box .fl> div{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 20px;
+}
+.sub02_1 .con4 .tab_content > .tx2{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.sub02_1 .con4 .tab_content .tx3{
+    margin-top: 7px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #818181;
+}
+.sub02_1 .con4 .tab_content .tx4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.sub02_1 .con4 .tab_content .both{
+    display: flex;
+}
+.sub02_1 .con4 .tab_content .both > div{
+    margin-right: 15px;
+}
+.sub02_1 .con4 .tab_content .box.type1 .fl{
+    min-height: 130px;
+}
+.sub02_1 .con4 .tab_content .box.type1 .both > div{
+    width: 130px;
+    text-align: center;
+}
+.sub02_1 .con4 .tab_content .box.type1 .both > div img{
+    margin-bottom: 8px;
+}
+
+.sub02_1 .con4 .tab_content .box.type1 .tx3{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.sub02_1 .con4 .tab_content .btnWrap{
+    height: 38px;
+    margin-top: 25px;
+    position: relative;
+}
+.sub02_1 .con4 .tab_content .btn_center{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.sub02_1 .con4 .tab_content .btn_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sub02_1 .con4 .tab_content .btn{
+    min-width: 100px;
+    height: 38px;
+    padding: 0 15px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.sub02_1 .con4 .tab_content .btn.blue{
+    border: 1px solid #384463;
+    background-color: #384463;
+    color: #fff;
+}
+.sub02_2 .con3{
+    display: block !important;
+}
+.sub02_2 .con3 .tx3{
+    font-size: 14px;
+    display: block;
+    line-height: 20px;
+}
+.sub02_2 .con3 .df{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+}
+.sub02_2 .con3 .df .poa{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+.sub02_2 .con3 .df .poa .bar{
+    width: 136px;
+    height: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #c5c5c5;
+    position: relative;
+}
+.sub02_2 .con3 .df .poa .bar div{
+    width: 11%;
+    height: 12px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-color: #fd671a;
+}
+.sub02_2 .con3 .df >*{
+    height: 28px;
+    margin-right: 10px;
+    line-height: 28px;
+}
+.sub02_2 .con3 .df input{
+    height: 27px;
+    padding: 0 10px;
+    line-height: 27px;
+}
+.sub02_2 .con3 .df a{
+    width: 60px;
+    background-color: #c1c1c1;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+.sub02_2 .con3{
+    padding-right: 20px;
+}
+.sub02_2 .con3 table{
+    width: 100%;
+}
+.sub02_2 .con3 table th{
+    line-height: 40px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #2f2c2d;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+.sub02_2 .con3 table td{
+    padding: 0 20px !important;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+.sub02_2 .con3 table td.link .inner{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px;
+    display: inline-block;
+    border-right: 1px solid #a3a6ae;
+}
+.sub02_2 .con3 table td.link a{
+    display: inline-block;
+}
+.sub02_2 .con3 table td.tal{
+    text-align: left !important;
+}
+.sub02_2 .con3 table td.bgc{
+    background-color: #f6f6f6;
+}
+.sub02_2 .con3 table .bdrn{
+    border-right: none !important;
+}
 .sub03 .leftWrap .btn_write {
     padding-left: 20px;
 }
@@ -1056,9 +1446,6 @@ table {
     left: 55px;
 }
 
-.sub04 .leftWrap{
-    height: 1062px;;
-}
 .sub04 .leftWrap .cal_s {
     margin-top: 30px;
 }
@@ -1143,15 +1530,17 @@ table {
     color: #fff;
 }
 
-.sub04 .container .cal_l{
+.sub04 .container .cal_l {
     margin-bottom: 50px;
     border-top: 2px solid #2f2c2d;
 }
-.sub04 .container .cal_l .middle{
+
+.sub04 .container .cal_l .middle {
     display: flex;
     border-bottom: 1px solid #d2d2d2;
 }
-.sub04 .container .cal_l .middle div{
+
+.sub04 .container .cal_l .middle div {
     width: 14.28571428571429%;
     height: 38px;
     line-height: 38px;
@@ -1160,19 +1549,24 @@ table {
     background-color: #f2f2f2;
     border-right: 1px solid #d2d2d2;
 }
-.sub04 .container .cal_l .middle div:first-child{
+
+.sub04 .container .cal_l .middle div:first-child {
     border-left: 1px solid #d2d2d2;
 }
-.sub04 .container .cal_l .red{
+
+.sub04 .container .cal_l .red {
     color: #fe2121;
 }
-.sub04 .container .cal_l .blue{
+
+.sub04 .container .cal_l .blue {
     color: #006ff2;
 }
-.sub04 .container .cal_l .bottom{
+
+.sub04 .container .cal_l .bottom {
     overflow: hidden;
 }
-.sub04 .container .cal_l .bottom .both{
+
+.sub04 .container .cal_l .bottom .both {
     width: 14.28571428571429%;
     font-size: 15px;
     float: left;
@@ -1180,31 +1574,39 @@ table {
     border-right: 1px solid #d2d2d2;
     border-bottom: 1px solid #d2d2d2;
 }
-.sub04 .container .cal_l .bottom .both .inner{
+
+.sub04 .container .cal_l .bottom .both .inner {
     height: 138px;
     padding: 15px;
     overflow: hidden;
 }
-.sub04 .container .cal_l .bottom .both.op .inner{
+
+.sub04 .container .cal_l .bottom .both.op .inner {
     opacity: .3;
 }
-.sub04 .container .cal_l .bottom .both.bdRed .inner{
+
+.sub04 .container .cal_l .bottom .both.bdRed .inner {
     border: 1px solid #fd671a;
 }
-.sub04 .container .cal_l .bottom .both.bdl{
+
+.sub04 .container .cal_l .bottom .both.bdl {
     border-left: 1px solid #d2d2d2;
 }
-.sub04 .container .cal_l .bottom .both .left{
+
+.sub04 .container .cal_l .bottom .both .left {
     float: left;
 }
-.sub04 .container .cal_l .bottom .both .right{
+
+.sub04 .container .cal_l .bottom .both .right {
     padding-left: 10px;
     font-size: 14px;
     float: left;
 }
-.sub04 .container .cal_l .bottom .both .right div{
+
+.sub04 .container .cal_l .bottom .both .right div {
     padding-bottom: 8px;
 }
+
 .sub04 .container .con1 {
     position: relative;
 }
@@ -1229,7 +1631,8 @@ table {
     left: 50%;
     transform: translate(-50%, 0);
 }
-.sub04 .container .con1 .today a{
+
+.sub04 .container .con1 .today a {
     width: 28px;
     height: 28px;
     padding: 7px 0;
@@ -1238,19 +1641,21 @@ table {
     text-align: center;
 }
 
-.sub04 .container .con1 .today div{
+.sub04 .container .con1 .today div {
     padding: 0 12px;
     line-height: 28px;
     font-size: 22px;
     font-weight: 500;
     color: #384463;
 }
-.sub04 .container .con1 .today div.orange{
+
+.sub04 .container .con1 .today div.orange {
     padding-left: 18px;
     color: #fd671a;
     font-size: 16px;
     font-weight: 400;
 }
+
 .sub05 .leftWrap .linkWrap.bgc {
     padding: 15px 0;
     background-color: #f3f2f2;

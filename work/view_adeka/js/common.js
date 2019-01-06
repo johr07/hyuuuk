@@ -26,7 +26,29 @@ function dropDwonSel() {
     });
 };
 
+function tab() {
+    $(".tab_list + .tab_content_wrap > .tab_content").hide();
+    $(".tab_list + .tab_content_wrap > .tab_content:first-child").show();
+    $(".tab_list a").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".tab_list").find("a").removeClass("active");
+        $(this).addClass("active");
+        $(this).closest(".tab_list").next().children().hide();
+        var activeTab = $(this).attr("data-rel");
+        $("#" + activeTab).fadeIn();
+    });
+}
+
+function openDiv(id, callback) {
+    var thisDiv = $('#openClose_' + id);
+    var thisDiv_f = $('#openClose_' + id + '_f');
+    thisDiv.slideToggle();
+    thisDiv_f.slideToggle();
+};
+
+
 $(function () {
     dropDwon();
     dropDwonSel();
+    tab();
 });

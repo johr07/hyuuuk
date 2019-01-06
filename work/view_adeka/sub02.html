@@ -75,21 +75,20 @@
                 <a href="sub06.html">주소록</a>
                 <a href="sub03.html">인사관리</a>
                 <a href="#">ERP</a>
+                <div class="right_btnWrap">
+                    <a href="#">관리자</a>
+                    <a href="#">로그아웃</a>
+                </div>
             </div>
             <div class="container">
                 <div class="con1">
                     <a href="#" class="btn_1"></a>
                     <input type="text" placeholder="메일검색">
                     <a href="#" class="btn_3">검색</a>
-                    <div class="btn_4 dropDownSel">
-                        <div class="select">
+                    <div class="btn_4">
+                        <div class="btn" onclick="openDiv('name_1');">
                             <span>자세히</span>
                         </div>
-                        <input type="hidden" name="type">
-                        <ul class="dropdown-menu">
-                            <li id="type1">type1</li>
-                            <li id="type2">type2</li>
-                        </ul>
                     </div>
                     <div class="count">
                         <span class="orange">0</span>
@@ -98,8 +97,78 @@
                     <a href="#" class="btn_2"></a>
                     <span class="tx3">안 읽은 메일 모두 읽음 표시</span>
                 </div>
-                <div class="con2">
+                <div class="con2" id="openClose_name_1_f">
                     상세 검색을 원하시면 '자세히' 버튼을 클릭하여 상세검색을 해주세요.
+                </div>
+                <div class="con4 con_drop" id="openClose_name_1">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="fl">보낸이</div>
+                            <div class="fl"><input type="text"></div>
+                        </div>
+                        <div class="inner">
+                            <div class="fl">메일함</div>
+                            <div class="fl">
+                                <div class="btn_show dropDownSel">
+                                    <div class="select">
+                                        <span>받는메일함</span>
+                                    </div>
+                                    <input type="hidden" name="type">
+                                    <ul class="dropdown-menu">
+                                        <li id="type1">type1</li>
+                                        <li id="type2">type2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="fl">받는사람</div>
+                            <div class="fl">
+                                <div class="btn_show dropDownSel">
+                                    <div class="select">
+                                        <span>받는사람+참조</span>
+                                    </div>
+                                    <input type="hidden" name="type">
+                                    <ul class="dropdown-menu">
+                                        <li id="type1">type1</li>
+                                        <li id="type2">type2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fl">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="fl">내용</div>
+                            <div class="fl"><input type="text"></div>
+                        </div>
+                        <div class="inner">
+                            <div class="fl">기간</div>
+                            <div class="fl">
+                                <div class="btn_show dropDownSel">
+                                    <div class="select">
+                                        <span>전체선택</span>
+                                    </div>
+                                    <input type="hidden" name="type">
+                                    <ul class="dropdown-menu">
+                                        <li id="type1">type1</li>
+                                        <li id="type2">type2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fl"><input type="text"></div>
+                            <span class="fl">-</span>
+                            <div class="fl"><input type="text"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#">검색</a>
+                    </div>
                 </div>
                 <div class="con3">
                     <div class="btn_sel dropDown">
