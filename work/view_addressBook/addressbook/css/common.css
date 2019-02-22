@@ -1,0 +1,673 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,400,700&subset=korean');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+table {
+    padding: 0;
+    border-spacing: 0px;
+    border: 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0px;
+}
+
+
+.checkbox-custom,
+.radio-custom {
+    position: absolute;
+    display: none;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before,
+.radio-custom+.radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #333;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+    content: "\f111";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #ff4200;
+}
+
+.radio-custom+.radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.table table {
+    width: 100%;
+    text-align: center;
+}
+
+.table table th {
+    padding: 12px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.table table th:nth-child(2) i {
+    margin-left: 0;
+}
+
+.table table th i {
+    margin-left: 5px;
+}
+
+.table table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pagenavi {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.pagenavi .inner {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pagenavi a {
+    width: 30px;
+    margin: 0 2px;
+    line-height: 30px;
+    float: left;
+    border: 1px solid #ccc;
+    color: #999;
+}
+
+.pagenavi .tx {
+    border: none;
+}
+
+.pagenavi .on {
+    color: #333;
+}
+
+.pagenavi .tx.on {
+    color: #00a2b4;
+    font-weight: bold;
+}
+
+.drop+.down {
+    display: none;
+}
+
+.drop.on+.down {
+    display: block;
+}
+
+.layerWrap {
+    position: relative;
+}
+
+.openLayer+.layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    display: none;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.header {
+    height: 55px;
+    background-color: #00a2b4;
+    position: relative;
+    z-index: 1;
+}
+
+.header a {
+    line-height: 55px;
+    color: #fff;
+}
+
+.header .n1 {
+    padding: 0 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.header .searchBox {
+    border: 1px solid #ccc;
+    position: relative;
+    display: inline-block;
+}
+
+.header .searchBox input {
+    height: 29px;
+    padding-left: 15px;
+    padding-right: 30px;
+    line-height: 29px;
+    border: none;
+}
+
+.header .searchBox a {
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    color: #666;
+}
+.header .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .menu .hover {
+    padding: 0 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.header .menu .hover a+.hover_con {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px #999;
+}
+
+.header .menu .hover:hover a+.hover_con {
+    display: block;
+}
+
+.header .menu .hover a+.hover_con a {
+    padding: 0 20px;
+    color: #333;
+}
+
+.header .poa {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .poa a {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.header .poa a:nth-child(1) i {
+    margin-right: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.container>.left {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid #999;
+}
+
+.container.on>.left{
+    left: -250px;
+}
+.container>.left>* {
+    padding: 10px 15px;
+}
+
+.container>.left .con {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.container>.left .con1 {
+    padding: 20px 30px 10px;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.container>.left .con1 a {
+    width: 49.5%;
+    margin-right: 1%;
+    padding: 10px 0;
+    float: left;
+    text-align: center;
+    background-color: #00a2b4;
+    color: #fff;
+}
+
+.container>.left .con1 a:last-child {
+    margin-right: 0;
+}
+
+.container>.left .con2 {
+    padding: 10px 30px 20px;
+    overflow: hidden;
+}
+
+.container>.left .con2 a {
+    width: 49.5%;
+    margin-right: 1%;
+    padding: 10px 0;
+    float: left;
+    text-align: center;
+    color: #666;
+}
+
+.container>.left .con2 a:last-child {
+    margin-right: 0;
+}
+
+.container>.left .con2 a span {
+    display: block;
+}
+
+.container>.left .con2 a span:last-child {
+    margin-top: 10px;
+}
+
+.container>.left .con2 a.on {
+    color: #333;
+}
+
+.container>.left .tx1 {
+    padding: 10px 30px;
+    color: #666;
+}
+
+.container>.left .tx.on {
+    color: #00a2b4;
+    font-weight: bold;
+}
+
+.container>.left .tx:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+
+.container>.left .tx.trash span {
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+
+.container>.left .tx.trash span:hover {
+    color: #333;
+    transition: all .5s;
+}
+
+.container>.left .tx1 i {
+    margin-right: 5px;
+}
+
+.container>.left .tx2 {
+    padding: 8px 0 8px 45px;
+    color: #666;
+}
+
+.container>.left .tx2 i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.container>.right {
+    min-width: 700px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+}
+
+.container.on>.right {
+    left: 0;
+}
+
+.container>.right .flr {
+    float: right;
+}
+
+.container>.right .con {
+    padding: 20px;
+}
+
+.container>.right .con1 {
+    padding-bottom: 10px;
+}
+
+.container>.right .con1>* {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.container>.right .con1>*:nth-child(1) {
+    height: 33px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.container>.right .con1>*:nth-child(3) {
+    font-weight: bold;
+}
+
+.container>.right .con1>*:nth-child(3) span {
+    color: #00a2b4;
+}
+
+.container>.right .con1>*:nth-child(4) {
+    color: #999;
+}
+
+.container>.right .con2 {
+    padding-top: 10px;
+}
+
+.container>.right .con2>* {
+    margin-right: 10px;
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.container>.right .con2>*:nth-child(1) {
+    height: 33px;
+    padding: 7px;
+}
+
+.container>.right .con2>*:nth-child(1) label:before {
+    margin-right: 0;
+}
+
+.container>.right .con2>*:nth-child(2) i,
+.container>.right .con2>*:nth-child(5) i {
+    margin-right: 8px;
+}
+
+.container>.right .con2>*:nth-child(3) i,
+.container>.right .con2>*:nth-child(4) i {
+    margin-left: 8px;
+}
+
+.container>.right .con3 {
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+}
+
+.container>.right .con3 a {
+    padding: 0 8px;
+    display: inline-block;
+    border-right: 1px solid #999;
+    color: #999;
+}
+
+.container>.right .con3 a:first-child {
+    color: #333;
+}
+
+.container>.right .con3 a:first-child i {
+    margin-left: 5px;
+}
+
+.container>.right .con3 a:last-child {
+    border-right: none;
+}
+
+.container>.right .con3 a.on {
+    color: #00a2b4;
+    font-weight: bold;
+}
+
+.container>.right .con3 .poa {
+    float: right;
+}
+
+.container>.right .con3 .poa .layerWrap {
+    display: inline-block;
+}
+
+.container>.right .con3 .poa a {
+    border: none;
+}
+
+.container>.right .con4 {
+    padding: 0;
+    position: absolute;
+    top: 175px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.container>.right .con4 .inner {
+    height: 100%;
+}
+
+.container>.right .con4 .bottom {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 47px;
+    bottom: 60px;
+    right: 0;
+    left: 0;
+}
+
+.container>.right .con4 .pagenavi {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer {
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer .fll {
+    padding-left: 20px;
+    float: left;
+    overflow: hidden;
+}
+
+.footer .fll a {
+    margin-right: 15px;
+    float: left;
+    color: #999;
+}
+
+.footer .fll a span {
+    color: #00a2b4;
+}
+
+.footer .tac {
+    font-size: 12px;
+}
+
+#layer_move a {
+    padding: 8px 15px;
+}
+
+#layer_move a:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+
+#layer_move .inputWrap {
+    width: 290px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+#layer_move .inputWrap input {
+    width: 200px;
+    height: 32px;
+    margin-right: 10px;
+    padding: 0 15px;
+    line-height: 32px;
+    float: left;
+}
+
+#layer_move .inputWrap a {
+    float: left;
+}
+
+#layer_move .btn {
+    border: 1px solid #ccc;
+}
+
+#layer_move .bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+#layer_move .bottom .inner {
+    display: inline-block;
+}
+
+#layer_move .bottom .inner .btn {
+    display: inline-block;
+}
+
+#layer_move .radio {
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+#layer_move .radio:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+
+#layer_move .radio label {
+    width: 100%;
+    height: 34px;
+    float: left;
+    line-height: 34px;
+}
+
+#layer_export a {
+    padding: 8px 10px;
+}
+
+#layer_export a:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+#layer_sort a{
+    width: 100%;
+    padding: 8px 10px;
+    color: #333;
+}
+#layer_sort a:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+#layer_list{
+    left: auto;
+    right: 0;
+}
+#layer_list label{
+    width: 150px;
+    padding: 8px 10px;
+}
+#layer_list label:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+#layer_list .bottom{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+#layer_list .bottom .inner{
+    display: inline-block;
+}
+#layer_list .bottom a{
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+#layer_list .bottom a:hover{
+    background-color: #eee;
+    transition: all .5s;
+}

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+    <link href="https://use.fontawesome.com/6fac2730d4.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="#" class="n1">주소록</a>
+            <div class="searchBox">
+                <input type="text" placeholder="연락처를 검색">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="menu">
+                <div class="hover">
+                    <a href="#">menu1</a>
+                    <div class="hover_con">
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <a href="#">menu1</a>
+                    <div class="hover_con">
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <a href="#">menu1</a>
+                    <div class="hover_con">
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <a href="#">menu1</a>
+                    <div class="hover_con">
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                        <a href="#">depth</a>
+                    </div>
+                </div>
+            </div>
+            <div class="poa">
+                <a href="#"><i class="fas fa-user-circle"></i>사용자</a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div class="con con1">
+                    <a href="#"">연락처 추가</a>
+                    <a href=" #">그룹 추가</a>
+                </div>
+                <div class="con con2">
+                    <a href="#" class="on">
+                        <span><i class="fas fa-clock"></i></span>
+                        <span>최근등록</span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fas fa-star"></i></span>
+                        <span>중요</span>
+                    </a>
+                </div>
+                <ul class="con con3">
+                    <li>
+                        <a href="#" class="drop tx1 tx"><i class="fas fa-angle-down"></i>내 주소록</a>
+                        <div class="down">
+                            <a href="#" class="drop tx1 tx on"><i class="fas fa-address-book"></i>전체 연락처<span>72</span></a>
+                            <div class="down">
+                                <a href="#" class="tx2 tx"><i class="fas fa-minus"></i>ICE<span>3</span></a>
+                                <a href="#" class="tx2 tx"><i class="fas fa-minus"></i>Coworkers</a>
+                                <a href="#" class="tx2 tx"><i class="fas fa-minus"></i>Friends</a>
+                                <a href="#" class="tx2 tx"><i class="fas fa-minus"></i>Family</a>
+                            </div>
+                            <a href="#" class="tx1 tx trash">
+                                <i class="fas fa-trash-alt"></i>
+                                휴지통
+                                <span><i class="far fa-trash-alt"></i></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="con con4">
+                    <a href="#" class="tx1 tx"><i class="fas fa-question-circle"></i>이름없는 연락처</a>
+                </div>
+                <div class="con con5">
+                    <a href="#" class="tx1 tx"><i class="fas fa-sign-out-alt"></i>연락처 불러오기</a>
+                    <a href="#" class="tx1 tx"><i class="fas fa-sign-in-alt"></i>연락처 저장 &middot; 내보내기</a>
+                    <a href="#" class="tx1 tx"><i class="fas fa-brush"></i>중복연락처 정리하기</a>
+                </div>
+                <div class="con con6">
+                    <a href="#" class="tx1 tx"><i class="fas fa-lock"></i>암호 잠금</a>
+                    <a href="#" class="tx1 tx"><i class="fas fa-exclamation-circle"></i>폰을 분실하셨나요?</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="con con1">
+                    <a href="#" class="left_toggle"><i class="fas fa-bars"></i></a>
+                    <div>내 주소록 | <span>72</span></div>
+                    <a href="#" class="flr">[안내]웹 일부기능 종료안내</a>
+                </div>
+                <div class="con con2">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                        <label for="checkbox-1" class="checkbox-custom-label"></label>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-trash-alt"></i>삭제</a>
+                    </div>
+                    <div class="layerWrap">
+                        <a href="#" class="openLayer" onclick="openLayer('move');">이동<i class="fas fa-caret-down"></i></a>
+                        <div class="layer" id="layer_move">
+                            <div class="radio">
+                                <input id="radio-1" class="radio-custom" name="radio-1" type="radio" checked>
+                                <label for="radio-1" class="radio-custom-label">ICE</label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-2" class="radio-custom" name="radio-1" type="radio">
+                                <label for="radio-2" class="radio-custom-label">Friends</label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-3" class="radio-custom" name="radio-1" type="radio">
+                                <label for="radio-3" class="radio-custom-label">Family</label>
+                            </div>
+                            <div class="inputWrap">
+                                <input type="text" placeholder="새 그룹">
+                                <a href="#" class="btn">추가</a>
+                            </div>
+                            <div class="bottom">
+                                <div class="inner">
+                                    <a href="#" class="btn">이동</a>
+                                    <a href="#" class="btn">복사</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerWrap">
+                        <a href="#" class="openLayer" onclick="openLayer('export');">내보내기<i class="fas fa-caret-down"></i></a>
+                        <div class="layer" id="layer_export">
+                            <a href="#">내보내기</a>
+                            <a href="#">합치기</a>
+                        </div>
+                    </div>
+                    <a href="#"><i class="far fa-envelope"></i>메일</a>
+                    <a href="#" class="flr"><i class="fas fa-print"></i></a>
+                </div>
+                <div class="con con3">
+                    <a href="#" class="on">탭메뉴</a>
+                    <a href="#">주소록</a>
+                    <a href="#">사진첩</a>
+                    <a href="#">세대목록</a>
+                    <div class="poa">
+                        <div class="layerWrap">
+                            <a href="#" class="openLayer" onclick="openLayer('sort');">종류별 보기<i class="fas fa-caret-down"></i></a>
+                            <div class="layer" id="layer_sort">
+                                <a href="#">중요 연락처</a>
+                                <a href="#">전화번호</a>
+                                <a href="#">이메일</a>
+                                <a href="#">네이버 ID</a>
+                                <a href="#">회사 &middot; 소속</a>
+                                <a href="#">홈페이지</a>
+                            </div>
+                        </div>
+                        <div class="layerWrap">
+                            <a href="#" class="openLayer" onclick="openLayer('list');">목록노출<i class="fas fa-caret-down"></i></a>
+                            <div class="layer" id="layer_list">
+                                <div class="checkbox">
+                                    <input id="checkbox-9999" class="checkbox-custom" name="checkbox-99" type="checkbox"
+                                        checked>
+                                    <label for="checkbox-9999" class="checkbox-custom-label">닉네임</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox-9998" class="checkbox-custom" name="checkbox-99" type="checkbox">
+                                    <label for="checkbox-9998" class="checkbox-custom-label">전화번호</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox-9997" class="checkbox-custom" name="checkbox-99" type="checkbox">
+                                    <label for="checkbox-9997" class="checkbox-custom-label">이메일</label>
+                                </div>
+                                <div class="bottom">
+                                    <div class="inner">
+                                        <a href="#" class="btn">이동</a>
+                                        <a href="#" class="btn">복사</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con con4">
+                    <div class="inner">
+                        <div class="table top">
+                            <table>
+                                <colgroup>
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="10%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                </colgroup>
+                                <tr>
+                                    <th></th>
+                                    <th><i class="fas fa-star"></i></th>
+                                    <th>이름<i class="fas fa-arrow-down"></i></th>
+                                    <th>전화번호</th>
+                                    <th>이메일</th>
+                                    <th>회사 &middot; 소속<i class="fas fa-arrow-down"></i></th>
+                                    <th>부서명</th>
+                                    <th>직책</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table bottom">
+                            <table>
+                                <colgroup>
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="10%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                </colgroup>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                                        <label for="checkbox-2" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                        <label for="checkbox-3" class="checkbox-custom-label"></label>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-star"></i>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-1234</td>
+                                    <td>asd@naver.com</td>
+                                    <td>네이버</td>
+                                    <td>운영</td>
+                                    <td>팀장</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pagenavi">
+                            <div class="inner">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#" class="tx on">1</a>
+                                <a href="#" class="tx">2</a>
+                                <a href="#" class="tx">3</a>
+                                <a href="#" class="tx">4</a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                                <a href="#" class="on"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fll">
+                <a href="#">보관연락처 <span>71</span>/20000</a>
+                <a href="#">환경설정</a>
+                <a href="#">스킨설정</a>
+            </div>
+            <div class="tac">
+                Copyright © NAVER Corp. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
