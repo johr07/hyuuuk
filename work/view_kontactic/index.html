@@ -132,53 +132,57 @@
                 </div>
             </div>
             <div class="con3">
-                <div class="inner w1140 wow fadeIn" data-wow-duration="3s" data-wow-delay="0">
-                    <div class="owl-carousel owl-carousel_4">
-                        <div class="item">
-                            <div class="tx1">
-                                컨택틱의 체계적인 솔루션을 통해<br>
-                                아마존 진출 6개월만에 <span>매출성장률이 20% 증가</span>했습니다
-                            </div>
-                            <div class="fl_wrap">
-                                <div class="fl">
-                                    <div class="tx2">주문개수<span>22,876</span></div>
-                                    <div class="tx2">발생매출<span>$440,174</span></div>
-                                    <div class="tx2">월평균 성장률<span>+458%</span></div>
-                                    <div class="tx2">아마존 진출기간<span>6개월</span></div>
+                <div class="inner">
+                    <div class="w1140 wow fadeIn" data-wow-duration="3s" data-wow-delay="0">
+                        <div class="owl-carousel owl-carousel_4">
+                            <div class="item">
+                                <div class="tx1">
+                                    컨택틱의 체계적인 솔루션을 통해<br>
+                                    아마존 진출 6개월만에 <span>매출성장률이 20% 증가</span>했습니다
                                 </div>
-                                <div class="fl">
-                                    <img src="images/con3_1.gif" alt="">
+                                <div class="fl_wrap">
+                                    <div class="fl">
+                                        <div class="tx2">주문개수<span>22,876</span></div>
+                                        <div class="tx2">발생매출<span>$440,174</span></div>
+                                        <div class="tx2">월평균 성장률<span>+458%</span></div>
+                                        <div class="tx2">아마존 진출기간<span>6개월</span></div>
+                                    </div>
+                                    <div class="fl">
+                                        <img src="images/con3_1.gif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="tx1">
+                                    컨택틱의 체계적인 솔루션을 통해<br>
+                                    아마존 진출 6개월만에 <span>매출성장률이 20% 증가</span>했습니다
+                                </div>
+                                <div class="fl_wrap">
+                                    <div class="fl">
+                                        <div class="tx2">주문개수<span>22,876</span></div>
+                                        <div class="tx2">발생매출<span>$440,174</span></div>
+                                        <div class="tx2">월평균 성장률<span>+458%</span></div>
+                                        <div class="tx2">아마존 진출기간<span>6개월</span></div>
+                                    </div>
+                                    <div class="fl">
+                                        <img src="images/con3_1.gif" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="tx1">
-                                컨택틱의 체계적인 솔루션을 통해<br>
-                                아마존 진출 6개월만에 <span>매출성장률이 20% 증가</span>했습니다
-                            </div>
-                            <div class="fl_wrap">
-                                <div class="fl">
-                                    <div class="tx2">주문개수<span>22,876</span></div>
-                                    <div class="tx2">발생매출<span>$440,174</span></div>
-                                    <div class="tx2">월평균 성장률<span>+458%</span></div>
-                                    <div class="tx2">아마존 진출기간<span>6개월</span></div>
-                                </div>
-                                <div class="fl">
-                                    <img src="images/con3_1.gif" alt="">
-                                </div>
-                            </div>
-                        </div>
+                        <script>
+                            $('.owl-carousel_4').owlCarousel({
+                                items: 1,
+                                loop: false,
+                                nav: true,
+                                navText: ['‹', '›'],
+                                margin: 20,
+                                autoplay: true,
+                                autoplaySpeed: 3000,
+                                autoplayHoverPause: true
+                            })
+                        </script>
                     </div>
-                    <script>
-                        $('.owl-carousel_4').owlCarousel({
-                            items: 1,
-                            loop: true,
-                            margin: 20,
-                            autoplay: true,
-                            autoplaySpeed: 3000,
-                            autoplayHoverPause: true
-                        })
-                    </script>
                 </div>
             </div>
             <div class="con4">
@@ -259,12 +263,14 @@
                 </div>
                 <script>
                     $('.owl-carousel_2').owlCarousel({
-                        loop: true,
+                        loop: false,
                         margin: 10,
+                        //nav: true,
+                        navText: ['‹', '›'],
+                        autoHeight: true,
                         autoplay: true,
-                        slideTransition: 'linear',
-                        autoplayTimeout: 0,
-                        autoplaySpeed: 7000,
+                        autoplayTimeout: 2000,
+                        autoplaySpeed: 4000,
                         autoplayHoverPause: true,
                         responsive: {
                             0: {
