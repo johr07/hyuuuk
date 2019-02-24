@@ -544,3 +544,66 @@ select {
 .searchEmail .container .bottom_btnWrap{
     margin-top: 110px;
 }
+
+.stamp .container{
+    padding-bottom: 110px;
+    background-color: #f8f8f8;
+}
+.stamp .container .con1{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.stamp .container .con1 .tx1 {
+    margin-bottom: 15px;
+}
+.stamp .container .con1 .tx1 > .fl{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.stamp .container .con1 .tx1 > .fr span{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f06489;
+}
+.stamp .container .con1 .tx1 > .fr img{
+    width: 16px;
+    margin-left: 10px;
+}
+.stamp .container .con1 .tx2{
+    line-height: 20px;
+    font-size: 0.9em;
+}
+.stamp .container .con1 .tx2 span{
+    color: #f06489;
+    font-weight: bold;
+}
+.stamp .container .con2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.stamp .container .con2 img{
+    width: 13%;
+    margin: 5px 0.95%;
+}
+.stamp .container .con3{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.stamp .container .con3 .tx1{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.stamp .container .con3 .tx2{
+    font-size: 0.9em;
+    color: #757575;
+    line-height: 20px;
+}
