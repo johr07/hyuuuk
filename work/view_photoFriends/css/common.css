@@ -24,6 +24,7 @@ a {
 
 img {
     width: 100%;
+    vertical-align: top;
 }
 
 input {
@@ -139,6 +140,96 @@ select {
     font-size: 1.2em;
 }
 
+.main .con2 {
+    height: 140px;
+    padding: 0 14px;
+    background-image: url(../images/main_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.main .con2 .flWrap .fl:first-child {
+    width: 65%;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.main .con2 .flWrap .fl:first-child .tx1 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.main .con2 .flWrap .fl:first-child .tx2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.main .con2 .flWrap .fl:first-child .tx2 a {
+    width: 16px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.main .con2 .flWrap .fl:last-child {
+    width: 35%;
+    margin-top: 30px;
+}
+
+.main .con2 .flWrap .fl:last-child .tx1 span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.main .con2 .flWrap .fl:last-child .tx2 {
+    margin-top: 15px;
+}
+
+.main .con2 .flWrap .fl:last-child .tx2 span:nth-child(2){
+    padding: 0 5px;
+}
+.main .con2 .flWrap .fl:last-child .tx2 span:last-child{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.main .con3{
+}
+.main .con3 .flWrap .fl{
+    width: 50%;
+    height: 110px;
+    padding-top: 75px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top 20px;
+    font-weight: bold;
+}
+
+.main .con3 .flWrap .fl:nth-child(1){
+    background-image: url(../images/icon_3.png);
+    background-size: 43.5px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.main .con3 .flWrap .fl:nth-child(2){
+    background-image: url(../images/icon_4.png);
+    background-size: 45px;
+    background-position: center top 30px;
+    border-bottom: 1px solid #ddd;
+}
+.main .con3 .flWrap .fl:nth-child(3){
+    background-image: url(../images/icon_2.png);
+    background-size: 39.5px;
+    border-right: 1px solid #ddd;
+    background-position: center top 25px;
+}
+.main .con3 .flWrap .fl:nth-child(4){
+    background-image: url(../images/icon_1.png);
+    background-size: 42px;
+}
+.main .con3 .flWrap .fl span{
+    color: #f06489;
+    font-size: 1.1em;
+}
 .cover .container {
     height: 100vh;
     padding-top: 124px;
@@ -146,22 +237,26 @@ select {
     text-align: center;
 }
 
-.cover .container .visual{
+.cover .container .visual {
     width: 100%;
     padding: 0 14px;
 }
-.cover .container .visual img{
+
+.cover .container .visual img {
     max-width: 196px;
 }
-.cover .container .visual .tx1{
+
+.cover .container .visual .tx1 {
     margin-top: 30px;
     color: #fff;
     font-size: 1.2em;
 }
-.cover .container .btnWrap{
+
+.cover .container .btnWrap {
     margin-top: 100px;
 }
-.cover .container .btnWrap a{
+
+.cover .container .btnWrap a {
     height: 50px;
     margin: 0 18px;
     line-height: 50px;
@@ -170,11 +265,13 @@ select {
     color: #fff;
     font-weight: bold;
 }
-.cover .container .btnWrap a:first-child{
+
+.cover .container .btnWrap a:first-child {
     margin-bottom: 10px;
     background-color: #fff;
     color: #f06489;
 }
+
 .signUp .container {
     padding-top: 20px;
     padding-bottom: 30px;
