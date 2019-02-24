@@ -89,7 +89,7 @@ input[type=radio]:checked+label:before {
     content: "\f00c";
     font-family: 'FontAwesome';
     font-size: 10px;
-    color: #333;
+    color: #f06489;
 }
 
 input[type=radio]+label:before {
@@ -107,6 +107,50 @@ select {
     position: relative;
 }
 
+.inputWrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inputWrap input,
+.inputWrap label,
+.inputWrap span,
+.inputWrap select {
+    height: 20px;
+    line-height: 20px;
+}
+
+.inputWrap {
+    background-color: #fff;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.inputWrap>.fl {
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.inputWrap>.fl:nth-child(2) {
+    border-left: 1px solid #efefef;
+}
+
+.email .fl:first-child input {
+    width: 90%;
+}
+
+.email .fl:first-child span {
+    width: 10%;
+}
+
+.email .fl {
+    width: 50%;
+}
+
+.email .fl:last-child select {
+    width: 100%;
+}
+
 .flWrap {
     overflow: hidden;
 }
@@ -115,29 +159,56 @@ select {
     float: left;
 }
 
-.wrapper {
-    max-width: 720px;
-    width: 100%;
-    margin: 0 auto;
+.flWrap .fr {
+    float: right;
 }
 
-.header {
-    border-bottom: 1px solid #e4e4e4;
+.bottom_btnWrap {
+    margin: 0;
 }
 
-.header h1 {
-    font-size: 1.2em;
-    line-height: 48px;
-    text-align: center;
-}
-
-.footer>a {
+.bottom_btnWrap a {
     height: 46px;
     line-height: 46px;
     color: #fff;
     background-color: #f06489;
     text-align: center;
     font-size: 1.2em;
+}
+
+.wrapper {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .con0 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+
+.container .con0 h1 {
+    font-size: 1.2em;
+    line-height: 48px;
+    text-align: center;
+}
+.container .con0 .btn_back{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    text-align: center;
+}
+.container .con0 .btn_back i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .main .con2 {
@@ -160,6 +231,7 @@ select {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
+
 .main .con2 .flWrap .fl:first-child .tx2 {
     font-size: 1.3em;
     font-weight: bold;
@@ -185,16 +257,18 @@ select {
     margin-top: 15px;
 }
 
-.main .con2 .flWrap .fl:last-child .tx2 span:nth-child(2){
+.main .con2 .flWrap .fl:last-child .tx2 span:nth-child(2) {
     padding: 0 5px;
 }
-.main .con2 .flWrap .fl:last-child .tx2 span:last-child{
+
+.main .con2 .flWrap .fl:last-child .tx2 span:last-child {
     font-weight: bold;
     font-size: 1.3em;
 }
-.main .con3{
-}
-.main .con3 .flWrap .fl{
+
+.main .con3 {}
+
+.main .con3 .flWrap .fl {
     width: 50%;
     height: 110px;
     padding-top: 75px;
@@ -204,32 +278,37 @@ select {
     font-weight: bold;
 }
 
-.main .con3 .flWrap .fl:nth-child(1){
+.main .con3 .flWrap .fl:nth-child(1) {
     background-image: url(../images/icon_3.png);
     background-size: 43.5px;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.main .con3 .flWrap .fl:nth-child(2){
+
+.main .con3 .flWrap .fl:nth-child(2) {
     background-image: url(../images/icon_4.png);
     background-size: 45px;
     background-position: center top 30px;
     border-bottom: 1px solid #ddd;
 }
-.main .con3 .flWrap .fl:nth-child(3){
+
+.main .con3 .flWrap .fl:nth-child(3) {
     background-image: url(../images/icon_2.png);
     background-size: 39.5px;
     border-right: 1px solid #ddd;
     background-position: center top 25px;
 }
-.main .con3 .flWrap .fl:nth-child(4){
+
+.main .con3 .flWrap .fl:nth-child(4) {
     background-image: url(../images/icon_1.png);
     background-size: 42px;
 }
-.main .con3 .flWrap .fl span{
+
+.main .con3 .flWrap .fl span {
     color: #f06489;
     font-size: 1.1em;
 }
+
 .cover .container {
     height: 100vh;
     padding-top: 124px;
@@ -273,8 +352,6 @@ select {
 }
 
 .signUp .container {
-    padding-top: 20px;
-    padding-bottom: 30px;
     background-color: #f8f8f8;
 }
 
@@ -284,63 +361,8 @@ select {
 
 .signUp .container .con .tx1 {
     margin-bottom: 10px;
-    padding: 0 14px;
-}
-
-.signUp .container .con>.flWrap {
-    background-color: #fff;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
-}
-
-.signUp .container .con>.flWrap>.fl {
-    padding: 0 14px;
-}
-
-.signUp .container .con .flWrap input {
-    height: 42px;
-    line-height: 42px;
-}
-
-.signUp .container .con .flWrap label {
-    height: 42px;
-    line-height: 42px;
-}
-
-.signUp .container .con .flWrap select {
-    height: 42px;
-    line-height: 42px;
-}
-
-.signUp .container .con .flWrap a {
-    height: 42px;
-    line-height: 42px;
-}
-
-.signUp .container .con .flWrap span {
-    width: 20%;
-    height: 42px;
-    line-height: 42px;
-}
-
-.signUp .container .con>.flWrap>.fl:nth-child(2) {
-    border-left: 1px solid #efefef;
-}
-
-.signUp .container .con1>.flWrap>.fl {
-    width: 50%;
-}
-
-.signUp .container .con1>.flWrap>.fl:first-child input {
-    width: 90%;
-}
-
-.signUp .container .con1>.flWrap>.fl:first-child span {
-    width: 10%;
-}
-
-.signUp .container .con1>.flWrap>.fl:last-child select {
-    width: 100%;
+    padding-right: 14px;
+    padding-left: 14px;
 }
 
 .signUp .container .con2>.flWrap>.fl:first-child {
@@ -359,22 +381,20 @@ select {
     width: 100%;
 }
 
-.signUp .container .con4>.flWrap>.fl {
+.signUp .container .con4>.flWrap {
     position: relative;
     padding-right: 40px;
 }
 
-.signUp .container .con4>.flWrap>.fl a {
-    height: auto;
-    padding: 2px 5px;
+.signUp .container .con4>.flWrap>a.fl {
+    padding: 3px 5px;
     color: #fff;
     background-color: #f06489;
-    line-height: normal;
     border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
+}
+
+.signUp .container .con5 {
+    padding-bottom: 30px;
 }
 
 .signUp .container .con5 .tx2 {
@@ -382,4 +402,145 @@ select {
     color: #7d7d7d;
     font-size: 0.9em;
     line-height: 20px;
+}
+
+.login .container .visual {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: #f06489;
+    text-align: center;
+}
+
+.login .container .visual img {
+    max-width: 196px;
+}
+
+.login .container {
+    background-color: #f8f8f8;
+}
+
+.login .container .con {
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.login .container .con1 {
+    padding-top: 20px;
+}
+
+.login .container .con1 .inputWrap {
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+}
+
+.login .container .con1 .email {
+    margin-bottom: 8px;
+}
+
+.login .container .con1 .password {
+    position: relative;
+}
+
+.login .container .con1 .password a {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translate(0, -50%);
+    color: #f06489;
+    text-decoration: underline;
+}
+
+.login .container .con2 {
+    margin-top: 14px;
+    margin-bottom: 50px;
+    color: #757575;
+}
+
+.login .container .con2 .flWrap .fl {
+    margin-right: 20px;
+}
+
+.login .container .con3 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.login .container .con3 .fl {
+    color: #757575;
+}
+
+.login .container .con3 span.fl {
+    padding: 0 5px;
+}
+.searchEmail .container{
+    background-color: #f8f8f8;
+}
+.searchEmail .container .con .tx1{
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.searchEmail .container .con .tx2{
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.searchEmail .container .con1{
+    padding-bottom: 40px;
+}
+.searchEmail .container .con1 .flWrap{
+    margin-top: 20px;
+}
+.searchEmail .container .con1 .flWrap .fl{
+    width: 100%;
+    background-color: #fff;
+}
+.searchEmail .container .con1 .flWrap .fl label{
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.searchEmail .container .con1 .flWrap .fl:nth-child(1) label{
+    border-top: 1px solid #ddd;
+}
+.searchEmail .container .con1 .flWrap .fl label::before{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translate(0,-50%);
+}
+.searchEmail .container .con1 .flWrap .fl label > div{
+    margin-left: 50px;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    color: #757575;
+}
+.searchEmail .container .con1 .flWrap .fl:nth-child(1) label > div{
+    background-image: url(../images/icon_6.png);
+    background-size: 14px;
+}
+.searchEmail .container .con1 .flWrap .fl:nth-child(2) label > div{
+    background-image: url(../images/icon_7.png);
+    background-size: 25px;
+}
+.searchEmail .container .con1 .flWrap .fl label >div span{
+    display: block;
+}
+.searchEmail .container .con1 .flWrap .fl label >div span:nth-child(1){
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.searchEmail .container .bottom_btnWrap{
+    margin-top: 110px;
 }

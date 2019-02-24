@@ -7,37 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo Friends</title>
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="js/common.js"></script>
     <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
     <div class="wrapper signUp">
-        <div class="header">
-            <h1>회원가입</h1>
-        </div>
         <div class="container">
+            <div class="con0">
+                <h1>회원가입</h1>
+            </div>
             <div class="con1 con">
                 <div class="tx1">이메일을 입력해주세요.</div>
-                <div class="flWrap">
+                <div class="flWrap email inputWrap">
                     <div class="fl flWrap">
                         <input type="text" class="fl" placeholder="이메일">
                         <span class="fl">@</span>
                     </div>
                     <div class="fl">
                         <select name="" id="">
-                            <option value="">선택</option>
-                            <option value="">선택</option>
-                            <option value="">선택</option>
-                            <option value="">선택</option>
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">gmail.com</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="con2 con">
                 <div class="tx1">생년월일을 입력해주세요.</div>
-                <div class="flWrap">
+                <div class="flWrap inputWrap">
                     <div class="fl">
                         <input type="date" placeholder="yyyy-mm-dd">
                     </div>
@@ -55,7 +56,7 @@
             </div>
             <div class="con3 con">
                 <div class="tx1">휴대폰번호를 입력해주세요.</div>
-                <div class="flWrap">
+                <div class="flWrap inputWrap">
                     <div class="fl">
                         <input type="text">
                     </div>
@@ -63,28 +64,24 @@
             </div>
             <div class="con4 con">
                 <div class="tx1">정책 약관 및 동의</div>
-                <div class="flWrap">
-                    <div class="fl flWrap">
-                        <input type="checkbox" id="input1">
-                        <label for="input1" class="fl">포토프렌즈 서비스 이용약관 동의</label>
-                        <a href="#" class="fl">보기</a>
-                    </div>
+                <div class="flWrap inputWrap">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1" class="fl">포토프렌즈 서비스 이용약관 동의</label>
+                    <a href="#" class="fl">보기</a>
                 </div>
-                <div class="flWrap">
-                    <div class="fl flWrap">
-                        <input type="checkbox" id="input2">
-                        <label for="input2" class="fl">개인정보 수집 및 이용약관 동의</label>
-                        <a href="#" class="fl">보기</a>
-                    </div>
+                <div class="flWrap inputWrap">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2" class="fl">개인정보 수집 및 이용약관 동의</label>
+                    <a href="#" class="fl">보기</a>
                 </div>
             </div>
             <div class="con5 con">
                 <div class="tx2">※ 이메일은 로그인 시, 아이디로 사용됩니다.</div>
                 <div class="tx2">※ 회원가입을 하시면 포토프렌즈의 이용약관을 동의한것으로 간주합니다.</div>
             </div>
-        </div>
-        <div class="footer">
-            <a href="#">가입하기</a>
+            <div class="bottom_btnWrap">
+                <a href="#">가입하기</a>
+            </div>
         </div>
     </div>
 </body>
