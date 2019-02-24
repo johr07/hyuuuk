@@ -1,0 +1,211 @@
+@import 'reset.css';
+@import url('https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: 'kopubdotum';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'kopubdotum';
+    font-size: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #333;
+}
+input::placeholder{
+    color: #757575;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  display: none;
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type=checkbox] + label:before,
+input[type=radio] + label:before {
+  content: '';
+  background: #fff;
+  border: 1px solid #ededed;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input[type=checkbox]:checked + label:before,
+input[type=radio]:checked + label:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  color: #333;
+}
+input[type=radio] + label:before {
+  border-radius: 50%;
+}
+
+select {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'kopubdotum';
+    font-size: 1em;
+    appearance: none;
+    color: #333;
+    position: relative;
+}
+
+.flWrap {
+    overflow: hidden;
+}
+
+.flWrap .fl {
+    float: left;
+}
+
+.wrapper {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header h1 {
+    font-size: 1.2em;
+    line-height: 48px;
+    text-align: center;
+}
+.footer > a{
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    background-color: #f06489;
+    text-align: center;
+    font-size: 1.2em;
+}
+.sub01 .container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #f8f8f8;
+}
+
+.sub01 .container .con {
+    margin: 20px 0;
+}
+
+.sub01 .container .con .tx1 {
+    margin-bottom: 10px;
+    padding: 0 14px;
+}
+
+.sub01 .container .con>.flWrap {
+    background-color: #fff;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.sub01 .container .con > .flWrap > .fl{
+    padding: 0 14px;
+}
+.sub01 .container .con .flWrap input {
+    height: 42px;
+    line-height: 42px;
+}
+
+.sub01 .container .con .flWrap label{
+    height: 42px;
+    line-height: 42px;
+}
+.sub01 .container .con .flWrap select {
+    height: 42px;
+    line-height: 42px;
+}
+
+.sub01 .container .con .flWrap a {
+    height: 42px;
+    line-height: 42px;
+}
+.sub01 .container .con .flWrap span {
+    width: 20%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.sub01 .container .con1>.flWrap>.fl {
+    width: 50%;
+}
+
+.sub01 .container .con1>.flWrap>.fl:nth-child(2) {
+    border-right: 1px solid #efefef;
+}
+
+.sub01 .container .con1>.flWrap>.fl:first-child input {
+    width: 90%;
+}
+
+.sub01 .container .con1>.flWrap>.fl:first-child span {
+    width: 10%;
+}
+
+.sub01 .container .con1>.flWrap>.fl:last-child select {
+    width: 100%;
+}
+.sub01 .container .con2>.flWrap>.fl:last-child .fl:first-child{
+    margin-right: 15px;
+}
+.sub01 .container .con3>.flWrap>.fl{
+    width: 100%;
+}
+.sub01 .container .con5 .tx2{
+    padding: 0 18px;
+    color: #7d7d7d;
+    font-size: 0.9em;
+    line-height: 20px;
+}

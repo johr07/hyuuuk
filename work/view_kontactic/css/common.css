@@ -547,6 +547,9 @@ a {
         display: none;
     }
 
+    .container .main_visual .inner {
+        margin: 0;
+    }
     .container .con1 {
         margin-top: 20px;
         border-top: 1px solid #eee;
