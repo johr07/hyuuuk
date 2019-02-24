@@ -178,12 +178,12 @@ select {
     line-height: 42px;
 }
 
-.sub01 .container .con1>.flWrap>.fl {
-    width: 50%;
+.sub01 .container .con>.flWrap>.fl:nth-child(2) {
+    border-left: 1px solid #efefef;
 }
 
-.sub01 .container .con1>.flWrap>.fl:nth-child(2) {
-    border-right: 1px solid #efefef;
+.sub01 .container .con1>.flWrap>.fl {
+    width: 50%;
 }
 
 .sub01 .container .con1>.flWrap>.fl:first-child input {
@@ -197,6 +197,13 @@ select {
 .sub01 .container .con1>.flWrap>.fl:last-child select {
     width: 100%;
 }
+.sub01 .container .con2>.flWrap>.fl:first-child {
+    width: 60%;
+}
+.sub01 .container .con2>.flWrap>.fl:last-child {
+    width: 40%;
+}
+
 .sub01 .container .con2>.flWrap>.fl:last-child .fl:first-child{
     margin-right: 15px;
 }
