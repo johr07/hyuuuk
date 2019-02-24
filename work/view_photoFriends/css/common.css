@@ -12,6 +12,11 @@ body {
     font-family: 'kopubdotum';
 }
 
+html.on,
+body.on {
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -762,6 +767,14 @@ select {
     color: #757575;
 }
 
-.coupon_3 .container .con2 .tx1:last-child {
+.coupon_3 .container .con2 .tx1:nth-child(3) {
     margin-top: 10px;
+}
+
+.coupon_4 .container .con1 .fl{
+    width: 100%;
+    border: 1px solid #f06489;
+}
+.coupon_4 .container .con1 .fl input{
+    padding: 0 14px;
 }
