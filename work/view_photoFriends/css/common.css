@@ -195,20 +195,22 @@ select {
     line-height: 48px;
     text-align: center;
 }
-.container .con0 .btn_back{
+
+.container .con0 .btn_back {
     width: 30px;
     height: 30px;
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     text-align: center;
 }
-.container .con0 .btn_back i{
+
+.container .con0 .btn_back i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .main .con2 {
@@ -381,16 +383,17 @@ select {
     width: 100%;
 }
 
-.signUp .container .con4>.flWrap {
+.signUp .container .con4>.inputWrap {
     position: relative;
     padding-right: 40px;
 }
 
-.signUp .container .con4>.flWrap>a.fl {
+.signUp .container .con4>.inputWrap>a {
     padding: 3px 5px;
     color: #fff;
     background-color: #f06489;
     border-radius: 4px;
+    display: inline-block;
 }
 
 .signUp .container .con5 {
@@ -472,41 +475,50 @@ select {
 .login .container .con3 span.fl {
     padding: 0 5px;
 }
-.searchEmail .container{
+
+.searchEmail .container {
     background-color: #f8f8f8;
 }
-.searchEmail .container .con .tx1{
+
+.searchEmail .container .con .tx1 {
     padding-left: 14px;
     padding-right: 14px;
     font-size: 1.1em;
     font-weight: bold;
 }
-.searchEmail .container .con .tx2{
+
+.searchEmail .container .con .tx2 {
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.searchEmail .container .con1{
+
+.searchEmail .container .con1 {
     padding-bottom: 40px;
 }
-.searchEmail .container .con1 .flWrap{
+
+.searchEmail .container .con1 .flWrap {
     margin-top: 20px;
 }
-.searchEmail .container .con1 .flWrap .fl{
+
+.searchEmail .container .con1 .flWrap .fl {
     width: 100%;
     background-color: #fff;
 }
-.searchEmail .container .con1 .flWrap .fl label{
+
+.searchEmail .container .con1 .flWrap .fl label {
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
     border-bottom: 1px solid #ddd;
 }
-.searchEmail .container .con1 .flWrap .fl:nth-child(1) label{
+
+.searchEmail .container .con1 .flWrap .fl:nth-child(1) label {
     border-top: 1px solid #ddd;
 }
-.searchEmail .container .con1 .flWrap .fl label::before{
+
+.searchEmail .container .con1 .flWrap .fl label::before {
     width: 20px;
     height: 20px;
     font-size: 20px;
@@ -514,9 +526,10 @@ select {
     position: absolute;
     top: 50%;
     left: 14px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
-.searchEmail .container .con1 .flWrap .fl label > div{
+
+.searchEmail .container .con1 .flWrap .fl label>div {
     margin-left: 50px;
     padding-left: 35px;
     padding-top: 20px;
@@ -525,58 +538,71 @@ select {
     background-position: 0 center;
     color: #757575;
 }
-.searchEmail .container .con1 .flWrap .fl:nth-child(1) label > div{
+
+.searchEmail .container .con1 .flWrap .fl:nth-child(1) label>div {
     background-image: url(../images/icon_6.png);
     background-size: 14px;
 }
-.searchEmail .container .con1 .flWrap .fl:nth-child(2) label > div{
+
+.searchEmail .container .con1 .flWrap .fl:nth-child(2) label>div {
     background-image: url(../images/icon_7.png);
     background-size: 25px;
 }
-.searchEmail .container .con1 .flWrap .fl label >div span{
+
+.searchEmail .container .con1 .flWrap .fl label>div span {
     display: block;
 }
-.searchEmail .container .con1 .flWrap .fl label >div span:nth-child(1){
+
+.searchEmail .container .con1 .flWrap .fl label>div span:nth-child(1) {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.1em;
 }
-.searchEmail .container .bottom_btnWrap{
-    margin-top: 110px;
+
+.searchEmail .container .bottom_btnWrap {
+    margin-top: 50px;
 }
 
-.stamp .container{
-    padding-bottom: 110px;
+.stamp .container {
+    padding-bottom: 50px;
     background-color: #f8f8f8;
 }
-.stamp .container .con1{
+
+.stamp .container .con1 {
     padding-left: 14px;
     padding-right: 14px;
 }
+
 .stamp .container .con1 .tx1 {
     margin-bottom: 15px;
 }
-.stamp .container .con1 .tx1 > .fl{
+
+.stamp .container .con1 .tx1>.fl {
     font-size: 1.25em;
     font-weight: bold;
 }
-.stamp .container .con1 .tx1 > .fr span{
+
+.stamp .container .con1 .tx1>.fr span {
     font-size: 1.3em;
     font-weight: bold;
     color: #f06489;
 }
-.stamp .container .con1 .tx1 > .fr img{
+
+.stamp .container .con1 .tx1>.fr img {
     width: 16px;
     margin-left: 10px;
 }
-.stamp .container .con1 .tx2{
+
+.stamp .container .con1 .tx2 {
     line-height: 20px;
     font-size: 0.9em;
 }
-.stamp .container .con1 .tx2 span{
+
+.stamp .container .con1 .tx2 span {
     color: #f06489;
     font-weight: bold;
 }
+
 .stamp .container .con2 {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -589,21 +615,153 @@ select {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.stamp .container .con2 img{
+
+.stamp .container .con2 img {
     width: 13%;
     margin: 5px 0.95%;
 }
-.stamp .container .con3{
+
+.stamp .container .con3 {
     padding-left: 14px;
     padding-right: 14px;
 }
-.stamp .container .con3 .tx1{
+
+.stamp .container .con3 .tx1 {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.1em;
 }
-.stamp .container .con3 .tx2{
+
+.stamp .container .con3 .tx2 {
     font-size: 0.9em;
     color: #757575;
     line-height: 20px;
+}
+
+.coupon .container .con0 {
+    margin-bottom: 0;
+}
+
+.coupon .container .con1 a {
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    color: #757575;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.coupon .container .con1 a:nth-child(1) {
+    border-right: 1px solid #ddd;
+}
+
+.coupon .container .con1 a.on {
+    color: #f06489;
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.coupon .container .con2 {
+    border-bottom: 1px solid #ddd;
+}
+
+.coupon .container .con2 .fl {
+    width: 50%;
+    text-align: center;
+}
+
+.coupon .container .con2 .fl label {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.coupon .container .con3 .flWrap {
+    padding-left: 14px;
+    padding-right: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.coupon .container .con3 .fl {
+    width: 50%;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.coupon .container .con3 .fl img {
+    max-width: 142px;
+}
+
+.coupon .container .con4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.coupon .container .con4 .tx1 {
+    color: #757575;
+    font-size: 0.9em;
+    line-height: 20px;
+}
+
+.coupon .container .bottom_btnWrap {
+    margin-top: 20px;
+    padding-top: 30px;
+    position: relative;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, .2)
+}
+
+.coupon .container .bottom_btnWrap i {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: #f06489;
+}
+
+.coupon_2 .container .bottom_btnWrap,
+.coupon_3 .container .bottom_btnWrap {
+    padding-top: 0;
+    box-shadow: none;
+    border-top: none;
+}
+
+.coupon_3 .container .con1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.coupon_3 .container .con1 .tx1 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.coupon_3 .container .con1 .fl {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.coupon_3 .container .con2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.coupon_3 .container .con2 .tx1 {
+    line-height: 20px;
+    font-size: 0.9em;
+    color: #757575;
+}
+
+.coupon_3 .container .con2 .tx1:last-child {
+    margin-top: 10px;
 }
