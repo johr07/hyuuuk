@@ -3,6 +3,7 @@ $(function () {
     clickOn();
     owlInitialize();
 });
+
 $(window).resize(function () {
     owlInitialize();
 });
@@ -33,14 +34,20 @@ function clickOn() {
 };
 
 function owlInitialize() {
-    if ($(window).width() < 769) {
+    var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+
+    if (isMobile) {
         $('.tag_wrap').addClass("owl-carousel").addClass("owl-carousel_1");
         $('.banner_wrap').addClass("owl-carousel").addClass("owl-carousel_2");
-        $('.owl-carousel').owlCarousel({
-            margin: 0,
+        $('.owl-carousel_1').owlCarousel({
             autoWidth: true,
-            dots: false,
-            autoWidth: true
+            margin: 0,
+            dots: false
+        });
+        $('.owl-carousel_2').owlCarousel({
+            autoWidth: true,
+            margin: 0,
+            dots: false
         });
     } else {
         $('.owl-carousel').owlCarousel('destroy');

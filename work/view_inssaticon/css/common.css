@@ -169,7 +169,7 @@ img {
     right: 0;
 }
 
-.container .con2 .banner_wrap a:first-child {
+.container .con2 .banner_wrap a {
     margin-bottom: 8px;
 }
 
@@ -512,6 +512,7 @@ img {
     .header .language {
         right: 8px;
         font-size: 10px;
+        z-index: 11;
     }
 
     .header .language .tx {
@@ -525,16 +526,16 @@ img {
         background-position: right 5px center;
     }
 
-    .container {
-        padding-top: 90px;
-    }
-
     .container .con1 {
         width: 100%;
+        margin-bottom: 0;
+        padding-top: 90px;
+        padding-bottom: 70px;
     }
 
     .container .con1 .tx1 {
         margin-top: 0;
+        margin-bottom: 0;
         font-size: 24px;
         line-height: 32px;
     }
@@ -589,7 +590,7 @@ img {
         position: absolute;
         top: 15px;
         left: 8px;
-        right: 8px;
+        right: 0;
     }
 
     .container .con2 .banner_wrap a {
@@ -606,6 +607,10 @@ img {
     }
 
     .container .con2 .tag_wrap {
+        position: absolute;
+        top: 160px;
+        left: 8px;
+        right: 0;
         padding-right: 0;
     }
 
@@ -620,6 +625,7 @@ img {
         font-weight: bold;
     }
     .container .con3 .con .click_copy{
+        margin-bottom: 0;
         padding: 0;
         border-bottom: 1px solid #e1e1e1;
     }
