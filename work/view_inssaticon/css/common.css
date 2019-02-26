@@ -1,0 +1,671 @@
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean';
+
+@font-face {
+    font-family: 'Jalnan';
+    src: url('../fonts/JalnanOTF.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    color: #404040;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.clickOn {
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.clickOn.on {
+    overflow: visible;
+}
+
+
+.clickOn .tx {
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 46px;
+    background-color: rgba(0, 0, 0, .6);
+    border: 1px solid #cfcfcf;
+    border-top: none;
+    color: #fff;
+}
+
+.clickOn>.tx {
+    background-image: url(../images/icon3.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border-top: 1px solid #cfcfcf;
+    cursor: pointer;
+}
+
+.clickOn .down {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.header {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../images/visual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.header .inner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 39px;
+    position: relative;
+}
+
+.header .tx1 {
+    margin-bottom: 10px;
+    font-family: 'Jalnan';
+    font-size: 48px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.header .tx2 {
+    margin-bottom: 21px;
+    font-family: 'Jalnan';
+    font-size: 24px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.header .btn_wrap {
+    overflow: hidden;
+}
+
+.header .btn_wrap a {
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.header .language {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .con1 {
+    max-width: 750px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .con1 .tx1 {
+    margin-top: 47px;
+    margin-bottom: 10px;
+    font-family: 'Jalnan';
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.container .con1 .tx2 {
+    color: #777;
+    line-height: 20px;
+}
+
+.container .con1 .tx2 a {
+    color: #4d11a3;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.container .con1 .tx2 .close {
+    display: none;
+}
+
+.container .con2 {
+    max-width: 220px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container .con2 .banner_wrap a:first-child {
+    margin-bottom: 8px;
+}
+
+.container .con2 .tag_wrap {
+    margin-top: 14px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.container .con2 .tag_wrap a {
+    margin-bottom: 8px;
+    margin-right: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    background-color: #c3b4db;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container .con2 .tag_wrap a.icon {
+    padding-left: 48px;
+    background-image: url(../images/icon1.png);
+    background-repeat: no-repeat;
+    background-position: 22px center;
+}
+
+.container .con2 .tag_wrap a.pink {
+    background-color: #eb008b;
+}
+
+.container .con2 .tag_wrap a.purple {
+    background-color: #813afa;
+}
+
+.container .con2 .sns_wrap {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.container .con2 .sns_wrap a {
+    margin-right: 8px;
+    float: left;
+}
+
+.container .con2 .tx1 {
+    margin-bottom: 30px;
+    font-size: 9px;
+    color: #999;
+}
+
+.container .con2 .tx1 a {
+    color: #e5256d;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.container .con3 {
+    max-width: 750px;
+    width: 100%;
+}
+
+.container .con3 .con {
+    margin-bottom: 30px;
+}
+
+.container .con3 .con .tx1 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+.container .con3 .con .tx1::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: #813afa;
+    border-radius: 100%;
+}
+
+.container .con3 .con>.inner {
+    max-width: 750px;
+    width: 100%;
+    font-size: 0;
+}
+
+.container .con3 .con .click_copy {
+    margin-bottom: 10px;
+    padding: 0 5px;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+}
+
+.container .con3 .con .click_copy .inner {
+    border: 1px solid #fff;
+}
+
+.container .con3 .con .click_copy .inner:hover {
+    border: 1px solid #4d11a3;
+}
+
+.container .con3 .con .click_copy .success {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    left: 5px;
+    background-color: rgba(247, 239, 248, .6);
+    transition: all .5;
+    border: 1px solid #4d11a3;
+}
+
+.container .con3 .con .click_copy .success b {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    background-color: #4d11a3;
+    color: #fff;
+}
+
+.container .con3 .con .click_copy .bd_inner {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #979797;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.container .con3 .con .click_copy:hover .bd_inner {
+    border: 1px solid #4d11a3;
+}
+
+.container .con3 .con .click_copy.new::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background-image: url(../images/icon11.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.container .con3 .con .click_copy.w1 {
+    width: 100%;
+}
+
+.container .con3 .con .click_copy.w2 {
+    width: 50%;
+}
+
+.container .con3 .con .click_copy.w3 {
+    width: 33.33333333333%;
+}
+
+.container .con4 {
+    max-width: 750px;
+    width: 100%;
+    padding-top: 32px;
+    position: relative;
+}
+
+.container .con4 .con {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .con4 .select_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .con4 .select_box .tx {
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-top: none;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.container .con4 .select_box>.tx {
+    background-image: url(../images/icon3_c.png);
+    border-top: 1px solid #cfcfcf;
+}
+
+.container .con4 .con .tx1 {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.container .con4 .con .tx2 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #565a5c;
+}
+
+.container .con4 .con .btn_bottom {
+    overflow: hidden;
+}
+
+.container .con4 .con .btn_bottom .fl {
+    float: left;
+    overflow: hidden;
+}
+
+.container .con4 .con .btn_bottom .fl a {
+    margin-right: 30px;
+    float: left;
+    line-height: 20px;
+}
+
+.container .con4 .con .btn_bottom .fl img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.container .con4 .btn_bottom .fr {
+    float: right;
+    overflow: hidden;
+}
+
+.container .con4 .con .btn_bottom .fr>* {
+    margin-left: 20px;
+    float: left;
+    line-height: 20px;
+}
+
+.container .con4 .con .btn_bottom .fr img {
+    width: 20px;
+}
+
+.container .con5 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container .con5 .pageNavi {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container .con5 .pageNavi a {
+    float: left;
+    line-height: 44px;
+}
+
+.container .con5 .pageNavi a.num {
+    padding: 0 7px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.container .con5 .pageNavi a.num.on {
+    color: #eb008b;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    .container .con1 {
+        width: 73%;
+    }
+
+    .container .con2 {
+        width: 22%;
+    }
+
+    .container .con3 {
+        width: 73%;
+    }
+
+    .container .con3 .con .inner .click_copy.w2 {
+        width: 100%;
+    }
+
+    .container .con3 .con .inner .click_copy.w3 {
+        width: 100%;
+    }
+
+    .container .con4 {
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding-top: 80px;
+    }
+
+    .header .inner {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header .tx1 {
+        font-size: 20px;
+    }
+
+    .header .tx2 {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .header .btn_wrap {
+        display: none;
+    }
+
+    .header .language {
+        right: 8px;
+        font-size: 10px;
+    }
+
+    .header .language .tx {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+
+    .header .language>.tx {
+        background-position: right 5px center;
+    }
+
+    .container {
+        padding-top: 90px;
+    }
+
+    .container .con1 {
+        width: 100%;
+    }
+
+    .container .con1 .tx1 {
+        margin-top: 0;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .container .con1 .tx1 span {
+        display: block;
+    }
+
+    .container .con1 .tx2 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .container .con1 .tx2 span {
+        display: block;
+    }
+
+    .container .con1 .fix_top {
+        padding: 20px 25px 20px 65px;
+        font-size: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        line-height: 20px;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        background-image: url(../images/icon12.png);
+        background-repeat: no-repeat;
+        background-position: 16px center;
+    }
+
+    .container .con1 .fix_top span {
+        display: block;
+    }
+
+    .container .con1 .fix_top .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .container .con2 {
+        max-width: 100%;
+        width: 100%;
+        position: static;
+    }
+
+    .container .con2 .banner_wrap {
+        position: absolute;
+        top: 15px;
+        left: 8px;
+        right: 8px;
+    }
+
+    .container .con2 .banner_wrap a {
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+
+    .container .con2 .sns_wrap {
+        display: none;
+    }
+
+    .container .con2 .tx1 {
+        display: none;
+    }
+
+    .container .con2 .tag_wrap {
+        padding-right: 0;
+    }
+
+    .container .con3 {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container .con3 .con .tx1 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .container .con3 .con .click_copy{
+        padding: 0;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .container .con3 .con .click_copy.new::after {
+        top: 0;
+        left: 0;
+    }
+
+    .container .con3 .con .click_copy .inner:hover {
+        border: none;
+    }
+
+    .container .con3 .con .click_copy .inner {
+        border: none;
+    }
+
+    .container .con3 .con .click_copy .bd_inner {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        border: none;
+    }
+
+    .container .con3 .con .click_copy:hover .bd_inner {
+        border: none;
+    }
+    .container .con3 .con .click_copy .success {
+        right: 0;
+        left: 0;
+        border: none;
+    }
+
+    .container .con4 {
+        max-width: 100%;
+        width: 100%;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .container .con4 .select_box {
+        top: 10px;
+        right: 8px;
+        left: auto;
+    }
+
+    .container .con4 .con .tx2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
