@@ -31,6 +31,7 @@ img {
     width: 100%;
     vertical-align: top;
 }
+
 textarea,
 input {
     width: 100%;
@@ -45,7 +46,7 @@ input {
     color: #333;
 }
 
-textarea,
+textarea::placeholder,
 input::placeholder {
     color: #757575;
 }
@@ -195,6 +196,7 @@ select {
 .tab_wrap a:nth-child(1) {
     border-right: 1px solid #ddd;
 }
+
 .tab_wrap a.on {
     color: #f06489;
     font-weight: bold;
@@ -773,20 +775,24 @@ select {
     margin-top: 10px;
 }
 
-.coupon_4 .container .con1 .fl{
+.coupon_4 .container .con1 .fl {
     width: 100%;
     border: 1px solid #f06489;
 }
-.coupon_4 .container .con1 .fl input{
+
+.coupon_4 .container .con1 .fl input {
     padding: 0 14px;
 }
-.gift .container .con0{
+
+.gift .container .con0 {
     margin-bottom: 0;
 }
-.gift .container .tab_wrap a.new{
+
+.gift .container .tab_wrap a.new {
     position: relative;
 }
-.gift .container .tab_wrap a.new::after{
+
+.gift .container .tab_wrap a.new::after {
     content: "";
     width: 16px;
     height: 16px;
@@ -797,42 +803,49 @@ select {
     vertical-align: middle;
     position: absolute;
     top: 50%;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
 }
-.gift .container .con2{
+
+.gift .container .con2 {
     padding-left: 14px;
     padding-right: 14px;
     padding-bottom: 50px;
 }
-.gift .container .con2 .tx1{
+
+.gift .container .con2 .tx1 {
     padding-top: 16px;
     padding-bottom: 28px;
     font-size: 1.3em;
     font-weight: bold;
 }
-.gift .container .con2 .flWrap .fl{
+
+.gift .container .con2 .flWrap .fl {
     width: 49%;
     margin-right: 2%;
     margin-bottom: 8px;
     padding-bottom: 12px;
     border: 1px solid #efefef;
 }
-.gift .container .con2 .flWrap .fl:nth-child(even){
+
+.gift .container .con2 .flWrap .fl:nth-child(even) {
     margin-right: 0;
 }
-.gift .container .con2 .flWrap .fl .tx2{
+
+.gift .container .con2 .flWrap .fl .tx2 {
     padding-top: 12px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
     color: #333;
 }
-.gift .container .con2 .flWrap .fl .tx2 span{
+
+.gift .container .con2 .flWrap .fl .tx2 span {
     font-weight: normal;
     color: #757575;
     font-size: 0.9em;
 }
-.gift .container .con2 .flWrap .fl .tx3{
+
+.gift .container .con2 .flWrap .fl .tx3 {
     margin-top: 8px;
     padding-left: 10px;
     padding-right: 10px;
@@ -840,90 +853,363 @@ select {
     font-weight: bold;
     color: #f06489;
 }
-.gift_3 .container .con0{
+
+.gift_3 .container .con0 {
     margin-bottom: 0;
 }
-.gift_3 .container .con1{
+
+.gift_3 .container .con1 {
     display: table;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
 }
-.gift_3 .container .con1 img{
+
+.gift_3 .container .con1 img {
     border-right: 1px solid #efefef;
     display: table-cell;
     vertical-align: middle;
 }
-.gift_3 .container .con1 .txWrap{
+
+.gift_3 .container .con1 .txWrap {
     width: 61%;
     padding-left: 15px;
     display: table-cell;
     vertical-align: middle;
 }
-.gift_3 .container .con1 .txWrap .tx2{
+
+.gift_3 .container .con1 .txWrap .tx2 {
     font-weight: bold;
 }
-.gift_3 .container .con1 .txWrap .tx2 span{
+
+.gift_3 .container .con1 .txWrap .tx2 span {
     font-size: 0.9em;
     font-weight: normal;
     color: #757575;
 }
-.gift_3 .container .con1 .txWrap .tx3{
+
+.gift_3 .container .con1 .txWrap .tx3 {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: bold;
     color: #f06489;
 }
-.gift_3 .container .con2 .tx1{
+
+.gift_3 .container .con2 .tx1 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 14px;
     padding-right: 14px;
     border-bottom: 1px solid #efefef;
 }
-.gift_3 .container .con2 .tx1 a{
+
+.gift_3 .container .con2 .tx1 a {
     color: #757575;
 }
-.gift_3 .container .con2 .tx1 a i{
+
+.gift_3 .container .con2 .tx1 a i {
     margin-left: 5px;
 }
-.gift_3 .container .con2 .tx1 .b{
+
+.gift_3 .container .con2 .tx1 .b {
     font-weight: bold;
 }
-.gift_3 .container .con2 .tx2{
+
+.gift_3 .container .con2 .tx2 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 14px;
     padding-right: 14px;
     background-color: #f8f8f8;
 }
-.gift_3 .container .con2 .tx2 .pink{
+
+.gift_3 .container .con2 .tx2 .pink {
     color: #f06489;
     font-weight: bold;
 }
-.gift_3 .container .con2 .w50p2 .fl{
+
+.gift_3 .container .con2 .w50p2 .fl {
     width: 50%;
     padding-left: 14px;
 }
-.gift_3 .container .con3{
+
+.gift_3 .container .con3 {
     padding-right: 14px;
     padding-left: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #f8f8f8;
 }
-.gift_3 .container .con3 .tx1{
+
+.gift_3 .container .con3 .tx1 {
     font-weight: bold;
 }
-.gift_3 .container .con3 .tx2{
+
+.gift_3 .container .con3 .tx2 {
     margin-top: 12px;
     font-size: 0.9em;
     line-height: 20px;
     color: #757575;
 }
-.gift_3 .container .con3 .tx2 span{
+
+.gift_3 .container .con3 .tx2 span {
     padding: 0 14px;
     display: block;
 }
-.gift_3 .container .con3 .tx2 span.b{
+
+.gift_3 .container .con3 .tx2 span.b {
     font-weight: bold;
+}
+
+.gift_3 .container .con4 .tx1 span {
+    font-weight: bold;
+    color: #f06489;
+}
+.gift_3 .container .con4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+.gift_3 .container .con4 .tx1 {
+    color: #757575;
+    font-size: 0.9em;
+    line-height: 20px;
+}
+
+.gift_5 .container .con3 {
+    padding: 0;
+    background-color: #fff;
+}
+
+.album .container .con0 {
+    margin-bottom: 0;
+}
+
+.album .container {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f8f8f8;
+}
+
+.album .container .con1 .flWrap .fl {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.album .container .con1 .flWrap .fl:nth-child(2n) {
+    margin-right: 0;
+}
+
+.album .container .con1 .flWrap .fl .inner {
+    padding: 10px 34px 20px;
+}
+
+.album .container .con1 .flWrap .fl .tx1 {
+    font-weight: bold;
+    line-height: 18px;
+    color: #f06489;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.album .container .con1 .flWrap .fl .tx2 {
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.album_2 .container {
+    padding: 0;
+}
+
+.album_2 .container .con1 .flWrap .fl {
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.album_2 .container .con1 .flWrap .fl .tx1 {
+    font-size: 1.2em;
+    line-height: 24px;
+}
+
+.album_2 .container .con1 .flWrap .fl .tx2 {
+    margin-top: 12px;
+    font-size: 1em;
+}
+
+.album_2 .container .con5 {
+    padding-top: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.album_2 .container .con5 a {
+    width: 25%;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    float: left;
+    font-size: 0.9em;
+    color: #999;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 27px;
+}
+.album_2 .container .con5 a:nth-child(1){
+    background-image: url(../images/album_2.png);
+}
+.album_2 .container .con5 a:nth-child(2){
+    background-image: url(../images/album_3.png);
+}
+.album_2 .container .con5 a:nth-child(3){
+    background-image: url(../images/album_4.png);
+}
+.album_2 .container .con5 a:nth-child(4){
+    background-image: url(../images/album_5.png);
+}
+.photo .container .con1{
+    padding: 0 16px;
+}
+.photo .container .con1 .tx1{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.photo .container .con1 .flWrap .fl{
+    text-align: center;
+}
+.photo .container .con1 .flWrap .fl img:nth-child(1){
+    width: 33px;
+    margin-bottom: 5px;
+}
+.photo .container .con1 .flWrap .fl:nth-child(1){
+    width: 30%;
+    margin-top: 35px;
+    padding: 0 10px;
+}
+.photo .container .con1 .flWrap .fl:nth-child(2){
+    width: 40%;
+    padding: 0 10px;
+}
+.photo .container .con1 .flWrap .fl:nth-child(3){
+    width: 30%;
+    margin-top: 35px;
+    padding: 0 10px;
+}
+.photo .container .con2{
+    margin-top: 40px;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.photo .container .con2 .tx1{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    color: #757575;
+}
+.photo .container .con2 .tx1 + i{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0,-50%);
+    color: #757575;
+}
+.photo .container .con3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.photo .container .con3 .tx2{
+    margin-bottom: 12px;
+}
+.photo .container .con3 .tx2 span:nth-child(1){
+    font-size: 0.9em;
+    color: #757575;
+}
+.photo .container .con3 .tx2 span:nth-child(2){
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #666;
+}
+.photo .container .con3 .tx3 span:nth-child(1){
+    font-size: 0.9em;
+    color: #757575;
+}
+.photo .container .con3 .tx3 span:nth-child(2){
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f06489;
+}
+.photo .container .con5 {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 50px;
+}
+.photo .container .con5 .flWrap .fl{
+    width: 25%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.photo .container .con5 .flWrap .fl .tx1{
+    width: 15px;
+    height: 29px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #757575;
+    border-bottom: 2px solid #757575;
+    background-position: 0 0;
+    background-size: contain;
+}
+.photo .container .con5 .flWrap .fl:nth-child(1) .tx1{
+    width: 33px;
+    background-image: url(../images/photo_2.png);
+    border-bottom: none;
+    text-indent: 100%;
+}
+.photo .container .con5 .flWrap .fl:nth-child(2) .tx1{
+    width: 33px;
+    background-image: url(../images/photo_1.png);
+    border-bottom: none;
+    text-indent: 1000%;
+}
+.photo .container .con5 .flWrap .fl:nth-child(3) .tx1{
+    width: 33px;
+    background-image: url(../images/photo_3.png);
+    border-bottom: none;
+    text-indent: 1000%;
+}
+.photo .container .con5 .flWrap .fl .inner{
+    border: 1px solid #e5e5e5;
+}
+.photo_2 .con0{
+    margin: 0;
+}
+.photo_2 .container .con1{
+    padding: 0;
+}
+.photo_2 .container .con1 .tx1{
+    padding: 8px 14px;
+    font-size: 1em;
+    border-bottom: 1px solid #e5e5e5;
+}
+.photo_2 .container .con1 .inner{
+    padding: 30px 34px;
 }
