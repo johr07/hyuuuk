@@ -1,0 +1,454 @@
+@import 'reset.css';
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+textarea,
+input {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    transition: all 0.7s;
+}
+
+textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5em !important;
+    font-size: 0.9em;
+}
+
+.bdrdBg {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.input_text label {
+    margin: 5px 0;
+    display: block;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.input_text textarea,
+.input_text input {
+    width: 100%;
+    margin: 5px 0;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header .con {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .con .logo {
+    width: 58px;
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.header .con h1 {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .con h1::after {
+    width: 19px;
+    height: 15px;
+    display: inline-block;
+    content: "";
+    background-image: url(../images/icon1.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+}
+
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.con1 {
+    margin-right: -14px;
+    margin-left: -14px;
+}
+
+.con1 .inner {
+    background-image: url(../images/con1_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.index_1 .con1 .inner {
+    background-image: url(../images/con1_2.png);
+}
+
+.index_3 .con1 .inner {
+    background-image: url(../images/con1_3.png);
+}
+
+.con1 h2 {
+    width: 33.3333333%;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 0.85em;
+    float: left;
+    text-align: center;
+}
+
+.con1 h2.on {
+    color: #fff;
+}
+
+.con2 {
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.con1 .tx1{
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background-color: #4472c4;
+}
+.con2 .tx1 {
+    margin-bottom: 15px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.con2 .tx2 {
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.7em;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.con3 .address {
+    overflow: hidden;
+}
+
+.con3 .address input {
+    width: 65%;
+    float: left;
+}
+
+.con3 .address a {
+    margin: 5px 0 5px 5px;
+    padding: 0 10px;
+    float: left;
+    background-color: #666;
+    color: #fff;
+    line-height: 34px;
+    border-radius: 5px;
+}
+
+.con3 .tx5 {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.con4 {
+    background-color: #fff;
+}
+
+.con4 .tx2 {
+    font-size: 0.85em;
+    line-height: 1.5em;
+}
+
+.con4 .imgWrap {
+    padding: 10px 20px 25px;
+    position: relative;
+}
+
+.con4 .imgWrap a {
+    padding: 3px 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.con4 .input_text {
+    padding: 0 30px;
+}
+
+.con4 .input_text label {
+    margin-top: 10px;
+    margin-left: -14px;
+    padding-right: -14px;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.con4 .input_text input {
+    text-align: center;
+}
+
+.con5 {
+    width: 100%;
+    display: table;
+}
+
+.con5 .fl {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.con5 .fl:first-child {
+    width: 25%;
+}
+
+.con5 .fl:last-child {
+    width: 75%;
+    padding-left: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.con5 .fl .tx2 {
+    width: 100%;
+    font-size: 0.85em;
+    line-height: 1.7em;
+    float: left;
+    overflow: hidden;
+}
+
+.con5 .fl .tx3 {
+    width: 30%;
+    float: left;
+}
+
+.con5 .fl .tx4 {
+    width: 70%;
+    float: left;
+}
+
+.con6 .tx1 {
+    margin: 23px 0;
+    color: #cc0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.con6 .con_inner {
+    margin: 10px 0;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+}
+
+.con6 .con_inner .flWrap {
+    overflow: hidden;
+}
+
+.con6 .con_inner .flWrap .fl {
+    margin: 3px 0;
+    float: left;
+    display: inline-block;
+    line-height: 1.7em;
+    font-size: 0.8em;
+}
+
+.con6 .con_inner .flWrap .fl:first-child {
+    width: 5%;
+}
+
+.con6 .con_inner .flWrap .fl:last-child {
+    width: 95%;
+}
+
+.con6 .con_inner .flWrap .fl span {
+    color: #cc0000;
+}
+.con6 b{
+    font-weight: bold;
+}
+
+.con7{
+    background-color: #f7f7f7;
+}
+.con7 .con_inner .flWrap .fl:first-child {
+    width: 35%;
+}
+
+.con7 .con_inner .flWrap .fl:last-child {
+    width: 65%;
+}
+
+.con7 .bar{
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+    border-top: 1px dotted #000;
+}
+.con7.bgw{
+    background-color: #fff;
+}
+.con7 .con_inner .modi .fl:last-child{
+    padding-right: 50px;
+    position: relative;
+}
+.con7 .con_inner .modi .fl:last-child a{
+    padding: 1px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3366cc;
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+.con99 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.con99 a {
+    padding: 5px 30px;
+    line-height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.con99 a.on {
+    background-color: #3366cc;
+    border: 1px solid #3366cc;
+    color: #fff;
+}
+
+.con99 a.on2 {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.popup_wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.popup_wrap .popup {
+    max-width: 640px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #fff;
+}
+
+.popup_wrap .popup .tx1 {
+    padding-bottom: 10px;
+    color: #cc0000;
+    font-size: 1.429em;
+    font-weight: bold;
+    border-bottom: 2px solid #aaa;
+}
+
+.popup_wrap .popup .tx2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.popup_wrap .popup .con {
+    text-align: left;
+}
+
+.popup_wrap .popup .con .tx3 {
+    margin: 5px 0;
+    overflow: hidden;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+.popup_wrap .popup .con .tx3 span {
+    float: left;
+}
+
+.popup_wrap .popup .con .tx3 span:first-child {
+    width: 35%;
+}
+
+.popup_wrap .popup .con .tx3 span:last-child {
+    width: 65%;
+}
+
+.popup_wrap .popup .tx4 {
+    margin-top: 10px;
+    font-size: 0.85em;
+    line-height: 1.5em;
+    color: #666;
+}
