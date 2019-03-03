@@ -1,0 +1,602 @@
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean';
+
+/* @font-face {
+    font-family: '';
+    src: url('') format('opentype');
+} */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+b {
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    max-width: 0 auto;
+}
+
+.con1 {
+    height: 100vh;
+    background-color: #3d3939;
+    position: relative;
+}
+
+.con1 .tx1 {
+    padding: 0 1.3em;
+    color: #fff;
+    font-size: 3em;
+    line-height: 1.5em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.con1 .tx1 b {
+    font-size: 1.3em;
+}
+
+.con1 .tx1 .fa-quote-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.con1 .tx1 .fa-quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.con1 .logo {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.con2 {
+    max-width: 1024px;
+    width: 100%;
+    margin: 4em auto 0;
+    padding: 5em 2em 0 2em;
+    position: relative;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.con2 .top {
+    padding: 1em 1.5em;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    border-radius: 20px;
+    background-color: #3d3939;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.con2 .tx1 {
+    padding: 0.5em 1.3em;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+    display: inline-block;
+    position: relative;
+}
+
+.con2 .tx1 .fas {
+    font-size: 1em;
+}
+
+.con2 .tx1 .fa-quote-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.con2 .tx1 .fa-quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.con_m30 {
+    margin: 4em 0;
+}
+
+.con2 .tx2 {
+    margin: 1em 0;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+.con2 .tx3 {
+    font-size: 1.7em;
+}
+
+.con2 .tx3 {
+    overflow: hidden;
+}
+
+.con2 .tx3 span {
+    padding: 0.5em 0;
+    float: left;
+    line-height: 1.3em;
+}
+
+.con2 .tx3 span:first-child {
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+}
+
+.con2 .tx3 span:last-child {
+    width: 70%;
+    padding-left: 1em;
+    background-color: #ccc;
+    color: #333;
+    text-align: left;
+}
+
+.con2 .tx4 {
+    padding: 1em 1.5em;
+    background-color: #eee;
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: #333;
+}
+
+.con2 .tx5 {
+    margin: 1em 0;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.con2 .tx6 {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-size: 8em;
+    font-weight: bold;
+}
+
+.con2 .imgWrap {
+    max-width: 664px;
+    margin: 0 auto;
+}
+
+.con2 .bottom {
+    margin: 4em -2em 0;
+    padding: 1em;
+    background-color: #3d3939;
+    color: #fff;
+    overflow: hidden;
+}
+
+.con2 .bottom .fll {
+    font-size: 1.5em;
+    line-height: 40px;
+    float: left;
+}
+
+.con2 .bottom .fll:nth-child(1) {
+    width: 25%;
+    font-size: 2em;
+    color: #fcd000;
+    text-align: left;
+}
+
+.con2 .bottom .fll:nth-child(2) {
+    width: 50%;
+    text-align: center;
+}
+
+.con2 .bottom .fll:nth-child(3) {
+    width: 25%;
+    text-align: right;
+    font-size: 1.7em;
+    color: #fcd000;
+}
+
+.con2 .bottom .fll:nth-child(3) span {
+    color: #fff;
+}
+
+.con2 .bottom .fll:nth-child(3) span:nth-child(2) {
+    margin-left: 0.3em;
+    color: #fcd000;
+}
+
+.con3 {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    background-color: #3d3939;
+    color: #fff;
+}
+
+.con3 .tx1 {
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+.con3 .tx2 {
+    font-size: 2em;
+    line-height: 1.6em;
+}
+
+.con4 {
+    padding-top: 5em;
+    background-color: #e4e4e4;
+}
+
+.con4 .inner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.con4 .type1 {
+    margin-bottom: 3em;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.con4 .type1>.fl {
+    float: left;
+}
+
+.con4 .type1>.fl:nth-child(1) {
+    width: 20%;
+    padding-top: 0.5em;
+    border-top: 2px solid #666;
+}
+
+.con4 .type1>.fl:nth-child(2) {
+    width: 80%;
+    padding-left: 1em;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap {
+    width: 100%;
+    padding-bottom: 1em;
+    display: table;
+    border-bottom: 1px dotted #666;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl {
+    background-color: #e4e4e4;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(1) {
+    width: 23%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(2) {
+    width: 2.666666666666667%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(3) {
+    width: 23%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(4) {
+    width: 2.666666666666667%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(5) {
+    width: 23%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(6) {
+    width: 2.666666666666667%;
+}
+
+.con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(7) {
+    width: 23%;
+}
+.con4 .type1>.fl:nth-child(2) ul{
+    padding: 1em 0;
+}
+.con4 .type1>.fl:nth-child(2) ul li{
+    margin: 0.5em 0;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.con4 .type2{
+    padding-bottom: 2em;
+    overflow: hidden;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.con4 .type2 .fl{
+    float: left;
+}
+.con4 .type2 .fl:nth-child(1){
+    width: 60%;
+    padding-right: 1em;
+}
+.con4 .type2 .fl:nth-child(1) ul li{
+    padding: 0.3em 0;
+    overflow: hidden;
+}
+.con4 .type2 .fl:nth-child(1) ul li span{
+    float: left;
+}
+.con4 .type2 .fl:nth-child(1) ul li span:nth-child(1){
+    width: 20%;
+    font-weight: bold;  
+}
+.con4 .type2 .fl:nth-child(1) ul li span:nth-child(2){
+    width: 80%;
+}
+.con4 .type2 .fl:nth-child(2){
+    width: 40%;
+}
+
+.con5{
+    padding: 8em 0;
+    background-color: #413b38;
+    text-align: center;
+}
+.con5 img{
+    max-width: 171px;
+}
+.con6{
+    padding-top: 5em;
+    text-align: center;
+    background-color: #3d3a39;
+    color: #fff;
+}
+.con6 img{
+    max-width: 228px;
+}
+.con6 .tx1{
+    margin: 0.5em 0 0.2em;
+    font-size: 4em;
+}
+.con6 .tx2{
+    font-size: 2.5em;
+}
+.con7{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #3d3a39;
+}
+.con7 .inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-top: 3px solid #aaa;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.con7 .fl{
+    min-height: 85px;
+    margin: 2em 2em;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #333;
+    position: relative;
+}
+.con7 .fl span{
+    padding: 0 0.5em;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.con7 .tx2{
+    text-align: center;
+}
+.con8{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #3d3a39;
+}
+.con8 .inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-top: 3px solid #aaa;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.con8 .tx1{
+    font-size: 2em;
+    text-align: center;
+}
+.con8 .tx2{
+    font-size: 3em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.con8 ul{
+    margin-bottom: 2em;
+    padding: 2em 0;
+}
+.con8 ul li{
+    padding: 0.5em 0;
+}
+.con8 .in_box{
+    overflow: hidden;
+}
+.con8 .tx3{
+    width: 50%;
+    float: right;
+}
+.con8 .tx3 .gray{
+    color: #666;
+}
+.con8 .tx4{
+    margin: 1.5em 0;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.con8 .tx5{
+    margin: 0.5em 0;
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 10px;
+    }
+
+    .con2 {
+        width: 98%;
+    }
+
+    .con2 .tx1 {
+        font-size: 3em;
+    }
+
+    .con2 .tx1 .fas {
+        font-size: 0.8em;
+    }
+    .con4 .inner{
+        padding: 0 1em;
+    }
+    .con4 .type1{
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+    .con4 .type1>.fl:nth-child(1){
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .con4 .type1>.fl:nth-child(2){
+        width: 100%;
+        padding-left: 0;
+    }
+    .con7{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .con7 .inner{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .con7 .fl{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .con8{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .con8 .inner{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .con1 .tx1 {
+        max-width: 230px;
+        width: 100%;
+    }
+
+    .con2 .tx3 span:first-child {
+        width: 100%;
+    }
+
+    .con2 .tx3 span:last-child {
+        width: 100%;
+    }
+
+    .con2 .bottom .fll:nth-child(1) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .con2 .bottom .fll:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .con2 .bottom .fll:nth-child(3) {
+        width: 100%;
+        text-align: center;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap{
+        display: block;
+        overflow: hidden;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl{
+        display: block;
+        float: left;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(2){
+        display: none;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(4){
+        display: none;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(6){
+        display: none;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(1){
+        width: 50%;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(3){
+        width: 50%;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(5){
+        width: 50%;
+    }
+    .con4 .type1>.fl:nth-child(2) .flWrap .fl:nth-child(7){
+        width: 50%;
+    }
+    .con4 .type2 .fl:nth-child(1){
+        width: 100%;
+    }
+    .con4 .type2 .fl:nth-child(2){
+        width: 100%;
+        margin-top: 2em;
+    }
+    .con5 img{
+        max-width: 320px;
+    }
+    .con8 .tx3{
+        width: 100%;
+    }
+    .con8 .tx1{
+        font-size: 1.5em;
+    }
+    .con8 .tx2{
+        font-size: 2.5em;
+    }
+}

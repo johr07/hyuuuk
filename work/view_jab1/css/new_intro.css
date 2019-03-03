@@ -1,0 +1,77 @@
+html,body{height:100%}
+*{margin:0;padding:0}
+.DB_tab25{position:relative;width:100%;height:100%}
+
+.DB_tab25 .DB_imgSet{position:relative;width:100%;height:100%;overflow:hidden;}
+.DB_tab25 .DB_imgSet li{float:left;width:100%;height:100%;overflow:hidden}
+.DB_tab25 .DB_prevBtn{position:absolute;top:50%;margin-top:-50px;cursor:pointer;left:30px;z-index: 999;width: 50px;height: 63px}
+.DB_tab25 .DB_nextBtn{position:absolute;top:50%;margin-top:-50px;cursor:pointer;right:30px;z-index: 999;width: 50px;height: 63px}
+.DB_tab25 .DB_prevBtn img, .DB_tab25 .DB_nextBtn img {width: 100%;}
+
+.DB_tab25 .DB_btnSet{position:absolute;bottom:20px;width:100%;text-align:center;font-size:0}
+.DB_tab25 .DB_btnSet li{display:inline;cursor:pointer;margin-right:5px}
+
+/* 厚陵倔备埃 */
+.inner {width:100%;height:100%;position: absolute;z-index:1}
+.wrapper {height: 100%;position: relative;width: 100%;margin: 0 auto;}
+h1.logo {left: 50px; padding: 0; position: absolute;top: 50px;z-index: 10;}
+.title{width:100%;text-align:center;position:absolute;top:15%;left:0;height:122px;overflow:hidden}
+
+/*intro_info*/
+.intro_info{width:100%;text-align: center;position: relative;
+	font-size: 0;
+	position: absolute;
+	top: 70%;
+}
+.intro_info > div{
+	max-width: 210px;
+	width: 20%;
+	padding: 1%;
+	display: inline-block;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.intro_info > div span{
+	display: block;
+}
+.intro_info > div span img{
+	width: 100%;
+}
+/* .hak1{z-index:2;left:50%;margin-left:-310px;position: absolute;top: 70%;cursor: pointer;}
+.hak2{z-index:2;right:50%;margin-right:-310px;position: absolute;top: 70%;cursor: pointer;}
+.hak1 span, .hak2 span {display: block;width:210px; height: 210px;}
+.hak1 span img, .hak2 span img {width: 100%;}*/
+.Text {position: absolute;top: 50%;width: 100%; text-align: center;}
+.Text img {height: 100px;}
+
+	@media only screen and (max-width:1024px) {
+		/* .hak1{z-index:2;left:50%;margin-left:-180px;position: absolute;top: 70%;cursor: pointer;}
+		.hak2{z-index:2;right:50%;margin-right:-180px;position: absolute;top: 70%;cursor: pointer;}
+		.hak1 span, .hak2 span {width:130px; height: 130px;} */
+				
+		.intro_info > div{
+			max-width: 130px;
+		}
+
+		.Text {position: absolute;top: 45%;}
+		.Text img {height: 70px;}
+		.DB_tab25 .DB_prevBtn{left: 10px;width: 28px;}
+		.DB_tab25 .DB_nextBtn{right: 10px;width: 28px;}
+	}
+	@media only screen and (max-width:768px) {
+		/* .hak1{z-index:2;left:50%;margin-left:-130px;position: absolute;top: 70%;cursor: pointer;}
+		.hak2{z-index:2;right:50%;margin-right:-130px;position: absolute;top: 70%;cursor: pointer;}
+		.hak1 span, .hak2 span {width:120px; height: 120px;} */
+
+		.intro_info{width:100%;text-align: center;position: relative;
+			top: 65%;
+		}
+		.intro_info > div{
+			width: 32%;
+		}	
+
+		.Text {position: absolute;top: 45%;}
+		.Text img {height: 50px;}
+		.DB_tab25 .DB_prevBtn{left: 10px;width: 30px;}
+		.DB_tab25 .DB_nextBtn{right: 10px;width: 30px;}
+	}

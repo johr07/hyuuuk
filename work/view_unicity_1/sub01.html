@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="left">
+                <a href="#">펼치기</a>
+            </div>
+            <a href="#" class="center">
+                <img src="images/logo.jpg" alt=""> 하자관리 시스템
+            </a>
+            <div class="right">
+                <a href="#">1단지</a>
+                <a href="#">태영건설</a>
+                <a href="#">홍길동님</a>
+                <a href="#">LOGOUT</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="con1 con">
+                <div class="left">
+                    <a href="#">> HOME</a>
+                </div>
+                <div class="right">
+                    <a href="#">접수리스트보기</a>
+                    <a href="#">하자등록</a>
+                </div>
+            </div>
+            <div class="con2 con">
+                <div class="left">현황 대시보드</div>
+                <div class="right">기준일자 : 2019.02.11</div>
+            </div>
+            <div class="con graph">
+                <div class="top">
+                    <div class="left">일자별 현황</div>
+                    <div class="right">
+                        <a href="#">자세히 보기</a>
+                        <a href="#">엑셀 다운로드</a>
+                    </div>
+                </div>
+                <canvas id="myChart1"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart1').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        // The type of chart we want to create
+                        type: 'bar',
+
+                        // The data for our dataset
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                label: "My First dataset",
+                                fill: false,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [68, 20, 40, 10, 85, 180, 140],
+                                borderWidth: 1
+                            }]
+                        },
+
+                        // Configuration options go here
+                        options: {}
+                    });
+                </script>
+            </div>
+            <div class="con graph">
+                <div class="top">
+                    <div class="left">하자유형별 현황</div>
+                    <div class="right">
+                        <a href="#">자세히 보기</a>
+                        <a href="#">엑셀 다운로드</a>
+                    </div>
+                </div>
+                <canvas id="myChart2"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart2').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        // The type of chart we want to create
+                        type: 'bar',
+
+                        // The data for our dataset
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                label: "My First dataset",
+                                fill: false,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [68, 20, 40, 10, 85, 180, 140],
+                                borderWidth: 1
+                            }]
+                        },
+
+                        // Configuration options go here
+                        options: {}
+                    });
+                </script>
+            </div>
+            <div class="con graph">
+                <div class="top">
+                    <div class="left">동별 현황</div>
+                    <div class="right">
+                        <a href="#">자세히 보기</a>
+                        <a href="#">엑셀 다운로드</a>
+                    </div>
+                </div>
+                <canvas id="myChart3"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart3').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        // The type of chart we want to create
+                        type: 'bar',
+
+                        // The data for our dataset
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                label: "My First dataset",
+                                fill: false,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [68, 20, 40, 10, 85, 180, 140],
+                                borderWidth: 1
+                            }]
+                        },
+
+                        // Configuration options go here
+                        options: {}
+                    });
+                </script>
+            </div>
+            <div class="con graph">
+                <div class="top">
+                    <div class="left">협력업체별 현황</div>
+                    <div class="right">
+                        <a href="#">자세히 보기</a>
+                        <a href="#">엑셀 다운로드</a>
+                    </div>
+                </div>
+                <canvas id="myChart4"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart4').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        // The type of chart we want to create
+                        type: 'bar',
+
+                        // The data for our dataset
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                label: "My First dataset",
+                                fill: false,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [68, 20, 40, 10, 85, 180, 140],
+                                borderWidth: 1
+                            }]
+                        },
+
+                        // Configuration options go here
+                        options: {}
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <div class="loading" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+
+<!-- 모바일용웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- 안드로이드 홈화면추가시 상단 주소창 제거 -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="/img/favicon.ico">
+<!-- ios홈화면추가시 상단 주소창 제거 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta http-equiv="Content-type" content="text/html; charset=uft-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>영어본능어학원</title>
+<link href="css/new_intro.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.DB_tabArrowBackground.min.js"></script>
+
+<body>
+<div class="wrapper">
+	<div class="DB_tab25">
+		<div class="inner">
+			<h1 class="logo"><img alt="영어본능어학원" src="images/logo_new.png"></h1>
+			<div class="intro_info">
+				<div class="hak1" onclick="fn_url_move('hak1')"><span><img src="images/11.png" alt="대치 초중등관"></span></div>
+				<div class="hak2" onclick="fn_url_move('hak2')"><span><img src="images/12.png" alt="대치 고등관"></span></div>
+				<div class="hak3" onclick="fn_url_move('hak3')"><span><img src="images/13.png" alt="송파 초중등관"></span></div>
+				<div class="hak4" onclick="fn_url_move('hak4')"><span><img src="images/14.png" alt="천안 초중등관"></span></div>
+				<div class="hak5" onclick="fn_url_move('hak5')"><span><img src="images/15.png" alt="국제관 international school"></span></div>
+			</div>
+		</div>
+		<ul class="DB_imgSet">
+			<li style="background: url('images/1.jpg') no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;background-size: cover;"><span class="Text"><img src="images/txt1.png" alt="목표와 결과가 분명한 영어본능 효율영어"></span></li>
+			<li style="background: url('images/2.jpg') no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;background-size: cover;"><span class="Text"><img src="images/txt2.png" alt="자사 특목 영재 준비를 위한 영어본능 효율영어"></span></li>
+			<li style="background: url('images/3.jpg') no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;background-size: cover;"><span class="Text"><img src="images/txt3.png" alt="1등급을 위한 확실한 선택 영어본능 효율영어"></span></li>
+		</ul>
+		<ul class="DB_btnSet">
+			<li><img src="images/btn_off.png" /></li>
+			<li><img src="images/btn_off.png" /></li>
+			<li><img src="images/btn_off.png" /></li>
+		</ul>
+		<span class="DB_prevBtn"><img src="images/ctrlPrev.png" alt="이전" /></span>
+		<span class="DB_nextBtn"><img src="images/ctrlNext.png" alt="다음" /></span>
+	</div>
+</div>
+<script type="text/javascript">
+$('.DB_tab25').DB_tabArrowBackground({
+	key: 'c15572',                    //라이센스키
+	motionType: 'x',                  //x,fade
+	moveSpeed: 1000,                  //이동속도
+	autoRollingTime: 5000            //자동롤링시간(밀리초)
+})
+</script>
+</body>
+</html>
