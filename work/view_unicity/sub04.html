@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="left">
+                <a href="#">펼치기</a>
+            </div>
+            <a href="#" class="center">
+                <img src="images/logo.jpg" alt=""> 하자관리 시스템
+            </a>
+            <div class="right">
+                <a href="#">크리파워</a>
+                <a href="#">홍길동님</a>
+                <a href="#">LOGOUT</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="con1 con">
+                <div class="left">
+                    <a href="#">> HOME</a>
+                </div>
+            </div>
+            <div class="tab_list con2 con">
+                <a href="#" data-rel="tab1_1" class="active">메세지 관리</a>
+                <a href="#" data-rel="tab1_2">분출물 관리</a>
+                <a href="#" data-rel="tab1_3">Tab</a>
+            </div>
+            <div class="tab_content_wrap">
+                <div class="tab_content" id="tab1_1">
+                    <div class="tab_list dsf con2 con">
+                        <a href="#" data-rel="tab2_1" class="active">발송관리</a>
+                        <a href="#" data-rel="tab2_2">스케줄</a>
+                        <a href="#" data-rel="tab2_3">Tab</a>
+                    </div>
+                    <div class="tab_content_wrap">
+                        <div class="tab_content" id="tab2_1">
+                            <div class="con search_wrap">
+                                <div class="top">검색조건</div>
+                                <div class="dt">
+                                    <div class="dtc">
+                                        <div class="fl_wrap">
+                                            <div class="fl">
+                                                <div class="tx">발송일</div>
+                                            </div>
+                                            <div class="fl">
+                                                <input type="date">
+                                            </div>
+                                            <div class="fl">~</div>
+                                            <div class="fl">
+                                                <input type="date">
+                                            </div>
+                                            <div class="fl">
+                                                <div class="tx">구분</div>
+                                            </div>
+                                            <div class="fl">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="">입주자</option>
+                                                    <option value="">협력업체</option>
+                                                    <option value="">1시공사</option>
+                                                    <option value="">2시공사</option>
+                                                    <option value="">시행사</option>
+                                                </select>
+                                            </div>
+                                            <div class="fl">
+                                                <div class="tx">발송ID</div>
+                                            </div>
+                                            <div class="fl">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="">사전예약</option>
+                                                    <option value="">공문발송</option>
+                                                    <option value="">처리현황</option>
+                                                    <option value="">작업지시</option>
+                                                </select>
+                                            </div>
+                                            <div class="fl fl_wrap">
+                                                <input type="checkbox" id="checkbox2_01" class="fl">
+                                                <label for="checkbox2_01" class="fl">수신여부</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dtc">
+                                        <a href="#">검색</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con table">
+                                <div class="top">
+                                    <div class="right">
+                                        <a href="#">추가</a>
+                                        <a href="#">삭제</a>
+                                        <a href="#">엑셀 업로드</a>
+                                        <a href="#">저장</a>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>선택</th>
+                                        <th>발송ID</th>
+                                        <th>구분</th>
+                                        <th>이름</th>
+                                        <th>상세</th>
+                                        <th>Phone</th>
+                                        <th>발송일자</th>
+                                        <th>수신일자</th>
+                                        <th>재발송여부</th>
+                                        <th>달력</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_01">
+                                        </td>
+                                        <td>사전예약</td>
+                                        <td>입주자</td>
+                                        <td>홍길동</td>
+                                        <td>202동 2301호</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02">
+                                        </td>
+                                        <td>
+                                            달력
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_01">
+                                        </td>
+                                        <td>사전예약</td>
+                                        <td>입주자</td>
+                                        <td>홍길동</td>
+                                        <td>202동 2301호</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02">
+                                        </td>
+                                        <td>
+                                            달력
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_01" checked>
+                                        </td>
+                                        <td>사전예약</td>
+                                        <td>입주자</td>
+                                        <td>홍길동</td>
+                                        <td>202동 2301호</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02" checked>
+                                        </td>
+                                        <td>
+                                            달력
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_01" checked>
+                                        </td>
+                                        <td>사전예약</td>
+                                        <td>입주자</td>
+                                        <td>홍길동</td>
+                                        <td>202동 2301호</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02">
+                                        </td>
+                                        <td>
+                                            달력
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="bottom fl_wrap">
+                                    <span class="fl">읽음 : 3건</span>
+                                    <span class="fl">안읽음 : 30건</span>
+                                </div>
+                                <div class="pageNavi">
+                                    <a href="#!">&#60;</a>
+                                    <a href="#!" class="active">1</a>
+                                    <a href="#!">2</a>
+                                    <a href="#!">3</a>
+                                    <a href="#!">4</a>
+                                    <a href="#!">5</a>
+                                    <a href="#!">6</a>
+                                    <a href="#!">7</a>
+                                    <a href="#!">8</a>
+                                    <a href="#!">9</a>
+                                    <a href="#!">10</a>
+                                    <a href="#!">&#62;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_content" id="tab2_2">
+                            <div class="con search_wrap">
+                                <div class="top">검색조건</div>
+                                <div class="dt">
+                                    <div class="dtc">
+                                        <div class="fl_wrap">
+                                            <div class="fl">
+                                                <div class="tx">발송일</div>
+                                            </div>
+                                            <div class="fl">
+                                                <input type="date">
+                                            </div>
+                                            <div class="fl">~</div>
+                                            <div class="fl">
+                                                <input type="date">
+                                            </div>
+                                            <div class="fl">
+                                                <div class="tx">구분</div>
+                                            </div>
+                                            <div class="fl">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="">입주자</option>
+                                                    <option value="">협력업체</option>
+                                                    <option value="">1시공사</option>
+                                                    <option value="">2시공사</option>
+                                                    <option value="">시행사</option>
+                                                </select>
+                                            </div>
+                                            <div class="fl">
+                                                <div class="tx">발송ID</div>
+                                            </div>
+                                            <div class="fl">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="">사전예약</option>
+                                                    <option value="">공문발송</option>
+                                                    <option value="">처리현황</option>
+                                                    <option value="">작업지시</option>
+                                                </select>
+                                            </div>
+                                            <div class="fl fl_wrap">
+                                                <input type="checkbox" id="checkbox2_01" class="fl">
+                                                <label for="checkbox2_01" class="fl">수신여부</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dtc">
+                                        <a href="#">검색</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con table">
+                                <div class="top">
+                                    <div class="right">
+                                        <a href="#">추가</a>
+                                        <a href="#">삭제</a>
+                                        <a href="#">엑셀 업로드</a>
+                                        <a href="#">저장</a>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>발송ID</th>
+                                        <th>대상</th>
+                                        <th>주기</th>
+                                        <th>시간</th>
+                                        <th>최근발송일자</th>
+                                        <th>다음발송일자</th>
+                                        <th>사용여부</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">발송ID</option>
+                                                <option value="">작업지시</option>
+                                                <option value="">처리현황</option>
+                                                <option value="">사전예약</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">입주자</option>
+                                                <option value="">1단지시공사</option>
+                                                <option value="">2단지시공사</option>
+                                                <option value="">시행사</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">주기</option>
+                                                <option value="">매일</option>
+                                                <option value="">요일</option>
+                                                <option value="">매달</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="time">
+                                        </td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">발송ID</option>
+                                                <option value="">작업지시</option>
+                                                <option value="">처리현황</option>
+                                                <option value="">사전예약</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">입주자</option>
+                                                <option value="">1단지시공사</option>
+                                                <option value="">2단지시공사</option>
+                                                <option value="">시행사</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">주기</option>
+                                                <option value="">매일</option>
+                                                <option value="">요일</option>
+                                                <option value="">매달</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="time">
+                                        </td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>2019-03-11 21:11:25</td>
+                                        <td>
+                                            <input type="checkbox" id="checkbox1_02" checked>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="bottom fl_wrap">
+                                    <span class="fl">읽음 : 3건</span>
+                                    <span class="fl">안읽음 : 30건</span>
+                                </div>
+                                <div class="pageNavi">
+                                    <a href="#!">&#60;</a>
+                                    <a href="#!" class="active">1</a>
+                                    <a href="#!">2</a>
+                                    <a href="#!">3</a>
+                                    <a href="#!">4</a>
+                                    <a href="#!">5</a>
+                                    <a href="#!">6</a>
+                                    <a href="#!">7</a>
+                                    <a href="#!">8</a>
+                                    <a href="#!">9</a>
+                                    <a href="#!">10</a>
+                                    <a href="#!">&#62;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content" id="tab1_2">
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <div class="popupWrap">
+        <div class="popup" id="popup_name_1">
+            <div class="inner">
+                <div class="img_wrap">
+                    <img src="images/img.jpg" alt="">
+                </div>
+            </div>
+            <div class="btn_close" onclick="closePopup();">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="popup" id="popup_name_2">
+            <div class="btn_close" onclick="closePopup();">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="con">
+                <div class="top">
+                    <a href="#" onclick="confirm('저장하시겠습니까?')">저장</a>
+                    <a href="#">작업지지서 인쇄</a>
+                    <a href="#">작업지지서 발송</a>
+                </div>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                        </colgroup>
+                        <tr>
+                            <th>단지</th>
+                            <td><input type="text" value="1"></td>
+                            <th>동</th>
+                            <td><input type="text" value="101"></td>
+                            <th>호수</th>
+                            <td><input type="text" value="1004"></td>
+                        </tr>
+                        <tr>
+                            <th>매니저</th>
+                            <td colspan="2"><input type="text" value="030-0000-0000"></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>대공중</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                            <th>공중</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                            <th>하자유형</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>처리</th>
+                            <td colspan="2" class="fl_wrap">
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_1">
+                                    <label for="radio99_1">인정</label>
+                                </div>
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_2">
+                                    <label for="radio99_2">미인정</label>
+                                </div>
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>등록일</th>
+                            <td colspan="2" class="fl_wrap">
+                                <input type="text" value="2019-02-23">
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>매니저</th>
+                            <td colspan="2" class="fl_wrap">
+                                <input type="text" value="홍길동">
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>처리</th>
+                            <td colspan="2" class="fl_wrap">
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_1">
+                                    <label for="radio99_1">인정</label>
+                                </div>
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_2">
+                                    <label for="radio99_2">미인정</label>
+                                </div>
+                            </td>
+                            <th>협력업체</th>
+                            <td colspan="2" class="fl_wrap">
+                                <select name="" id="">
+                                    <option value="">하자1</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bottom">
+                    <img src="images/img2.jpg" alt="">
+                    <img src="images/img3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+</body>
+
+</html>

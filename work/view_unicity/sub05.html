@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="left">
+                <a href="#">펼치기</a>
+            </div>
+            <a href="#" class="center">
+                <img src="images/logo.jpg" alt=""> 하자관리 시스템
+            </a>
+            <div class="right">
+                <a href="#">크리파워</a>
+                <a href="#">홍길동님</a>
+                <a href="#">LOGOUT</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="con1 con">
+                <div class="left">
+                    <a href="#">> HOME</a>
+                </div>
+            </div>
+            <div class="tab_list con2 con">
+                <a href="#" data-rel="tab1_1" class="active">계정정보</a>
+                <a href="#" data-rel="tab1_2">발송계정</a>
+                <a href="#" data-rel="tab1_3">발신번호</a>
+                <a href="#" data-rel="tab1_4">플러스친구</a>
+                <a href="#" data-rel="tab1_5">템플릿 관리</a>
+                <a href="#" data-rel="tab1_6">주소록</a>
+                <a href="#" data-rel="tab1_7">080 관리</a>
+                <a href="#" data-rel="tab1_8">결제</a>
+                <a href="#" data-rel="tab1_9">사용내역</a>
+            </div>
+            <div class="tab_content_wrap">
+                <div class="tab_content" id="tab1_1">
+                    <div class="con table">
+                        <table>
+                            <tr>
+                                <th>
+                                    <input type="checkbox">
+                                </th>
+                                <th>No</th>
+                                <th>발송ID</th>
+                                <th>플러스친구ID</th>
+                                <th>템플릿명</th>
+                                <th>템플릿코드</th>
+                                <th>등록일</th>
+                                <th>상태</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>반려</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>반려</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>세종반려</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>승인</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>반려</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>14</td>
+                                <td>공통</td>
+                                <td>@uni-city</td>
+                                <td>마감자재변경안내문</td>
+                                <td>SJTW1_184_1</td>
+                                <td>2019.03.11</td>
+                                <td>검수요청</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab_content" id="tab1_2">
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <div class="popupWrap">
+        <div class="popup" id="popup_name_1">
+            <div class="inner">
+                <div class="img_wrap">
+                    <img src="images/img.jpg" alt="">
+                </div>
+            </div>
+            <div class="btn_close" onclick="closePopup();">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="popup" id="popup_name_2">
+            <div class="btn_close" onclick="closePopup();">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="con">
+                <div class="top">
+                    <a href="#" onclick="confirm('저장하시겠습니까?')">저장</a>
+                    <a href="#">작업지지서 인쇄</a>
+                    <a href="#">작업지지서 발송</a>
+                </div>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                            <col width="16.66666666666667%">
+                        </colgroup>
+                        <tr>
+                            <th>단지</th>
+                            <td><input type="text" value="1"></td>
+                            <th>동</th>
+                            <td><input type="text" value="101"></td>
+                            <th>호수</th>
+                            <td><input type="text" value="1004"></td>
+                        </tr>
+                        <tr>
+                            <th>매니저</th>
+                            <td colspan="2"><input type="text" value="030-0000-0000"></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>대공중</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                            <th>공중</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                            <th>하자유형</th>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">전기</option>
+                                    <option value="">전기</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>처리</th>
+                            <td colspan="2" class="fl_wrap">
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_1">
+                                    <label for="radio99_1">인정</label>
+                                </div>
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_2">
+                                    <label for="radio99_2">미인정</label>
+                                </div>
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>등록일</th>
+                            <td colspan="2" class="fl_wrap">
+                                <input type="text" value="2019-02-23">
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>매니저</th>
+                            <td colspan="2" class="fl_wrap">
+                                <input type="text" value="홍길동">
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th>처리</th>
+                            <td colspan="2" class="fl_wrap">
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_1">
+                                    <label for="radio99_1">인정</label>
+                                </div>
+                                <div class="fl">
+                                    <input type="radio" name="radio99" id="radio99_2">
+                                    <label for="radio99_2">미인정</label>
+                                </div>
+                            </td>
+                            <th>협력업체</th>
+                            <td colspan="2" class="fl_wrap">
+                                <select name="" id="">
+                                    <option value="">하자1</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bottom">
+                    <img src="images/img2.jpg" alt="">
+                    <img src="images/img3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+</body>
+
+</html>
