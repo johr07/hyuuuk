@@ -1,0 +1,254 @@
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean';
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #efefef;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.swiper-pagination-bullet-active {
+    background: #1bcd77;
+}
+
+.dsf {
+    display: flex;
+    align-items: center;
+}
+
+.tx1 {
+    font-size: 3.733333333333333vw;
+
+}
+
+.tx2 {
+    font-size: 3.466666666666667vw;
+}
+
+.tx3 {
+    font-size: 2.4vw;
+}
+.tx4 {
+    font-size: 2.0vw;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.wrapper {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 13.33333333333333vw;
+    max-height: 100px;
+    padding-top: 3.333333333333333vw;
+    padding-bottom: 3.333333333333333vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background-color: #1bcd77;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .btn_my {
+    width: 6.666666666666667vw;
+    max-width: 50px;
+    position: absolute;
+    left: 4vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header .logo {
+    width: 39.73333333333333vw;
+    max-width: 298px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .btn_menu {
+    width: 6.666666666666667vw;
+    max-width: 50px;
+    position: absolute;
+    right: 4vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.footer{
+    text-align: center;
+}
+.footer .top .dsf{
+    justify-content: space-between;
+}
+.footer .bottom{
+    padding: 4vw;
+    background-color: #717171;
+    color: #fff;
+}
+.footer .bottom img{
+    width: 11.2vw;
+}
+.footer .bottom .tx2{
+    margin: 2vw 0;
+}
+
+.con {
+    margin: 3vw 0;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+.con .inner {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-left: 4vw;
+    padding-right: 42px;
+}
+
+.con .inner .tx1 {
+    margin-bottom: 2vw;
+}
+
+.con1 {
+    margin-bottom: 3vw;
+}
+
+.con1 .swiper-pagination-fraction {
+    width: auto;
+    padding: 0.5vw 2.5vw;
+    display: inline-block;
+    bottom: 4vw;
+    right: 4vw;
+    left: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 40px;
+    font-size: 3.2vw;
+}
+
+.con2 {
+    background-color: #efefef;
+}
+
+.con2 .inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.con2 .swiper-slide {
+    width: 61.33333333333333vw;
+    max-width: 460px;
+    margin-right: 4vw;
+}
+
+.con2 .swiper-slide:first-child {
+    margin-left: 4vw;
+}
+
+.con3 .swiper-slide .dsf:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.con3 .swiper-slide .dsf {
+    padding: 3vw 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.con2 .swiper-slide .wrap_tx {
+    position: absolute;
+    bottom: 4vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.con3 .wrap_tx {
+    width: 70%;
+    padding-left: 3vw;
+}
+
+.con3 .wrap_tx>div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+.con3 .wrap_tx .tx2 {
+    color: #333;
+}
+
+.con3 .wrap_tx .tx3 {
+    color: #666;
+}
+
+.con4 .swiper-slide {
+    margin-right: 2vw;
+}
+
+.con4 .swiper-slide:last-child {
+    margin-right: 0;
+}
+.con6{
+    padding: 3vw 0;
+    justify-content: center;
+}
+.con6 a{
+    width: 33.33333%;
+    text-align: center;
+}
+.con6 a img{
+    width: 6.666666666666667vw;
+}
+
+
+/* @media screen and (min-width: 750px) {
+    .tx1 {
+        font-size: 28px;
+
+    }
+
+    .tx2 {
+        font-size: 26px;
+    }
+
+    .tx3 {
+        font-size: 18px;
+    }
+
+    .con2 .swiper-slide {
+        margin-right: 30px;
+    }
+
+    .con2 .swiper-slide:first-child {
+        margin-left: 30px;
+    }
+} */
