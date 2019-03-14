@@ -201,23 +201,6 @@ input {
     float: none
 }
 
-@media only screen and (max-width: 992px) {
-    .pagination {
-        width: 100%
-    }
-
-    .pagination li.prev,
-    .pagination li.next {
-        width: 10%
-    }
-
-    .pagination li.pages {
-        width: 80%;
-        overflow: hidden;
-        white-space: nowrap
-    }
-}
-
 .tx1 {
     font-size: 3.733333333333333vw;
 
