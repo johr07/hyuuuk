@@ -31,6 +31,7 @@ textarea {
     color: #333;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    box-shadow: none;
 }
 
 input {
@@ -38,6 +39,7 @@ input {
     margin: 0;
     padding: 1vw;
     border: 1px solid #ccc;
+    box-shadow: none;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 3.466666666666667vw;
