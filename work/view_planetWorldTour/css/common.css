@@ -36,6 +36,7 @@ textarea {
     -moz-appearance: none;
     appearance: none;
     border-radius: 0px;
+    -webkit-border-radius: 0;
 }
 
 input {
@@ -52,7 +53,8 @@ input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 .control-group {
