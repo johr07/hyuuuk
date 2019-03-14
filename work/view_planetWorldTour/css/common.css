@@ -32,6 +32,9 @@ textarea {
     border: 1px solid #ccc;
     box-sizing: border-box;
     box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 input {
@@ -45,6 +48,9 @@ input {
     font-size: 3.466666666666667vw;
     font-weight: 400;
     color: #333;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .control-group {
@@ -857,9 +863,10 @@ li.active .collapsible-header .more {
     width: 50vw;
 }
 
-.con12 .phone8 .tx2:nth-child(2){
+.con12 .phone8 .tx2:nth-child(2) {
     justify-content: space-around;
 }
+
 .con12 .phone8 .tx2:nth-child(2) .item input {
     width: 65vw;
 }
