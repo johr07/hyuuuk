@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planet World Tour</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper sub">
+        <div class="header">
+            <a href="#!" class="btn_back">
+                <img src="images/WP_01_03.png" alt="">
+            </a>
+            <a href="#!" class="logo">
+                예약하기
+            </a>
+            <a href="#!" class="btn_menu">
+                <img src="images/WP_00main_06.png" alt="">
+            </a>
+        </div>
+        <div class="container">
+            <div class="con8 con">
+                <div class="inner ovh">
+                    <div class="tx2 medium fll">예약정보입력</div>
+                </div>
+            </div>
+            <div class="con12 con">
+                <div class="inner">
+                    <div class="dsf">
+                        <div class="tx2 medium">여행명</div>
+                        <div class="tx2">베이트 초이스 부탄 정통 클래식 6일 여행</div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">상품가격</div>
+                        <div class="tx2">3,870,000원</div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">출발일</div>
+                        <div class="tx2">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="tx2_1 gray3">
+                        ※ 예약시 여권사본이 필요하며 예약확정 후 여행경비를 지불해야 비자수속이 진행됩니다.
+                    </div>
+                </div>
+            </div>
+            <div class="con8 con">
+                <div class="inner ovh">
+                    <div class="tx2 medium fll">예약자정보</div>
+                </div>
+            </div>
+            <div class="con12 con">
+                <div class="inner">
+                    <div class="dsf">
+                        <div class="tx2 medium">한글이름 <span class="green2">*</span></div>
+                        <div class="tx2">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">휴대전화 <span class="green2">*</span></div>
+                        <div class="tx2 dsf phone">
+                            <div class="item wrap_dropdown">
+                                <a class='dropdown-trigger btn dsf' href='#' data-target='dropdown1'>
+                                    선택
+                                </a>
+                                <ul id='dropdown1' class='dropdown-content'>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">&nbsp;-&nbsp;</div>
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                            <div class="item">&nbsp;-&nbsp;</div>
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">이메일</div>
+                        <div class="tx2 dsf phone">
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                            <div class="item">&nbsp;@&nbsp;</div>
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                            <div class="item">&nbsp;</div>
+                            <div class="item wrap_dropdown">
+                                <a class='dropdown-trigger btn dsf' href='#' data-target='dropdown2'>
+                                    선택
+                                </a>
+                                <ul id='dropdown2' class='dropdown-content'>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            010
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">집전화</div>
+                        <div class="tx2 dsf phone">
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                            <div class="item">&nbsp;-&nbsp;</div>
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                            <div class="item">&nbsp;-&nbsp;</div>
+                            <div class="item">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dsf">
+                        <div class="tx2 medium">요청사항</div>
+                        <div class="tx2">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con8 con">
+                <div class="inner ovh">
+                    <div class="tx2 medium fll">동반자정보</div>
+                </div>
+            </div>
+            <div class="con12 con">
+                <div class="inner">
+                    <div class="dsf phone3">
+                        <div class="tx2 medium">여행인원</div>
+                        <div class="tx2">
+                            <div class="dsf phone2">
+                                <div class="item">성인</div>
+                                <div class="item wrap_dropdown">
+                                    <a class='dropdown-trigger btn dsf' href='#' data-target='dropdown3'>
+                                        선택
+                                    </a>
+                                    <ul id='dropdown3' class='dropdown-content'>
+                                        <li>
+                                            <a href="#!">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">명</div>
+                            </div>
+                            <div class="dsf phone2">
+                                <div class="item">아동</div>
+                                <div class="item wrap_dropdown">
+                                    <a class='dropdown-trigger btn dsf' href='#' data-target='dropdown3'>
+                                        선택
+                                    </a>
+                                    <ul id='dropdown3' class='dropdown-content'>
+                                        <li>
+                                            <a href="#!">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">명</div>
+                            </div>
+                            <div class="dsf phone2">
+                                <div class="item">유아</div>
+                                <div class="item wrap_dropdown">
+                                    <a class='dropdown-trigger btn dsf' href='#' data-target='dropdown3'>
+                                        선택
+                                    </a>
+                                    <ul id='dropdown3' class='dropdown-content'>
+                                        <li>
+                                            <a href="#!">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">명</div>
+                            </div>
+                            <div class="dsf phone4">
+                                <div class="item dsf">
+                                    <div class="control-group">
+                                        <label class="control control--radio">본인포함
+                                            <input type="radio" name="radio1" checked="checked" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="item dsf">
+                                    <div class="control-group">
+                                        <label class="control control--radio">본인미포함
+                                            <input type="radio" name="radio1" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tx2_1 gray3">※ 여행인원을 선택하시면 동반자입력란과 예약버튼이 생깁니다..</div>
+                    <div class="tx2_1 gray3">※ 여행자의 영문이름은 여권상의 영문이름과 반드시 동일해야합니다.</div>
+                </div>
+            </div>
+            <div class="con8 con">
+                <div class="inner ovh">
+                    <div class="tx2 medium fll">여행약관</div>
+                </div>
+            </div>
+            <div class="con10 con">
+                <div class="inner">
+                    <div class="tx2_1 gray3">
+                        ※ 예약하시기 전에 해외여행양관 및 소비자 피해보상규정을 미리 확인해주세요.
+                    </div>
+                    <div class="inner2 tx2_2">
+                        [제 1조 목적]<br>
+                        본 장을 플래닛차이나 투어와 내국인 및 국내 거주 외국인 간에 해외 기획여행에 관한 사항을 규점함을 목적으로 한다.<br>
+                        <br>
+                        [제 1조 목적]<br>
+                        본 장을 플래닛차이나 투어와 내국인 및 국내 거주 외국인 간에 해외 기획여행에 관한 사항을 규점함을 목적으로 한다.
+                    </div>
+                    <div class="ovh">
+                        <div class="flr">
+                            <div class="control-group">
+                                <label class="control control--checkbox">여행약관에 동의합니다.
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#!" class="btn_type1 tx1 bold">예약하기</a>
+        </div>
+        <div class="footer">
+            <div class="top con">
+                <div class="inner">
+                    <div class="tx1 bold">플래닛월드 투어가족</div>
+                    <div class="dsf">
+                        <div class="item">
+                            <img src="images/WP_00main_41.png" alt="">
+                            <div class="tx2">스리랑카</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_43.png" alt="">
+                            <div class="tx2">중국</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_45.png" alt="">
+                            <div class="tx2">터키</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_47.png" alt="">
+                            <div class="tx2">영국</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_49.png" alt="">
+                            <div class="tx2">프랑스</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_41.png" alt="">
+                            <div class="tx2">스리랑카</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/WP_00main_39.png" alt="">
+                            <div class="tx2">러시아</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="images/WP_00main_59.png" alt="">
+                <div class="tx4">planetworldtour.com</div>
+                <div class="tx2 light">
+                    [주]플래닛월드투어 대표이사 한재철<br>
+                    사업자등록번호 : 104-86-46393<br>
+                    통신판매 중구 0216 관광사업 중구 2013-02 개인정보책임자 한재철<br>
+                    서울시 중구 다동길 5 광일빌딩 707호<br>
+                    T : 070.7124.1400 F :02.6919.2445<br>
+                </div>
+                <div class="tx4">Copyright(c) 2006-2011 PLANETTOUR all right reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
