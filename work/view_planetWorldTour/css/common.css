@@ -31,12 +31,6 @@ textarea {
     color: #333;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    box-shadow: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0px;
-    -webkit-border-radius: 0;
 }
 
 input {
@@ -44,17 +38,11 @@ input {
     margin: 0;
     padding: 1vw;
     border: 1px solid #ccc;
-    box-shadow: none;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 3.466666666666667vw;
     font-weight: 400;
     color: #333;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
 }
 
 .control-group {
@@ -201,29 +189,33 @@ input {
     float: none
 }
 
+.pb10vw {
+    padding-bottom: 10vw;
+}
+
 .tx1 {
-    font-size: 3.733333333333333vw;
+    font-size: 4.3vw;
 
 }
 
 .tx2 {
-    font-size: 3.466666666666667vw;
+    font-size: 3.8vw;
 }
 
 .tx2_1 {
-    font-size: 3vw;
+    font-size: 3.6vw;
 }
 
 .tx2_2 {
-    font-size: 2.7vw;
+    font-size: 3.2vw;
 }
 
 .tx3 {
-    font-size: 2.4vw;
+    font-size: 3vw;
 }
 
 .tx4 {
-    font-size: 2.0vw;
+    font-size: 2vw;
 }
 
 .tx5 {
@@ -507,6 +499,12 @@ li.active .collapsible-header .more {
 .footer .top .dsf {
     justify-content: space-between;
 }
+.footer .top .dsf .item{
+    margin: 0 1vw;
+}
+.footer .top .dsf .item .tx2{
+    font-size: 3vw;
+}
 
 .footer .bottom {
     padding: 4vw;
@@ -548,6 +546,17 @@ li.active .collapsible-header .more {
 
 .con1 {
     margin-bottom: 3vw;
+}
+
+.con1 .swiper-slide{
+    position: relative;
+}
+.con1 .swiper-slide .tx5{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 6.5vw;
 }
 
 .con1 .swiper-pagination-fraction {
