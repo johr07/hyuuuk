@@ -1,3 +1,28 @@
+.popupWrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10000;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 5% 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	display: none;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: left;
+	box-sizing: border-box;
+}
+
 .bg_blue {
 	background-color: #ebf4f6;
 }
@@ -104,35 +129,40 @@
 	text-align: center;
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_07.jpg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center;
 }
-.about01 .banner .inner{
+
+.about01 .banner .inner {
 	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-.about01 .banner .inner .tx_wrap{
+
+.about01 .banner .inner .tx_wrap {
 	width: 50%;
 	margin-top: 60px;
 	float: right;
 }
-.about01 .banner .inner .tx_wrap .tx1{
+
+.about01 .banner .inner .tx_wrap .tx1 {
 	font-size: 60px;
 	font-weight: 300;
 	line-height: 78px;
 }
 
-.about01 .banner .inner .tx_wrap .tx2{
+.about01 .banner .inner .tx_wrap .tx2 {
 	font-size: 60px;
 	font-weight: 500;
 	line-height: 78px;
 }
-.about01 .banner .inner .tx_wrap .tx3{
+
+.about01 .banner .inner .tx_wrap .tx3 {
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 36px;
 }
-.about01 .banner .inner .tx_wrap .tx4{
+
+.about01 .banner .inner .tx_wrap .tx4 {
 	margin-top: 20px;
 	padding-bottom: 5px;
 	font-size: 18px;
@@ -140,6 +170,7 @@
 	border-bottom: 2px solid #00abcf;
 	display: inline-block;
 }
+
 .about01 .counsel ul {
 	overflow: hidden;
 }
@@ -160,21 +191,25 @@
 	box-sizing: border-box;
 }
 
-.about01 .counsel li:nth-child(1){
+.about01 .counsel li:nth-child(1) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_08.jpg);
 }
-.about01 .counsel li:nth-child(2){
+
+.about01 .counsel li:nth-child(2) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_09.jpg);
 }
-.about01 .counsel li:nth-child(3){
+
+.about01 .counsel li:nth-child(3) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_10.jpg);
 }
-.about01 .counsel li .tx1{
+
+.about01 .counsel li .tx1 {
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 40px;
 }
-.about01 .counsel li .tx2{
+
+.about01 .counsel li .tx2 {
 	margin-top: 15px;
 	padding-bottom: 5px;
 	font-size: 18px;
@@ -184,10 +219,12 @@
 	border-bottom: 2px solid #00abcf;
 	display: inline-block;
 }
-.about01 .counsel li:nth-child(1) .tx2{
+
+.about01 .counsel li:nth-child(1) .tx2 {
 	color: #429d7f;
 	border-bottom: 2px solid #429d7f;
 }
+
 .about01 .contact .sub_tit02 {
 	margin-top: 130px;
 	font-size: 48px;
@@ -267,19 +304,21 @@
 	width: calc(100%/3);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	box-sizing: border-box;
 	color: #fff;
 	text-align: center;
-	background: #000;
 }
 
-.about01 .affiliated ul li:nth-child(1){
+.about01 .affiliated ul li:nth-child(1) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_13.jpg);
 }
-.about01 .affiliated ul li:nth-child(2){
+
+.about01 .affiliated ul li:nth-child(2) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_13-73.jpg);
 }
-.about01 .affiliated ul li:nth-child(3){
+
+.about01 .affiliated ul li:nth-child(3) {
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_sub01_13-74.jpg);
 }
 
@@ -666,6 +705,48 @@
 .about05 .anes .fl_wrap.wrap_1400 .fl:last-child .tx4.mb38 {
 	margin-bottom: 38px;
 }
+.about05 .imgWrap001{
+	position: relative;
+}
+.about05 .imgWrap001 .poa{
+	width: 300px;
+	position: absolute;
+}
+.about05 .imgWrap001 .poa .tx1{
+	font-size: 24px;
+	font-weight: 500;
+}
+.about05 .imgWrap001 .poa .tx2{
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+.about05 .imgWrap001 .poa1{
+	top: 32%;
+	left: 6%;
+	text-align: right;
+}
+.about05 .imgWrap001 .poa2{
+	top: 3%;
+	left: 64%;
+	text-align: left;
+}
+.about05 .imgWrap001 .poa3{
+	top: 33%;
+	left: 72%;
+	text-align: left;
+}
+.about05 .imgWrap001 .poa4{
+	top: 80%;
+	left: 67%;
+	text-align: left;
+}
+.about05 .imgWrap001 .poa5{
+	top: 80%;
+	left: 12%;
+	text-align: right;
+}
 
 .about07 table {
 	width: 100%;
@@ -768,6 +849,10 @@
 	background-color: #fcfcfc;
 	font-size: 18px;
 	font-weight: 500;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
 }
 
 .about .media_detail .tx1+.fl_wrap {
@@ -1203,4 +1288,442 @@
 .sub.about05 .sub_visual_box {
 	height: 680px;
 	background-image: url(https://wonjin6.cafe24.com/img/sub/about_visual05.jpg);
+}
+
+@media screen and (max-width: 1400px) {
+	.about03 .wrap_1400 {
+		width: 100%;
+	}
+
+	.about03 .doctors li {
+		width: 33.33333%;
+	}
+
+	.about05 .introducing .fl {
+		width: 50%;
+	}
+	.about05 .imgWrap001 {
+		width: 100%;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.about05 .imgWrap001 .poa{
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: left;
+	}
+	.about05 .imgWrap001 .poa .tx1{
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	.about05 .imgWrap001 .poa .tx2{
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.about11 .story {
+		width: 100%;
+	}
+
+	.about01 .banner {
+		height: 180px;
+		background-size: cover;
+	}
+
+	.about01 .banner .inner .tx_wrap {
+		margin-top: 15px;
+	}
+
+	.about01 .banner .inner .tx_wrap .tx1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.about01 .banner .inner .tx_wrap .tx2 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.about01 .banner .inner .tx_wrap .tx3 {
+		font-size: 16px;
+		display: none;
+	}
+
+	.about01 .material_list.val01>li img,
+	.about01 .material_list.val01>li div {
+		width: 100%;
+		display: block;
+	}
+
+	.about01 .material_list.val01>li div {
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.about_slide {
+		width: 100%;
+	}
+
+	.about_slide .eye_slide_box img {
+		height: auto;
+	}
+
+	.about01 .counsel ul {
+		text-align: center;
+	}
+
+	.about01 .counsel li {
+		max-width: 580px;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 20px;
+		padding-top: 50px;
+		padding-left: 30px;
+		background-position: center;
+		display: inline-block;
+		float: none;
+		text-align: left;
+	}
+
+	.about03 .doctors li {
+		width: 50%;
+	}
+
+	.list_wrap .inner {
+		width: 100%;
+	}
+
+	.list_wrap a {
+		width: 30%;
+		height: 40px;
+		line-height: 40px;
+		float: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	.about .media_detail .tx1+.fl_wrap .fl {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.about .media .fl {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.about .media .fl img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.sub.about .sub_visual_box .tx2 {
+		display: none;
+	}
+
+	.about01 .affiliated ul li {
+		width: 100%;
+		height: 400px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.about01 .affiliated ul li .tx1 {
+		margin-top: 30px;
+		font-size: 25px;
+	}
+
+	.about01 .affiliated ul li .tx3_wrap {
+		max-width: 400px;
+		width: 100%;
+		margin: 40px auto 0;
+	}
+
+	.about01 .contact .ul_1 li {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.about01 .contact .ul_1 li .tx1 {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+
+	.about01 .contact .ul_1 li .tx2 {
+		margin-top: 0;
+		font-size: 16px;
+	}
+
+	.sub.about01 .sub_visual_box {
+		padding-top: 70px;
+		background-image: url(../img/sub/m_sub_09about_1client_02.png);
+		background-size: cover;
+	}
+
+	.sub.about02 .sub_visual_box {
+		height: auto;
+		padding-bottom: 500px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 50px;
+		background-image: url(../img/sub/m_sub_09about_2greeting_02.png);
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	.sub.about03 .sub_visual_box {
+		padding-top: 50px;
+		background-image: url(../img/sub/m_sub_09about_3doctors_1list_02.png);
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	.sub.about04 .sub_visual_box {
+		padding-top: 50px;
+		background-image: url(../img/sub/m_sub_09about_3doctors_2popup_02.png);
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	.sub.about05 .sub_visual_box {
+		padding-top: 50px;
+		background-image: url(../img/sub/m_sub_09about_5surgery_1intro_02.png);
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	.sub.about .sub_visual_box .tx1 {
+		font-size: 46px;
+		line-height: 58px;
+	}
+
+	.sub.about02 .sub_visual_box .tx1 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	.about11 .story .fl {
+		width: calc(100%/2 - 66px/4);
+	}
+
+	.about11 .story .fl:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.about11 .story .fl>img {
+		width: 100%;
+	}
+
+	.about05 .introducing .fl {
+		width: 100%;
+		height: 350px;
+		padding-top: 150px;
+	}
+
+	.about05 .introducing .fl>img {
+		top: 50px;
+	}
+
+	.story_2>div {
+		width: 100%;
+	}
+
+	.story_2 .fl:nth-child(1) img {
+		width: 100%;
+	}
+
+	.story_2 .fl:nth-child(2) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+	.about .media_detail .detail_con{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.about07 .table{
+		overflow-x: scroll;
+	}
+	.about07 table{
+		width: 960px;
+		overflow-x: scroll;
+	}
+	.about07 table th{
+		font-size: 16px;
+	}
+	.about07 table td{
+		font-size: 16px;
+	}
+	.about06 .address{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.about06 .traffic{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.route_map{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about .sub_tit02 {
+		margin-bottom: 30px;
+	}
+
+	.about01 .contact .sub_tit02 {
+		margin-top: 30px;
+		font-size: 26.5px;
+	}
+
+	.about04 .history::before {
+		left: 19px;
+		right: auto;
+	}
+
+	.about04 .history .left.mb100,
+	.about04 .history .right.mb100 {
+		margin-bottom: 20px;
+	}
+
+	.about04 .history .left.mt100,
+	.about04 .history .right.mt100 {
+		margin-top: 0;
+	}
+
+	.about04 .history .left,
+	.about04 .history .right {
+		width: 100%;
+		padding-left: 60px;
+	}
+
+	.about04 .history .left {
+		padding-right: 0;
+		padding-left: 60px;
+		text-align: left;
+	}
+
+	.about04 .history .right {
+		float: left;
+	}
+
+	.about04 .history .left .tx2 {
+		padding-left: 10px;
+		padding-right: 0;
+	}
+
+	.about04 .history .left .tx2::before {
+		right: auto;
+		left: 0;
+	}
+
+	.about04 .history .left .mon>div {
+		float: left;
+	}
+
+	.about04 .history .year {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+
+	.about04 .history .year:after {
+		width: 15px;
+		height: 15px;
+		right: auto;
+		left: 0;
+		transform: translate(-53px, -50%);
+		border: 5px solid #3eafbf;
+	}
+
+	.about04 .history .mon {
+		margin-bottom: 15px;
+	}
+
+	.about04 .history .mon>div {
+		width: 100%;
+	}
+
+	.about04 .history .tx1 {
+		margin-bottom: 7px;
+	}
+
+	.about05 .anes .fl_wrap.wrap_1400 .fl:first-child {
+		width: 100%;
+		height: 300px;
+	}
+
+	.about05 .anes .fl_wrap.wrap_1400 .fl:last-child {
+		width: 100%;
+		margin-top: 40px;
+		padding-left: 0;
+	}
+
+	.about05 .anes .fl_wrap.wrap_1400 .fl:first-child img {
+		width: 50%;
+		max-width: 200px;
+	}
+
+	.about05 .anes .fl_wrap.wrap_1400 .fl:last-child .tx1 {
+		text-align: center;
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+	.about05 .anes .fl_wrap.wrap_1400 .fl:last-child .tx2 {
+		text-align: center;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	.table_1 .selectSearch{
+		width: 100%;	
+	}
+	.table_1 .selectSearch .inner{
+		width: 100%;
+	}
+	.table_1 .selectSearch select{
+		width: 30%;
+	}
+	.table_1 .selectSearch .searchBox{
+		width: 70%;
+	}
+	.table_1 .selectSearch input{
+		width: 100%;
+	}
+	.traffic .table{
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.traffic .table table{
+		width: 768px;
+	}
+	.about05 .anes .fl_wrap.wrap_1800 .fl{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	.about05 .anes .fl_wrap.wrap_1800 .fl img{
+		width: 100%;
+	}
+	.about05 .anes .fl_wrap.wrap_1800 .fl .tx2{
+		margin-top: 10px;
+	}
+	.about05 .anes .fl_wrap.wrap_1800 .fl .tx1{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	.about05 .anes .sub_tit03{
+		font-size: 30px;
+	}
+	.sub_top_tab a.mobile_location{
+		background-color: #3eafbf;
+	}
 }

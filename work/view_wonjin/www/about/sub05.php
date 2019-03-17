@@ -21,7 +21,17 @@
 		</ul>
 	</article>
 	<article class="sub_visual_box">
-		<img src="https://wonjin6.cafe24.com/img/sub/about_visual05.jpg" alt="">
+		<div class="wrap_1200">
+			<div class="tx1">
+				Introducing<br>
+				WONJIN<br>
+				Plastic Surgery
+			</div>
+			<div class="tx2">
+				Our medical services are provided by<br>
+				more than 40 specialist doctors
+			</div>
+		</div>
 		<div class="sub_top_tab">
 			<a href="#" class="active">Introducing WONJIN</a>
 			<a href="#">Clinic Overview</a>
@@ -32,22 +42,51 @@
 		<div class="wrap_1800">
 			<div class="introducing">
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_16.png" alt="">
+					<div class="tx1">Finest Technique</div>
+					<div class="tx2">
+						Fully Accredited Surgeons<br>
+						Using the Finest Technique
+					</div>
 				</div>
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-03.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_11.png" alt="">
+					<div class="tx1">The Key to Satisfactory Results</div>
+					<div class="tx2">
+						Over 20 Years of numerous surgical Experience<br>
+						The Key to Satisfactory Results
+					</div>
 				</div>
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-04.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_12.png" alt="">
+					<div class="tx1">Personalized care system</div>
+					<div class="tx2">
+						We accommodate you<br>
+						Full-service & personalized care system
+					</div>
 				</div>
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-15.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_13.png" alt="">
+					<div class="tx1">High Quality Medical System</div>
+					<div class="tx2">
+						We keep adopting the most advanced medical devices
+					</div>
 				</div>
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-16.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_14.png" alt="">
+					<div class="tx1">Fast Recovery Time</div>
+					<div class="tx2">
+						Fast Recovery Time<br>
+						With a thorough After-Care Service
+					</div>
 				</div>
 				<div class="fl">
-					<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-17.jpg" alt="">
+					<img src="https://wonjin6.cafe24.com/img/sub/icon_15.png" alt="">
+					<div class="tx1">An Exclusive 1:1 Anesthesia System</div>
+					<div class="tx2">
+						We value not only aesthetic aspect but also your safety<br>
+						An Exclusive 1:1 Anesthesia System
+					</div>
 				</div>
 			</div>
 		</div>
@@ -60,7 +99,29 @@
 			Wonjin is ready at all times to provide variety of treatments with our many years of clinical experiences and
 			know-how.
 		</p>
-		<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-28.jpg" alt="">
+		<div class="imgWrap001">
+			<img src="https://wonjin6.cafe24.com/img/sub/about_sub05-29.png" alt="">
+			<div class="poa poa1">
+				<div class="tx1">01. Anesthesia</div>
+				<div class="tx2">Safest Anesthesia System by Exclusive Anesthesiologists</div>
+			</div>
+			<div class="poa poa2">
+				<div class="tx1">02. Exmination</div>
+				<div class="tx2">Smart Examination System for an Accurate Surgery</div>
+			</div>
+			<div class="poa poa3">
+				<div class="tx1">03. Safety</div>
+				<div class="tx2">Fully equipped with specialized medical facilities and system</div>
+			</div>
+			<div class="poa poa4">
+				<div class="tx1">04. Satisfaction</div>
+				<div class="tx2">1:1 Customized Customer Satisfaction system</div>
+			</div>
+			<div class="poa poa5">
+				<div class="tx1">05. Care</div>
+				<div class="tx2">24-hour intensive care units for patient monitoring and emergency</div>
+			</div>
+		</div>
 	</article>
 	<article class="anes bg_blue">
 		<h2 class="sub_tit03">01. Anesthesia</h2>

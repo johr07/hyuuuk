@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize_custom.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container login singup">
+      <div class="wrap-500">
+        <div class="top">
+          <a href="#!" class="logo">
+            <img src="images/nemodax2.png" alt="">
+          </a>
+          <div class="df">
+            <div class="fz20">회원가입</div>
+          </div>
+        </div>
+        <div class="input_type2">
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">아이디 *</div>
+            </div>
+            <div class="input-field">
+              <input id="input_1" type="text" class="validate browser-default" placeholder="Email을 입력해주세요.">
+              <span class="fc_orange fz12">이미 등록 된 Email입니다.</span>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">비밀번호 *</div>
+            </div>
+            <div class="input-field">
+              <input id="input_1" type="password" class="validate browser-default" placeholder="비밀번호를 입력해주세요.">
+              <span class="fc_orange fz12">영문+숫자 조합으로 최소 5자 이상 입력해주세요.</span>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">비밀번호 확인 *</div>
+            </div>
+            <div class="input-field">
+              <input id="input_1" type="password" class="validate browser-default" placeholder="비밀번호를 한번 더 입력해주세요.">
+              <span class="fc_orange fz12">동일한 비밀번호를 입력해주세요.</span>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">이름 *</div>
+            </div>
+            <div class="input-field">
+              <input id="input_1" type="text" class="validate browser-default" placeholder="이름을 입력해주세요.">
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">생년월일</div>
+            </div>
+            <div class="dfb year">
+              <div class="input-field">
+                <input id="input_1" type="text" class="validate browser-default tac" placeholder="YYYY">
+              </div>
+              <div class="input-field">
+                <input id="input_1" type="text" class="validate browser-default tac" placeholder="MM">
+              </div>
+              <div class="input-field">
+                <input id="input_1" type="text" class="validate browser-default tac" placeholder="DD">
+              </div>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">성별</div>
+            </div>
+            <div class="input-field">
+              <p class="mr20">
+                <label>
+                  <input type="radio" name="radio1" />
+                  <span>남자</span>
+                </label>
+              </p>
+              <p class="mr20">
+                <label>
+                  <input type="radio" name="radio1" />
+                  <span>여자</span>
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">전화번호 *</div>
+            </div>
+            <div class="item">
+              <div class="dfb phone1">
+                <div class="input-field">
+                  <select class="browser-default">
+                    <option value="1">+82</option>
+                    <option value="2">Option 1</option>
+                    <option value="3">Option 2</option>
+                    <option value="4">Option 3</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <input id="input_1" type="text" class="validate browser-default" placeholder="'-'없이 입력해주세요.">
+                </div>
+                <div class="input-field">
+                  <a href="#!" class="btn bgc_orange">인증번호</a>
+                </div>
+              </div>
+              <div class="dfb phone2">
+                <div class="input-field">
+                  <input id="input_1" type="text" class="validate browser-default" disabled>
+                  <span class="fc_orange fz12">인증번호가 일치 하지 않습니다.</span>
+                </div>
+                <div class="input-field">
+                  <a href="#!" class="btn">확인</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">소속</div>
+            </div>
+            <div class="input-field">
+              <input id="input_1" type="text" class="validate browser-default" placeholder="강의바다">
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">접속가능시간</div>
+            </div>
+            <div class="item">
+              <div class="dfb">
+                <div class="input-field">
+                  <select class="browser-default">
+                    <option value="1">HH</option>
+                    <option value="2">Option 1</option>
+                    <option value="3">Option 2</option>
+                    <option value="4">Option 3</option>
+                  </select>
+                </div>
+                <span>:</span>
+                <div class="input-field">
+                  <select class="browser-default">
+                    <option value="1">MM</option>
+                    <option value="2">Option 1</option>
+                    <option value="3">Option 2</option>
+                    <option value="4">Option 3</option>
+                  </select>
+                </div>
+                <span>~</span>
+                <div class="input-field">
+                  <select class="browser-default">
+                    <option value="1">HH</option>
+                    <option value="2">Option 1</option>
+                    <option value="3">Option 2</option>
+                    <option value="4">Option 3</option>
+                  </select>
+                </div>
+                <span>:</span>
+                <div class="input-field">
+                  <select class="browser-default">
+                    <option value="1">MM</option>
+                    <option value="2">Option 1</option>
+                    <option value="3">Option 2</option>
+                    <option value="4">Option 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">대표 이미지</div>
+            </div>
+            <div class="item">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+              <span class="fc_orange fz12 ml5 db">대표 이미지를 등록해주세요.</span>
+              <span class="fc_orange fz12 ml5 db">콘텐츠 등록시 메인 이미지로 등록되어 표시됩니다.</span>
+            </div>
+          </div>
+          <div class="dfb">
+            <div class="dfb subTitle">
+              <div class="fz13">인사말</div>
+            </div>
+            <div class="item">
+              <div class="input-field">
+                <textarea name="" class="browser-default" placeholder="선생님의(CP)"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="df">
+          <div class="fz14 fc_orange">* 필수 정보가 모두 입력되지 않았습니다. 회원정보를 입력해주세요.</div>
+        </div>
+        <div class="df">
+          <a href="#!" class="fc_orange btn btn_bottom">완료</a>
+        </div>
+        <div class="df copy">© 2019. NEMOLab All rights reserved</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
