@@ -7,4 +7,8 @@ $(function () {
         var asd = $(this).html();
         $(this).parent().parent().parent().children('.dropdown-trigger').html(asd);
     });
+
+    $('.btn_menu').click(function(){
+        $('.header').toggleClass('on');
+    });
 })
