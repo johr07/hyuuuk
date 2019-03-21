@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="description" content="P2P대출 최초 모바일, 무서류, 즉시지급. 최저금리 3.7%">
+    <meta name="keywords" content="렌딩사이언스,p2p대출,대출">
+    <meta name="author" content="Jinny">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta charset="utf-8">
+    <title>렌딩사이언스</title>
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+			$("header").load("../inc/header.html");
+			$("footer").load("../inc/footer.html");
+		});*/
+	</script>     
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1>렌딩사이언스</h1>
+            <h2>주 메뉴</h2>
+            <a href="#" class="btn-open-nav"><img src="../images/common/btn_open_nav.png" alt=""></a>
+            <nav>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="HOME">HOME</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#">Cek Limit/Bunga</a></li>
+                                <li><a href="#">Notifikasi Pinjaman</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span class="new">new</span><a href="#">Informasi Pinjaman</a></li>
+                                <li><a href="#">Informasi Pribadi</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DanaOK</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="util">
+                    <a href="#">Syarat dan Ketentuan<br>Penggunaan</a>
+                    <a href="">Kebijakan Menangani<br>Informasi Pribadi</a>
+                    <a href="">Penanggulangan<br>Aktifitas Ilegal</a>
+                    <a href="">DISCLAIMER</a>
+                </div>
+                <a href="#" class="btn-close-nav"><img src="../images/common/btn_close.png" alt="닫기"></a>
+            </nav>
+        </header>
+        <div class="sub-header">
+            <h2>Informasi Pendaftaran</h2>
+            <a href="#" class="btn-back"><img src="../images/common/btn_back.png" alt="뒤로"></a>
+        </div>
+        <div id="contents">
+            <div class="step">
+                <ol>
+                    <li>Pendaftaran</li>
+                    <li>Hasil </li>
+                    <li class="current">Pekerjaan</li>
+                    <li>Tambahan</li>
+                </ol>
+            </div>
+            <div class="container sub-wrap work-info">
+                <ul class="apply-list">
+                    <li>
+                        <label for="companyName">Nama Perusahaan</label>
+                        <input type="text" name="eKTP" id="eKTP" class="input-text">
+                    </li>
+                    <li>
+                        <label for="job">Pekerjaan</label>
+                        <div class="select-box">
+                            <select name="job" id="job">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>            
+                    <li>
+                        <label for="workField">Bidang Pekerjaan</label>
+                        <div class="select-box">
+                            <select name="workField" id="workField">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>   
+                    <li>
+                        <label for="department">Jabatan</label>
+                        <div class="select-box">
+                            <select name="department" id="department">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>                                               
+                    <li>
+                        <label for="yearIncome">Pendapatan Tahunan</label>
+                        <div class="select-box">
+                            <select name="yearIncome" id="yearIncome">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>       
+                    <li>
+                        <label for="workHour">Lama Bekerja (di perusahaan ini)</label>
+                        <div class="select-box">
+                            <select name="workHour" id="workHour">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>     
+                    <li>
+                        <label for="state">Provinsi</label>
+                        <div class="select-box">
+                            <select name="state" id="state">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>     
+                    <li>
+                        <label for="city">Kota</label>
+                        <div class="select-box">
+                            <select name="city" id="city">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>   
+                    <li>
+                        <label for="district">Kecamatan</label>
+                        <div class="select-box">
+                            <select name="district" id="district">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li> 
+                    <li>
+                        <label for="village">Kelurahan</label>
+                        <div class="select-box">
+                            <select name="village" id="village">
+                                <option value="Silakan pilih">Silakan pilih</option>
+                            </select>
+                        </div>
+                    </li>  
+                    <li>
+                        <label for="rtRw">RT/RW</label>
+                        <input type="text" name="rtRw" id="rtRw" class="input-text">
+                    </li>             
+                    <li>
+                        <label for="building">Jalan & nomor rumah/apartemen</label>
+                        <input type="text" name="building" id="building" class="input-text">
+                    </li>    
+                    <li>
+                        <label for="zipCode">Kode Pos</label>
+                        <input type="text" name="zipCode" id="zipCode" class="input-text">
+                    </li>                                                                                                                                                              
+                </ul>
+				<span class="btn btn-submit" id="niceBtn"><a href="" ng-click="phoneAuth1_1()" class="on">Lanjut</a></span>
+            </div>
+        </div>
+    </div>
+</body>

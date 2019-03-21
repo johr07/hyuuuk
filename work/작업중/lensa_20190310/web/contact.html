@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta name="description" content="P2P대출 최초 모바일, 무서류, 즉시지급. 최저금리 3.7%">
+    <meta name="keywords" content="렌딩사이언스,p2p대출,대출">
+    <meta name="author" content="Jinny">
+    <meta name="viewport" id="viewport" content="width=1280px">
+    <meta charset="utf-8">
+    <title>렌딩사이언스</title>
+    <link type="text/css" href="../css/style_pc.css" rel="stylesheet">
+    <link type="text/css" href="../css/sub_m.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script_pc.js"></script>
+    <script src="../js/script_m.js"></script>
+    <script type="text/javascript">
+        /*$(document).ready(function(){
+			$("header").load("../inc/header.html");
+			$("footer").load("../inc/footer.html");
+		});*/
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5DBIestJcy9Hjr8e2zYYY_--_RZbOKbw&language=id&region=id"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+            function initialize() {
+                if ($("#google_map").length) {
+
+                    var mapOptions = { //구글 맵 옵션 설정
+                        zoom: 16, //기본 확대율
+                        center: new google.maps.LatLng(-6.219109, 106.814597), // 지도 중앙 위치
+                        scrollwheel: true, //마우스 휠로 확대 축소 사용 여부
+                        mapTypeControl: false //맵 타입 컨트롤 사용 여부
+                    };
+
+                    var map = new google.maps.Map(document.getElementById('google_map'), mapOptions); //구글 맵을 사용할 타겟
+
+                    var marker = new google.maps.Marker({ //마커 설정
+                        map: map,
+                        position: map.getCenter(), //마커 위치
+                        info: "Sahid Mini Office<br> 1 Sahid Sudirman Residence Jl.<br>Jendral Sudirman No. 86 Jakarta 10220<br>Indonesia", // 말풍선 안에 들어갈 내용.
+                        title: 'danaOk' // 마커에 마우스 포인트를 갖다댔을 때 뜨는 타이틀.
+                    });
+
+                    var content =
+                        "Sahid Mini Office<br> 1 Sahid Sudirman Residence Jl.<br>Jendral Sudirman No. 86 Jakarta 10220<br>Indonesia"; // 말풍선 안에 들어갈 내용
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: content
+                    });
+
+                    google.maps.event.addListener(marker, "click", function () {
+                        infowindow.open(map, marker);
+                    });
+
+                    google.maps.event.addDomListener(window, "resize", function () { //리사이즈에 따른 마커 위치
+                        var center = map.getCenter();
+                        google.maps.event.trigger(map, "resize");
+                        map.setCenter(center);
+                    });
+
+                } //if-end
+            } //function-end
+
+        }); //jQuery-end
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <h1><a href="main.html"><img src="../images/web/common/logo.png" alt="DanaOk"></a></h1>
+                <h2>주 메뉴</h2>
+                <nav>
+                    <ul>
+                        <li></li><a href="#">Ajukan Pinjaman</a></li>
+                        <li><a href="#">Informasi Pinjaman</a></li>
+                        <li><a href="#">DanaOK</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <!-- 로그인 후 메뉴 -->
+                    <a href="#">Mypage</a>
+                    <a href="">Logout</a>
+                    <!--로그인전 메뉴 <a href="">Login</a> -->
+                </div>
+                <a href="#!" class="btn_close">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="sub-header">
+                <a href="#!" class="btn-back"><img src="../images/common/btn_back.png" alt="뒤로"></a>
+                <h3>Tentang Kami</h3>
+                <a href="#!" class="btn_open"><img src="../images/common/btn_open_nav.png" alt=""></a>
+            </div>
+            <h3 class="sub-title">Kontak</h3>
+            <div class="container sub-container contact">
+                <h4 class="title">Informasi kontak perusahaan</h4>
+                <ul class="apply-list">
+                    <li>
+                        <h3>Address</h3>
+                        <div class="txt">
+                            Sahid Mini Office<br>
+                            1 Sahid Sudirman Residence Jl.<br>
+                            Jendral Sudirman No. 86 Jakarta 10220<br>
+                            Indonesia
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Phone Number</h3>
+                        <div class="txt">000 0000 0000</div>
+                    </li>
+                    <li>
+                        <h3>Email</h3>
+                        <div class="txt">okp2p@okp2p.in</div>
+                    </li>
+                    <li>
+                        <h3>SNS</h3>
+                        <div class="txt">
+                            <a href="#" target="_blank"><img src="../images/web/ico_sns1.png" alt=""></a>
+                            <a href="#" target="_blank"><img src="../images/web/ico_sns2.png" alt=""></a>
+                            <a href="#" target="_blank"><img src="../images/web/ico_sns3.png" alt=""></a>
+                            <a href="#" target="_blank"><img src="../images/web/ico_sns4.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="map">
+                    <div id="google_map" class="mgb40" style="width:100%; height:230px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

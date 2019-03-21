@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="description" content="P2P대출 최초 모바일, 무서류, 즉시지급. 최저금리 3.7%">
+    <meta name="keywords" content="렌딩사이언스,p2p대출,대출">
+    <meta name="author" content="Jinny">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta charset="utf-8">
+    <title>렌딩사이언스</title>
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+			$("header").load("../inc/header.html");
+			$("footer").load("../inc/footer.html");
+		});*/
+	</script>     
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1>렌딩사이언스</h1>
+            <h2>주 메뉴</h2>
+            <a href="#" class="btn-open-nav"><img src="../images/common/btn_open_nav.png" alt=""></a>
+            <nav>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="HOME">HOME</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#">Cek Limit/Bunga</a></li>
+                                <li><a href="#">Notifikasi Pinjaman</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span class="new">new</span><a href="#">Informasi Pinjaman</a></li>
+                                <li><a href="#">Informasi Pribadi</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DanaOK</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="util">
+                    <a href="#">Syarat dan Ketentuan<br>Penggunaan</a>
+                    <a href="">Kebijakan Menangani<br>Informasi Pribadi</a>
+                    <a href="">Penanggulangan<br>Aktifitas Ilegal</a>
+                    <a href="">DISCLAIMER</a>
+                </div>
+                <a href="#" class="btn-close-nav"><img src="../images/common/btn_close.png" alt="닫기"></a>
+            </nav>
+        </header>
+        <div class="sub-header">
+            <h2>Mypage</h2>
+            <a href="#" class="btn-back"><img src="../images/common/btn_back.png" alt="뒤로"></a>
+        </div>
+        <div id="contents">
+            <div class="container mypage has-popup">
+                <ul class="tab-menu">
+                    <li class="on"><a href="#">Informasi Pinjaman</a></li>
+                    <li><a href="#">Informasi Pribadi</a></li>
+                </ul>
+                <h3 class="title">Infomasi pinjaman  berjalan nasabah</h3>
+                <div class="group">
+                    <div class="radio-box v2">
+                        <input type="radio" name="opt" id="opt1">
+                        <label for="opt1">Detail<br>pengembalian</label>
+                    </div>
+                    <div class="radio-box v2">
+                        <input type="radio" name="opt" id="opt2">
+                        <label for="opt2">Tentang<br>pengembalian</label>
+                    </div>
+                    <div class="radio-box v2">
+                        <input type="radio" name="opt" id="opt3" checked>
+                        <label for="opt3">Jadwal<br>pengembalian</label>
+                    </div>
+                </div>
+                <form action="">
+                    <ul class="apply-list">
+                        <li>
+                            <label for="accountNO">Nomor Rekening</label>
+                            <input type="text" name="accountNO" id="accountNO" class="input-text" value="125645454512312154545454">
+                        </li>
+                        <li>
+                            <label for="termFrom">Jangka waktu pencarian</label>
+                            <div class="cal-group">
+                                <input type="text" name="termFrom" id="termFrom" class="input-text" value="2018.10.02">
+                                <a href="#" class="btn-cal" data-value="cal1"><img src="../images/btn_cal.png" alt=""></a>
+                                &nbsp; ~ &nbsp; 
+                                <input type="text" name="termTo" id="termTo" class="input-text" value="2018.12.02">
+                                <a href="#" class="btn-cal" data-value="cal1"><img src="../images/btn_cal.png" alt=""></a>
+                            </div>
+                        </li>         
+                        <li>
+                            <div class="group">
+                                <div class="radio-box v2">
+                                    <input type="radio" name="sel" id="sel1">
+                                    <label for="sel1">Bulan Pertama</label>
+                                </div>
+                                <div class="radio-box v2">
+                                    <input type="radio" name="sel" id="sel2">
+                                    <label for="sel2">Bulan Kedua</label>
+                                </div>
+                                <div class="radio-box v2">
+                                    <input type="radio" name="sel" id="sel3">
+                                    <label for="sel3">Bulan Ketiga</label>
+                                </div>
+                            </div>
+                            <span class="btn btn-submit v2 v3"><a href="">Cari</a></span>
+                        </li>   
+                        <li>
+                            <label for="" class="caption">Riwayat transaksi</label>
+                            <div class="scroll-table">
+                                <div class="box">
+                                    <table class="deal-history">
+                                        <colgroup>
+                                            <col class="no">
+                                            <col class="">
+                                            <col class="">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tahap</th>
+                                                <th>Tanggal<br>pembayaran</th>
+                                                <th>Tanggal<br>Transfer</th>
+                                                <th>Total<br>Pengembalian</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>4</th>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">100,000</td></a>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">100,000</td></a>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">100,000</td></a>
+                                            </tr>    
+                                            <tr>
+                                                <th>2</th>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">100,000</td></a>
+                                            </tr>
+                                            <tr>
+                                                <th>1</th>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">2017.05.21</td></a>
+                                                <td><a href="#">100,000</td></a>
+                                            </tr>                      
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="popup calender cal1">
+                        <h2>Pilih tanggal</h2>
+                        <div class="top-area">
+                            <a href="" class="btn-go-first">처음으로</a>
+                            <a href="" class="btn-go-prev">이전달</a>
+                            <h4>2018.09</h4>
+                            <a href="" class="btn-go-next">다음달</a>
+                            <a href="" class="btn-go-last">마지막으로</a>
+                        </div>
+                        <div class="date-area">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S</th>
+                                        <th>M</th>
+                                        <th>T</th>
+                                        <th>W</th>
+                                        <th>T</th>
+                                        <th>F</th>
+                                        <th>S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"></td></a>
+                                        <td><a href="#"></td></a>
+                                        <td><a href="#"></td></a>
+                                        <td><a href="#"></td></a>
+                                        <td><a href="#">1</td></a>
+                                        <td><a href="#">2</td></a>
+                                        <td><a href="#">3</td></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">4</td></a>
+                                        <td><a href="#">5</td></a>
+                                        <td><a href="#">6</td></a>
+                                        <td><a href="#">7</td></a>
+                                        <td><a href="#">8</td></a>
+                                        <td><a href="#">9</td></a>
+                                        <td><a href="#">10</td></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">11</td></a>
+                                        <td><a href="#">12</td></a>
+                                        <td class="selected"><a href="#">13</td></a>
+                                        <td><a href="#">14</td></a>
+                                        <td><a href="#">15</td></a>
+                                        <td><a href="#">16</td></a>
+                                        <td><a href="#">17</td></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">18</td></a>
+                                        <td><a href="#">19</td></a>
+                                        <td><a href="#">20</td></a>
+                                        <td><a href="#">21</td></a>
+                                        <td><a href="#">22</td></a>
+                                        <td><a href="#">23</td></a>
+                                        <td><a href="#">24</td></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">25</td></a>
+                                        <td><a href="#">26</td></a>
+                                        <td><a href="#">27</td></a>
+                                        <td><a href="#">28</td></a>
+                                        <td><a href="#">29</td></a>
+                                        <td><a href="#">30</td></a>
+                                        <td><a href="#"></td></a>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container">
+                            <span class="btn btn-submit v2"><a href="">OK</a></span>
+                        </div>
+                        <a href="#" class="btn-close-popup"><img src="../images/common/btn_close.png" alt="창닫기"></a>
+                    </div>
+                </form>                    
+            </div>
+        </div>
+
+    </div>
+</body>

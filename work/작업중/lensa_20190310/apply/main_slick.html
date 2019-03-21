@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta name="description" content="P2P대출 최초 모바일, 무서류, 즉시지급. 최저금리 3.7%">
+    <meta name="keywords" content="렌딩사이언스,p2p대출,대출">
+    <meta name="author" content="Jinny">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta charset="utf-8">
+    <title>렌딩사이언스</title>
+    <link type="text/css" href="../css/fonts.css" rel="stylesheet">
+    <link type="text/css" href="../css/basic.css" rel="stylesheet">
+    <link type="text/css" href="../css/slick.css" rel="stylesheet">
+    <link type="text/css" href="../css/main_slick.css" rel="stylesheet">
+    <link type="text/css" href="../css/mt-range-slider-basic.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.mtRangeSlider.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/slick.js"></script>
+    <script>
+        
+        
+        $('document').ready(function () {
+            $('.swipe-slider').slick({
+                infinite: false,
+                dots: true,
+                centerMode: true,
+                centerPadding: '100px',
+                slidesToShow: 1,
+                arrows: false,
+                asNavFor:".swipe-slider-nav",
+                responsive: [
+                    {
+                        breakpoint: 721,
+                        settings: {
+                            centerPadding: '70px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 481,
+                        settings: {
+                            centerPadding: '50px'
+                        }
+                    },
+                    {
+                        breakpoint: 381,
+                        settings: {
+                            centerPadding: '40px'
+                        }
+                    },
+                    {
+                        breakpoint: 321,
+                        settings: {
+                            centerPadding: '43px'
+                        }
+                    }
+                ]
+            });
+            $('.swipe-slider-nav').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.swipe-slider',
+                arrows: false,
+            });
+
+            $(".rp-range").on("draggable mouseenter mousedown",function(event){
+                event.stopPropagation();
+            });
+        });
+
+    </script>    
+    <script>
+        var frSliderHandle,
+            frSliderElement,
+            fcVal;
+
+        function inputBoxChanged() {
+            sliderHandle.update(inputValue.value);
+        }
+
+        function sliderMoved(sliderDataObject) {
+            inputValue.value = sliderElement.value;
+        }
+
+        function inputBoxChanged2() {
+            sliderHandle2.update(inputValue2.value);
+        }
+
+        function sliderMoved2(sliderDataObject2) {
+            inputValue2.value = sliderElement2.value;
+        }        
+
+        $(document).ready(function (sliderDataObject) {
+           
+            $("#slider").mtRangeSlider({
+                min: 0,
+                max: 3000000,
+                initialValue: 1500000,
+                onChange: sliderMoved
+            });
+
+            $("#slider-curr-value").val("1500000").on("focus", function () { this.select(); }).change(inputBoxChanged);
+            sliderHandle = $("#slider").data("mtRangeSlider"), // Slider positioning 
+                sliderElement = document.getElementById("slider"), // getting slider value
+                inputValue = document.getElementById("slider-curr-value"); //THis is where you may get and set the value of textbox
+                
+            $("#slider2").mtRangeSlider({
+                    min: 0,
+                    max: 3000000,
+                    initialValue: 1500000,
+                    onChange: sliderMoved2
+                });
+
+                $("#slider-curr-value2").val("1500000").on("focus", function () { this.select(); }).change(inputBoxChanged2);
+                sliderHandle2 = $("#slider2").data("mtRangeSlider"), // Slider positioning 
+                    sliderElement2 = document.getElementById("slider2"), // getting slider value
+                    inputValue2 = document.getElementById("slider-curr-value2"); //THis is where you may get and set the value of textbox
+                        
+                    // slider-curr-value
+        });
+        $('document').ready(function () {
+            // input 처음 숫자 콤마 적용
+            $("#slider-curr-value").val(comma($("#slider-curr-value").val()));
+            $("#slider-curr-value2").val(comma($("#slider-curr-value2").val()));
+            function comma(num){
+                var len, point, str; 
+       
+                num = num + ""; 
+                point = num.length % 3 ;
+                len = num.length; 
+               
+                str = num.substring(0, point); 
+                while (point < len) { 
+                    if (str != "") str += "."; 
+                    str += num.substring(point, point + 3); 
+                    point += 3; 
+                } 
+                 
+                return str;
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!--  -->
+    <div id="wrap">
+        <header>
+            <h1><img src="../images/logo_main.png" alt="ok!p2p"></h1>
+            <h2>주 메뉴</h2>
+            <a href="#" class="btn-open-nav"><img src="../images/common/btn_open_nav.png" alt=""></a>
+            <nav>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="HOME">HOME</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#">Cek Limit/Bunga</a></li>
+                                <li><a href="#">Notifikasi Pinjaman</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span class="new">new</span><a href="#">Informasi Pinjaman</a></li>
+                                <li><a href="#">Informasi Pribadi</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DanaOK</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="util">
+                    <a href="#">Syarat dan Ketentuan<br>Penggunaan</a>
+                    <a href="">Kebijakan Menangani<br>Informasi Pribadi</a>
+                    <a href="">Penanggulangan<br>Aktifitas Ilegal</a>
+                    <a href="">DISCLAIMER</a>
+                </div>
+                <a href="#" class="btn-close-nav"><img src="../images/common/btn_close.png" alt="닫기"></a>
+            </nav>
+        </header>
+        <div class="swipe-slider">
+            <div class="cont">
+                <div class="box">
+                    <h3>Pinjaman <span>SME</span></h3>
+                    <div class="rp-range">
+                        <label for="amount">
+                            <sup>Rp</sup>
+                            <input id="slider-curr-value" maxlength="3" size="3" type="text" tabindex="1">
+                        </label>
+                        <div class="slider-area">
+                            <span class="rs rs-0 first"></span>
+                            <input type="text" id="slider" class="slider rs-hidden-input" value="" name="slider" tabindex="-1" readonly="">
+                        </div>
+                    </div>
+                    <ul class="apply-list">
+                        <li>
+                            <label for="days">Jumlah hari peminjaman</label>
+                            <div class="select-box">
+                                <select name="days" id="days">
+                                    <option value="1">180 hari</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="total">Total biaya administrasi</label>
+                            <input type="text" name="total" id="total" class="input-text" value="Rp 160.000">
+                        </li>
+                        <li>
+                            <label for="yang">Total yang masuk rekening</label>
+                            <input type="text" name="yang" id="yang" class="input-text" value="Rp 2.840.000">
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="btn-apply">Pengajuan Pinjaman</a>
+                <!-- <span class="bg"><img src="../images/bg_bottom1.png" alt="" class=""></span> -->
+            </div>
+            <div class="cont">
+                <div class="box">
+                    <h3>Pinjaman <span>Payday</span></h3>
+                    <div class="rp-range">
+                        <label for="amount">
+                            <sup>Rp</sup>
+                            <input id="slider-curr-value2" maxlength="3" size="3" type="text" tabindex="1">
+                        </label>
+                        <div class="slider-area">
+                            <span class="rs rs-0 first"></span>
+                            <input type="text" id="slider2" class="slider rs-hidden-input" value="" name="slider2" tabindex="-1" readonly="">
+                        </div>
+                    </div>
+                    <ul class="apply-list">
+                        <li>
+                            <label for="days">Jumlah hari peminjaman</label>
+                            <div class="select-box">
+                                <select name="days" id="days">
+                                    <option value="1">180 hari</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="total">Total biaya administrasi</label>
+                            <input type="text" name="total" id="total" class="input-text" value="Rp 160.000">
+                        </li>
+                        <li>
+                            <label for="yang">Total yang masuk rekening</label>
+                            <input type="text" name="yang" id="yang" class="input-text" value="Rp 2.840.000">
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="btn-apply">Pengajuan Pinjaman</a>
+                <!-- <span class="bg"><img src="../images/bg_bottom2.png" alt="" class=""></span> -->
+            </div>
+        </div>
+        <div class="swipe-slider-nav">
+         <img src="../images/bg_bottom1.png" alt="" class="">
+        <img src="../images/bg_bottom2.png" alt="" class="">
+        </div>  
+    </div>
+</body>

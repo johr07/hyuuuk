@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* sub 공통 */
+#wrap {max-width:720px;margin:0 auto;}
+.container.sub-wrap {width:100%;min-height:calc(100% - 106px);margin:0;box-sizing:border-box;}
+.title {width:98%;height:61px;margin:0 auto 37px;border-radius:40px;font-size:34px;line-height:61px;color:#161616;text-align:center;background:#f6bf00;}
+.ico-quest {display:inline-block;width:49px;height:49px;margin-top:-6.3%;background:url('../images/ico_question.png') no-repeat;vertical-align:top;}
+.layer-popup {display:none;width:91.6%;margin-left:-45.8%;position:absolute;top:50%;left:50%;background:#fff;z-index:9999;}
+.popup {display:none;width:100%;height:100%;position:fixed;top:0;left:0;background:#fff;overflow-y:auto;z-index:9999;}
+.popup h2 {width:100%;height:100px;position:relative;font-size:2.625rem;line-height:6.25rem;color:#fff;text-align:center;background:#0795c2;}
+.popup .container {min-height:90%;padding:6.946% 5.557%;box-sizing:border-box;}
+.has-popup .popup .desc {margin-bottom:140px;padding:0 4.7%;font-size:1.875rem;line-height:2.5rem;}
+.has-popup .popup .caution {margin-bottom:20px;font-weight:700;font-size:2.125rem;line-height:2.8125rem;text-align:center;}
+.has-popup .popup .img img {max-width:100%;}
+.has-popup .popup .btn-submit {text-align:center;text-indent:0;background-image:none;}
+.has-popup .popup .btn-close-popup {position:absolute;top:32px;right:30px;}
+.has-popup .popup .btn-close-popup img {height:100%;}
+.step {width:100%;height:70px;background:#0080a8;position:fixed;top:100px;left:0;overflow:hidden;z-index:9;
+    -webkit-box-shadow: inset 0px 1px 0px 1px rgba(0,9,11,0.2);
+    -moz-box-shadow: inset 0px 1px 0px 1px rgba(0,9,11,0.2);
+    box-shadow: inset 0px 1px 0px 1px rgba(0,9,11,0.2);
+    box-sizing:border-box;}
+.step>ol {display:flex;flex-wrap:nowrap;margin-top:1px;}
+.step>ol>li {float:left;width:24%;height:69px;position:relative;font-size:1.625rem;line-height:69px;color:#fefefe;text-align:center;background:#0080a8;}
+.step>ol>li.current {width:28%;content:"";background:#0795c2;}
+.step>ol>li.current:before {content:"";display:block;width:0;height:0;position:absolute;top:0;left:0;border-top:35px solid transparent;border-left:25px solid #0080a8;border-bottom:35px solid transparent;background:#0795c2;}
+.step>ol>li.current:after {content:"";display:block;width:0;height:0;position:absolute;top:0;right:0;border-top:35px solid transparent;border-left:25px solid #0795c2;border-bottom:35px solid transparent;background:#0080a8;}
+.step>ol>li:first-child.current:before {left:auto;right:0;border-left-color:#0795c2;background:#0080a8;}
+.step>ol>li:last-child.current:after {display:none;}
+.tab-menu {margin-bottom:40px;font-size:0;line-height:0;text-align:justify;}
+.tab-menu>li {display:inline-block;width:49%;margin-left:1%;border-radius:20px 20px 0 0;font-size:30px;line-height:30px;color:#818181;text-align:center;background:#e1e1e1;vertical-align:top;}
+.tab-menu>li.on {background:#0695c2;color:#fff;}
+.tab-menu>li:first-child {margin-left:0;}
+.tab-menu>li a {display:block;padding:13px 0;}
+.tab-menu.v2 {text-align:left;}
+.tab-menu.v2>li {width:32.5%;}
+
+.scroll-table {width:100%;max-width:720px;overflow:hidden;overflow-x:scroll;}
+.scroll-table .box {width:115%;overflow:hidden;}
+.scroll-table table thead tr th:first-child {position:absolute;width:18.3%;padding:31px 0 30px;}
+.scroll-table table tbody tr th {position:absolute;width:18.3%;}
+
+/* apply-form */
+.apply-list>li>label {display:block;margin-bottom:10px;text-indent:5px;}
+.apply-list>li {margin-bottom:40px;}
+
+/* apply-info-confirm(7.한도금리조회,대출신청-신청정보 확인) */
+.apply-info-confirm {height:100%;}
+.apply-info-confirm .apply-list {margin:6.946% 5.557%;}
+.apply-info-confirm .txt {margin-bottom:66px;margin:4.16%;font-size:1.875rem;line-height:1.875rem;color:#0795c2;}
+.apply-info-confirm .msg-certification {display:flex;flex-wrap:nowrap;justify-content:space-between;}
+.apply-info-confirm .msg-certification .input-text {width:52.4%;}
+.apply-info-confirm .apply-list .msg-certification .timer {font-size:1.875rem;line-height:4.25rem;}
+.apply-info-confirm .apply-list .msg-certification .btn-confirm {width:28.784%;}
+
+/* apply-info(6.한도그림조회,대출신청-신청정보 입력) */
+.apply-info .apply-list {padding:6.946% 5.557%;}
+.apply-info .birth {display:flex;flex-wrap:nowrap;justify-content:space-between;}
+.apply-info .birth .select-box {width:31.5%;}
+.apply-info .birth .select-box select {color:#535353;}
+.apply-info .group.radio-box {margin:12px 8% 0 0;}
+
+/* limit-result(3.한도금리확인,대출신청-한도결과) */
+.limit-result .sub-wrap {padding:6.946% 5.557%;}
+.limit-result .check-list {margin-bottom:9.377%;}
+.limit-result .check-list>li {height:52px;margin-bottom:35px;border-bottom:2px solid #0795c2;}
+.limit-result .check-list>li label {display:inline-block;width:40%;padding-top:8px;font-size:1.875rem;line-height:30px;color:#b6b6b6;letter-spacing:-0.06em;vertical-align:top;}
+.limit-result .check-list>li .select-box {display:inline-block;width:59%;border-bottom:none;}
+.limit-result .check-list>li .select-box select {float:right;width:auto;text-align-last:right;font-size:3.125rem;color:#242424;}
+.limit-result .check-list>li .input-text {display:inline-block;width:59%;border-bottom:none;text-align:right;color:#242424;font-size:3.125rem;}
+.limit-result .desc {margin-bottom:15.629%;font-size:1.875rem;line-height:40px;color:#242424;text-align:center;}
+.limit-result .btns {display:flex;flex-wrap:nowrap;justify-content:space-between;}
+.limit-result .btns .btn {width:49.68%;height:85px;font-size:1.875rem;letter-spacing:-0.05em;background:#0795c2 url('../images/common/ico_btn.png') 90% 50% no-repeat;}
+.limit-result .btns .btn> a:after {display:none;}
+.limit-result .btns .btn.double-line {line-height:35px;}
+.limit-result .btns .btn.double-line > a {display:inline-block;padding-top:10px;vertical-align:middle;}
+.limit-result .btns button.btn {line-height:1.9rem;}
+.limit-result .layer-popup .title {width:74%;margin:30px auto 66px;}
+.limit-result .layer-popup ul {width:80.3%;margin:0 auto 80px;}
+.limit-result .layer-popup ul>li {position:relative;margin-bottom:22px;font-size:30px;line-height:30px;color:#242424;}
+.limit-result .layer-popup ul>li .rp {position:absolute;right:0;}
+.limit-result .layer-popup .btn {width:100%;text-align:center;}
+
+/* apply-loan(18.대출신청01,대출신청-대출신청) */
+.apply-loan .apply-list {padding:6.946% 5.557%;}
+/* .apply-loan .btn-submit {position:absolute;left:0;bottom:0;} */
+
+/* img-upload(17.대출약정(이미지등록),대출신청-이미지등록 */
+.img-upload .txt {margin-bottom:66px;margin:4.16%;font-size:1.875rem;line-height:1.875rem;color:#0795c2;letter-spacing:-0.05rem;}
+.img-upload .apply-list {padding:4.16% 5.557% 6.946% 5.557%;}
+.img-upload .apply-list > li .input-file .input-text {width:68.6%;height:75px;line-height:75px;}
+.img-upload .apply-list > li .group {display:flex;flex-wrap:nowrap;justify-content:space-between;}
+.img-upload .input-file input[type='file'] {width:29.7%;height:75px;}
+.img-upload .apply-list > li .btn-confirm {width:28.7%;height:75px;line-height:75px;text-align:center;}
+.img-upload .desc {margin:30px 0 145px;font-size:26px;line-height:32px;color:#535353;letter-spacing:-0.05em;}
+
+/* decline_guide(2.한도금리확인_거부,대출신청-거절안내) */
+.decline-guide .sub-wrap {padding:7% 4.16%;}
+.decline-guide .msg {margin:70px 0 65px;font-size:3.125rem;line-height:4.375rem;text-align:center;color:#242424;}
+.decline-guide .desc {margin-bottom:50px;padding:0 2%;font-size:1.875rem;line-height:2.3125rem;text-align:center;}
+.decline-guide .btn-submit {text-align:center;background-position:78% 50%;}
+
+/* work-info(5.한도그림조회2,대출신청-직장정보) */
+.work-info .apply-list {padding:7% 4.16%;}
+
+/* apply_additional_info(4.한도금리조회03,대출신청-추가정보) */
+.apply-additional-info .apply-list {padding:7% 4.16%;}
+
+/* contract(대출약정) */
+.contract-cont .apply-list {padding:7% 4.16%;}
+.contract-cont .guide-txt {font-size:30px;line-height:40px;letter-spacing:-0.05em;color:#0795c2;}
+.contract-cont .popup .container {position:relative;}
+.contract-cont .popup .agree-area {position:absolute;left:4.168%;bottom:5%;}
+.contract-cont .popup .agree-area .check-box {vertical-align:middle;}
+.contract-cont .popup .agree-area .check-box label {width:10%;}
+.contract-cont .popup .agree-area p {display:inline-block;vertical-align:middle;}
+.contract-cont .popup .agree-area p label {font-size:30px;line-height:35px;vertical-align:middle;}
+.contract-cont .txt {margin-bottom:3%;font-size:30px;line-height:40px;letter-spacing:-0.05em;color:#242424;}
+.contract .popup h3 {margin-bottom:50px;font-size:34px;line-height:34px;color:#242424;}
+.contract .popup .txt {margin-bottom:50px;font-size:34px;line-height:45px;letter-spacing:-0.02em;color:#242424;}
+.contract .popup ul {margin-bottom:70px;}
+.contract .popup ul>li {margin-bottom:5px;padding-left:43px;font-size:34px;line-height:40px;letter-spacing:-0.02em;color:#242424;overflow:hidden;}
+.contract .popup ul>li .no {float:left;margin-left:-43px;}
+.contract .popup dl:after {content:"";display:block;clear:both;}
+.contract .popup dl>dt {padding-left:43px;font-weight:700;font-size:34px;line-height:45px;letter-spacing:-0.02em;color:#242424;}
+.contract .popup dl>dt .no {float:left;margin-left:-43px;}
+.contract .popup dl>dd {font-size:34px;line-height:45px;letter-spacing:-0.02em;color:#242424;}
+.contract .popup dl>dd dl {padding-left:8.5%;}
+.contract .popup dl>dd dl dd {padding-left:10%;}
+.contract .popup dl>dd dl dd dt {margin-left:-10%;font-weight:700;}
+.contract .popup dl>dd dl dl {padding-left:15%;}
+.contract .popup dl>dd dl dl dt {margin-left:-17%;}
+.contract .popup dl>dd dl dl dd {padding-left:0;}
+.contract .popup .section-finish {margin-bottom:10px;}
+.contract .popup .txt {padding:10px 0;text-align:center;}
+.contract .popup h4 {margin-bottom:5px;font-weight:700;font-size:14px;}
+.contract .popup table {border-left:none;border-right:none;}
+.contract .popup table tbody tr th {padding:0 3%;background:#f9f9f9;}
+.contract .popup table tbody tr td {padding:0 3%;text-align:left;}
+.contract .popup .caution {margin-top:10px;font-size:26px;line-height:40px;text-align:left;}
+.contract .popup .img-area .tit {display:block;margin-bottom:18px;font-weight:700;font-size:30px;}
+.contract .popup .img-area>div {margin-bottom:15%;text-align:center;vertical-align:top;}
+.contract .popup .img-area>div .img {display:inline-block;width:59.4%;height:230px;margin-bottom:16px;border:2px solid #e0e0e0;font-size:0;line-height:230px;}
+.contract .popup .img-area>div .img img {max-width:100%;max-height:100%;vertical-align:middle;}
+.contract .popup .img-area>div .code {display:block;margin-bottom:10px;font-size:30px;color:#a7a7a7;}
+.contract .popup .img-area>div p {font-size:30px;color:#434343;}
+.contract.v2 .popup ul>li {padding-left:0;}
+.contract.v2 .popup ul>li .no {margin-left:0;}
+.contract.v2 dt {padding-left:0;}
+.contract.v2 dt .no {float:none;margin-left:0;}
+.contract.v2 dl {padding-left:0;}
+.contract.v2 .popup dl>dt {padding-left:0;}
+.contract.v2 .popup dl>dt .no {float:none;margin-left:0;}
+.contract.v2 .popup dl>dd dl {padding-left:0;}
+.contract.v2 .popup dl>dd dl dd {padding-left:0;}
+.contract.v2 .popup dl>dd dl dl dt {margin-left:0;}
+
+/* loan-finish(대출약정 완료 팝업) */
+.loan-finish .layer-popup {height:464px;}
+.loan-finish .layer-popup .container {padding:30px 13%;position:relative;}
+.loan-finish .layer-popup .txt {font-size:30px;line-height:35px;color:#242424;letter-spacing:-0.05em;text-align:center;}
+.loan-finish .layer-popup .txt.v2 {text-align:left;}
+.loan-finish .layer-popup .txt.v2 strong {font-size:700;}
+.loan-finish .layer-popup .btn {width:100%;position:absolute;left:0;bottom:0;}
+
+/*** member ***/
+.member .sub-wrap {padding:6% 4%;}
+/* login */
+.login .container.sub-wrap {min-height:auto;}
+.login .apply-list {margin-bottom:135px;}
+.login .btns {display:flex;flex-wrap:wrap;justify-content:space-between;}
+.login .btns .btn-submit {width:100%;height:86px;align-self:baseline;margin-bottom:7.25%;line-height:86px;}
+.login .btns .btn-member {display:block;width:48.5%;height:65px;border:1px solid #9b9b9b;font-size:30px;line-height:65px;text-align:center;}
+.birth {display:flex;flex-wrap:nowrap;justify-content:space-between;}
+.birth .select-box {width:31.5%;}
+.birth .select-box select {color:#535353;}
+.group.radio-box {margin:12px 8% 0 0;}
+.login .popup .txt {padding:0 8%;font-size:34px;line-height:40px;color:#3e3e3e;letter-spacing:-0.07em;}
+.login .popup .container {position:relative;}
+.find-id-result .txt {margin-top:160px;padding:0 8%;font-size:34px;line-height:40px;color:#3e3e3e;letter-spacing:-0.07em;}
+.find-id-result .btns {margin-top:10%;}
+.find-id-result .btns .btn-submit {margin-bottom:0;width:48.5%;letter-spacing:-0.05em;}
+.find-id-result .result {margin-top:80px;font-weight:700;font-size:40px;line-height:40px;color:#000;text-align:center;}
+.login .btn-go-login {margin-top:10%;}
+.login .find-pw .apply-list {margin-bottom:40px;}
+.login .change-pw .apply-list {margin-bottom:0;}
+.login.change-pw .apply-list {margin-bottom:0;}
+.login .change-pw .txt {padding:0;}
+.login .change-pw .btn-submit {margin-top:10%;}
+.change-pw .txt {margin-bottom:8%;padding:0 8%;font-size:34px;line-height:40px;color:#3e3e3e;letter-spacing:-0.07em;}
+.change-pw-result .txt {padding:0 8%;font-size:34px;line-height:40px;color:#3e3e3e;letter-spacing:-0.07em;}
+
+/* faq */
+.faq {margin:6.946% 5.557%;}
+.faq ul>li {border-bottom:2px solid #d7d7d7;overflow:hidden;}
+.faq ul>li h4 {padding:10.316% 0 10.316% 17.11%;position:relative;font-weight:700;font-size:34px;line-height:30px;color:#434343;}
+.faq ul>li h4 span {position:absolute;top:50%;left:0;margin-top:-4.01%;}
+.faq .answer {padding:13.126% 7.035% 13.126% 15.001%;font-size:34px;line-height:34px;color:#242424;background:#ededed;overflow:hidden;}
+.faq .answer span {float:left;margin-left:-12%;}
+
+/* mypage */
+.mypage {margin:6.946% 5.557%;}
+.mypage .group {margin-bottom:46px;font-size:0;line-height:0;}
+.mypage .apply-list .radio-box.v2 {width:32.5%;margin-left:1%}
+.mypage .apply-list .radio-box.v2:first-child {margin-left:0;}
+.mypage .apply-list .radio-box.v2>label {width:100%;height:73px;padding:0;font-size:30px;line-height:73px;color:#2f2f2f;border:1px solid #9b9b9b;box-sizing:border-box}
+.mypage .input-text {text-align:right;}
+.mypage .cal-group .input-text {text-align:left;}
+.mypage .select-box select {text-align-last:right;}
+.mypage table.deal-history colgroup .no {width:18.6%;}
+.mypage table.deal-history thead tr th:first-child {background:#eaeaea;}
+.mypage table.deal-history tbody tr th {background:#eaeaea}
+.apply-list>li>label {margin-bottom:30px;}
+.personal-info .input-text {text-align:right;}
+.calender .top-area {margin-bottom:20px;padding:35px 0;height:115px;text-align:center;border-bottom:2px solid #bcbcbc;box-sizing:border-box;}
+.calender .top-area a {display:inline-block;width:34px;height:39px;font-size:0;background:url('../images/arrow_left_double.png') 0 50% no-repeat;vertical-align:top;}
+.calender .top-area a.btn-go-next, .calender .top-area a.btn-go-last {transform:rotate(180deg)}
+.calender .top-area a.btn-go-prev, .calender .top-area a.btn-go-next {width:23px;background-image:url('../images/arrow_left.png');}
+.calender .top-area a.btn-go-prev {margin-left:56px;}
+.calender .top-area a.btn-go-next {margin-right:56px;}
+.calender .top-area h4 {display:inline-block;width:44%;font-weight:700;font-size:40px;color:#434343;vertical-align:top;}
+.calender table {border:none;}
+.calender table thead tr th {height:87px;padding:0;font-weight:700;border:none;}
+.calender table tbody tr {border:none;}
+.calender table tbody tr td {width:14.2%;height:87px;padding:0;position:relative;font-weight:700;vertical-align:middle;}
+.calender table tbody tr td.selected {color:#fff;background:url('../images/bg_cal_selected.png') 50% 50% no-repeat;background-size:auto 100%;}
+.popup.calender .container {min-height:auto;}
+
+/* etc */
+.etc {padding:6.946% 5.557%;}
+.etc .point {margin:75px 0;font-size:50px;line-height:70px;color:#242424;text-align:center;letter-spacing:-0.05em;}
+.etc .txt {font-size:30px;line-height:35px;color:#242424;text-align:center;letter-spacing:-0.05em;}
+.etc table {border-left:none;border-right:none;}
+.etc table tbody tr th {padding-left:3%;padding-right:3%;background:#f9f9f9;vertical-align:middle;}
+.etc table tbody tr td {padding-left:3%;padding-right:3%;text-align:right;vertical-align:middle;}
+
+/* about company */
+.about-company {padding:6.946% 5.557%;;text-align:center;}
+.about-company .logo {margin-bottom:85px;font-size:0;}
+.about-company h4 {margin-bottom:26px;font-weight:700;font-size:36px;line-height:36px;color:#000;}
+.about-company .txt {margin-bottom:40px ;font-size:27px;line-height:30px;color:#000;}
+.about-company .img {margin-bottom:90px;font-size:0;}
+.about-company ol {margin-bottom:100px;}
+.about-company ol>li {margin-bottom:35px;}
+.about-company ol>li:last-child {margin-bottom:0;}
+.about-company ol .no {display:inline-block;width:30px;height:30px;margin-bottom:5px;font-size:26px;line-height:30px;color:#000;border-radius:100%;background:#f6ae24;vertical-align:top;}
+.about-company ol .desc {font-size:26px;line-height:36px;color:#000;}
+.about-company .txt.v2 {margin-bottom:110px;}
+.about-company .partners h4 {margin-bottom:50px;}
+.about-company .partners img {display:inline-block;margin-bottom:87px;}
