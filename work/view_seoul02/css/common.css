@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import 'reset.css';
-@import 'https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean';
-@import 'https://use.fontawesome.com/releases/v5.7.2/css/all.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
 * {
     box-sizing: border-box;
@@ -166,9 +166,8 @@ body {
 }
 
 .con99 .swiper-slide {
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
-    padding: 0 15%;
 }
 
 .con99 .swiper-slide a {
@@ -200,7 +199,7 @@ body {
     color: #fff;
 }
 
-.con99 .nextPrev>div svg {
+.con99 .nextPrev>div i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,7 +353,7 @@ body {
         height: 40px;
     }
 
-    .con99 .nextPrev>div svg {
+    .con99 .nextPrev>div i {
         font-size: 20px;
     }
     .con98{

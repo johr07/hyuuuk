@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/common.css">
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.8.0/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
 
@@ -76,6 +75,7 @@
                         pagination: {
                             el: '.swiper-pagination',
                         },
+                        centeredSlides: true,
                         paginationClickable: true,
                         navigation: {
                             nextEl: '.swiper-button-next',
@@ -87,9 +87,9 @@
                         slidesPerView: 'auto',
                         coverflowEffect: {
                             rotate: 0,
-                            stretch: 50,
-                            depth: 200,
-                            modifier: 1.5,
+                            stretch: 0,
+                            depth: 150,
+                            modifier: 5,
                             slideShadows: false,
                         },
                     });
