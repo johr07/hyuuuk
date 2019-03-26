@@ -48,6 +48,15 @@ $(function () {
         });
 
     });
+
+    $('.btn_gnb_open').click(function () {
+        $('.header .bottom').addClass('on');
+        $('.bg_gnb').fadeIn();
+    });
+    $('.btn_gnb_close').click(function () {
+        $('.header .bottom').removeClass('on');
+        $('.bg_gnb').fadeOut();
+    });
 })
 
 function isMobileDevice() {

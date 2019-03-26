@@ -736,6 +736,13 @@ input[type=checkbox]:checked+label::before {
     color: #555;
 }
 
+.con4 .fll span:nth-child(2) {
+    width: calc(100% - 40px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .con4 .flr {
     font-size: 15px;
     line-height: 20px;
@@ -763,6 +770,14 @@ input[type=checkbox]:checked+label::before {
 
 .con4.blue .inner .flr {
     color: #fff;
+}
+
+.con4 li>a>.fll {
+    width: calc(100% - 75px);
+}
+
+.con4 li>a>.flr {
+    width: 75px;
 }
 
 
@@ -1741,4 +1756,331 @@ input[type=checkbox]:checked+label::before {
     color: #777;
     font-size: 12px;
     font-weight: 300;
+}
+
+.mobile_v {
+    display: none;
+}
+
+.btn_gnb_open {
+    width: 30px;
+    height: 20px;
+    margin-top: 25px;
+    float: right;
+    position: relative;
+}
+
+.btn_gnb_open span {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #555;
+}
+
+.btn_gnb_open span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.btn_gnb_open span:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.btn_gnb_open span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.btn_gnb_close {
+    width: 30px;
+    height: 30px;
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+}
+
+.btn_gnb_close span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.btn_gnb_close span:nth-child(1) {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.btn_gnb_close span:nth-child(2) {
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.bg_gnb {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}
+
+@media (max-width: 1180px) {
+    .mobile_h {
+        display: none;
+    }
+
+    .mobile_v {
+        display: block;
+    }
+
+    .wrap-1180 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .con1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .con2 {
+        width: 50%;
+    }
+
+    .con3 {
+        width: 50%;
+    }
+
+    .header .bottom {
+        width: 300px;
+        height: 100vh;
+        padding-top: 70px;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 999;
+        transition: all 0.2s;
+    }
+
+    .header .bottom.on {
+        right: 0;
+    }
+
+    .con1 .inner {
+        background: #fff;
+    }
+
+    .con1 .tx_wrap {
+        display: none;
+    }
+
+    .con1 .searBox-01 {
+        width: 100%;
+        position: relative;
+        right: auto;
+        left: auto;
+        bottom: auto;
+    }
+
+    .header .bottom a.on::after {
+        content: "";
+        height: 6px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #788eae;
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+        display: block;
+    }
+
+    .footer .logo {
+        width: 168px;
+        margin: 30px auto 20px;
+        float: none;
+    }
+
+    .footer .ovv {
+        display: none;
+    }
+
+    .footer .copy {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .spai_header .item:nth-child(1) {
+        min-width: 160px;
+    }
+
+    .spai_container .item:nth-child(3) {
+        display: none;
+    }
+    .sub99>.left{
+        display: none;
+    }
+    .sub99>.right{
+        max-width: 100%;
+        width: 100%;
+    }
+    .sub99>.right>.bottom>.right{
+        display: none;
+    }
+    .sub99>.right>.bottom>.left{
+        width: 100%;
+    }
+    .sub99>.right>.bottom>.left .bar .poa{
+        left: 80%;
+    }
+    .sub99>.right>.top .flr>.select{
+        display: none;
+    }
+    .sub99>.right>.top .flr .btn_close{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-1180 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .con {
+        width: 100%;
+    }
+
+    .con3 .blue .fll:nth-child(2) {
+        padding-right: 10px;
+    }
+
+    .searBox-01 .select {
+        min-width: 80px;
+    }
+
+    .visual-01 .searBox-01 {
+        width: 100%;
+    }
+
+    .visual-01 .df .item:nth-child(2) {
+        display: none;
+    }
+
+    .sub .title .fz15 {
+        display: none;
+    }
+
+    .con-01 .bottom .inner_btn {
+        width: 20%;
+    }
+
+    .con-01 .top .fz18 {
+        margin: 0 2px;
+    }
+
+    .con-01 .top .btn {
+        margin: 0 2px;
+    }
+
+    .con-01 .top .fz20 {
+        margin: 0 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .con-02 .flr a:nth-child(1) {
+        display: none;
+    }
+
+    .con-02 .flr .input {
+        display: none;
+    }
+
+    .con-02 .flr {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .con-02 .flr a:nth-child(3) {
+        float: right;
+    }
+
+    .spai_header .item:nth-child(3) {
+        width: 100%;
+        min-width: 100%;
+        margin-top: 10px;
+        float: left;
+        text-align: right;
+        display: block;
+    }
+
+    .spai_header .item:nth-child(3) a {
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .spai_header .icon::before {
+        display: none;
+    }
+
+    .spai_header .item:nth-child(1) {
+        min-width: 120px;
+        float: left;
+    }
+
+    .spai_header .item:nth-child(2) {
+        width: calc(100% - 120px);
+        float: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .spai_container .item:nth-child(1) {
+        display: none;
+    }
+
+    .spai_header .item:nth-child(2).icon::before {
+        display: block;
+    }
+
+    .spai_wrap .spai_header {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .con-03>.df {
+        display: block;
+    }
+
+    .con-03>.df .fz16 {
+        margin-left: 30px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .spai_container .tx_wrap {
+        padding-left: 10px;
+    }
+    .con93 .item:nth-child(1){
+        min-width: 130px;
+    }
+    .con96 .tac .poa{
+        display: none;
+    }
 }
