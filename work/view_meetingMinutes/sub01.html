@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/common.css">
     <title>서울특별시의회 회의록</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 
@@ -121,6 +123,29 @@
                                 <div class="fz18">제 6대</div>
                             </div>
                             <div class="middle">
+
+                                <div id="sliderRange">
+                                </div>
+                                <script>
+                                    var slider = document.getElementById('sliderRange');
+
+                                    noUiSlider.create(slider, {
+                                        step: 1,
+                                        start: [2014, 2018],
+                                        connect: true,
+                                        range: {
+                                            'min': 2014,
+                                            'max': 2018
+                                        },
+                                        pips: {
+                                            mode: 'count',
+                                            stepped: true,
+                                            values: 5
+                                        },
+                                        tooltips: true
+
+                                    });
+                                </script>
                                 <div class="bar_wrap">
                                     <div class="bar">
                                         <div class="df">
@@ -394,7 +419,8 @@
                         <div class="pageNavi">
                             <div class="inner">
                                 <div class="df">
-                                    <a href="#!" class="bullet02 mobile_h"><img src="img/front/ic-plast.png" alt="plast"></a>
+                                    <a href="#!" class="bullet02 mobile_h"><img src="img/front/ic-plast.png"
+                                            alt="plast"></a>
                                     <a href="#!" class="bullet01"><img src="img/front/ic-pprev.png" alt="pprev"></a>
                                     <a href="#!" class="num on">1</a>
                                     <a href="#!" class="num">2</a>
@@ -407,7 +433,8 @@
                                     <a href="#!" class="num">9</a>
                                     <a href="#!" class="num">10</a>
                                     <a href="#!" class="bullet01"><img src="img/front/ic-pnext.png" alt="pnext"></a>
-                                    <a href="#!" class="bullet02 mobile_h"><img src="img/front/ic-pfirst.png" alt="pfirst"></a>
+                                    <a href="#!" class="bullet02 mobile_h"><img src="img/front/ic-pfirst.png"
+                                            alt="pfirst"></a>
                                 </div>
                             </div>
                         </div>
@@ -443,6 +470,9 @@
                     </select>
                     <input type="submit" value="이동">
                 </div>
+            </div>
+            <div class="top_btn">
+                <a href="#"><img src="img/front/btn-top.png" alt="위로가기"></a>
             </div>
         </div>
     </div>

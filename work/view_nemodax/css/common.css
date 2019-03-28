@@ -668,6 +668,9 @@ body {
     margin-top: 20px;
     border-bottom: 1px solid #eee;
 }
+.con2 .top + .tab_container{
+    position: relative;
+}
 
 .con2 .top .searchBox {
     position: relative;
@@ -1325,6 +1328,7 @@ body {
     margin-top: 10%;
     padding: 72px 65px 27px;
     text-align: center;
+    position: relative;
     background-color: #fff;
 }
 
@@ -1668,10 +1672,13 @@ body {
 
 .con2_popup {
     width: 1200px;
-    margin: 5% auto;
     background-color: #fff;
 }
-
+#popup-con2_01{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 .card01 {
     width: 220px;
     margin-top: 60px;

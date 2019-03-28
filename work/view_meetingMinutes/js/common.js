@@ -57,6 +57,10 @@ $(function () {
         $('.header .bottom').removeClass('on');
         $('.bg_gnb').fadeOut();
     });
+
+    $('.spai_header .item:nth-child(2)').click(function(){
+        $(this).parent().toggleClass('on');
+    });
 })
 
 function isMobileDevice() {
