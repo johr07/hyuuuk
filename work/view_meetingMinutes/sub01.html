@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/common.css">
     <title>서울특별시의회 회의록</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 
@@ -123,85 +124,38 @@
                                 <div class="fz18">제 6대</div>
                             </div>
                             <div class="middle">
-
-                                <div id="sliderRange">
+                                <div id="range_wrap">
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
                                 </div>
                                 <script>
-                                    var slider = document.getElementById('sliderRange');
+                                    var lang = "ko-KR";
+                                    var year = 2018;
 
-                                    noUiSlider.create(slider, {
-                                        step: 1,
-                                        start: [2014, 2018],
-                                        connect: true,
-                                        range: {
-                                            'min': 2014,
-                                            'max': 2018
-                                        },
-                                        pips: {
-                                            mode: 'count',
-                                            stepped: true,
-                                            values: 5
-                                        },
-                                        tooltips: true
+                                    function dateToTS(date) {
+                                        return date.valueOf();
+                                    }
 
+                                    function tsToDate(ts) {
+                                        var d = new Date(ts);
+
+                                        return d.toLocaleDateString(lang, {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        });
+                                    }
+
+                                    $(".js-range-slider").ionRangeSlider({
+                                        skin: "big",
+                                        type: "double",
+                                        grid: true,
+                                        min: dateToTS(new Date(year, 10, 1)),
+                                        max: dateToTS(new Date(year, 11, 1)),
+                                        from: dateToTS(new Date(year, 10, 1)),
+                                        to: dateToTS(new Date(year, 11, 1)),
+                                        prettify: tsToDate
                                     });
                                 </script>
-                                <div class="bar_wrap">
-                                    <div class="bar">
-                                        <div class="df">
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet h15"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet h15"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet h15"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                            <div class="bullet"></div>
-                                        </div>
-                                    </div>
-                                    <a href="#!" class="circle left">
-                                        <div class="fz12">2014년</div>
-                                    </a>
-                                    <a href="#!" class="circle right">
-                                        <div class="fz12">2018년</div>
-                                    </a>
-                                </div>
-                                <div class="df">
-                                    <div class="fz12">2014</div>
-                                    <div class="fz12">2015</div>
-                                    <div class="fz12">2016</div>
-                                    <div class="fz12">2017</div>
-                                    <div class="fz12">2018</div>
-                                </div>
                             </div>
                             <div class="bottom">
                                 <div class="inner_btn">
