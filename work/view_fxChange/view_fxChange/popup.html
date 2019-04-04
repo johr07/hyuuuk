@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <a href="#!" onclick="openPopup('buy_order')">buy_order</a>
+    <a href="#!" onclick="openPopup('sell_order')">sell_order</a>
+    <a href="#!" onclick="openPopup('withdraw')">withdraw</a>
+    <a href="#!" onclick="openPopup('diposit')">diposit</a>
+    <a href="#!" onclick="openPopup('tlist')">tlist</a>
+    <a href="#!" onclick="openPopup('find_code')">find_code</a>
+
+
+
+    <div id="popup-buy_order" class="popup popup-buy_order">
+        <div class="popup_inner wrap-1000">
+            <div class="con1">
+                <div class="fz30">
+                    손익 분배 계약서
+                </div>
+                <div class="fz15 sub_title">금융투자상품 (FX마진거래) 투자자(당사)의 ±손익권 조건부 손익분배 계약서</div>
+                <span class="bar"></span>
+                <div class="fz15"><span>회원ID :</span> state489</div>
+                <span class="bar"></span>
+            </div>
+            <div class="con2 df">
+                <div class="fll">
+                    <div>
+                        <div>
+                            <span>&middot; 5,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 1,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 50,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 100,000</span> x (10)
+                        </div>
+                    </div>
+                </div>
+                <div class="fll">
+                    <div>
+                        대여 시작 시간<br>
+                        <span class="fc-red fz25">2019년00월 00일 00시 00분</span><br>
+                        보금증<br>
+                        <span class="fc-red fz25">10,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <a href="#!" class="btn black">매수</a>
+                <a href="#!" class="btn black">수익</a>
+                <a href="#!" class="btn red">계약</a>
+            </div>
+            <div class="fz16">
+                계약 버튼을 누른 즉시 효력이 발생하며 FX마진거래 손익분배 계약 보증금은 차손 발생시 귀속되는 계약입니다.
+                *해당 계약을 취득하기 전에 당사의 이용약관 및 설명서를 필히 읽어 보시기 바랍니다
+            </div>
+            <div class="con3">
+                <div class="ovh fz18">
+                    <div class="fll">상품구분</div>
+                    <div class="fll">
+                        당사 보유(MOU) 금융투자 (FX 마진거래 GBP/AUD)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">1LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">2LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">10LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">20LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+            </div>
+            <div class="ovh">
+                <div class="flr fc-red fz16 fw500">
+                    계약하신 상품의 금액만 해당됩니다.
+                </div>
+            </div>
+            <div class="con99">
+                <a href="#!" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="fz25">문의전화 1234-1111</div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-sell_order" class="popup popup-buy_order blue">
+        <div class="popup_inner wrap-1000">
+            <div class="con1">
+                <div class="fz30">
+                    손익 분배 계약서
+                </div>
+                <div class="fz15 sub_title">금융투자상품 (FX마진거래) 투자자(당사)의 ±손익권 조건부 손익분배 계약서</div>
+                <span class="bar"></span>
+                <div class="fz15"><span>회원ID :</span> state489</div>
+                <span class="bar"></span>
+            </div>
+            <div class="con2 df">
+                <div class="fll">
+                    <div>
+                        <div>
+                            <span>&middot; 5,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 1,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 50,000</span> x (10)
+                        </div>
+                        <div>
+                            <span>&middot; 100,000</span> x (10)
+                        </div>
+                    </div>
+                </div>
+                <div class="fll">
+                    <div>
+                        대여 시작 시간<br>
+                        <span class="fc-blue fz25">2019년00월 00일 00시 00분</span><br>
+                        보금증<br>
+                        <span class="fc-blue fz25">10,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <a href="#!" class="btn black">매수</a>
+                <a href="#!" class="btn black">수익</a>
+                <a href="#!" class="btn blue">계약</a>
+            </div>
+            <div class="fz16">
+                계약 버튼을 누른 즉시 효력이 발생하며 FX마진거래 손익분배 계약 보증금은 차손 발생시 귀속되는 계약입니다.
+                *해당 계약을 취득하기 전에 당사의 이용약관 및 설명서를 필히 읽어 보시기 바랍니다
+            </div>
+            <div class="con3">
+                <div class="ovh fz18">
+                    <div class="fll">상품구분</div>
+                    <div class="fll">
+                        당사 보유(MOU) 금융투자 (FX 마진거래 GBP/AUD)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">1LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">2LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">10LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+                <div class="ovh">
+                    <div class="fll fz17">20LOT(매수)</div>
+                    <div class="fll fz16">
+                        렌트보증금 $5(5,000)으로 렌트시작<br>
+                        단위 ▲50 실현 \4,300(차익) 실현 지급 종료<br>
+                        단위 ▼50 실격 \5,000(차손) 실격 소멸 종료<br>
+                        (손익분배비율: 약 86%)
+                    </div>
+                </div>
+            </div>
+            <div class="ovh">
+                <div class="flr fc-blue fz16 fw500">
+                    계약하신 상품의 금액만 해당됩니다.
+                </div>
+            </div>
+            <div class="con99">
+                <a href="#!" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="fz25">문의전화 1234-1111</div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-withdraw" class="popup popup-withdraw">
+        <div class="popup_inner wrap-430">
+            <div class="con1">
+                <div class="fz30">
+                    출금 신청
+                </div>
+            </div>
+            <div class="con3">
+                <div class="form">
+                    <div class="input">
+                        <label for="">사용자 아이디</label>
+                        <input type="text" placeholder="userid">
+                    </div>
+                    <div class="input">
+                        <label for="">사용자명</label>
+                        <input type="text" placeholder="홍길동">
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="ovh">
+                        <div class="fll">은행</div>
+                        <div class="fll">xx은행 예금주 : 홍길동</div>
+                    </div>
+                    <div class="ovh">
+                        <div class="fll">출금 계좌 번호</div>
+                        <div class="fll">Xxxxxx-xx-xxxxxx</div>
+                    </div>
+                    <div class="ovh">
+                        <div class="fll">출금 가능 금액</div>
+                        <div class="fll">1,000,000</div>
+                    </div>
+                    <div class="ovh">
+                        <div class="fll">출금 신청 금액</div>
+                        <div class="fll">100,000</div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="#!" class="btn blue">출금 신청</a>
+                </div>
+            </div>
+            <p class="fz13 fc-gray">
+                출금 신청 금액에 원하는 금액 입력 후<br>
+                출금 신청을 클릭하시면 출금 신청이 완료됩니다.<br>
+                은행이나 계좌번호는 초기에 등록된 계좌로 출금됩니다.<br>
+                <br>
+                <span class="fc-red fw500">*주의사항</span><br>
+                출금 신청은 본인명의만 신청이 가능합니다.<br>
+                1일 3회 출금 제한됩니다.<br>
+                1회 최대 500만원이 제한됩니다<br>
+                500만원 이상의 출금 시 다시 한번 안내전화를 드립니다.
+            </p>
+        </div>
+    </div>
+    <div id="popup-diposit" class="popup popup-withdraw popup-diposit">
+        <div class="popup_inner wrap-430">
+            <div class="con1">
+                <div class="fz30">
+                    입금 신청
+                </div>
+            </div>
+            <div class="con3">
+                <div class="form">
+                    <div class="input">
+                        <label for="">사용자 아이디</label>
+                        <input type="text" placeholder="userid">
+                    </div>
+                    <div class="input">
+                        <label for="">사용자명</label>
+                        <input type="text" placeholder="홍길동">
+                    </div>
+                    <div class="input">
+                        <label for="">메모</label>
+                        <input type="text" placeholder="김아무개 이름으로 입금할게요.">
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="ovh">
+                        <div class="fll">은행</div>
+                        <div class="fll">xx은행 예금주 : 홍길동</div>
+                    </div>
+                    <div class="ovh">
+                        <div class="fll">입금 계좌 번호</div>
+                        <div class="fll">Xxxxxx-xx-xxxxxx</div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="#!" class="btn red">입금 신청</a>
+                </div>
+            </div>
+            <p class="fz13 fc-gray">
+                예금주 XXX 계좌번호 XXXX<br>
+                계좌번호로 원하는 금액을 입금 후 입금신청을 누르시면 입금이 됩니다.<br>
+                <br>
+                <span class="fc-red fw500">*주의사항</span><br>
+                입금 신청 대상자는 가입시 본인인증을 통해 입력한<br>
+                고객명을 기준으로 표시됩니다.<br>
+                변경을 원하시는 경우 고객센터로 전화주시기바랍니다.<br>
+                입금신청을 하고 계좌이체를 하지 않을경우<br>
+                10분 후에 자동으로 입금 신청 취소가 됩니다.
+
+            </p>
+        </div>
+    </div>
+    <div id="popup-tlist" class="popup tlist">
+        <div class="popup_inner wrap-1000">
+            <div class="con1">
+                <div class="fz30">
+                    거래내역
+                </div>
+                <span class="bar"></span>
+            </div>
+            <div class="form_type05">
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>번호</th>
+                            <th>렌트약정시간</th>
+                            <th>구분</th>
+                            <th>실격</th>
+                            <th>실현</th>
+                            <th>수량</th>
+                            <th>보증금</th>
+                            <th>결과</th>
+                            <th>약정서</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-red">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-red">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-red">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-red">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2010-00-00 20:20:20</td>
+                            <td>매수</td>
+                            <td>
+                                <img src="img/icon_down_b.png" alt="down">
+                                50
+                            </td>
+                            <td>
+                                <img src="img/icon_up_r.png" alt="up">
+                                50
+                            </td>
+                            <td>1LOT</td>
+                            <td>100,000</td>
+                            <td class="fc-blue">실격</td>
+                            <td>
+                                <a href="#!" class="btn">보기</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tac">
+                <div class="pageNavi">
+                    <div class="df">
+                        <a href="#!"><img src="img/icon_left02.png" alt=""></a>
+                        <a href="#!"><img src="img/icon_left01.png" alt=""></a>
+                        <a href="#!" class="active">1</a>
+                        <a href="#!">2</a>
+                        <a href="#!">3</a>
+                        <a href="#!">4</a>
+                        <a href="#!">5</a>
+                        <a href="#!"><img src="img/icon_right01.png" alt=""></a>
+                        <a href="#!"><img src="img/icon_right02.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-find_code" class="popup popup-withdraw popup-find_code">
+        <div class="popup_inner wrap-430">
+            <div class="con3">
+                <div class="form">
+                    <div class="input find_code_con1">
+                        <label for="">추천인을 검색하여 주세요.</label>
+                        <div class="input">
+                            <input type="text" placeholder="">
+                            <a href="#!" class="btn">추천인 검색</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con3 con4">
+                <div class="form">
+                    <div class="input find_code_con1">
+                        <label for="">지점명</label>
+                        <div class="input">
+                            <div class="df">
+                                <input type="checkbox" id="check01-01">
+                                <label for="check01-01">[ 본사 ] <span class="fc-red">홍길동</span></label>
+                            </div>
+                            <a href="#!" class="btn">선택</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
