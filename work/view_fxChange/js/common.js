@@ -3,7 +3,18 @@ $(function () {
         $(this).toggleClass('on');
         $('.header-con1').toggleClass('on');
         $('body').toggleClass('on');
-    })
+    });
+
+    $('.btn-up').click(function () {
+        var thisNum = $(this).parent().children('input');
+        var num = thisNum.val();
+        num = thisNum.val(num * 1 + 1);
+    });
+    $('.btn-down').click(function () {
+        var thisNum = $(this).parent().children('input');
+        var num = thisNum.val();
+        num = thisNum.val(num * 1 - 1);
+    });
 });
 
 function openPopup(id, callback) {

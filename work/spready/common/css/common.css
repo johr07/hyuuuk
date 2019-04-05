@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
 
 body {
     margin: 0;
@@ -20,6 +21,10 @@ a {
 img {
     width: 100%;
     vertical-align: top;
+}
+
+input::placeholder {
+    color: #9b9b9b;
 }
 
 input[type='checkbox'],
@@ -85,19 +90,20 @@ select::-ms-expand {
     display: none;
 }
 
-.select {
-    position: relative;
+.f-ns {
+    font-family: 'NanumSquare', sans-serif;
 }
 
-.select::after {
-    content: "\f0dd";
+.select {
+    position: relative;
     display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translate(0, -50%);
+}
+
+.select select {
+    background-image: url(../img/arrow_06.png);
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px 20px;
 }
 
 .clb::after {
@@ -209,7 +215,7 @@ select::-ms-expand {
 .main-visual .fz106 {
     color: #fff;
     font-size: 106px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 120px;
 }
 
@@ -258,12 +264,16 @@ select::-ms-expand {
 
 .main-visual .img-wrap {
     margin-top: 70px;
+    margin-bottom: 160px;
 }
 
 .main-con1 {
     padding: 110px 0 120px;
     color: #fff;
-    background-color: #000;
+    background-image: url(../img/img01-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-con1 .bar {
@@ -480,8 +490,9 @@ select::-ms-expand {
 }
 
 .fz44.title {
+    font-family: 'NanumSquare', sans-serif;
     font-size: 44px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 55px;
 }
 
@@ -498,8 +509,9 @@ select::-ms-expand {
     display: flex;
     align-items: center;
     color: #777;
+    font-family: 'NanumSquare', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .sub-title.white .fz18 {
@@ -511,6 +523,11 @@ select::-ms-expand {
     margin-left: 10px;
 }
 
+.main-browse-con2 {
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
 .main-browse-con2>.clb>.fll:nth-child(1) {
     max-width: 234px;
     width: 100%;
@@ -519,6 +536,10 @@ select::-ms-expand {
 .main-browse-con2>.clb>.fll:nth-child(2) {
     max-width: 790px;
     width: 100%;
+}
+
+.main-browse-con2>.clb>.fll:nth-child(2) .table {
+    margin-top: 25px;
 }
 
 .main-browse-con2 .con1 {
@@ -552,6 +573,11 @@ select::-ms-expand {
     color: #6f78ff;
 }
 
+.main-browse-con2 .con1 .fz14 img {
+    width: 20px;
+    height: 20px;
+}
+
 .main-browse-con2 .con1 .down>div {
     padding: 8px 10px;
 }
@@ -571,14 +597,126 @@ select::-ms-expand {
     font-size: 12px;
     font-weight: 700;
     border: none;
+    display: inline-block;
 }
 
 .main-browse-con2 .con2 .btn a {
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     color: #fff;
+}
+
+.main-browse-con2 .con3 select {
+    height: 26px;
+    line-height: 26px;
+}
+
+.main-browse-con1 {
+    padding: 90px 0 60px;
+    background-color: #f9f9f9;
+}
+
+.main-browse-con1 .search-wrap {
+    margin-top: 50px;
+    position: relative;
+}
+
+.main-browse-con1 .search-wrap input {
+    height: 52px;
+    line-height: 52px;
+    padding-left: 55px;
+    font-size: 18px;
+}
+
+.main-browse-con1 .search-wrap .btn-search {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+}
+
+.table .tal {
+    text-align: left;
+}
+
+.table .bdb {
+    border-bottom: 2px solid #9b9b9b;
+}
+
+.table .fw700 {
+    font-weight: 700;
+}
+
+.table table {
+    width: 100%;
+    text-align: center;
+    color: #565a5c;
+}
+
+.table img {
+    vertical-align: middle;
+}
+
+.table th {
+    padding: 15px 0;
+    border-bottom: 2px solid #eee;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.table td {
+    padding: 28px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.table .profile {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)
+}
+
+.table .box-new {
+    padding: 2px 6px;
+    background-color: #e5256d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+.pageNavi {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.pageNavi .inner {
+    display: inline-block;
+}
+
+.pageNavi .df {
+    align-items: center;
+}
+
+.pageNavi a {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+.pageNavi a.active {
+    color: #6f7cff;
+}
+
+.pageNavi a:first-child,
+.pageNavi a:last-child {
+    width: 44px;
+    height: 44px;
 }
 
 @media only screen and (max-width:1024px) {
