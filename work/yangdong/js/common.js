@@ -1,5 +1,10 @@
 $(function () {
-
+    $('.btn-menu-open').click(function(){
+        $('.header-bottom').addClass('active');
+    });
+    $('.btn-menu-close').click(function(){
+        $('.header-bottom').removeClass('active');
+    });
 });
 
 function openPopup(id, callback) {

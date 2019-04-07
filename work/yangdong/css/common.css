@@ -13,7 +13,7 @@ body {
 
 a {
     color: #333;
-    display: block;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -224,6 +224,38 @@ select::-ms-expand {
     text-align: left;
 }
 
+.header-top .btn-menu-open {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.header-top .btn-menu-open span {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+}
+
+.header-top .btn-menu-open span:nth-child(1) {
+    top: 0;
+}
+
+.header-top .btn-menu-open span:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header-top .btn-menu-open span:nth-child(3) {
+    bottom: 0;
+}
+
 .header-top .poa>a {
     margin-bottom: 4px;
     color: #614c3f;
@@ -313,19 +345,22 @@ select::-ms-expand {
     margin-left: 15px;
 }
 
-.footer-bottom{
+.footer-bottom {
     padding: 25px 0 50px;
 }
-.footer-bottom >.fll>.fll{
+
+.footer-bottom>.fll>.fll {
     padding-left: 30px;
     font-size: 15px;
     color: #585858;
     line-height: 24px;
 }
-.footer-bottom >.fll>.fll span{
+
+.footer-bottom>.fll>.fll span {
     display: block;
     color: #999;
 }
+
 .footer-bottom>.flr {
     max-width: 430px;
     width: 100%;
@@ -421,6 +456,7 @@ select::-ms-expand {
     padding: 20px 0;
     box-sizing: border-box;
     border-right: 1px dashed #d2d2d2;
+    float: right;
 }
 
 .main-con1 .fll:last-child {
@@ -681,4 +717,253 @@ select::-ms-expand {
 
 .main-con5 .img-wrap img {
     width: 100%;
+}
+
+.m-visible {
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .wrap-1200 {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .header-top {
+        padding: 15px 20px;
+    }
+
+    .main-con1 .fll {
+        width: 33.33333%;
+        float: none;
+        display: inline-block;
+        border-right: none;
+    }
+
+    .main-con1 .fll:nth-child(1) {
+        width: 100%;
+    }
+
+    .main-con2.wrap-1200 {
+        padding: 0;
+    }
+
+    .main-con2 .fll {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .main-con2 .fll img {
+        width: 100%;
+    }
+
+    .owl-carousel .owl-item .fll {
+        vertical-align: middle;
+    }
+
+    .main-con5 .fll {
+        max-width: 420px;
+        float: none;
+    }
+
+    .main-con5 .fll:nth-child(1) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-con5 .fll:nth-child(2),
+    .main-con5 .fll:nth-child(3) {
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-top>.clb>.fll {
+        display: inline-block;
+        float: none;
+    }
+
+    .footer-top>.clb>.fll>.fll {
+        margin: 10px;
+    }
+
+    .footer-top>.clb>.flr {
+        display: inline-block;
+        float: none;
+    }
+
+    .footer-top>.clb>.flr>.fll {
+        margin: 10px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+    }
+
+    .footer-bottom>.fll {
+        float: none;
+    }
+
+    .footer-bottom>.fll>.fll {
+        padding: 10px 0;
+        float: none;
+    }
+
+    .footer-bottom>.flr {
+        max-width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .m-visible {
+        display: block;
+    }
+
+    .header-bottom {
+        max-width: 320px;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        overflow-y: auto;
+        display: none;
+    }
+
+    .header-bottom.active {
+        display: block;
+    }
+
+    .header-bottom .menu {
+        display: none;
+    }
+
+    .header-bottom .drop-menu {
+        padding-top: 50px;
+        top: 0;
+        display: block;
+    }
+
+    .header-bottom .drop-menu .depth01 {
+        width: auto;
+        height: auto;
+        padding: 20px 0;
+        float: none;
+        border: none;
+    }
+
+    .header-bottom .drop-menu .depth01:nth-child(1) {
+        border: none;
+    }
+
+    .header-bottom .drop-menu .depth01>div:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+    }
+
+    .btn-menu-close {
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    .btn-menu-close span {
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #333;
+    }
+
+    .btn-menu-close span:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .btn-menu-close span:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .main-visual video {
+        display: none;
+    }
+
+    .main-visual img {
+        width: 100%;
+    }
+
+    .main-visual .inner .fz50 {
+        font-size: 36px;
+    }
+
+    .main-visual .inner .fz17 {
+        font-size: 14px;
+    }
+
+    .main-visual .inner {
+        padding: 100px 20px 0;
+    }
+
+    .main-con1 .fll {
+        width: 48%;
+    }
+
+    .main-con4 .item .fll .fz42 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .owl-carousel .owl-item .fll {
+        width: 100%;
+        display: block;
+    }
+
+    .main-con4 .item .fll:nth-child(1) {
+        padding: 30px 20px;
+    }
+
+    .main-con4 .wrap-1200 {
+        padding: 0;
+    }
+
+    .main-con4 .owl-nav {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .main-con4 .owl-next {
+        position: relative;
+        transform: translate(0, 0);
+    }
+
+    .main-con4 .owl-prev {
+        position: relative;
+        transform: translate(0, 0);
+    }
+
+    .main-con4 .owl-carousel .owl-nav button.owl-next,
+    .main-con4 .owl-carousel .owl-nav button.owl-prev,
+    .main-con4 .owl-carousel button.owl-dot {
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .main-con1 .fll {
+        width: 100%;
+    }
 }
