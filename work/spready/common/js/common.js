@@ -4,7 +4,7 @@ function openPopup(id, callback) {
     var thisPopup = $('#popup-' + id);
     thisPopup.after('<div class="popup_overlay"></div>')
     thisPopup.fadeIn(200);
-    $('body').addClass('popup_open');
+    $('html,body').addClass('popup_open');
     $('.popup_overlay').fadeIn(100);
     $(document).mouseup(function (e) {
         if (!$('.popup_inner').is(e.target) && $('.popup_inner').has(e.target).length === 0) {
