@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900');
 @import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
 
+html {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
