@@ -2,7 +2,7 @@ $(function () {});
 
 function openPopup(id, callback) {
     var thisPopup = $('#popup-' + id);
-    thisPopup.after('<div class="popup_overlay"></div>')
+    thisPopup.after('<div class="popup_overlay" onclick="closePopup();"></div>')
     thisPopup.fadeIn(200);
     $('body').addClass('popup_open');
     $('.popup_overlay').fadeIn(100);
