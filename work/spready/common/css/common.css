@@ -201,6 +201,9 @@ table {
 .modal-open {
     overflow: hidden;
 }
+body.modal-open {
+    position: fixed;
+}
 
 .modal-open .modal {
     overflow-x: hidden;
