@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900');
 @import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
 
-html {
-    overflow: hidden;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -13,12 +9,7 @@ body {
     font-size: 14px;
     color: #333;
     overflow-x: hidden;
-    overflow: hidden;
     word-break: keep-all;
-}
-
-body.popup_open {
-    overflow: hidden;
 }
 
 a {
@@ -189,6 +180,84 @@ table {
 
 .btn img {
     margin: 0 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal {
+    z-index: 1072;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    margin: 5% auto;
+    padding: 40px 30px 60px 30px;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.modal-backdrop {
+    z-index: 1071;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+.modal-backdrop.show {
+    opacity: 0.5;
 }
 
 #header {
@@ -601,9 +670,10 @@ table {
     position: relative;
 }
 
-.main-browse-con2 .con1 .select{
+.main-browse-con2 .con1 .select {
     display: none;
 }
+
 .main-browse-con2 .con1 .inner .lock {
     position: absolute;
     top: 0;
@@ -1257,47 +1327,6 @@ table {
     margin-bottom: 10px;
 }
 
-.popup {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1003;
-    opacity: 1;
-    overflow-y: auto;
-    background: none;
-    transform: scaleX(1) scaleY(1);
-    -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-}
-
-.popup_inner {
-    margin: 5% auto;
-    padding: 40px 30px 60px 30px;
-    position: relative;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-
-.popup_overlay {
-    width: 100%;
-    height: 125%;
-    position: fixed;
-    z-index: 999;
-    top: -25%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1002;
-    background: #000;
-    display: none;
-    will-change: opacity;
-    opacity: 0.5;
-}
-
 #popup-sign_01 {
     text-align: center;
 }
@@ -1388,31 +1417,39 @@ table {
     .detail-con2 .con3 {
         padding-bottom: 50px;
     }
-    .main-browse-con2>.clb>.fll:nth-child(2){
+
+    .main-browse-con2>.clb>.fll:nth-child(2) {
         max-width: 750px;
     }
-    .main-browse-con2>.clb>.fll:nth-child(1){
+
+    .main-browse-con2>.clb>.fll:nth-child(1) {
         max-width: 100%;
         overflow: hidden;
     }
-    .main-browse-con2 .con1{
+
+    .main-browse-con2 .con1 {
         width: auto;
         margin-right: 20px;
         float: left;
     }
-    .main-browse-con2 .con1:last-child{
+
+    .main-browse-con2 .con1:last-child {
         margin-right: 0;
     }
-    .main-browse-con2 .con1 .inner >*{
+
+    .main-browse-con2 .con1 .inner>* {
         display: none;
     }
-    .main-browse-con2 .con1 .inner >.select{
+
+    .main-browse-con2 .con1 .inner>.select {
         display: block;
     }
-    .main-browse-con2 .con1 .inner >.lock{
+
+    .main-browse-con2 .con1 .inner>.lock {
         display: block;
     }
-    .main-browse-con2>.clb>.fll:nth-child(2){
+
+    .main-browse-con2>.clb>.fll:nth-child(2) {
         max-width: 100%;
     }
 }
@@ -1431,7 +1468,7 @@ table {
         min-width: 640px;
     }
 
-    .popup_inner {
+    .modal-dialog {
         margin: 10% auto;
     }
 
@@ -1517,39 +1554,50 @@ table {
         height: 60px;
         line-height: 60px;
     }
-    .how-to-con2 .con1>.fll{
+
+    .how-to-con2 .con1>.fll {
         width: 100%;
     }
-    .how-to-con2 .con1>.fll:nth-child(2){
+
+    .how-to-con2 .con1>.fll:nth-child(2) {
         margin-top: 40px;
     }
-    .how-to-con1{
+
+    .how-to-con1 {
         margin-top: 50px;
     }
-    .how-to-con3{
+
+    .how-to-con3 {
         padding-top: 50px;
     }
-    .how-to-con4{
+
+    .how-to-con4 {
         padding-top: 40px;
     }
-    .how-to-con4 .fll:nth-child(1){
+
+    .how-to-con4 .fll:nth-child(1) {
         display: none;
     }
-    .how-to-con4 .fll:nth-child(2){
+
+    .how-to-con4 .fll:nth-child(2) {
         width: 100%;
     }
-    .main-browse-con1{
+
+    .main-browse-con1 {
         padding: 40px 0;
     }
-    .main-browse-con1 .search-wrap{
+
+    .main-browse-con1 .search-wrap {
         margin-top: 30px;
     }
-    .main-browse-con2 .con1{
+
+    .main-browse-con2 .con1 {
         width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
     }
-    .main-browse-con2>.clb>.fll:nth-child(1){
+
+    .main-browse-con2>.clb>.fll:nth-child(1) {
         margin-bottom: 20px;
     }
 }
