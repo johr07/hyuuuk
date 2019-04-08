@@ -219,7 +219,7 @@ select::-ms-expand {
 .header-top .poa {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 7%;
     transform: translate(0, -50%);
     text-align: left;
 }
@@ -339,6 +339,23 @@ select::-ms-expand {
     margin-right: 40px;
     font-size: 17px;
     color: #585858;
+    position: relative;
+}
+
+.footer-top>.clb>.fll>.fll:after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    display: block;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+
+.footer-top>.clb>.fll>.fll:last-child:after {
+    content: "";
+    display: none;
 }
 
 .footer-top>.clb>.flr>.fll {
@@ -456,7 +473,7 @@ select::-ms-expand {
     padding: 20px 0;
     box-sizing: border-box;
     border-right: 1px dashed #d2d2d2;
-    float: right;
+    float: left;
 }
 
 .main-con1 .fll:last-child {
@@ -697,6 +714,9 @@ select::-ms-expand {
 
 .main-con5 .table td:nth-child(2) {
     width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .main-con5 .table td .new {
@@ -733,6 +753,11 @@ select::-ms-expand {
         padding: 15px 20px;
     }
 
+    .main-con1 {
+        padding-top: 180px;
+        position: relative;
+    }
+
     .main-con1 .fll {
         width: 33.33333%;
         float: none;
@@ -740,8 +765,11 @@ select::-ms-expand {
         border-right: none;
     }
 
-    .main-con1 .fll:nth-child(1) {
+    .main-con1 .fll:nth-child(5) {
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .main-con2.wrap-1200 {
@@ -818,6 +846,10 @@ select::-ms-expand {
         max-width: 100%;
         float: none;
         text-align: center;
+    }
+
+    .footer-top>.clb>.fll>.fll:after {
+        right: -10px;
     }
 }
 
@@ -960,10 +992,30 @@ select::-ms-expand {
     .main-con4 .owl-carousel button.owl-dot {
         opacity: 0.8;
     }
+
+    .header-top .poa {
+        right: 0;
+    }
+
+    .main-con5 .con-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-con5 .con-title img {
+        display: none;
+    }
+
+    .main-con5 .fll .fz18 {
+        margin-right: 10px;
+    }
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:430px) {
     .main-con1 .fll {
         width: 100%;
+    }
+    .main-con5 .con-title{
+        display: block;
     }
 }
