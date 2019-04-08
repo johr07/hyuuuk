@@ -12,7 +12,6 @@ body {
     word-break: keep-all;
 }
 
-html.popup_open ,
 body.popup_open {
     overflow: hidden;
 }
