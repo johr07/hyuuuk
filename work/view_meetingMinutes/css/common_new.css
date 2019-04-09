@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-
+input
 
 .con-01 .top-02 {
     text-align: center;
@@ -164,6 +164,10 @@
 .con-04 .btn-wrap .btn img {
     width: auto;
     vertical-align: middle;
+}
+.con-04 input{
+    text-align: center;
+    border-radius: 0;
 }
 
 .con-05 {
@@ -412,6 +416,8 @@
         width: 100%;
     }
     .con-08 .fll{
+        margin: 0;
+        padding: 20px 0;
         flex-wrap: nowrap;
         overflow-x: auto;
         white-space: nowrap;
