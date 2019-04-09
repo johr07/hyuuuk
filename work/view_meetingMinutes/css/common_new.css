@@ -165,6 +165,7 @@ input
     width: auto;
     vertical-align: middle;
 }
+.con-04 select,
 .con-04 input{
     text-align: center;
     border-radius: 0;
