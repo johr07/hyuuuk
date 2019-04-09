@@ -444,11 +444,9 @@ input .con-01 .top-02 {
     }
 
     .con-04 .select-hidden,
-    .con-04 .select-styled {
-        padding-left: 20px;
-    }
-
+    .con-04 .select-styled ,
     .con-04 input[type=date] {
         padding-left: 20px;
+        text-align: left;
     }
 }
