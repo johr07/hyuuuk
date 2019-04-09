@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_new.css">
+    <title>서울특별시의회 회의록</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="wrapper sub">
+        <div class="header">
+            <div class="top ovh wrap-1180">
+                <h1 class="fll"><a href="#!"><img src="img/front/logo.png" alt="서울특별시의회 회의록"></a></h1>
+                <ul class="flr ovh mobile_h">
+                    <li class="fll">
+                        <a href="#!">의회홈페이지</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">의안정보</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">영상회의록</a>
+                    </li>
+                </ul>
+                <a href="#!" class="btn_gnb_open mobile_v">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="bottom">
+                <ul class="inner ovh">
+                    <li class="fll">
+                        <a href="#!">최근회의록</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">단순검색</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">의원별검색</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">시정질문</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!">5분자유발언</a>
+                    </li>
+                    <li class="fll">
+                        <a href="#!" class="on">상세검색</a>
+                    </li>
+                </ul>
+                <a href="#!" class="btn_gnb_close">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="bg_gnb"></div>
+        </div>
+        <div class="container bgc-f0f0f0">
+            <div class="visual-01">
+                <div class="df wrap-1180">
+                    <div class="item">
+                        <div class="searBox-01">
+                            <select name="" id="">
+                                <option value="">전체</option>
+                                <option value="">전체</option>
+                                <option value="">전체</option>
+                            </select>
+                            <div class="input">
+                                <input type="text" placeholder="검색어를 입려해주세요">
+                            </div>
+                            <div class="submit">
+                                <input type="image" src="img/front/ic-search.png" alt="search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fz14">최근 인기 검색어</div>
+                        <div class="fz13">
+                            <a href="#!">제285회 1차 본회의</a>
+                            <a href="#!">의원 시정질의</a>
+                            <a href="#!">처리의안</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con_sub01 wrap-1180">
+                <div class="title ovh">
+                    <div class="fll df">
+                        <div class="fz32">상세검색</div>
+                        <div class="fz15">상세조건으로 회의록을 검색하실 수 있습니다.</div>
+                    </div>
+                    <div class="flr navi df">
+                        <a href="#!">홈</a>
+                        <span><img src="img/front/ic-locationarrow.png" alt="bullet"></span>
+                        <a href="#!" class="on">상세검색</a>
+                    </div>
+                </div>
+                <div class="tab_header df con-07">
+                    <a href="" class="tab_list active">전체</a>
+                    <a href="" class="tab_list">본회의</a>
+                    <a href="" class="tab_list">상임위원회</a>
+                    <a href="" class="tab_list">예산결산특별위원회</a>
+                    <a href="" class="tab_list">특별위원회</a>
+                    <a href="" class="tab_list">행정사무감사</a>
+                    <a href="" class="tab_list">행정사무조사</a>
+                </div>
+                <div class="tab_container">
+                    <div class="tab_con01">
+                        <div class="con-04">
+                            <div class="row">
+                                <div class="col12">
+                                    <label for="">검색어</label>
+                                    <input type="text" class="tal">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col6">
+                                    <label for="">대수</label>
+                                    <select name="" id="">
+                                        <option value="">초대</option>
+                                        <option value="">초대</option>
+                                        <option value="">초대</option>
+                                    </select>
+                                    <span>~</span>
+                                    <select name="" id="">
+                                        <option value="">10대</option>
+                                        <option value="">20대</option>
+                                        <option value="">30대</option>
+                                    </select>
+                                </div>
+                                <div class="col6 flr">
+                                    <label for="">기간</label>
+                                    <input type="date" value="1997-03-04">
+                                    <span>~</span>
+                                    <input type="date" value="2019-03-04">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col6">
+                                    <label for="">회기(차)</label>
+                                    <select name="" id="">
+                                        <option value="">제1회</option>
+                                        <option value="">제2회</option>
+                                        <option value="">제3회</option>
+                                    </select>
+                                    <span>~</span>
+                                    <select name="" id="">
+                                        <option value="">제285회</option>
+                                        <option value="">제286회</option>
+                                        <option value="">제287회</option>
+                                    </select>
+                                </div>
+                                <div class="col6 flr">
+                                    <label for="">발언자</label>
+                                    <select name="" id="">
+                                        <option value="">홍길동(8대)</option>
+                                        <option value="">홍길동(9대)</option>
+                                        <option value="">홍길동(10대)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#!" class="btn"><img src="img/front/ic-search.png" alt="검색"></a>
+                            </div>
+                        </div>
+                        <div class="con-01">
+                            <div class="top-02">
+                                <a href="#!" class="btn">대수별</a>
+                                <a href="#!" class="btn blue">연도별</a>
+                            </div>
+                            <div class="middle">
+                                <div id="range_wrap">
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                </div>
+                                <script>
+                                    var lang = "ko-KR";
+                                    var year = 2018;
+
+                                    function dateToTS(date) {
+                                        return date.valueOf();
+                                    }
+
+                                    function tsToDate(ts) {
+                                        var d = new Date(ts);
+
+                                        return d.toLocaleDateString(lang, {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        });
+                                    }
+
+                                    $(".js-range-slider").ionRangeSlider({
+                                        skin: "big",
+                                        type: "double",
+                                        grid: true,
+                                        min: dateToTS(new Date(year, 10, 1)),
+                                        max: dateToTS(new Date(year, 11, 1)),
+                                        from: dateToTS(new Date(year, 10, 1)),
+                                        to: dateToTS(new Date(year, 11, 1)),
+                                        prettify: tsToDate
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="con-02 con-08 ovh">
+                            <div class="fll df">
+                                <a href="#!" class="on">전체</a>
+                                <span></span>
+                                <a href="#!">본회의</a>
+                                <span></span>
+                                <a href="#!">상임위원회</a>
+                                <span></span>
+                                <a href="#!">예산결산특별위원회</a>
+                                <span></span>
+                                <a href="#!">특별위원회</a>
+                                <span></span>
+                                <a href="#!">행정사무감사</a>
+                                <span></span>
+                                <a href="#!">행정사무조사</a>
+                            </div>
+                            <div class="con-05">
+                                <a href="#!" class="on">최신순</a>
+                                <span></span>
+                                <a href="#!">과거순</a>
+                                <select name="" id="">
+                                    <option value="">50개</option>
+                                    <option value="">100개</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="con-06">
+                            <div class="result">
+                                <div class="icon_01 icon df tx2">상세검색 결과는 <span class="fw500 blue">총 1,161건</span> 입니다
+                                </div>
+                            </div>
+                            <div class="jsb">
+                                <div class="icon_03 icon df tx1"><span class="fw500 blue">안건명</span>에서 <span
+                                        class="fw500">128건</span>이 검색되었습니다</div>
+                                <a href="#!" class="icon_add"><span>결과더보기</span> +</a>
+                            </div>
+                            <div class="tx4">
+                                <a href="#!">1.교복구입비 지원 조례 전부개정조례안</a>
+                                <a href="#!">2.소속 지방공무원 정원 조례 일부개정조례안</a>
+                            </div>
+                            <div class="jsb">
+                                <div class="icon_02 icon df tx1"><span class="fw500 blue">안건명</span>에서 <span
+                                        class="fw500">128건</span>이 검색되었습니다</div>
+                                <a href="#!" class="icon_add"><span>결과더보기</span> +</a>
+                            </div>
+                            <div class="tx3">
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                            </div>
+                            <div class="jsb">
+                                <div class="icon_04 icon df tx1"><span class="fw500 blue">안건명</span>에서 <span
+                                        class="fw500">128건</span>이 검색되었습니다</div>
+                                <a href="#!" class="icon_add"><span>결과더보기</span> +</a>
+                            </div>
+                            <div class="tx3">
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                                <a href="#!">
+                                    <div class="sky sub-title">제5대 124차 본회의</div>
+                                    지방자치법 제41조와 고흥군의회 <div class="sky">행정사무감사</div> 및 조사에 관한 조례 제3조의 규정에 의거 제223회 임시회 회기
+                                    중 실시한 2013년도 군 발주사업에
+                                    대한 현지확인 행정사무조사 결과를 보고드리겠습니다.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="con-06-h20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer wrap-1180 df">
+            <div class="ovh">
+                <a href="#!" class="logo fll"><img src="img/front/flogo.png" alt="서울특별시의회"></a>
+                <div class="copy fll">
+                    (04519) 서울특별시 중구 세종대로 125(태평로1가 60-1) 서울특별시의회<br>
+                    Copyright © 2013. 서울특별시의회. all rights reserved.
+                </div>
+            </div>
+            <div class="ovv">
+                <div class="fll input df">
+                    <input type="text">
+                    <input type="submit" value="의원검색">
+                </div>
+                <div class="fll input df">
+                    <input type="text">
+                    <input type="submit" value="용어검색">
+                </div>
+                <div class="fll viewDownload">
+                    <a href="#!">뷰어다운로드</a>
+                </div>
+                <div class="fll df select_wrap">
+                    <select name="" id="">
+                        <option value="">전국시도의회</option>
+                        <option value="">전국시도의회</option>
+                        <option value="">전국시도의회</option>
+                    </select>
+                    <input type="submit" value="이동">
+                </div>
+            </div>
+            <div class="top_btn">
+                <a href="#"><img src="img/front/btn-top.png" alt="위로가기"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
