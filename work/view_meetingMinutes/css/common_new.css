@@ -445,10 +445,10 @@ input .con-01 .top-02 {
 
     .con-04 .select-hidden,
     .con-04 .select-styled {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .con-04 input[type=date] {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 }
