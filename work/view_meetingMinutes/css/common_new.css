@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-input
-
-.con-01 .top-02 {
+input .con-01 .top-02 {
     text-align: center;
     font-size: 0;
 }
@@ -165,9 +163,9 @@ input
     width: auto;
     vertical-align: middle;
 }
+
 .con-04 select,
-.con-04 input{
-    text-align: center;
+.con-04 input {
     border-radius: 0;
 }
 
@@ -416,7 +414,8 @@ input
     .con-04 .btn-wrap .btn {
         width: 100%;
     }
-    .con-08 .fll{
+
+    .con-08 .fll {
         margin: 0;
         padding: 20px 0;
         flex-wrap: nowrap;
@@ -424,19 +423,32 @@ input
         white-space: nowrap;
         float: none;
     }
-    .icon_add span{
+
+    .icon_add span {
         display: none;
     }
-    .con-06 .result{
+
+    .con-06 .result {
         padding-left: 0;
         padding-right: 0;
     }
-    .con-06 .jsb{
+
+    .con-06 .jsb {
         padding-left: 0;
         padding-right: 0;
     }
-    .con-06 .tx3{
+
+    .con-06 .tx3 {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .con-04 .select-hidden,
+    .con-04 .select-styled {
+        padding-left: 10px;
+    }
+
+    .con-04 input[type=date] {
+        padding-left: 10px;
     }
 }
